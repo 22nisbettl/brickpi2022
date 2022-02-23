@@ -34,7 +34,7 @@ class Robot(BrickPiInterface):
 # Only execute if this is the main file, good for testing code
 if __name__ == '__main__':
     logging.basicConfig(filename='logs/robot.log', level=logging.INFO)
-    ROBOT = Robot(timelimit=10)  #10 second timelimit before
+    ROBOT = Robot(timelimit=0)  #10 second timelimit before
     bp = ROBOT.BP
     ROBOT.configure_sensors() #This takes 4 seconds
     ROBOT.rotate_power_degrees_IMU(20,-90)

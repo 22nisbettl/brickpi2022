@@ -1,5 +1,5 @@
 from flask import Flask, render_template, session, request, redirect, flash, url_for, jsonify, Response, logging
-from interfaces import databaseinterface, camerainterface, soundinterface
+from interfaces import databaseinterface, camerainterface, soundinterface, brickpiinterface
 import robot #robot is class that extends the brickpi class
 import global_vars as GLOBALS #load global variables
 import logging, time
@@ -68,6 +68,13 @@ def robotdashboard():
     enabled = int(GLOBALS.ROBOT != None)
     return render_template('dashboard.html', robot_enabled = enabled )
 
+@app.route('/manualcontrol', methods=['GET','POST'])
+def manualcontrol():
+    if not 'userid' in session:
+        return redirect('/')
+    enabled = int(GLOBALS.ROBOT != None)
+    return render_template('manualcontrol.html', robot_enabled = enabled )
+
 #Used for reconfiguring IMU
 @app.route('/reconfig_IMU', methods=['GET','POST'])
 def reconfig_IMU():
@@ -91,6 +98,54 @@ def sensors():
     if GLOBALS.ROBOT:
         data = GLOBALS.ROBOT.get_all_sensors()
     return jsonify(data)
+
+@app.route('/forward', methods=['GET','POST'])
+def forward():
+    if GLOBALS.ROBOT:
+        GLOBALS.ROBOT.move_power(50)
+
+@app.route('/reverse', methods=['GET','POST'])
+def reverse():
+    if GLOBALS.ROBOT:
+        GLOBALS.ROBOT.move_power(-50)
+
+@app.route('/stopall', methods=['GET','POST'])
+def stopall():
+    if GLOBALS.ROBOT:
+        GLOBALS.ROBOT.stop_all()
+
+@app.route('/shootup', methods=['GET','POST'])
+def shootup():
+    if GLOBALS.ROBOT:
+        GLOBALS.ROBOT.spin_medium_motor(360)
+        GLOBALS.ROBOT.spin_medium_motor(360)
+        GLOBALS.ROBOT.spin_medium_motor(360)
+
+@app.route('/shootdown', methods=['GET','POST'])
+def shootdown():
+    if GLOBALS.ROBOT:
+        GLOBALS.ROBOT.spin_medium_motor(-360)
+        GLOBALS.ROBOT.spin_medium_motor(-360)
+        GLOBALS.ROBOT.spin_medium_motor(-360)
+
+@app.route('/left', methods=['GET','POST'])
+def left():
+    if GLOBALS.ROBOT:
+        GLOBALS.ROBOT.rotate_power_degrees_IMU(75,-7)
+
+@app.route('/right', methods=['GET','POST'])
+def right():
+    if GLOBALS.ROBOT:
+        GLOBALS.ROBOT.rotate_power_degrees_IMU(75,7)
+
+@app.route('/sensorview', methods=['GET','POST'])
+def sensorview():
+    data = None
+    return render_template("sensors.html", data=data)
+
+@app.route('/mission', methods=['GET','POST'])
+def mission():
+    return render_template("mission.html")
 
 # YOUR FLASK CODE------------------------------------------------------------------------
 
@@ -171,7 +226,7 @@ def shutdowneverything():
 #Ajax handler for shutdown button
 @app.route('/robotshutdown', methods=['GET','POST'])
 def robotshutdown():
-    shutdowneverything()
+    shutdowneverything()    
     return jsonify({'message':'robot shutdown'})
 
 #Shut down the web server if necessary
