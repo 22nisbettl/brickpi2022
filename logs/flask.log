@@ -2699,3 +2699,2759 @@ INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
 INFO:werkzeug: * Restarting with stat
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.118 - - [23/Feb/2022 13:18:09] "[37mGET /manualcontrol HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:werkzeug:10.10.72.118 - - [23/Feb/2022 13:18:14] "[37mGET /manualcontrol HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.118 - - [23/Feb/2022 13:18:14] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:THERMAL READ: get_sensor error: Invalid sensor data
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.118 - - [23/Feb/2022 13:18:17] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [23/Feb/2022 13:18:36] "[37mGET /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.142.25 - - [23/Feb/2022 13:34:15] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:werkzeug:10.10.142.25 - - [23/Feb/2022 13:34:22] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.142.25 - - [23/Feb/2022 13:34:22] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.142.25 - - [23/Feb/2022 13:34:25] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.142.25 - - [23/Feb/2022 13:36:49] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.142.25 - - [23/Feb/2022 13:36:51] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.142.25 - - [23/Feb/2022 13:36:52] "[37mGET /sensors HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.142.25 - - [23/Feb/2022 13:37:21] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.142.25 - - [23/Feb/2022 13:37:23] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.142.25 - - [23/Feb/2022 13:37:26] "[37mGET /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.142.25 - - [23/Feb/2022 13:38:35] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.142.25 - - [23/Feb/2022 13:39:30] "[37mGET /manualcontrol HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.142.25 - - [23/Feb/2022 13:39:30] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.142.25 - - [23/Feb/2022 13:39:56] "[35m[1mPOST /forward HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.142.25 - - [23/Feb/2022 13:44:10] "[37mGET /manualcontrol HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.142.25 - - [23/Feb/2022 13:44:12] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.142.25 - - [23/Feb/2022 13:44:22] "[35m[1mPOST /reverse HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.142.25 - - [23/Feb/2022 13:44:22] "[35m[1mPOST /stopall HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.142.25 - - [23/Feb/2022 13:44:31] "[35m[1mPOST /shootdown HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.142.25 - - [23/Feb/2022 13:44:43] "[35m[1mPOST /shootdown HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.142.25 - - [23/Feb/2022 13:45:05] "[35m[1mPOST /shootdown HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.142.25 - - [23/Feb/2022 13:46:02] "[35m[1mPOST /shootdown HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.142.25 - - [23/Feb/2022 13:46:08] "[35m[1mPOST /shootdown HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.142.25 - - [23/Feb/2022 13:46:16] "[35m[1mPOST /shootdown HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.142.25 - - [23/Feb/2022 13:46:17] "[35m[1mPOST /shootdown HTTP/1.1[0m" 500 -
+                                                                                                    INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.118 - - [25/Feb/2022 09:22:31] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [25/Feb/2022 09:22:32] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.10.72.118 - - [25/Feb/2022 09:22:32] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.10.72.118 - - [25/Feb/2022 09:22:32] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.10.72.118 - - [25/Feb/2022 09:22:32] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.10.72.118 - - [25/Feb/2022 09:22:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:flask_app:DATABASE ERROR: no such table: users
+ERROR:flask_app:SELECT * FROM users WHERE email = ?
+INFO:flask_app:False
+INFO:werkzeug:10.10.72.118 - - [25/Feb/2022 09:22:46] "[37mPOST / HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: no such table: users
+ERROR:flask_app:SELECT * FROM users WHERE email = ?
+INFO:flask_app:False
+INFO:werkzeug:10.10.72.118 - - [25/Feb/2022 09:22:53] "[37mPOST / HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+ERROR:flask_app:DATABASE ERROR: no such table: users
+ERROR:flask_app:SELECT * FROM users WHERE email = ?
+INFO:flask_app:False
+INFO:werkzeug:10.10.72.118 - - [25/Feb/2022 09:23:46] "[37mPOST / HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: no such table: users
+ERROR:flask_app:SELECT * FROM users WHERE email = ?
+INFO:flask_app:False
+INFO:werkzeug:10.10.72.118 - - [25/Feb/2022 09:23:50] "[37mPOST / HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: no such table: users
+ERROR:flask_app:SELECT * FROM users WHERE email = ?
+INFO:flask_app:False
+INFO:werkzeug:10.10.72.118 - - [25/Feb/2022 09:24:00] "[37mPOST / HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: no such table: users
+ERROR:flask_app:SELECT * FROM users WHERE email = ?
+INFO:flask_app:False
+INFO:werkzeug:10.10.72.118 - - [25/Feb/2022 09:24:07] "[37mPOST / HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: no such table: users
+ERROR:flask_app:SELECT * FROM users WHERE email = ?
+INFO:flask_app:False
+INFO:werkzeug:10.10.72.118 - - [25/Feb/2022 09:24:12] "[37mPOST / HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.118 - - [25/Feb/2022 09:32:41] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+ERROR:flask_app:DATABASE ERROR: no such table: users
+ERROR:flask_app:SELECT * FROM users WHERE email = ?
+INFO:flask_app:False
+INFO:werkzeug:10.10.72.118 - - [25/Feb/2022 09:33:02] "[37mPOST / HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: no such table: users
+ERROR:flask_app:SELECT * FROM users WHERE email = ?
+INFO:flask_app:False
+INFO:werkzeug:10.10.72.118 - - [25/Feb/2022 09:33:11] "[37mPOST / HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: no such table: users
+ERROR:flask_app:SELECT * FROM users WHERE email = ?
+INFO:flask_app:False
+INFO:werkzeug:10.10.72.118 - - [25/Feb/2022 09:34:06] "[37mPOST / HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+ERROR:flask_app:DATABASE ERROR: no such table: users
+ERROR:flask_app:SELECT * FROM users WHERE email = ?
+INFO:flask_app:False
+INFO:werkzeug:10.10.72.118 - - [25/Feb/2022 09:34:37] "[37mPOST / HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: no such table: users
+ERROR:flask_app:SELECT * FROM users WHERE email = ?
+INFO:flask_app:False
+INFO:werkzeug:10.10.72.118 - - [25/Feb/2022 09:34:43] "[37mPOST / HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: no such table: users
+ERROR:flask_app:SELECT * FROM users WHERE email = ?
+INFO:flask_app:False
+INFO:werkzeug:10.10.72.118 - - [25/Feb/2022 09:34:58] "[37mPOST / HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: no such table: users
+ERROR:flask_app:SELECT * FROM users WHERE email = ?
+INFO:flask_app:False
+INFO:werkzeug:10.10.72.118 - - [25/Feb/2022 09:35:04] "[37mPOST / HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: no such table: users
+ERROR:flask_app:SELECT * FROM users WHERE email = ?
+INFO:flask_app:False
+INFO:werkzeug:10.10.72.118 - - [25/Feb/2022 09:35:08] "[37mPOST / HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+ERROR:flask_app:DATABASE ERROR: no such table: users
+ERROR:flask_app:SELECT * FROM users WHERE email = ?
+INFO:flask_app:False
+INFO:werkzeug:10.10.72.118 - - [25/Feb/2022 09:36:18] "[37mPOST / HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [25/Feb/2022 09:36:21] "[37mGET / HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: no such table: users
+ERROR:flask_app:SELECT * FROM users WHERE email = ?
+INFO:flask_app:False
+INFO:werkzeug:10.10.72.118 - - [25/Feb/2022 09:36:31] "[37mPOST / HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [25/Feb/2022 09:36:35] "[32mGET /dashboard HTTP/1.1[0m" 302 -
+INFO:werkzeug:10.10.72.118 - - [25/Feb/2022 09:36:35] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [25/Feb/2022 09:36:40] "[32mGET /manualcontrol HTTP/1.1[0m" 302 -
+INFO:werkzeug:10.10.72.118 - - [25/Feb/2022 09:36:40] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [25/Feb/2022 09:36:42] "[32mGET /manualcontrol HTTP/1.1[0m" 302 -
+INFO:werkzeug:10.10.72.118 - - [25/Feb/2022 09:36:43] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.118 - - [25/Feb/2022 09:38:15] "[37mGET / HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: no such table: users
+ERROR:flask_app:SELECT * FROM users WHERE email = ?
+INFO:flask_app:False
+INFO:werkzeug:10.10.72.118 - - [25/Feb/2022 09:38:19] "[37mPOST / HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+ERROR:flask_app:DATABASE ERROR: no such table: users
+ERROR:flask_app:SELECT * FROM users WHERE email = ?
+INFO:flask_app:False
+INFO:werkzeug:10.10.72.118 - - [25/Feb/2022 09:38:46] "[37mPOST / HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: no such table: users
+ERROR:flask_app:SELECT * FROM users WHERE email = ?
+INFO:flask_app:False
+INFO:werkzeug:10.10.72.118 - - [25/Feb/2022 09:38:48] "[37mPOST / HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+ERROR:flask_app:DATABASE ERROR: no such table: users
+ERROR:flask_app:SELECT * FROM users WHERE email = ?
+INFO:flask_app:False
+INFO:werkzeug:10.10.72.118 - - [25/Feb/2022 09:39:01] "[37mPOST / HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:06:53] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:06:53] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:06:53] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:06:53] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:06:53] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:06:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:flask_app:DATABASE ERROR: no such table: users
+ERROR:flask_app:SELECT * FROM users WHERE email = ?
+INFO:flask_app:False
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:07:02] "[37mPOST / HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: no such table: users
+ERROR:flask_app:SELECT * FROM users WHERE email = ?
+INFO:flask_app:False
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:08:29] "[37mPOST / HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: no such table: users
+ERROR:flask_app:SELECT * FROM users WHERE email = ?
+INFO:flask_app:False
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:08:40] "[37mPOST / HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:flask_app:[{'email': 'admin@admin', 'name': 'admin', 'userid': 1, 'permission': 'admin', 'password': 'raspassword'}]
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:09:38] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:09:50] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:09:50] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:09:51] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:09:51] "[36mGET /static/js/mapping.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:09:52] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:09:53] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:09:56] "[37mGET /manualcontrol HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:09:56] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:10:01] "[35m[1mPOST /shootdown HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:10:01] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:10:04] "[35m[1mPOST /shootdown HTTP/1.1[0m" 500 -
+INFO:flask_app:0.0
+INFO:flask_app:-0.0009440183639526367
+INFO:flask_app:-0.0009440183639526367
+INFO:flask_app:-0.0023853182792663574
+INFO:flask_app:-0.06178714334964752
+INFO:flask_app:-0.327089861035347
+INFO:flask_app:-0.91783706843853
+INFO:flask_app:-1.8188994377851486
+INFO:flask_app:-2.6801500469446182
+INFO:flask_app:-3.694635272026062
+INFO:flask_app:-4.749366283416748
+INFO:flask_app:-5.947257995605469
+INFO:flask_app:-7.118484348058701
+INFO:flask_app:-8.321564882993698
+INFO:flask_app:-9.308242484927177
+INFO:flask_app:-10.347747787833214
+INFO:flask_app:-11.217020854353905
+INFO:flask_app:-12.121298417448997
+INFO:flask_app:-13.026920810341835
+INFO:flask_app:-13.992986977100372
+INFO:flask_app:-14.959864914417267
+INFO:flask_app:-15.904947280883789
+INFO:flask_app:-16.850649058818817
+INFO:flask_app:-17.821354389190674
+INFO:flask_app:-18.946128353476524
+INFO:flask_app:-19.938579618930817
+INFO:flask_app:-20.937676057219505
+INFO:flask_app:-21.970614716410637
+INFO:flask_app:-23.097023233771324
+INFO:flask_app:-24.115593746304512
+INFO:flask_app:-25.237599328160286
+INFO:flask_app:-26.246367409825325
+INFO:flask_app:-27.3061450868845
+INFO:flask_app:-28.285362645983696
+INFO:flask_app:-29.309263348579407
+INFO:flask_app:-30.329908281564713
+INFO:flask_app:-31.444814950227737
+INFO:flask_app:-32.45727415382862
+INFO:flask_app:-33.471546679735184
+INFO:flask_app:-34.45739693939686
+INFO:flask_app:-35.46378283202648
+INFO:flask_app:-36.46877694129944
+INFO:flask_app:-37.560915768146515
+INFO:flask_app:-38.66881808638573
+INFO:flask_app:-39.65699663758278
+INFO:flask_app:-40.68003234267235
+INFO:flask_app:-41.658168256282806
+INFO:flask_app:-42.724852710962296
+INFO:flask_app:-43.688775151968
+INFO:flask_app:-44.84827855229378
+INFO:flask_app:-45.82405611872673
+INFO:flask_app:-46.797278851270676
+INFO:flask_app:-47.75907510519028
+INFO:flask_app:-48.737949818372726
+INFO:flask_app:-49.71437019109726
+INFO:flask_app:-50.69864150881767
+INFO:flask_app:-52.259186536073685
+INFO:flask_app:-53.38512271642685
+INFO:flask_app:-54.573108837008476
+INFO:flask_app:-55.75884862244129
+INFO:flask_app:-56.99330358207226
+INFO:flask_app:-58.452523186802864
+INFO:flask_app:-59.60706976056099
+INFO:flask_app:-60.952340096235275
+INFO:flask_app:-62.081368178129196
+INFO:flask_app:-63.099111437797546
+INFO:flask_app:-64.5382707118988
+INFO:flask_app:-65.59810960292816
+INFO:flask_app:-66.84226834774017
+INFO:flask_app:-67.97873252630234
+INFO:flask_app:-69.07697063684464
+INFO:flask_app:-70.37823575735092
+INFO:flask_app:-72.31504660844803
+INFO:flask_app:-73.91657024621964
+INFO:flask_app:-75.42284458875656
+INFO:flask_app:-76.72584027051926
+INFO:flask_app:-77.91108484566212
+INFO:flask_app:-78.76148064434528
+INFO:flask_app:-79.6914143115282
+INFO:flask_app:-80.52939648926258
+INFO:flask_app:-81.49623627960682
+INFO:flask_app:-82.346585765481
+INFO:flask_app:-83.31919728219509
+INFO:flask_app:-84.14873494207859
+INFO:flask_app:-85.04291239380836
+INFO:flask_app:-85.915583178401
+INFO:flask_app:-86.84437154233456
+INFO:flask_app:-87.7446949928999
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:10:14] "[35m[1mPOST /left HTTP/1.1[0m" 500 -
+INFO:flask_app:0.0018365681171417236
+INFO:flask_app:0.0010238289833068848
+INFO:flask_app:0.0010238289833068848
+INFO:flask_app:0.00016388297080993652
+INFO:flask_app:-0.0006791949272155762
+INFO:flask_app:0.00023114681243896484
+INFO:flask_app:0.013180851936340332
+INFO:flask_app:0.034939542412757874
+INFO:flask_app:0.09656141698360443
+INFO:flask_app:0.3762109875679016
+INFO:flask_app:0.7893451154232025
+INFO:flask_app:1.8466531336307526
+INFO:flask_app:2.8793191015720367
+INFO:flask_app:4.287556439638138
+INFO:flask_app:5.669019997119904
+INFO:flask_app:6.864324972033501
+INFO:flask_app:8.526061564683914
+INFO:flask_app:9.709615543484688
+INFO:flask_app:10.95283131301403
+INFO:flask_app:11.980418533086777
+INFO:flask_app:13.049185544252396
+INFO:flask_app:14.202428728342056
+INFO:flask_app:15.239717334508896
+INFO:flask_app:16.6771350055933
+INFO:flask_app:18.55915017426014
+INFO:flask_app:20.704106986522675
+INFO:flask_app:22.54552674293518
+INFO:flask_app:24.257087007164955
+INFO:flask_app:25.93467327952385
+INFO:flask_app:28.269062280654907
+INFO:flask_app:29.83984099328518
+INFO:flask_app:31.44679184257984
+INFO:flask_app:32.52253033220768
+INFO:flask_app:33.845739647746086
+INFO:flask_app:34.98957274854183
+INFO:flask_app:36.15045486390591
+INFO:flask_app:37.135451540350914
+INFO:flask_app:38.22339890897274
+INFO:flask_app:39.16961504518986
+INFO:flask_app:40.1195252686739
+INFO:flask_app:41.074545323848724
+INFO:flask_app:42.10910779237747
+INFO:flask_app:43.024450063705444
+INFO:flask_app:44.102317705750465
+INFO:flask_app:45.083204224705696
+INFO:flask_app:46.11554801464081
+INFO:flask_app:47.177402660250664
+INFO:flask_app:48.42906944453716
+INFO:flask_app:49.50114454329014
+INFO:flask_app:50.63868476450443
+INFO:flask_app:51.652772426605225
+INFO:flask_app:52.76073521375656
+INFO:flask_app:53.69323244690895
+INFO:flask_app:54.689865708351135
+INFO:flask_app:55.66622853279114
+INFO:flask_app:56.60012283921242
+INFO:flask_app:57.590037524700165
+INFO:flask_app:58.55042937397957
+INFO:flask_app:59.59425690770149
+INFO:flask_app:60.60609768331051
+INFO:flask_app:61.61091187596321
+INFO:flask_app:62.57626497745514
+INFO:flask_app:63.67644274234772
+INFO:flask_app:64.66640043258667
+INFO:flask_app:65.75291913747787
+INFO:flask_app:66.72735279798508
+INFO:flask_app:67.61155913770199
+INFO:flask_app:68.641632437706
+INFO:flask_app:69.57386341691017
+INFO:flask_app:70.54929503798485
+INFO:flask_app:71.49474954605103
+INFO:flask_app:72.5779522806406
+INFO:flask_app:73.5816086679697
+INFO:flask_app:74.58082307875156
+INFO:flask_app:75.62212380766869
+INFO:flask_app:76.60242035984993
+INFO:flask_app:77.5710976421833
+INFO:flask_app:78.52818469703197
+INFO:flask_app:79.52655819058418
+INFO:flask_app:80.56382116675377
+INFO:flask_app:81.74407263100147
+INFO:flask_app:82.94276922941208
+INFO:flask_app:84.09394255280495
+INFO:flask_app:85.19399526715279
+INFO:flask_app:86.34087234735489
+INFO:flask_app:87.67081797122955
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:10:17] "[35m[1mPOST /right HTTP/1.1[0m" 500 -
+INFO:flask_app:0.007480025291442871
+INFO:flask_app:0.003840625286102295
+INFO:flask_app:-0.0022424161434173584
+INFO:flask_app:-0.011576801538467407
+INFO:flask_app:-0.010772570967674255
+INFO:flask_app:0.059570446610450745
+INFO:flask_app:0.17882932722568512
+INFO:flask_app:0.44316552579402924
+INFO:flask_app:0.8115645200014114
+INFO:flask_app:1.3901392966508865
+INFO:flask_app:2.133152097463608
+INFO:flask_app:2.8531139194965363
+INFO:flask_app:3.8380219638347626
+INFO:flask_app:4.908822014927864
+INFO:flask_app:6.0531871765851974
+INFO:flask_app:7.076484814286232
+INFO:flask_app:8.241300269961357
+INFO:flask_app:9.333957225084305
+INFO:flask_app:10.277983888983727
+INFO:flask_app:11.339151218533516
+INFO:flask_app:12.59383638203144
+INFO:flask_app:13.515261337161064
+INFO:flask_app:14.871629223227501
+INFO:flask_app:16.028012454509735
+INFO:flask_app:17.09267756342888
+INFO:flask_app:18.59015244245529
+INFO:flask_app:19.909956097602844
+INFO:flask_app:21.27768811583519
+INFO:flask_app:22.5139122903347
+INFO:flask_app:23.69667848944664
+INFO:flask_app:25.03031601011753
+INFO:flask_app:26.076322093605995
+INFO:flask_app:27.188392460346222
+INFO:flask_app:28.334950149059296
+INFO:flask_app:29.34764887392521
+INFO:flask_app:30.505248561501503
+INFO:flask_app:31.71351657807827
+INFO:flask_app:32.90770699083805
+INFO:flask_app:34.05348102748394
+INFO:flask_app:35.27653597295284
+INFO:flask_app:36.90909297764301
+INFO:flask_app:39.371590197086334
+INFO:flask_app:41.884362265467644
+INFO:flask_app:43.77733759582043
+INFO:flask_app:45.04673655331135
+INFO:flask_app:46.01608555018902
+INFO:flask_app:47.029318168759346
+INFO:flask_app:47.975020587444305
+INFO:flask_app:48.97137197852135
+INFO:flask_app:49.9135619699955
+INFO:flask_app:50.854178965091705
+INFO:flask_app:51.888632133603096
+INFO:flask_app:52.861961260437965
+INFO:flask_app:53.87215483188629
+INFO:flask_app:54.857094049453735
+INFO:flask_app:55.92354139685631
+INFO:flask_app:56.91116972267628
+INFO:flask_app:57.94977529346943
+INFO:flask_app:58.98979039490223
+INFO:flask_app:60.0092443972826
+INFO:flask_app:60.98182559013367
+INFO:flask_app:61.99874222278595
+INFO:flask_app:62.930379033088684
+INFO:flask_app:63.86706826090813
+INFO:flask_app:64.83429571986198
+INFO:flask_app:65.73522661626339
+INFO:flask_app:66.64837016165257
+INFO:flask_app:67.58232320845127
+INFO:flask_app:68.5506496578455
+INFO:flask_app:69.2958303540945
+INFO:flask_app:70.04576843976974
+INFO:flask_app:70.79598188400269
+INFO:flask_app:71.5178207308054
+INFO:flask_app:72.25370712578297
+INFO:flask_app:73.10387845337391
+INFO:flask_app:73.93431383371353
+INFO:flask_app:74.79121333360672
+INFO:flask_app:75.60651004314423
+INFO:flask_app:76.39740872383118
+INFO:flask_app:77.191814661026
+INFO:flask_app:77.94644530117512
+INFO:flask_app:78.76442596316338
+INFO:flask_app:79.56417533755302
+INFO:flask_app:80.42197386920452
+INFO:flask_app:81.13061286509037
+INFO:flask_app:81.81248004734516
+INFO:flask_app:82.5764934271574
+INFO:flask_app:83.42418973147869
+INFO:flask_app:84.1473527699709
+INFO:flask_app:84.99027739465237
+INFO:flask_app:85.73450773954391
+INFO:flask_app:86.65418301522732
+INFO:flask_app:87.6813365072012
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:10:19] "[35m[1mPOST /right HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:10:23] "[35m[1mPOST /forward HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:10:23] "[35m[1mPOST /stopall HTTP/1.1[0m" 500 -
+INFO:flask_app:0.0
+INFO:flask_app:0.0013548284769058228
+INFO:flask_app:0.0013548284769058228
+INFO:flask_app:-0.006927356123924255
+INFO:flask_app:-0.016532346606254578
+INFO:flask_app:-0.1011672168970108
+INFO:flask_app:-0.33072541654109955
+INFO:flask_app:-0.749218687415123
+INFO:flask_app:-1.7502450197935104
+INFO:flask_app:-3.1899453848600388
+INFO:flask_app:-4.178564175963402
+INFO:flask_app:-5.404973015189171
+INFO:flask_app:-6.177959010004997
+INFO:flask_app:-6.764628395438194
+INFO:flask_app:-7.389888808131218
+INFO:flask_app:-8.083099037408829
+INFO:flask_app:-8.886235564947128
+INFO:flask_app:-9.777313351631165
+INFO:flask_app:-10.738906562328339
+INFO:flask_app:-11.659128412604332
+INFO:flask_app:-12.785409018397331
+INFO:flask_app:-13.790809318423271
+INFO:flask_app:-14.764615401625633
+INFO:flask_app:-15.672294184565544
+INFO:flask_app:-16.528283342719078
+INFO:flask_app:-17.42648147046566
+INFO:flask_app:-18.26067404448986
+INFO:flask_app:-19.280438512563705
+INFO:flask_app:-20.156720221042633
+INFO:flask_app:-21.018491849303246
+INFO:flask_app:-23.81235884130001
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:10:26] "[35m[1mPOST /stopall HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:10:26] "[35m[1mPOST /left HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:10:29] "[35m[1mPOST /forward HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:10:31] "[35m[1mPOST /reverse HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:10:31] "[35m[1mPOST /stopall HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:10:31] "[35m[1mPOST /forward HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:10:35] "[35m[1mPOST /reverse HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:10:35] "[35m[1mPOST /stopall HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:10:42] "[35m[1mPOST /forward HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:10:42] "[35m[1mPOST /stopall HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:11:10] "[35m[1mPOST /reverse HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:11:10] "[35m[1mPOST /stopall HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:11:11] "[35m[1mPOST /stopall HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:11:11] "[35m[1mPOST /reverse HTTP/1.1[0m" 500 -
+INFO:flask_app:0.0
+INFO:flask_app:0.0009145438671112061
+INFO:flask_app:0.0009145438671112061
+INFO:flask_app:-0.0013285279273986816
+INFO:flask_app:-0.006294861435890198
+INFO:flask_app:-0.08485640585422516
+INFO:flask_app:-0.25820355117321014
+INFO:flask_app:-0.642125204205513
+INFO:flask_app:-1.2363910973072052
+INFO:flask_app:-2.196009710431099
+INFO:flask_app:-3.4000360518693924
+INFO:flask_app:-4.909186124801636
+INFO:flask_app:-6.704064726829529
+INFO:flask_app:-8.093637824058533
+INFO:flask_app:-9.716847717761993
+INFO:flask_app:-11.084709972143173
+INFO:flask_app:-12.214610368013382
+INFO:flask_app:-13.219446763396263
+INFO:flask_app:-14.522866889834404
+INFO:flask_app:-15.575739279389381
+INFO:flask_app:-16.81193195283413
+INFO:flask_app:-18.10271118581295
+INFO:flask_app:-19.58528172969818
+INFO:flask_app:-21.330424189567566
+INFO:flask_app:-23.315435215830803
+INFO:flask_app:-25.691030457615852
+INFO:flask_app:-27.834820210933685
+INFO:flask_app:-29.560430467128754
+INFO:flask_app:-31.558979600667953
+INFO:flask_app:-32.933678194880486
+INFO:flask_app:-33.93577419221401
+INFO:flask_app:-35.07818713784218
+INFO:flask_app:-36.264936208724976
+INFO:flask_app:-37.24947226047516
+INFO:flask_app:-38.34306573867798
+INFO:flask_app:-39.38570261001587
+INFO:flask_app:-40.32793100178242
+INFO:flask_app:-41.21236327290535
+INFO:flask_app:-42.156736090779305
+INFO:flask_app:-43.1496667265892
+INFO:flask_app:-44.076829090714455
+INFO:flask_app:-45.00311540067196
+INFO:flask_app:-45.977273643016815
+INFO:flask_app:-46.94470003247261
+INFO:flask_app:-47.9516379237175
+INFO:flask_app:-48.96585574746132
+INFO:flask_app:-50.141390949487686
+INFO:flask_app:-51.31916323304176
+INFO:flask_app:-52.449471443891525
+INFO:flask_app:-53.50744867324829
+INFO:flask_app:-54.507592260837555
+INFO:flask_app:-55.474029183387756
+INFO:flask_app:-56.51322424411774
+INFO:flask_app:-57.49380159378052
+INFO:flask_app:-58.451560631394386
+INFO:flask_app:-59.5048464089632
+INFO:flask_app:-60.52606029808521
+INFO:flask_app:-61.514019683003426
+INFO:flask_app:-62.5875733345747
+INFO:flask_app:-63.670012682676315
+INFO:flask_app:-64.68015596270561
+INFO:flask_app:-65.64799663424492
+INFO:flask_app:-66.65931460261345
+INFO:flask_app:-67.58475002646446
+INFO:flask_app:-68.5645007789135
+INFO:flask_app:-69.53149814903736
+INFO:flask_app:-70.65819293260574
+INFO:flask_app:-71.61715343594551
+INFO:flask_app:-72.59849674999714
+INFO:flask_app:-73.61141447722912
+INFO:flask_app:-74.64727346599102
+INFO:flask_app:-75.64811065793037
+INFO:flask_app:-76.69842147827148
+INFO:flask_app:-77.70635963976383
+INFO:flask_app:-78.71632255613804
+INFO:flask_app:-79.73451299965382
+INFO:flask_app:-80.89507369697094
+INFO:flask_app:-82.19207175076008
+INFO:flask_app:-83.40571619570255
+INFO:flask_app:-84.65604339540005
+INFO:flask_app:-85.91343806684017
+INFO:flask_app:-87.01415945589542
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:11:14] "[35m[1mPOST /left HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:11:18] "[35m[1mPOST /forward HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:11:18] "[35m[1mPOST /stopall HTTP/1.1[0m" 500 -
+INFO:flask_app:0.0008904635906219482
+INFO:flask_app:0.0017671585083007812
+INFO:flask_app:0.0009530037641525269
+INFO:flask_app:-8.031725883483887e-06
+INFO:flask_app:-0.005777999758720398
+INFO:flask_app:-0.030913695693016052
+INFO:flask_app:-0.17114554345607758
+INFO:flask_app:-0.6196980774402618
+INFO:flask_app:-1.2500410676002502
+INFO:flask_app:-2.333146095275879
+INFO:flask_app:-3.566300630569458
+INFO:flask_app:-5.110902488231659
+INFO:flask_app:-6.619228646159172
+INFO:flask_app:-8.088847935199738
+INFO:flask_app:-9.688505992293358
+INFO:flask_app:-10.878984346985817
+INFO:flask_app:-12.00221985578537
+INFO:flask_app:-13.76402236521244
+INFO:flask_app:-15.50345553457737
+INFO:flask_app:-17.329375937581062
+INFO:flask_app:-18.92177787423134
+INFO:flask_app:-20.42040976881981
+INFO:flask_app:-21.1046249717474
+INFO:flask_app:-21.539488971233368
+INFO:flask_app:-21.855604872107506
+INFO:flask_app:-22.175976738333702
+INFO:flask_app:-22.527808904647827
+INFO:flask_app:-22.948281824588776
+INFO:flask_app:-23.45312349498272
+INFO:flask_app:-23.95483300089836
+INFO:flask_app:-24.45656183362007
+INFO:flask_app:-24.942410603165627
+INFO:flask_app:-25.338062599301338
+INFO:flask_app:-25.710411563515663
+INFO:flask_app:-26.105051174759865
+INFO:flask_app:-26.49890488386154
+INFO:flask_app:-26.862573206424713
+INFO:flask_app:-27.25337888300419
+INFO:flask_app:-27.69289819896221
+INFO:flask_app:-28.033651873469353
+INFO:flask_app:-28.393630117177963
+INFO:flask_app:-28.746671050786972
+INFO:flask_app:-29.103302091360092
+INFO:flask_app:-29.470083445310593
+INFO:flask_app:-29.83271935582161
+INFO:flask_app:-30.190940394997597
+INFO:flask_app:-30.510709777474403
+INFO:flask_app:-30.86500433087349
+INFO:flask_app:-31.174029141664505
+INFO:flask_app:-31.522423595190048
+INFO:flask_app:-31.878035560250282
+INFO:flask_app:-32.25608994066715
+INFO:flask_app:-32.59747453033924
+INFO:flask_app:-32.90438409149647
+INFO:flask_app:-33.370847061276436
+INFO:flask_app:-33.67090792953968
+INFO:flask_app:-33.9612292945385
+INFO:flask_app:-34.26937273144722
+INFO:flask_app:-34.64370237290859
+INFO:flask_app:-35.08963052928448
+INFO:flask_app:-35.538632944226265
+INFO:flask_app:-36.056773617863655
+INFO:flask_app:-36.62126301229
+INFO:flask_app:-37.1634411662817
+INFO:flask_app:-37.62778288125992
+INFO:flask_app:-38.04338699579239
+INFO:flask_app:-38.392818942666054
+INFO:flask_app:-38.68453173339367
+INFO:flask_app:-38.924565836787224
+INFO:flask_app:-39.20574162900448
+INFO:flask_app:-39.48560939729214
+INFO:flask_app:-39.880248710513115
+INFO:flask_app:-40.329406425356865
+INFO:flask_app:-40.76874615252018
+INFO:flask_app:-41.21172487735748
+INFO:flask_app:-41.86553633213043
+INFO:flask_app:-42.25857865810394
+INFO:flask_app:-42.66614907979965
+INFO:flask_app:-43.06805729866028
+INFO:flask_app:-43.446050733327866
+INFO:flask_app:-43.85223266482353
+INFO:flask_app:-44.2826464176178
+INFO:flask_app:-44.70093463361263
+INFO:flask_app:-45.10906034708023
+INFO:flask_app:-45.546509861946106
+INFO:flask_app:-45.932855904102325
+INFO:flask_app:-46.324480414390564
+INFO:flask_app:-46.761218160390854
+INFO:flask_app:-47.260818630456924
+INFO:flask_app:-47.79924264550209
+INFO:flask_app:-48.39213341474533
+INFO:flask_app:-48.94853916764259
+INFO:flask_app:-49.41113141179085
+INFO:flask_app:-49.89901888370514
+INFO:flask_app:-50.4258808195591
+INFO:flask_app:-51.03715732693672
+INFO:flask_app:-51.63024988770485
+INFO:flask_app:-52.40763978660107
+INFO:flask_app:-53.1891703158617
+INFO:flask_app:-54.04631893336773
+INFO:flask_app:-54.972697243094444
+INFO:flask_app:-56.19775150716305
+INFO:flask_app:-57.247415229678154
+INFO:flask_app:-58.43456952273846
+INFO:flask_app:-59.48897136747837
+INFO:flask_app:-60.560709193348885
+INFO:flask_app:-61.61401395499706
+INFO:flask_app:-62.62511794269085
+INFO:flask_app:-63.68717463314533
+INFO:flask_app:-64.57299031317234
+INFO:flask_app:-65.5090780556202
+INFO:flask_app:-66.31788772344589
+INFO:flask_app:-67.16294339299202
+INFO:flask_app:-67.99391597509384
+INFO:flask_app:-69.02928584814072
+INFO:flask_app:-70.00142568349838
+INFO:flask_app:-71.06567162275314
+INFO:flask_app:-72.05245390534401
+INFO:flask_app:-73.0356163084507
+INFO:flask_app:-74.04082795977592
+INFO:flask_app:-74.97075426578522
+INFO:flask_app:-75.9868768453598
+INFO:flask_app:-76.96321105957031
+INFO:flask_app:-78.52051785588264
+INFO:flask_app:-79.84870697557926
+INFO:flask_app:-81.31140108406544
+INFO:flask_app:-82.6531754732132
+INFO:flask_app:-83.98314072191715
+INFO:flask_app:-85.43290410935879
+INFO:flask_app:-86.55889783799648
+INFO:flask_app:-87.85663598775864
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:11:22] "[35m[1mPOST /left HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:11:26] "[35m[1mPOST /forward HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:11:26] "[35m[1mPOST /stopall HTTP/1.1[0m" 500 -
+INFO:flask_app:0.0
+INFO:flask_app:0.0016399472951889038
+INFO:flask_app:-0.00042523443698883057
+INFO:flask_app:-0.03369857370853424
+INFO:flask_app:-0.09417514503002167
+INFO:flask_app:-0.25435447692871094
+INFO:flask_app:-0.9448552131652832
+INFO:flask_app:-1.7781528234481812
+INFO:flask_app:-3.088689014315605
+INFO:flask_app:-5.17601566016674
+INFO:flask_app:-6.763528600335121
+INFO:flask_app:-8.9313253313303
+INFO:flask_app:-10.54825833439827
+INFO:flask_app:-11.7189981341362
+INFO:flask_app:-12.602006152272224
+INFO:flask_app:-13.456415444612503
+INFO:flask_app:-14.320667043328285
+INFO:flask_app:-15.106397598981857
+INFO:flask_app:-16.109772875905037
+INFO:flask_app:-17.073554947972298
+INFO:flask_app:-18.1212278008461
+INFO:flask_app:-19.1711198836565
+INFO:flask_app:-20.580418899655342
+INFO:flask_app:-21.72639210522175
+INFO:flask_app:-22.93126806616783
+INFO:flask_app:-24.115884602069855
+INFO:flask_app:-25.279635787010193
+INFO:flask_app:-26.347126588225365
+INFO:flask_app:-27.514053523540497
+INFO:flask_app:-28.424448281526566
+INFO:flask_app:-29.4519282579422
+INFO:flask_app:-30.434451147913933
+INFO:flask_app:-31.39079624414444
+INFO:flask_app:-32.40383921563625
+INFO:flask_app:-33.38426077365875
+INFO:flask_app:-34.56922785937786
+INFO:flask_app:-35.572756096720695
+INFO:flask_app:-36.63853159546852
+INFO:flask_app:-37.6492380797863
+INFO:flask_app:-38.96620190143585
+INFO:flask_app:-40.0706068277359
+INFO:flask_app:-41.21561749279499
+INFO:flask_app:-42.2546072602272
+INFO:flask_app:-43.22859051823616
+INFO:flask_app:-44.236943528056145
+INFO:flask_app:-45.19646470248699
+INFO:flask_app:-46.24948342144489
+INFO:flask_app:-47.26213724911213
+INFO:flask_app:-48.19104374945164
+INFO:flask_app:-49.27649234235287
+INFO:flask_app:-50.515816405415535
+INFO:flask_app:-51.56078930199146
+INFO:flask_app:-52.587485149502754
+INFO:flask_app:-53.69099763035774
+INFO:flask_app:-54.774487003684044
+INFO:flask_app:-55.71551655232906
+INFO:flask_app:-56.82933992147446
+INFO:flask_app:-57.917128294706345
+INFO:flask_app:-58.96395008265972
+INFO:flask_app:-59.94817580282688
+INFO:flask_app:-61.0555175691843
+INFO:flask_app:-62.014954164624214
+INFO:flask_app:-63.13630537688732
+INFO:flask_app:-64.46580450236797
+INFO:flask_app:-65.6184983253479
+INFO:flask_app:-67.22450253367424
+INFO:flask_app:-68.69727966189384
+INFO:flask_app:-69.97777244448662
+INFO:flask_app:-71.29662999510765
+INFO:flask_app:-72.46381396055222
+INFO:flask_app:-73.61130106449127
+INFO:flask_app:-74.70735627412796
+INFO:flask_app:-75.73517040908337
+INFO:flask_app:-76.72420355677605
+INFO:flask_app:-77.58762463927269
+INFO:flask_app:-78.56333164870739
+INFO:flask_app:-79.4531890898943
+INFO:flask_app:-80.3472981005907
+INFO:flask_app:-81.28639842569828
+INFO:flask_app:-82.20773769915104
+INFO:flask_app:-83.27574491500854
+INFO:flask_app:-84.28186096251011
+INFO:flask_app:-85.31363993883133
+INFO:flask_app:-86.37048342823982
+INFO:flask_app:-87.39267314970493
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:11:28] "[35m[1mPOST /left HTTP/1.1[0m" 500 -
+INFO:flask_app:-0.015017449855804443
+INFO:flask_app:-0.02625247836112976
+INFO:flask_app:-0.02489630877971649
+INFO:flask_app:-0.06618116796016693
+INFO:flask_app:-0.2286503165960312
+INFO:flask_app:-0.5182716250419617
+INFO:flask_app:-1.5907053351402283
+INFO:flask_app:-2.8791635930538177
+INFO:flask_app:-4.067191869020462
+INFO:flask_app:-5.366835758090019
+INFO:flask_app:-6.763566300272942
+INFO:flask_app:-8.035113796591759
+INFO:flask_app:-9.816662058234215
+INFO:flask_app:-12.003018483519554
+INFO:flask_app:-13.553058490157127
+INFO:flask_app:-15.044247940182686
+INFO:flask_app:-16.22043016552925
+INFO:flask_app:-17.302547872066498
+INFO:flask_app:-18.242797791957855
+INFO:flask_app:-19.327599585056305
+INFO:flask_app:-20.544672667980194
+INFO:flask_app:-21.61585932970047
+INFO:flask_app:-22.737151443958282
+INFO:flask_app:-23.831492722034454
+INFO:flask_app:-24.780556857585907
+INFO:flask_app:-25.930560544133186
+INFO:flask_app:-26.91503868997097
+INFO:flask_app:-28.050167426466942
+INFO:flask_app:-28.926406487822533
+INFO:flask_app:-30.00259719789028
+INFO:flask_app:-30.99322997033596
+INFO:flask_app:-31.950729101896286
+INFO:flask_app:-32.96765646338463
+INFO:flask_app:-34.01497237384319
+INFO:flask_app:-35.16808693110943
+INFO:flask_app:-36.21439699828625
+INFO:flask_app:-37.164189383387566
+INFO:flask_app:-38.100190207362175
+INFO:flask_app:-39.24999161064625
+INFO:flask_app:-40.24227672815323
+INFO:flask_app:-41.406324565410614
+INFO:flask_app:-42.38183368742466
+INFO:flask_app:-43.423710241913795
+INFO:flask_app:-44.379005804657936
+INFO:flask_app:-45.47190298140049
+INFO:flask_app:-46.41576321423054
+INFO:flask_app:-47.36524300277233
+INFO:flask_app:-48.32890109717846
+INFO:flask_app:-49.3128981590271
+INFO:flask_app:-50.29643872380257
+INFO:flask_app:-51.21957066655159
+INFO:flask_app:-52.362571090459824
+INFO:flask_app:-53.30541941523552
+INFO:flask_app:-54.35868114233017
+INFO:flask_app:-55.35040006041527
+INFO:flask_app:-56.33515253663063
+INFO:flask_app:-57.33057478070259
+INFO:flask_app:-58.292887672781944
+INFO:flask_app:-59.35177581012249
+INFO:flask_app:-60.31434129178524
+INFO:flask_app:-61.313860550522804
+INFO:flask_app:-62.419893994927406
+INFO:flask_app:-63.3976134955883
+INFO:flask_app:-64.39187116920948
+INFO:flask_app:-65.45943368971348
+INFO:flask_app:-66.6208115965128
+INFO:flask_app:-67.81151069700718
+INFO:flask_app:-69.00310803949833
+INFO:flask_app:-70.30607150495052
+INFO:flask_app:-71.55257324874401
+INFO:flask_app:-72.75178100168705
+INFO:flask_app:-74.18670490384102
+INFO:flask_app:-75.38734601438046
+INFO:flask_app:-76.71484510600567
+INFO:flask_app:-77.94053719937801
+INFO:flask_app:-79.05323748290539
+INFO:flask_app:-80.37917791306973
+INFO:flask_app:-81.57783199846745
+INFO:flask_app:-82.74920251965523
+INFO:flask_app:-84.27803081274033
+INFO:flask_app:-85.53151014447212
+INFO:flask_app:-87.73661196231842
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:11:30] "[35m[1mPOST /left HTTP/1.1[0m" 500 -
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:6.69357705116272
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:9.682738065719604
+INFO:flask_app:9.680932998657227
+INFO:flask_app:9.678173989057541
+INFO:flask_app:9.675484225153923
+INFO:flask_app:9.670601442456245
+INFO:flask_app:9.667111590504646
+INFO:flask_app:9.682130083441734
+INFO:flask_app:9.7191621363163
+INFO:flask_app:9.849785447120667
+INFO:flask_app:10.078753307461739
+INFO:flask_app:10.560714229941368
+INFO:flask_app:11.206707283854485
+INFO:flask_app:12.025900810956955
+INFO:flask_app:13.05427297949791
+INFO:flask_app:14.142266631126404
+INFO:flask_app:15.431117981672287
+INFO:flask_app:16.97179126739502
+INFO:flask_app:18.59977735579014
+INFO:flask_app:19.683942064642906
+INFO:flask_app:20.782301619648933
+INFO:flask_app:21.68955869972706
+INFO:flask_app:22.64509566128254
+INFO:flask_app:23.598435044288635
+INFO:flask_app:24.573460146784782
+INFO:flask_app:25.475824549794197
+INFO:flask_app:26.34856614470482
+INFO:flask_app:27.34802433848381
+INFO:flask_app:28.258215203881264
+INFO:flask_app:29.17570771276951
+INFO:flask_app:30.155264601111412
+INFO:flask_app:31.208891049027443
+INFO:flask_app:32.144960537552834
+INFO:flask_app:33.249767646193504
+INFO:flask_app:34.33050033450127
+INFO:flask_app:35.33311714231968
+INFO:flask_app:36.3305374532938
+INFO:flask_app:37.218764558434486
+INFO:flask_app:38.16124153137207
+INFO:flask_app:39.00398311018944
+INFO:flask_app:39.83845081925392
+INFO:flask_app:40.722672536969185
+INFO:flask_app:41.57228893041611
+INFO:flask_app:42.43964943289757
+INFO:flask_app:43.387402668595314
+INFO:flask_app:44.482371881604195
+INFO:flask_app:45.60434032976627
+INFO:flask_app:46.62907446920872
+INFO:flask_app:47.75478471815586
+INFO:flask_app:49.14265547692776
+INFO:flask_app:50.31435416638851
+INFO:flask_app:51.40368150174618
+INFO:flask_app:52.490849658846855
+INFO:flask_app:53.74971269071102
+INFO:flask_app:54.938940703868866
+INFO:flask_app:56.09318044781685
+INFO:flask_app:57.23864880204201
+INFO:flask_app:58.38150158524513
+INFO:flask_app:59.66895657777786
+INFO:flask_app:61.06102678179741
+INFO:flask_app:62.38699014484882
+INFO:flask_app:63.61510281264782
+INFO:flask_app:64.98781777918339
+INFO:flask_app:66.27718515694141
+INFO:flask_app:67.7537974268198
+INFO:flask_app:69.0053917914629
+INFO:flask_app:70.55796165764332
+INFO:flask_app:71.65268059074879
+INFO:flask_app:73.37006437778473
+INFO:flask_app:74.8150063753128
+INFO:flask_app:76.2292107641697
+INFO:flask_app:77.17137745022774
+INFO:flask_app:78.19991743564606
+INFO:flask_app:79.18979649245739
+INFO:flask_app:80.15387897193432
+INFO:flask_app:81.11891631782055
+INFO:flask_app:82.11238597333431
+INFO:flask_app:83.12864671647549
+INFO:flask_app:84.08939562737942
+INFO:flask_app:85.1281318962574
+INFO:flask_app:86.06782341003418
+INFO:flask_app:87.03786173462868
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:11:32] "[35m[1mPOST /right HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:11:37] "[35m[1mPOST /forward HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:11:37] "[35m[1mPOST /stopall HTTP/1.1[0m" 500 -
+INFO:flask_app:0.0008947104215621948
+INFO:flask_app:0.001791447401046753
+INFO:flask_app:0.000957787036895752
+INFO:flask_app:6.631016731262207e-05
+INFO:flask_app:-0.004288852214813232
+INFO:flask_app:-0.03629693388938904
+INFO:flask_app:-0.08309750258922577
+INFO:flask_app:-0.17737990617752075
+INFO:flask_app:-0.32094836235046387
+INFO:flask_app:-0.6607289910316467
+INFO:flask_app:-1.153536632657051
+INFO:flask_app:-1.851781502366066
+INFO:flask_app:-2.799852892756462
+INFO:flask_app:-3.925775170326233
+INFO:flask_app:-5.162963971495628
+INFO:flask_app:-6.407908156514168
+INFO:flask_app:-7.662813976407051
+INFO:flask_app:-8.833374097943306
+INFO:flask_app:-10.121711820363998
+INFO:flask_app:-11.198990225791931
+INFO:flask_app:-12.273465991020203
+INFO:flask_app:-13.227068543434143
+INFO:flask_app:-14.092663288116455
+INFO:flask_app:-15.01041841506958
+INFO:flask_app:-15.956498697400093
+INFO:flask_app:-16.855594515800476
+INFO:flask_app:-17.880626618862152
+INFO:flask_app:-18.90007334947586
+INFO:flask_app:-20.006310522556305
+INFO:flask_app:-21.04885870218277
+INFO:flask_app:-22.12343195080757
+INFO:flask_app:-23.427234828472137
+INFO:flask_app:-24.50847414135933
+INFO:flask_app:-25.76785898208618
+INFO:flask_app:-26.940168142318726
+INFO:flask_app:-27.939380899071693
+INFO:flask_app:-28.97936673462391
+INFO:flask_app:-29.967465713620186
+INFO:flask_app:-30.949375495314598
+INFO:flask_app:-31.82433272898197
+INFO:flask_app:-33.34984411299229
+INFO:flask_app:-34.827273935079575
+INFO:flask_app:-36.24591413140297
+INFO:flask_app:-37.79750391840935
+INFO:flask_app:-39.15868079662323
+INFO:flask_app:-40.679850935935974
+INFO:flask_app:-42.11039274930954
+INFO:flask_app:-43.27129286527634
+INFO:flask_app:-45.04082626104355
+INFO:flask_app:-46.77206853032112
+INFO:flask_app:-48.32067430019379
+INFO:flask_app:-49.54067371785641
+INFO:flask_app:-50.86417196691036
+INFO:flask_app:-51.96241709589958
+INFO:flask_app:-53.547513738274574
+INFO:flask_app:-55.69081702828407
+INFO:flask_app:-58.0957547724247
+INFO:flask_app:-60.2544047832489
+INFO:flask_app:-61.563955783843994
+INFO:flask_app:-62.61232966184616
+INFO:flask_app:-63.63262289762497
+INFO:flask_app:-64.63797467947006
+INFO:flask_app:-65.8305621445179
+INFO:flask_app:-66.84209629893303
+INFO:flask_app:-67.94091954827309
+INFO:flask_app:-68.91581857204437
+INFO:flask_app:-69.92703855037689
+INFO:flask_app:-70.78510683774948
+INFO:flask_app:-71.77554887533188
+INFO:flask_app:-72.66497728228569
+INFO:flask_app:-73.61287316679955
+INFO:flask_app:-74.54855927824974
+INFO:flask_app:-75.43334493041039
+INFO:flask_app:-76.39224895834923
+INFO:flask_app:-77.30505189299583
+INFO:flask_app:-78.35938601195812
+INFO:flask_app:-79.37964291870594
+INFO:flask_app:-80.48851765692234
+INFO:flask_app:-81.57637207210064
+INFO:flask_app:-82.65679912269115
+INFO:flask_app:-83.66252152621746
+INFO:flask_app:-84.81366610527039
+INFO:flask_app:-85.76574030518532
+INFO:flask_app:-86.78235545754433
+INFO:flask_app:-87.73350682854652
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:11:40] "[35m[1mPOST /left HTTP/1.1[0m" 500 -
+INFO:flask_app:0.0
+INFO:flask_app:-0.011767923831939697
+INFO:flask_app:-0.018272727727890015
+INFO:flask_app:-0.014266490936279297
+INFO:flask_app:0.010371357202529907
+INFO:flask_app:0.27087026834487915
+INFO:flask_app:1.0243177860975266
+INFO:flask_app:1.8448609113693237
+INFO:flask_app:2.7634164690971375
+INFO:flask_app:3.8120084702968597
+INFO:flask_app:5.008858293294907
+INFO:flask_app:6.255559593439102
+INFO:flask_app:7.394357353448868
+INFO:flask_app:8.591860309243202
+INFO:flask_app:9.678049191832542
+INFO:flask_app:10.810941234230995
+INFO:flask_app:11.714347451925278
+INFO:flask_app:12.60310611128807
+INFO:flask_app:13.421032935380936
+INFO:flask_app:14.217102140188217
+INFO:flask_app:15.060503765940666
+INFO:flask_app:15.927325710654259
+INFO:flask_app:16.847556084394455
+INFO:flask_app:17.877125069499016
+INFO:flask_app:18.77258948981762
+INFO:flask_app:19.692824378609657
+INFO:flask_app:20.67750209569931
+INFO:flask_app:21.693700969219208
+INFO:flask_app:22.701645776629448
+INFO:flask_app:23.64398066699505
+INFO:flask_app:24.669675275683403
+INFO:flask_app:25.61404825747013
+INFO:flask_app:26.614833131432533
+INFO:flask_app:27.539229199290276
+INFO:flask_app:28.6012155264616
+INFO:flask_app:29.59965418279171
+INFO:flask_app:30.608057484030724
+INFO:flask_app:31.736872002482414
+INFO:flask_app:32.78018121421337
+INFO:flask_app:33.96067117154598
+INFO:flask_app:34.912955060601234
+INFO:flask_app:35.915723249316216
+INFO:flask_app:36.89689512550831
+INFO:flask_app:38.043814957141876
+INFO:flask_app:39.03065164387226
+INFO:flask_app:40.02631311118603
+INFO:flask_app:41.04831300675869
+INFO:flask_app:42.1830385774374
+INFO:flask_app:43.11545355618
+INFO:flask_app:44.21487586200237
+INFO:flask_app:45.207823529839516
+INFO:flask_app:46.396427035331726
+INFO:flask_app:47.63777482509613
+INFO:flask_app:49.61853414773941
+INFO:flask_app:50.81865233182907
+INFO:flask_app:52.05022019147873
+INFO:flask_app:53.187038004398346
+INFO:flask_app:54.38833051919937
+INFO:flask_app:55.35731798410416
+INFO:flask_app:56.33345001935959
+INFO:flask_app:57.45995259284973
+INFO:flask_app:58.43015503883362
+INFO:flask_app:59.46864530444145
+INFO:flask_app:60.44186607003212
+INFO:flask_app:61.42138287425041
+INFO:flask_app:62.46421121060848
+INFO:flask_app:63.606681779026985
+INFO:flask_app:64.62864251434803
+INFO:flask_app:65.72157436609268
+INFO:flask_app:66.78948965668678
+INFO:flask_app:67.78751537203789
+INFO:flask_app:68.8075924217701
+INFO:flask_app:69.7920591533184
+INFO:flask_app:71.22420209646225
+INFO:flask_app:72.55403307080269
+INFO:flask_app:73.61522547900677
+INFO:flask_app:74.67290051281452
+INFO:flask_app:75.66918896138668
+INFO:flask_app:76.72548216581345
+INFO:flask_app:77.66292491555214
+INFO:flask_app:78.629438996315
+INFO:flask_app:79.63109318912029
+INFO:flask_app:80.70790569484234
+INFO:flask_app:81.68242172896862
+INFO:flask_app:82.60436071455479
+INFO:flask_app:83.6263166218996
+INFO:flask_app:84.65544304251671
+INFO:flask_app:85.76028069853783
+INFO:flask_app:86.71289345622063
+INFO:flask_app:87.80205181241035
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:11:42] "[35m[1mPOST /right HTTP/1.1[0m" 500 -
+INFO:flask_app:0.0022968649864196777
+INFO:flask_app:0.004189163446426392
+INFO:flask_app:0.0022499263286590576
+INFO:flask_app:0.0033155083656311035
+INFO:flask_app:0.07602719962596893
+INFO:flask_app:0.44403235614299774
+INFO:flask_app:2.325612708926201
+INFO:flask_app:4.333017662167549
+INFO:flask_app:12.012575507164001
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:11:46] "[35m[1mPOST /right HTTP/1.1[0m" 500 -
+INFO:flask_app:-0.00333559513092041
+INFO:flask_app:-0.09549044072628021
+INFO:flask_app:-0.14013424515724182
+INFO:flask_app:-0.06053897738456726
+INFO:flask_app:0.010130614042282104
+INFO:flask_app:0.07867781817913055
+INFO:flask_app:0.17962753772735596
+INFO:flask_app:0.36240461468696594
+INFO:flask_app:0.6414742767810822
+INFO:flask_app:1.2115014344453812
+INFO:flask_app:1.9310139268636703
+INFO:flask_app:2.972970351576805
+INFO:flask_app:4.1248404532670975
+INFO:flask_app:5.2631580382585526
+INFO:flask_app:6.356257453560829
+INFO:flask_app:7.640741631388664
+INFO:flask_app:9.07483695447445
+INFO:flask_app:10.161912426352501
+INFO:flask_app:11.31049557030201
+INFO:flask_app:12.241483882069588
+INFO:flask_app:13.296472564339638
+INFO:flask_app:14.081883683800697
+INFO:flask_app:15.027956023812294
+INFO:flask_app:15.895471081137657
+INFO:flask_app:16.753283008933067
+INFO:flask_app:17.69455659389496
+INFO:flask_app:18.941105380654335
+INFO:flask_app:20.007479920983315
+INFO:flask_app:21.186529904603958
+INFO:flask_app:22.184522435069084
+INFO:flask_app:23.259636357426643
+INFO:flask_app:24.45087520778179
+INFO:flask_app:25.57550458610058
+INFO:flask_app:26.572796389460564
+INFO:flask_app:27.67691369354725
+INFO:flask_app:28.79683654010296
+INFO:flask_app:29.85573646426201
+INFO:flask_app:30.98798495531082
+INFO:flask_app:32.081273913383484
+INFO:flask_app:33.19243085384369
+INFO:flask_app:34.60327127575874
+INFO:flask_app:36.03615561127663
+INFO:flask_app:37.2759275585413
+INFO:flask_app:38.705840960145
+INFO:flask_app:39.86408157646656
+INFO:flask_app:40.94876058399677
+INFO:flask_app:42.3975714892149
+INFO:flask_app:43.49025712907314
+INFO:flask_app:44.70159529149532
+INFO:flask_app:45.79579445719719
+INFO:flask_app:47.08549675345421
+INFO:flask_app:48.366661965847015
+INFO:flask_app:1.284763291478157
+INFO:flask_app:49.52761146426201
+INFO:flask_app:2.575232610106468
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:13.414097175002098
+INFO:flask_app:56.48838031291962
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:67.87482106685638
+INFO:flask_app:13.300853729248047
+INFO:flask_app:69.17105060815811
+INFO:flask_app:14.537720143795013
+INFO:flask_app:70.36258655786514
+INFO:flask_app:15.685575067996979
+INFO:flask_app:71.6718739271164
+INFO:flask_app:16.92946121096611
+INFO:flask_app:72.9166748225689
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:77.16342708468437
+INFO:flask_app:22.77820059657097
+INFO:flask_app:78.12665267288685
+INFO:flask_app:23.7092065513134
+INFO:flask_app:79.10201586782932
+INFO:flask_app:24.653678685426712
+INFO:flask_app:79.99665823578835
+INFO:flask_app:25.678610146045685
+INFO:flask_app:81.00398138165474
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:31.61096340417862
+INFO:flask_app:84.03339484333992
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:88.50165465474129
+INFO:flask_app:39.08839136362076
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:11:47] "[35m[1mPOST /right HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:11:47] "[35m[1mPOST /right HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:11:48] "[35m[1mPOST /right HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:11:49] "[35m[1mPOST /right HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [01/Mar/2022 16:11:50] "[35m[1mPOST /right HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 111-144-191
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:35:06] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:35:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:flask_app:[{'userid': 1, 'email': 'admin@admin', 'password': 'raspassword', 'name': 'admin', 'permission': 'admin'}]
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:35:15] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:35:15] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:35:20] "[37mGET /manualcontrol HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:35:20] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:35:25] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:0.0
+INFO:flask_app:0.0011605769395828247
+INFO:flask_app:-0.0009206682443618774
+INFO:flask_app:-0.008323833346366882
+INFO:flask_app:-0.035341277718544006
+INFO:flask_app:-0.14191004633903503
+INFO:flask_app:-0.4129900634288788
+INFO:flask_app:-0.7943182289600372
+INFO:flask_app:-1.926416739821434
+INFO:flask_app:-2.8960262686014175
+INFO:flask_app:-4.167668625712395
+INFO:flask_app:-5.697423025965691
+INFO:flask_app:-7.709016755223274
+INFO:flask_app:-9.521965637803078
+INFO:flask_app:-10.762806490063667
+INFO:flask_app:-11.89909115433693
+INFO:flask_app:-12.716668918728828
+INFO:flask_app:-13.518459394574165
+INFO:flask_app:-14.383613154292107
+INFO:flask_app:-15.208900019526482
+INFO:flask_app:-16.053076669573784
+INFO:flask_app:-17.012480780482292
+INFO:flask_app:-18.00853480398655
+INFO:flask_app:-18.98250360786915
+INFO:flask_app:-20.044067576527596
+INFO:flask_app:-21.122002586722374
+INFO:flask_app:-22.18835136294365
+INFO:flask_app:-23.270168662071228
+INFO:flask_app:-24.389202535152435
+INFO:flask_app:-25.339096307754517
+INFO:flask_app:-26.286726474761963
+INFO:flask_app:-27.142436981201172
+INFO:flask_app:-28.01735520362854
+INFO:flask_app:-28.920538872480392
+INFO:flask_app:-29.790071427822113
+INFO:flask_app:-30.70961955189705
+INFO:flask_app:-31.682365119457245
+INFO:flask_app:-32.62204295396805
+INFO:flask_app:-33.549821734428406
+INFO:flask_app:-34.48868216574192
+INFO:flask_app:-35.40704430639744
+INFO:flask_app:-36.33008898794651
+INFO:flask_app:-37.300548151135445
+INFO:flask_app:-38.20610339939594
+INFO:flask_app:-39.11849595606327
+INFO:flask_app:-40.02168561518192
+INFO:flask_app:-41.01826037466526
+INFO:flask_app:-41.91302873194218
+INFO:flask_app:-42.83726121485233
+INFO:flask_app:-43.72236827015877
+INFO:flask_app:-44.63041055202484
+INFO:flask_app:-45.54691556096077
+INFO:flask_app:-46.479528814554214
+INFO:flask_app:-47.43044891953468
+INFO:flask_app:-48.37227548658848
+INFO:flask_app:-49.31823472678661
+INFO:flask_app:-50.23400758206844
+INFO:flask_app:-51.17683854699135
+INFO:flask_app:-52.02816426753998
+INFO:flask_app:-53.123260259628296
+INFO:flask_app:-54.07219958305359
+INFO:flask_app:-55.04167628288269
+INFO:flask_app:-56.025647073984146
+INFO:flask_app:-57.31902638077736
+INFO:flask_app:-58.485460087656975
+INFO:flask_app:-59.73497845232487
+INFO:flask_app:-60.930071488022804
+INFO:flask_app:-62.23505352437496
+INFO:flask_app:-63.43869258463383
+INFO:flask_app:-64.87272088229656
+INFO:flask_app:-66.18840071558952
+INFO:flask_app:-67.42822660505772
+INFO:flask_app:-68.867550984025
+INFO:flask_app:-70.13346968591213
+INFO:flask_app:-71.29221402108669
+INFO:flask_app:-72.5229507535696
+INFO:flask_app:-73.60423520207405
+INFO:flask_app:-74.90561217069626
+INFO:flask_app:-76.04917198419571
+INFO:flask_app:-77.27634711563587
+INFO:flask_app:-79.68889465928078
+INFO:flask_app:-81.84321713447571
+INFO:flask_app:-83.54429516196251
+INFO:flask_app:-85.10495814681053
+INFO:flask_app:-87.04299683868885
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:35:54] "[35m[1mPOST /left HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/interfaces/brickpiinterface.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 111-144-191
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:36:29] "[35m[1mPOST /left HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 111-144-191
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:36:40] "[37mGET /manualcontrol HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:36:45] "[37mGET /manualcontrol HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:36:45] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:0.0
+INFO:flask_app:0.0
+INFO:flask_app:-0.0018959641456604004
+INFO:flask_app:-0.0028226226568222046
+INFO:flask_app:-0.020732536911964417
+INFO:flask_app:-0.05338999629020691
+INFO:flask_app:-0.19936412572860718
+INFO:flask_app:-0.42685650289058685
+INFO:flask_app:-0.8547727763652802
+INFO:flask_app:-1.3790760189294815
+INFO:flask_app:-2.076608791947365
+INFO:flask_app:-2.83525587618351
+INFO:flask_app:-3.6272184997797012
+INFO:flask_app:-4.399484351277351
+INFO:flask_app:-5.169870659708977
+INFO:flask_app:-5.699177786707878
+INFO:flask_app:-6.092328831553459
+INFO:flask_app:-6.165285184979439
+INFO:flask_app:-6.086381554603577
+INFO:flask_app:-5.956431657075882
+INFO:flask_app:-5.9554633647203445
+INFO:flask_app:-5.9524708688259125
+INFO:flask_app:-5.946693658828735
+INFO:flask_app:-5.938330173492432
+INFO:flask_app:-5.93361708521843
+INFO:flask_app:-5.93935889005661
+INFO:flask_app:-5.955306097865105
+INFO:flask_app:-5.958171457052231
+INFO:flask_app:-5.9477939903736115
+INFO:flask_app:-5.936121925711632
+INFO:flask_app:-5.94897685945034
+INFO:flask_app:-5.969302237033844
+INFO:flask_app:-5.971538603305817
+INFO:flask_app:-5.93485552072525
+INFO:flask_app:-5.959935575723648
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:-5.949931383132935
+INFO:flask_app:-5.942825138568878
+INFO:flask_app:-5.946154832839966
+INFO:flask_app:-5.986428737640381
+INFO:flask_app:-6.059614464640617
+INFO:flask_app:-6.220672473311424
+INFO:flask_app:LOADING THE SOUND
+INFO:flask_app:-6.706626310944557
+INFO:flask_app:-16.759316816926003
+INFO:flask_app:-18.02091832458973
+INFO:flask_app:-18.971049964427948
+INFO:flask_app:-19.835575327277184
+INFO:flask_app:-20.68668757379055
+INFO:flask_app:-21.515030965209007
+INFO:flask_app:-22.279949262738228
+INFO:flask_app:-23.14599235355854
+INFO:flask_app:-24.111678883433342
+INFO:flask_app:-25.1561871021986
+INFO:flask_app:-26.19001917541027
+INFO:flask_app:-27.221036687493324
+INFO:flask_app:-28.42346416413784
+INFO:flask_app:-29.498732432723045
+INFO:flask_app:-30.63954435288906
+INFO:flask_app:-31.727030590176582
+INFO:flask_app:-32.82910771667957
+INFO:flask_app:-33.90525798499584
+INFO:flask_app:-35.01997068524361
+INFO:flask_app:-36.03566333651543
+INFO:flask_app:-37.012383580207825
+INFO:flask_app:-37.97895926237106
+INFO:flask_app:-38.87823751568794
+INFO:flask_app:-39.76071310043335
+INFO:flask_app:-40.64821779727936
+INFO:flask_app:-41.60056680440903
+INFO:flask_app:-42.53646618127823
+INFO:flask_app:-43.492613315582275
+INFO:flask_app:-44.67302146553993
+INFO:flask_app:-45.69093203544617
+INFO:flask_app:-46.73774605989456
+INFO:flask_app:-47.875754088163376
+INFO:flask_app:-49.111222326755524
+INFO:flask_app:-50.110795378685
+INFO:flask_app:-51.12788873910904
+INFO:flask_app:-52.104006335139275
+INFO:flask_app:-53.37154583632946
+INFO:flask_app:-54.51027072966099
+INFO:flask_app:-55.75650633871555
+INFO:flask_app:-56.89885655045509
+INFO:flask_app:-58.2736703902483
+INFO:flask_app:-59.38774557411671
+INFO:flask_app:-60.97982509434223
+INFO:flask_app:-62.66048990190029
+INFO:flask_app:-63.86495839059353
+INFO:flask_app:-65.14981353282928
+INFO:flask_app:-66.34495970606804
+INFO:flask_app:-67.76813980937004
+INFO:flask_app:-68.924880027771
+INFO:flask_app:-70.02868603169918
+INFO:flask_app:-71.15522123873234
+INFO:flask_app:-72.38369227945805
+INFO:flask_app:-74.40326945483685
+INFO:flask_app:-76.94297759234905
+INFO:flask_app:-78.72948126494884
+INFO:flask_app:-80.98983456194401
+INFO:flask_app:-83.16608646512032
+INFO:flask_app:-85.16857454180717
+INFO:flask_app:-86.53106258809566
+INFO:flask_app:-87.60168822109699
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:36:48] "[35m[1mPOST /left HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:36:49] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/interfaces/brickpiinterface.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 111-144-191
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 111-144-191
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:37:50] "[37mGET /manualcontrol HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:37:51] "[37mGET /manualcontrol HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:37:52] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:37:53] "[35m[1mPOST /left HTTP/1.1[0m" 500 -
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:flask_app:-0.0016719996929168701
+INFO:flask_app:-0.004415944218635559
+INFO:flask_app:-0.0018548369407653809
+INFO:flask_app:-0.0036842823028564453
+INFO:flask_app:-0.018319755792617798
+INFO:flask_app:-0.043814465403556824
+INFO:flask_app:-0.09289577603340149
+INFO:flask_app:-0.1711692065000534
+INFO:flask_app:-0.2729920893907547
+INFO:flask_app:-0.5118760615587234
+INFO:flask_app:-0.8743535429239273
+INFO:flask_app:-1.5468846708536148
+INFO:flask_app:-2.767743244767189
+INFO:flask_app:-3.96648146212101
+INFO:flask_app:-5.210274040699005
+INFO:flask_app:-6.914001166820526
+INFO:flask_app:-8.23434317111969
+INFO:flask_app:-9.453476548194885
+INFO:flask_app:-10.67787717282772
+INFO:flask_app:-11.800908863544464
+INFO:flask_app:-12.877933263778687
+INFO:flask_app:-13.816351175308228
+INFO:flask_app:-14.855799928307533
+INFO:flask_app:-16.16499264538288
+INFO:flask_app:-17.350496843457222
+INFO:flask_app:-18.55630996823311
+INFO:flask_app:-21.25296401977539
+INFO:flask_app:-23.195434138178825
+INFO:flask_app:-25.17683333158493
+INFO:flask_app:-27.014070868492126
+INFO:flask_app:-28.759487703442574
+INFO:flask_app:-29.970610216259956
+INFO:flask_app:-31.10193768143654
+INFO:flask_app:IMU: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:-68.80780862271786
+INFO:flask_app:IMU Orientation: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:37:57] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:-52.05159614980221
+INFO:flask_app:-53.512734696269035
+INFO:flask_app:-54.567935302853584
+INFO:flask_app:-55.47676457464695
+INFO:flask_app:-56.50952695310116
+INFO:flask_app:-57.34815149009228
+INFO:flask_app:-58.45357994735241
+INFO:flask_app:-59.34543739259243
+INFO:flask_app:-60.20480714738369
+INFO:flask_app:-61.067617908120155
+INFO:flask_app:-62.022809103131294
+INFO:flask_app:-62.91254119575024
+INFO:flask_app:-63.8005034327507
+INFO:flask_app:-64.7430145740509
+INFO:flask_app:-65.70116114616394
+INFO:flask_app:-66.72183123230934
+INFO:flask_app:-67.61664174497128
+INFO:flask_app:-68.57034991681576
+INFO:flask_app:-69.3610077649355
+INFO:flask_app:-70.4547485858202
+INFO:flask_app:-71.32769612967968
+INFO:flask_app:-72.32644562423229
+INFO:flask_app:-73.24509742856026
+INFO:flask_app:-74.323989585042
+INFO:flask_app:-75.23954312503338
+INFO:flask_app:-76.19956384599209
+INFO:flask_app:-77.16629932820797
+INFO:flask_app:-78.1553605645895
+INFO:flask_app:-79.16429434716702
+INFO:flask_app:-80.1226759403944
+INFO:flask_app:-81.13300663232803
+INFO:flask_app:-82.01921300590038
+INFO:flask_app:-83.05296818912029
+INFO:flask_app:-83.9360372275114
+INFO:flask_app:-84.97474047541618
+INFO:flask_app:-85.89353787899017
+INFO:flask_app:-86.91618148982525
+INFO:flask_app:-87.86168949306011
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:37:58] "[35m[1mPOST /left HTTP/1.1[0m" 500 -
+INFO:flask_app:-0.0015475749969482422
+INFO:flask_app:-0.0015475749969482422
+INFO:flask_app:-0.0015475749969482422
+INFO:flask_app:-0.0015475749969482422
+INFO:flask_app:-0.0023637712001800537
+INFO:flask_app:0.01552477478981018
+INFO:flask_app:0.052169471979141235
+INFO:flask_app:0.17472854256629944
+INFO:flask_app:0.3570925295352936
+INFO:flask_app:0.7464585602283478
+INFO:flask_app:1.3343313038349152
+INFO:flask_app:2.0279173851013184
+INFO:flask_app:2.814787119626999
+INFO:flask_app:3.679665893316269
+INFO:flask_app:4.627574652433395
+INFO:flask_app:5.587297260761261
+INFO:flask_app:6.603293225169182
+INFO:flask_app:7.549744948744774
+INFO:flask_app:8.319201454520226
+INFO:flask_app:9.051489681005478
+INFO:flask_app:9.780761539936066
+INFO:flask_app:10.49679909646511
+INFO:flask_app:11.137288048863411
+INFO:flask_app:11.828635334968567
+INFO:flask_app:12.604241728782654
+INFO:flask_app:13.357380524277687
+INFO:flask_app:14.109495222568512
+INFO:flask_app:14.982457131147385
+INFO:flask_app:15.920948952436447
+INFO:flask_app:16.826213032007217
+INFO:flask_app:17.740163892507553
+INFO:flask_app:18.56641310453415
+INFO:flask_app:19.3715428262949
+INFO:flask_app:20.654047057032585
+INFO:flask_app:21.59877820312977
+INFO:flask_app:22.599783018231392
+INFO:flask_app:23.67249985039234
+INFO:flask_app:24.709380611777306
+INFO:flask_app:25.750660851597786
+INFO:flask_app:26.85700687766075
+INFO:flask_app:28.047648400068283
+INFO:flask_app:29.091438993811607
+INFO:flask_app:30.282755061984062
+INFO:flask_app:31.373156026005745
+INFO:flask_app:32.410148575901985
+INFO:flask_app:33.745391473174095
+INFO:flask_app:34.775362357497215
+INFO:flask_app:35.94772507250309
+INFO:flask_app:39.20889627933502
+INFO:flask_app:41.28232201933861
+INFO:flask_app:43.1214117705822
+INFO:flask_app:44.713298603892326
+INFO:flask_app:45.77458415925503
+INFO:flask_app:46.727544054389
+INFO:flask_app:47.7687421888113
+INFO:flask_app:48.709235683083534
+INFO:flask_app:49.67861533164978
+INFO:flask_app:50.7136544585228
+INFO:flask_app:51.69199502468109
+INFO:flask_app:52.664076790213585
+INFO:flask_app:53.685732528567314
+INFO:flask_app:54.700086399912834
+INFO:flask_app:55.75870384275913
+INFO:flask_app:56.73986026644707
+INFO:flask_app:57.767832309007645
+INFO:flask_app:58.73706737160683
+INFO:flask_app:59.6936716735363
+INFO:flask_app:60.68890306353569
+INFO:flask_app:61.66272249817848
+INFO:flask_app:62.62704727053642
+INFO:flask_app:63.66222259402275
+INFO:flask_app:64.55526587367058
+INFO:flask_app:65.7064081132412
+INFO:flask_app:66.69267290830612
+INFO:flask_app:67.64402115345001
+INFO:flask_app:68.6021574139595
+INFO:flask_app:69.57550558447838
+INFO:flask_app:70.60689926147461
+INFO:flask_app:71.58554482460022
+INFO:flask_app:72.55778032541275
+INFO:flask_app:73.60982352495193
+INFO:flask_app:74.6974995136261
+INFO:flask_app:75.66231387853622
+INFO:flask_app:76.62030045688152
+INFO:flask_app:77.62897332012653
+INFO:flask_app:78.63743717968464
+INFO:flask_app:79.55940805375576
+INFO:flask_app:80.68367625772953
+INFO:flask_app:81.72489656507969
+INFO:flask_app:82.71643815934658
+INFO:flask_app:83.6812525242567
+INFO:flask_app:84.83172945678234
+INFO:flask_app:85.83712504804134
+INFO:flask_app:86.92767810821533
+INFO:flask_app:87.88352793455124
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:38:06] "[35m[1mPOST /right HTTP/1.1[0m" 500 -
+INFO:flask_app:0.002187371253967285
+INFO:flask_app:0.0011323243379592896
+INFO:flask_app:-0.0029151886701583862
+INFO:flask_app:-0.036383435130119324
+INFO:flask_app:-0.11162833869457245
+INFO:flask_app:-0.26926399767398834
+INFO:flask_app:-0.6196671575307846
+INFO:flask_app:-1.2922724187374115
+INFO:flask_app:-2.160577028989792
+INFO:flask_app:-3.291009247303009
+INFO:flask_app:-4.581147059798241
+INFO:flask_app:-6.206277683377266
+INFO:flask_app:-7.593491822481155
+INFO:flask_app:-8.930657774209976
+INFO:flask_app:-10.22261992096901
+INFO:flask_app:-11.298079997301102
+INFO:flask_app:-12.604592233896255
+INFO:flask_app:-13.612318933010101
+INFO:flask_app:-14.945906579494476
+INFO:flask_app:-15.981613278388977
+INFO:flask_app:-17.188689678907394
+INFO:flask_app:-18.846778750419617
+INFO:flask_app:-20.210022300481796
+INFO:flask_app:-21.94388312101364
+INFO:flask_app:-23.632932230830193
+INFO:flask_app:-24.773992761969566
+INFO:flask_app:-26.526648983359337
+INFO:flask_app:-27.828489527106285
+INFO:flask_app:-28.91129322350025
+INFO:flask_app:-30.404107943177223
+INFO:flask_app:-31.575487852096558
+INFO:flask_app:-32.86277875304222
+INFO:flask_app:-35.092382311820984
+INFO:flask_app:-37.12923753261566
+INFO:flask_app:-39.33203512430191
+INFO:flask_app:-40.970913767814636
+INFO:flask_app:-42.66351376473904
+INFO:flask_app:-43.94222420454025
+INFO:flask_app:-44.941263139247894
+INFO:flask_app:-45.90714433789253
+INFO:flask_app:-46.89066365361214
+INFO:flask_app:-47.913948476314545
+INFO:flask_app:-48.924764692783356
+INFO:flask_app:-50.05979534983635
+INFO:flask_app:-51.06721302866936
+INFO:flask_app:-52.07585808634758
+INFO:flask_app:-53.175995856523514
+INFO:flask_app:-54.220941841602325
+INFO:flask_app:-55.348992228507996
+INFO:flask_app:-56.462099730968475
+INFO:flask_app:-57.45825308561325
+INFO:flask_app:-58.59128415584564
+INFO:flask_app:-59.559384286403656
+INFO:flask_app:-60.50074066221714
+INFO:flask_app:-61.60599236190319
+INFO:flask_app:-62.61319783329964
+INFO:flask_app:-63.5626058280468
+INFO:flask_app:-64.44959530234337
+INFO:flask_app:-65.44605013728142
+INFO:flask_app:-66.41380915045738
+INFO:flask_app:-67.39123186469078
+INFO:flask_app:-68.37994182109833
+INFO:flask_app:-69.4486915320158
+INFO:flask_app:-70.38765323162079
+INFO:flask_app:-71.26904857158661
+INFO:flask_app:-72.23689952492714
+INFO:flask_app:-73.12238237261772
+INFO:flask_app:-74.01512721180916
+INFO:flask_app:-74.85900881886482
+INFO:flask_app:-75.7628199160099
+INFO:flask_app:-76.67361828684807
+INFO:flask_app:-77.59663078188896
+INFO:flask_app:-78.65700885653496
+INFO:flask_app:-79.58443421125412
+INFO:flask_app:-80.5501120686531
+INFO:flask_app:-81.58854620158672
+INFO:flask_app:-82.48569349944592
+INFO:flask_app:-83.43450151383877
+INFO:flask_app:-84.36766289174557
+INFO:flask_app:-85.34112855792046
+INFO:flask_app:-86.19192479550838
+INFO:flask_app:-87.08717352151871
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:38:15] "[35m[1mPOST /left HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 111-144-191
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:38:46] "[37mGET /manualcontrol HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:38:50] "[37mGET /manualcontrol HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:38:50] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:38:55] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:-0.0011499673128128052
+INFO:flask_app:-0.0011499673128128052
+INFO:flask_app:0.0007272213697433472
+INFO:flask_app:-0.01582939922809601
+INFO:flask_app:-0.03094823658466339
+INFO:flask_app:-0.046723976731300354
+INFO:flask_app:-0.10880880057811737
+INFO:flask_app:-0.30051253736019135
+INFO:flask_app:-0.6256646662950516
+INFO:flask_app:-1.4369571655988693
+INFO:flask_app:-2.514986142516136
+INFO:flask_app:-4.150880038738251
+INFO:flask_app:-5.438176870346069
+INFO:flask_app:-6.903770878911018
+INFO:flask_app:-8.15369038283825
+INFO:flask_app:-9.243492767214775
+INFO:flask_app:-10.66781060397625
+INFO:flask_app:-11.636491820216179
+INFO:flask_app:-12.791507929563522
+INFO:flask_app:-14.068890303373337
+INFO:flask_app:-15.085542887449265
+INFO:flask_app:-16.273492723703384
+INFO:flask_app:-17.639033406972885
+INFO:flask_app:-18.91066348552704
+INFO:flask_app:-20.58653423190117
+INFO:flask_app:-21.74959246814251
+INFO:flask_app:-23.34023530781269
+INFO:flask_app:-24.651085168123245
+INFO:flask_app:-25.803358674049377
+INFO:flask_app:-27.284486934542656
+INFO:flask_app:-28.52336737513542
+INFO:flask_app:-29.727549225091934
+INFO:flask_app:-31.07012015581131
+INFO:flask_app:-32.281114995479584
+INFO:flask_app:-33.86404925584793
+INFO:flask_app:-35.21849337220192
+INFO:flask_app:-36.35919667780399
+INFO:flask_app:-37.65820129215717
+INFO:flask_app:-39.03154902160168
+INFO:flask_app:-40.80550475418568
+INFO:flask_app:-42.11871348321438
+INFO:flask_app:-43.289214074611664
+INFO:flask_app:-44.546655029058456
+INFO:flask_app:-45.64447271823883
+INFO:flask_app:-47.067895114421844
+INFO:flask_app:-48.24628788232803
+INFO:flask_app:-49.827370420098305
+INFO:flask_app:-51.588102236390114
+INFO:flask_app:-52.98785115778446
+INFO:flask_app:-54.708871349692345
+INFO:flask_app:-56.73654854297638
+INFO:flask_app:-58.85814578831196
+INFO:flask_app:-61.2878248244524
+INFO:flask_app:-63.333856508135796
+INFO:flask_app:-64.92446278035641
+INFO:flask_app:-65.95662738382816
+INFO:flask_app:-67.00575660169125
+INFO:flask_app:-68.01796931028366
+INFO:flask_app:-69.07257813215256
+INFO:flask_app:-70.0731929242611
+INFO:flask_app:-71.2158832103014
+INFO:flask_app:-72.22116188704967
+INFO:flask_app:-73.29614761471748
+INFO:flask_app:-74.32524321973324
+INFO:flask_app:-75.36640153825283
+INFO:flask_app:-76.49598953127861
+INFO:flask_app:-77.54527232050896
+INFO:flask_app:-78.672646433115
+INFO:flask_app:-79.6527079641819
+INFO:flask_app:-80.6297279894352
+INFO:flask_app:-81.5104627609253
+INFO:flask_app:-82.64766402542591
+INFO:flask_app:-83.66900788247585
+INFO:flask_app:-84.66358859837055
+INFO:flask_app:-85.69792886078358
+INFO:flask_app:-86.77541951835155
+INFO:flask_app:-87.71735705435276
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:38:57] "[35m[1mPOST /left HTTP/1.1[0m" 500 -
+INFO:flask_app:0.0
+INFO:flask_app:-0.0010001808404922485
+INFO:flask_app:-0.008435934782028198
+INFO:flask_app:-0.11212633550167084
+INFO:flask_app:-1.015221729874611
+INFO:flask_app:-2.0130638778209686
+INFO:flask_app:-3.2495934814214706
+INFO:flask_app:-4.3356082290410995
+INFO:flask_app:-5.299935504794121
+INFO:flask_app:-6.294321581721306
+INFO:flask_app:-7.157009705901146
+INFO:flask_app:-8.073384329676628
+INFO:flask_app:-8.980825707316399
+INFO:flask_app:-9.919683709740639
+INFO:flask_app:-10.783680766820908
+INFO:flask_app:-11.635128438472748
+INFO:flask_app:-12.490703269839287
+INFO:flask_app:-13.379593804478645
+INFO:flask_app:-14.256471902132034
+INFO:flask_app:-15.20886880159378
+INFO:flask_app:-16.234449684619904
+INFO:flask_app:-17.231520652770996
+INFO:flask_app:-18.2186349183321
+INFO:flask_app:-19.285859033465385
+INFO:flask_app:-20.255515545606613
+INFO:flask_app:-21.251111447811127
+INFO:flask_app:-22.298885375261307
+INFO:flask_app:-23.28764747083187
+INFO:flask_app:-24.239396795630455
+INFO:flask_app:-25.138143658638
+INFO:flask_app:-26.003788471221924
+INFO:flask_app:-26.952305018901825
+INFO:flask_app:-27.78979080915451
+INFO:flask_app:-28.772776424884796
+INFO:flask_app:-29.745562374591827
+INFO:flask_app:-30.749871730804443
+INFO:flask_app:-31.735706225037575
+INFO:flask_app:-32.755116671323776
+INFO:flask_app:-33.80579048395157
+INFO:flask_app:-34.980873346328735
+INFO:flask_app:-36.01736454665661
+INFO:flask_app:-37.05724672973156
+INFO:flask_app:-38.06394022703171
+INFO:flask_app:-39.02313795685768
+INFO:flask_app:-39.979859337210655
+INFO:flask_app:-40.95251156389713
+INFO:flask_app:-41.93676400184631
+INFO:flask_app:-42.96206200122833
+INFO:flask_app:-44.00446006655693
+INFO:flask_app:-44.99643036723137
+INFO:flask_app:-45.99607095122337
+INFO:flask_app:-47.038437843322754
+INFO:flask_app:-48.19236299395561
+INFO:flask_app:-49.240554094314575
+INFO:flask_app:-50.65261760354042
+INFO:flask_app:-52.17479029297829
+INFO:flask_app:-53.34141691029072
+INFO:flask_app:-54.767062440514565
+INFO:flask_app:-56.04056142270565
+INFO:flask_app:-57.568548902869225
+INFO:flask_app:-58.81018942594528
+INFO:flask_app:-59.91741293668747
+INFO:flask_app:-61.05216825008392
+INFO:flask_app:-62.3124235868454
+INFO:flask_app:-63.60562263429165
+INFO:flask_app:-64.72212432324886
+INFO:flask_app:-66.06906388700008
+INFO:flask_app:-67.2630945444107
+INFO:flask_app:-68.34335526823997
+INFO:flask_app:-69.78387865424156
+INFO:flask_app:-71.09455673396587
+INFO:flask_app:-72.65666614472866
+INFO:flask_app:-74.89952932298183
+INFO:flask_app:-76.58476375043392
+INFO:flask_app:-77.7211004793644
+INFO:flask_app:-78.72274678945541
+INFO:flask_app:-79.62523676455021
+INFO:flask_app:-80.5238076299429
+INFO:flask_app:-81.44202545285225
+INFO:flask_app:-82.35585263371468
+INFO:flask_app:-83.26458957791328
+INFO:flask_app:-84.27757313847542
+INFO:flask_app:-85.25557377934456
+INFO:flask_app:-86.23605826497078
+INFO:flask_app:-87.21324065327644
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:39:05] "[35m[1mPOST /left HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/interfaces/brickpiinterface.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 111-144-191
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:39:33] "[37mGET /manualcontrol HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:39:36] "[37mGET /manualcontrol HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:39:36] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:flask_app:-0.5755061209201813
+INFO:flask_app:-0.8170658648014069
+INFO:flask_app:-1.0648588240146637
+INFO:flask_app:-1.592996284365654
+INFO:flask_app:-2.271174982190132
+INFO:flask_app:-3.1392026394605637
+INFO:flask_app:-4.136542096734047
+INFO:flask_app:-5.259096190333366
+INFO:flask_app:-6.366326376795769
+INFO:flask_app:-7.4708153158426285
+INFO:flask_app:-8.77196653187275
+INFO:flask_app:-9.921348348259926
+INFO:flask_app:-10.905365943908691
+INFO:flask_app:-11.894278049468994
+INFO:flask_app:-12.710367202758789
+INFO:flask_app:-13.566295593976974
+INFO:flask_app:-14.392193764448166
+INFO:flask_app:-15.236401170492172
+INFO:flask_app:-16.081423297524452
+INFO:flask_app:-16.96294631063938
+INFO:flask_app:-17.899343848228455
+INFO:flask_app:-19.133157193660736
+INFO:flask_app:-20.164603114128113
+INFO:flask_app:-21.381671980023384
+INFO:flask_app:-22.425137743353844
+INFO:flask_app:-23.568750128149986
+INFO:flask_app:-24.564486011862755
+INFO:flask_app:-25.54782548546791
+INFO:flask_app:-26.572705551981926
+INFO:flask_app:-27.602248415350914
+INFO:flask_app:-28.52816231548786
+INFO:flask_app:-29.495689690113068
+INFO:flask_app:-30.585648357868195
+INFO:flask_app:-31.613070458173752
+INFO:flask_app:-32.58379663527012
+INFO:flask_app:-33.66770960390568
+INFO:flask_app:-34.66432620584965
+INFO:flask_app:-35.633077159523964
+INFO:flask_app:-36.75073763728142
+INFO:flask_app:-37.83099669218063
+INFO:flask_app:-39.018005669116974
+INFO:flask_app:-40.085978135466576
+INFO:flask_app:-41.10839231312275
+INFO:flask_app:-42.09377837181091
+INFO:flask_app:-43.0854706466198
+INFO:flask_app:-44.24078434705734
+INFO:flask_app:-45.368723422288895
+INFO:flask_app:-46.545046865940094
+INFO:flask_app:-47.695082023739815
+INFO:flask_app:-49.07179598510265
+INFO:flask_app:-50.52283118665218
+INFO:flask_app:-51.60718958079815
+INFO:flask_app:-52.958908066153526
+INFO:flask_app:-54.582552537322044
+INFO:flask_app:-56.294192776083946
+INFO:flask_app:-58.5264682918787
+INFO:flask_app:-59.91052366793156
+INFO:flask_app:-61.21358506381512
+INFO:flask_app:-62.261737659573555
+INFO:flask_app:-63.27625970542431
+INFO:flask_app:-64.22301869094372
+INFO:flask_app:-65.44234983623028
+INFO:flask_app:-66.3686179369688
+INFO:flask_app:-67.35426269471645
+INFO:flask_app:-68.28303979337215
+INFO:flask_app:-69.22072330117226
+INFO:flask_app:-70.20429721474648
+INFO:flask_app:-71.31506015360355
+INFO:flask_app:-72.26244930922985
+INFO:flask_app:-73.32062828540802
+INFO:flask_app:-74.25445997714996
+INFO:flask_app:-75.25762525200844
+INFO:flask_app:-76.16453941166401
+INFO:flask_app:-77.14653886854649
+INFO:flask_app:-78.16901557147503
+INFO:flask_app:-79.12626668810844
+INFO:flask_app:-80.11412501335144
+INFO:flask_app:-81.0631275177002
+INFO:flask_app:-82.0859782397747
+INFO:flask_app:-83.11235675215721
+INFO:flask_app:-84.07695969939232
+INFO:flask_app:-85.04194986820221
+INFO:flask_app:-85.9031126499176
+INFO:flask_app:-86.9056705236435
+INFO:flask_app:-87.90317019820213
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:39:40] "[35m[1mPOST /left HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:39:41] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 111-144-191
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:39:58] "[37mGET /manualcontrol HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:40:00] "[37mGET /manualcontrol HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:40:01] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:flask_app:0.0009614676237106323
+INFO:flask_app:0.0017670989036560059
+INFO:flask_app:0.0026417970657348633
+INFO:flask_app:0.0026417970657348633
+INFO:flask_app:0.0035875290632247925
+INFO:flask_app:0.011813119053840637
+INFO:flask_app:0.03303904831409454
+INFO:flask_app:0.05066858232021332
+INFO:flask_app:0.1001356691122055
+INFO:flask_app:0.2695777118206024
+INFO:flask_app:0.576406329870224
+INFO:flask_app:1.076613649725914
+INFO:flask_app:1.8095758110284805
+INFO:flask_app:2.714409962296486
+INFO:flask_app:3.8933218121528625
+INFO:flask_app:5.0235766768455505
+INFO:flask_app:6.259803459048271
+INFO:flask_app:7.57428865134716
+INFO:flask_app:8.90848495066166
+INFO:flask_app:10.09969399869442
+INFO:flask_app:11.226739898324013
+INFO:flask_app:12.537380710244179
+INFO:flask_app:13.964289084076881
+INFO:flask_app:14.979270353913307
+INFO:flask_app:16.103951707482338
+INFO:flask_app:17.770665660500526
+INFO:flask_app:19.03718490898609
+INFO:flask_app:20.370973244309425
+INFO:flask_app:21.862455740571022
+INFO:flask_app:23.2149046510458
+INFO:flask_app:24.92467610538006
+INFO:flask_app:26.082175493240356
+INFO:flask_app:27.372130274772644
+INFO:flask_app:28.462554708123207
+INFO:flask_app:29.691532269120216
+INFO:flask_app:31.132007881999016
+INFO:flask_app:32.28532449901104
+INFO:flask_app:33.517841041088104
+INFO:flask_app:34.8056058883667
+INFO:flask_app:36.307729333639145
+INFO:flask_app:39.32072274386883
+INFO:flask_app:41.040859907865524
+INFO:flask_app:42.61690737307072
+INFO:flask_app:43.860599368810654
+INFO:flask_app:44.95626628398895
+INFO:flask_app:46.059314012527466
+INFO:flask_app:47.025294333696365
+INFO:flask_app:48.1010472625494
+INFO:flask_app:49.132358729839325
+INFO:flask_app:50.36815965175629
+INFO:flask_app:51.361668944358826
+INFO:flask_app:52.57624024152756
+INFO:flask_app:53.517802357673645
+INFO:flask_app:54.56335783004761
+INFO:flask_app:55.54683020710945
+INFO:flask_app:56.68729665875435
+INFO:flask_app:57.61201651394367
+INFO:flask_app:58.53667379915714
+INFO:flask_app:59.59763814508915
+INFO:flask_app:60.56244394183159
+INFO:flask_app:61.5765595883131
+INFO:flask_app:62.490333423018456
+INFO:flask_app:63.53078339993954
+INFO:flask_app:64.43381717801094
+INFO:flask_app:65.48898956179619
+INFO:flask_app:66.44457612931728
+INFO:flask_app:67.49814410507679
+INFO:flask_app:68.44229373335838
+INFO:flask_app:69.45142278075218
+INFO:flask_app:70.34699964523315
+INFO:flask_app:71.42069461941719
+INFO:flask_app:72.42999958992004
+INFO:flask_app:73.49083775281906
+INFO:flask_app:74.40095895528793
+INFO:flask_app:75.3440551161766
+INFO:flask_app:76.22652705013752
+INFO:flask_app:77.17175628244877
+INFO:flask_app:78.11979447305202
+INFO:flask_app:79.1896531432867
+INFO:flask_app:80.07782067358494
+INFO:flask_app:80.96851743757725
+INFO:flask_app:81.89826981723309
+INFO:flask_app:82.80936570465565
+INFO:flask_app:83.73420478403568
+INFO:flask_app:84.61418195068836
+INFO:flask_app:85.55241777002811
+INFO:flask_app:86.46063080430031
+INFO:flask_app:87.41481950879097
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:40:06] "[35m[1mPOST /right HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:40:06] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 111-144-191
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:40:28] "[37mGET /manualcontrol HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:40:29] "[37mGET /manualcontrol HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:40:31] "[37mGET /manualcontrol HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:40:32] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:40:36] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:41:23] "[35m[1mPOST /shootup HTTP/1.1[0m" 500 -
+INFO:flask_app:0.0017149746417999268
+INFO:flask_app:0.0034765303134918213
+INFO:flask_app:0.00047357380390167236
+INFO:flask_app:0.003437325358390808
+INFO:flask_app:0.0024079233407974243
+INFO:flask_app:-0.03934115171432495
+INFO:flask_app:-0.10657675564289093
+INFO:flask_app:-0.370781347155571
+INFO:flask_app:-1.0318713039159775
+INFO:flask_app:-1.8011458963155746
+INFO:flask_app:-3.1433185935020447
+INFO:flask_app:-4.363687217235565
+INFO:flask_app:-5.562779784202576
+INFO:flask_app:-6.919388338923454
+INFO:flask_app:-8.2100500613451
+INFO:flask_app:-9.801337763667107
+INFO:flask_app:-10.977500781416893
+INFO:flask_app:-11.998150706291199
+INFO:flask_app:-13.250304087996483
+INFO:flask_app:-14.258696511387825
+INFO:flask_app:-15.481291368603706
+INFO:flask_app:-16.62446330487728
+INFO:flask_app:-17.848124966025352
+INFO:flask_app:-19.09113870561123
+INFO:flask_app:-20.62025921046734
+INFO:flask_app:-22.160520285367966
+INFO:flask_app:-23.289078518748283
+INFO:flask_app:-24.67243905365467
+INFO:flask_app:-25.78826729953289
+INFO:flask_app:-26.91354012489319
+INFO:flask_app:-28.00568664073944
+INFO:flask_app:-29.376646518707275
+INFO:flask_app:-30.909611582756042
+INFO:flask_app:-34.64697225391865
+INFO:flask_app:-36.71226568520069
+INFO:flask_app:-38.489129319787025
+INFO:flask_app:-40.16980814933777
+INFO:flask_app:-41.39757251739502
+INFO:flask_app:-42.5770760178566
+INFO:flask_app:-43.80648426711559
+INFO:flask_app:-44.81852023303509
+INFO:flask_app:-45.885488495230675
+INFO:flask_app:-46.87390576303005
+INFO:flask_app:-47.91563622653484
+INFO:flask_app:-48.97544567286968
+INFO:flask_app:-50.17409984767437
+INFO:flask_app:-51.25406052172184
+INFO:flask_app:-52.29256536066532
+INFO:flask_app:-53.42019732296467
+INFO:flask_app:-54.402349546551704
+INFO:flask_app:-55.556099221110344
+INFO:flask_app:-56.52244593203068
+INFO:flask_app:-57.54241581261158
+INFO:flask_app:-58.53248496353626
+INFO:flask_app:-59.592124715447426
+INFO:flask_app:-60.550739005208015
+INFO:flask_app:-61.79858140647411
+INFO:flask_app:-62.78365479409695
+INFO:flask_app:-63.83387617766857
+INFO:flask_app:-64.76237414777279
+INFO:flask_app:-65.8251344114542
+INFO:flask_app:-66.88470943272114
+INFO:flask_app:-67.9297394901514
+INFO:flask_app:-68.96934248507023
+INFO:flask_app:-70.06225910782814
+INFO:flask_app:-71.06444588303566
+INFO:flask_app:-72.0831795334816
+INFO:flask_app:-73.04669727385044
+INFO:flask_app:-74.02064849436283
+INFO:flask_app:-74.9098991304636
+INFO:flask_app:-75.87551485002041
+INFO:flask_app:-77.01569867134094
+INFO:flask_app:-78.02096512913704
+INFO:flask_app:-79.0378911793232
+INFO:flask_app:-80.0154908746481
+INFO:flask_app:-81.04671555757523
+INFO:flask_app:-81.97684426605701
+INFO:flask_app:-82.99181838333607
+INFO:flask_app:-83.93855805695057
+INFO:flask_app:-84.86668984591961
+INFO:flask_app:-85.81048648059368
+INFO:flask_app:-86.77603930234909
+INFO:flask_app:-87.86790400743484
+INFO:werkzeug:10.10.72.118 - - [01/Mar/2022 16:41:24] "[35m[1mPOST /left HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:06:36] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:06:36] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:06:36] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:06:36] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:06:36] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:06:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:flask_app:[{'userid': 1, 'email': 'admin@admin', 'permission': 'admin', 'password': 'raspassword', 'name': 'admin'}]
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:06:44] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:06:45] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:06:45] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:06:45] "[36mGET /static/js/mapping.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:06:56] "[35m[1mGET /sensorview HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:06:56] "[37mGET /sensorview?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:06:56] "[37mGET /sensorview?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:06:56] "[37mGET /sensorview?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:06:57] "[37mGET /sensorview?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:06:57] "[37mGET /sensorview?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:06:58] "[37mGET /sensorview?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:07:06] "[35m[1mGET /sensorview HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:07:06] "[37mGET /sensorview?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:07:06] "[37mGET /sensorview?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:07:06] "[37mGET /sensorview?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:07:06] "[37mGET /sensorview?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:07:06] "[37mGET /sensorview?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:COLOUR: get_sensor error: Invalid sensor data
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:07:13] "[35m[1mGET /sensorview HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:07:14] "[37mGET /sensorview?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:07:14] "[37mGET /sensorview?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:07:14] "[37mGET /sensorview?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:07:14] "[37mGET /sensorview?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:07:14] "[37mGET /sensorview?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:07:19] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:07:25] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:07:25] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:07:35] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:07:35] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:07:35] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:07:36] "[37mPOST /reconfig_IMU HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:07:37] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:07:38] "[37mGET /static/js/sensor.js HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:10:34] "[32mGET /sensorview HTTP/1.1[0m" 302 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:10:35] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:10:38] "[35m[1mGET /sensorview HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:10:39] "[37mGET /sensorview?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:10:39] "[37mGET /sensorview?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:10:39] "[37mGET /sensorview?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:10:39] "[37mGET /sensorview?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:10:39] "[37mGET /sensorview?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:10:40] "[37mGET /sensorview?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:10:43] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:10:43] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:10:44] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:10:48] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:11:44] "[32mGET /sensorview HTTP/1.1[0m" 302 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:11:48] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:11:57] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:11:59] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:22:48] "[32mGET /sensorview HTTP/1.1[0m" 302 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:22:48] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:ULTRASONIC: get_sensor error: Invalid sensor data
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:22:54] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:22:57] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:23:12] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:23:12] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:23:14] "[37mPOST /reconfig_IMU HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:23:15] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:23:18] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:23:35] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:23:40] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:23:44] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:23:45] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:23:47] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:23:49] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:23:51] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:23:52] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:23:54] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:23:54] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:23:56] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:23:57] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:25:14] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:25:20] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:25:24] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:25:26] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:25:30] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:25:32] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:25:34] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:25:45] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:25:54] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:25:56] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:30:21] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:30:21] "[37mGET /static/css/theme.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:30:21] "[37mGET /static/css/custom.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:30:21] "[37mGET /static/js/custom.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:30:21] "[37mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:30:21] "[37mGET /static/js/sensor.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:30:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:40:50] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:40:50] "[37mGET /static/css/theme.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:40:50] "[37mGET /static/css/custom.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:40:50] "[37mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:40:51] "[37mGET /static/js/sensor.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:40:51] "[37mGET /static/js/custom.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:40:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:40:59] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:41:01] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:41:03] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:41:05] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:41:07] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:41:09] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:41:11] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:41:13] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:41:15] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:41:17] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:41:19] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:41:21] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:41:23] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:41:25] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:41:27] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:41:29] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:41:31] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:41:35] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:41:35] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:41:37] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:41:39] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:41:41] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:41:43] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:41:45] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:41:47] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:41:49] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:41:51] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:41:53] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:41:55] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:41:57] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:41:59] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:42:01] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:42:03] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:42:05] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:42:07] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:42:09] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:42:11] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:42:13] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:42:15] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:42:17] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:42:19] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:42:21] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:42:23] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:42:25] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:42:27] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:42:29] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:42:31] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:42:33] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:42:35] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:42:37] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:42:39] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:42:41] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:42:43] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:42:45] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:42:47] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:42:49] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:42:51] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:42:53] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:42:55] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:42:57] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:43:00] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:43:01] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:43:03] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:43:05] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:43:07] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:43:09] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:43:11] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:43:13] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:flask_app:IMU Acceleration: [Errno 5] Input/output error
+INFO:flask_app:IMU Acceleration: [Errno 5] Input/output error
+INFO:flask_app:IMU: [Errno 5] Input/output error
+INFO:flask_app:IMU: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU: [Errno 5] Input/output error
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:43:21] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:flask_app:IMU Temp: [Errno 5] Input/output error
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:43:21] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:43:21] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:43:21] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:43:23] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:43:25] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:43:25] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:43:25] "[37mGET /static/css/theme.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:43:25] "[37mGET /static/css/custom.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:43:25] "[37mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:43:25] "[37mGET /static/js/sensor.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:43:25] "[37mGET /static/js/custom.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:43:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:43:31] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:43:31] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:43:33] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:43:35] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:43:37] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:43:39] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:43:41] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:43:43] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:43:45] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:43:47] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:43:49] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:43:51] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:43:53] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:43:55] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:43:57] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:44:00] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:44:01] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:44:03] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:44:05] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:44:07] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:44:09] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:44:11] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:44:13] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:44:15] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:44:17] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:flask_app:IMU: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU Temp: [Errno 5] Input/output error
+INFO:flask_app:IMU Orientation: [Errno 5] Input/output error
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:44:20] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:44:21] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:44:26] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:44:26] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:44:27] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:44:29] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:44:29] "[37mGET /static/css/theme.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:44:29] "[37mGET /static/css/custom.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:44:29] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:44:30] "[37mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:44:30] "[37mGET /static/js/custom.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:44:30] "[37mGET /static/js/sensor.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:44:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:44:36] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:44:37] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:44:39] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:44:42] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:44:42] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:44:42] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:IMU Acceleration: [Errno 5] Input/output error
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:44:45] "[37mPOST /reconfig_IMU HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:44:46] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:44:48] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:44:52] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:44:54] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:44:57] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:44:58] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:45:01] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:45:02] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:45:05] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:45:06] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:45:10] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:45:10] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:45:12] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:45:14] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:45:16] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:45:19] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:45:20] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:45:22] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:45:24] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:45:26] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:45:28] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:45:30] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:45:32] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:45:34] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:45:36] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:flask_app:IMU: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU Temp: [Errno 5] Input/output error
+INFO:flask_app:IMU Orientation: [Errno 5] Input/output error
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:45:38] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:45:40] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:45:42] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:45:44] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:45:46] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:45:48] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:45:50] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:45:52] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:45:54] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:45:55] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:46:00] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:46:00] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:46:00] "[37mGET /static/css/theme.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:46:00] "[37mGET /static/css/custom.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:46:00] "[37mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:46:00] "[37mGET /static/js/sensor.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:46:00] "[37mGET /static/js/custom.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:46:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:46:03] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:46:06] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:46:06] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:46:07] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:IMU Acceleration: [Errno 5] Input/output error
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:46:09] "[37mPOST /reconfig_IMU HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:46:13] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:46:15] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:46:17] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:46:19] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:46:21] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:46:23] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:46:25] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:46:27] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:46:29] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:flask_app:IMU: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU Temp: [Errno 5] Input/output error
+INFO:flask_app:IMU Orientation: [Errno 5] Input/output error
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:46:31] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:46:33] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:46:36] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:46:37] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:46:39] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:46:41] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:46:44] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:46:45] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:46:48] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:46:49] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:46:52] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:46:53] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:46:56] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:46:57] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:47:00] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:47:02] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:47:06] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:47:07] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:47:10] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:47:10] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:47:12] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:47:16] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:47:16] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:47:20] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:47:20] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:47:24] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:47:24] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:47:27] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:47:27] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:47:29] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:47:31] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:47:34] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:47:35] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:47:37] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:47:39] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:47:41] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:47:43] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:47:45] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:47:47] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:47:49] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:47:51] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:47:53] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:47:55] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:47:58] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:48:00] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:48:02] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [02/Mar/2022 10:48:03] "[37mPOST /sensors HTTP/1.1[0m" 200 -

@@ -24,7 +24,7 @@ def login():
     message = ""
     if request.method == "POST":
         email = request.form.get("email")
-        userdetails = GLOBALS.DATABASE.ViewQuery("SELECT * FROM users WHERE email = ?", (email,))
+        userdetails = GLOBALS.DATABASE.ViewQuery("SELECT * FROM UserTable WHERE email = ?", (email,))
         log(userdetails)
         if userdetails:
             user = userdetails[0] #get first row in results
@@ -35,6 +35,8 @@ def login():
                 return redirect('/dashboard')
             else:
                 message = "Login Unsuccessful"
+                password = GLOBALS.DATABASE.ViewQuery("SELECT password FROM UserTable WHERE email = ?", ('admin@admin',))
+                print(password)
         else:
             message = "Login Unsuccessful"
     return render_template('login.html', data = message)    
@@ -131,16 +133,20 @@ def shootdown():
 @app.route('/left', methods=['GET','POST'])
 def left():
     if GLOBALS.ROBOT:
-        GLOBALS.ROBOT.rotate_power_degrees_IMU(75,-7)
+        GLOBALS.ROBOT.rotate_power_degrees_IMU(17,-90)
 
 @app.route('/right', methods=['GET','POST'])
 def right():
     if GLOBALS.ROBOT:
-        GLOBALS.ROBOT.rotate_power_degrees_IMU(75,7)
+        GLOBALS.ROBOT.rotate_power_degrees_IMU(17,90)
 
 @app.route('/sensorview', methods=['GET','POST'])
 def sensorview():
     data = None
+    if GLOBALS.ROBOT:
+        data = GLOBALS.ROBOT.get_all_sensors()
+    else:
+        return redirect('/dashboard')
     return render_template("sensors.html", data=data)
 
 @app.route('/mission', methods=['GET','POST'])

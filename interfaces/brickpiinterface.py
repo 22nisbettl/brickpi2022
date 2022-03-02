@@ -472,7 +472,7 @@ class BrickPiInterface():
         return data
 
     #rotates the robot until faces targetheading - only works for a heading between 0 - 360
-    def rotate_power_heading_IMU(self, power, targetheading, marginoferror=8):
+    def rotate_power_heading_IMU(self, power, targetheading, marginoferror=-1):
         if (self.config['imu'] >= SensorStatus.DISABLED):
             return
         self.interrupt_previous_command()
