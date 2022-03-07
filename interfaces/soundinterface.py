@@ -7,8 +7,8 @@ class SoundInterface():
     def __init__(self):
         self.engine = speake3.Speake()
         self.engine.set('voice', 'en-scotish')
-        self.engine.set('speed', '150')
-        self.engine.set('pitch', '60')
+        self.engine.set('speed', '200')
+        self.engine.set('pitch', '80')
         #load music player
         pygame.mixer.init()
         return
@@ -60,9 +60,9 @@ class SoundInterface():
 #only execute if this is the main file, good for testing code.   
 if __name__ == "__main__":
     SOUND = SoundInterface()
-    SOUND.load_mp3("static/music/inspectorgadget.mp3")
-    SOUND.say("I am on a mission to hunt aliens.")
+    SOUND.load_mp3("static/music/sports.mp3")
+    #SOUND.say("Zac, Zac")
     SOUND.play_music(1)
-    SOUND.set_volume(0.6)
+    SOUND.set_volume(1)
     response = input("Press Enter to stop")
     SOUND.stop_music()
