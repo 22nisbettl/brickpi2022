@@ -10,11 +10,7 @@
     </div>   
     <div id="dashboard">
         <div class="row">
-            <button id="shutdown" type="button" class="btn btn-danger" style="width:100px" onclick="shutdown_robot();">Shutdown Robot</button>
-            <label for="customRange1" class="form-label">Example range</label>
-            <input type="range" class="form-range" id="customRange1">
-            <input type="submit">
-            <button id="forward" type="button" class="btn btn-info" style="width:100px" onclick="new_ajax_helper('/forward');">Move Forward</button>
+            <button id="forward" type="button" class="btn btn-info" style="width:100px" onclick="new_ajax_helper('/forward', mapforward);">Move Forward</button>
             <button id="reverse" type="button" class="btn btn-info" style="width:100px" onclick="new_ajax_helper('/reverse');">Reverse</button>
             <button id="stopall" type="button" class="btn btn-info" style="width:100px" onclick="new_ajax_helper('/stopall');">Stop</button>
             <button id="shootdown" type="button" class="btn btn-info" style="width:100px" onclick="new_ajax_helper('/shootdown');">Shoot Down</button>

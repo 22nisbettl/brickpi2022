@@ -103,18 +103,23 @@ def sensors():
 
 @app.route('/forward', methods=['GET','POST'])
 def forward():
+    data = {}
     if GLOBALS.ROBOT:
-        GLOBALS.ROBOT.move_power(50)
+        data['elapsedtime'] = GLOBALS.ROBOT.move_power(50)
+        data['heading'] = GLOBALS.ROBOT.get_compass_IMU()
+    return jsonify(data)
 
 @app.route('/reverse', methods=['GET','POST'])
 def reverse():
     if GLOBALS.ROBOT:
         GLOBALS.ROBOT.move_power(-50)
+    return jsonify()
 
 @app.route('/stopall', methods=['GET','POST'])
 def stopall():
     if GLOBALS.ROBOT:
         GLOBALS.ROBOT.stop_all()
+    return jsonify()
 
 @app.route('/shootup', methods=['GET','POST'])
 def shootup():
@@ -122,6 +127,7 @@ def shootup():
         GLOBALS.ROBOT.spin_medium_motor(360)
         GLOBALS.ROBOT.spin_medium_motor(360)
         GLOBALS.ROBOT.spin_medium_motor(360)
+    return jsonify()
 
 @app.route('/shootdown', methods=['GET','POST'])
 def shootdown():
@@ -129,16 +135,19 @@ def shootdown():
         GLOBALS.ROBOT.spin_medium_motor(-360)
         GLOBALS.ROBOT.spin_medium_motor(-360)
         GLOBALS.ROBOT.spin_medium_motor(-360)
+    return jsonify()
 
 @app.route('/left', methods=['GET','POST'])
 def left():
     if GLOBALS.ROBOT:
         GLOBALS.ROBOT.rotate_power_degrees_IMU(17,-90)
+    return jsonify()
 
 @app.route('/right', methods=['GET','POST'])
 def right():
     if GLOBALS.ROBOT:
         GLOBALS.ROBOT.rotate_power_degrees_IMU(17,90)
+    return jsonify()
 
 @app.route('/sensorview', methods=['GET','POST'])
 def sensorview():

@@ -28,5 +28,10 @@ function drawmap() {
    }
 }
 
+function mapforward(results)
+{
+   turtle.lookTo(results.heading);
+   turtle.forward(results.elapsedtime*30);
+}
+
 load_map();
-drawmap();
