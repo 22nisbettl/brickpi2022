@@ -3,6 +3,7 @@ from interfaces import databaseinterface, camerainterface, soundinterface, brick
 import robot #robot is class that extends the brickpi class
 import global_vars as GLOBALS #load global variables
 import logging, time
+from datetime import *
 
 #Creates the Flask Server Object
 app = Flask(__name__); app.debug = True
@@ -69,6 +70,41 @@ def robotdashboard():
         return redirect('/')
     enabled = int(GLOBALS.ROBOT != None)
     return render_template('dashboard.html', robot_enabled = enabled )
+
+@app.route('/maze', methods=['GET','POST'])
+def maze():
+    while True:
+        ultra = GLOBALS.ROBOT.get_ultra_sensor()
+        print(ultra)
+        one = False
+        two = False
+        three = False
+        four = False
+        if ultra < 15:
+            one = True
+            GLOBALS.ROBOT.rotate_power_degrees_IMU(17,-90)
+        else:
+            one = False
+            GLOBALS.ROBOT.rotate_power_degrees_IMU(17,-90)
+        if ultra < 15:
+            two = True
+            GLOBALS.ROBOT.rotate_power_degrees_IMU(17,-90)
+        else:
+            two = False
+            GLOBALS.ROBOT.rotate_power_degrees_IMU(17,-90)
+        if ultra < 15:
+            three = True
+            GLOBALS.ROBOT.rotate_power_degrees_IMU(17,-90)
+        else:
+            three = False
+            GLOBALS.ROBOT.rotate_power_degrees_IMU(17,-90)
+        if ultra < 15:
+            four = True
+            GLOBALS.ROBOT.rotate_power_degrees_IMU(17,-90)
+        else:
+            four = False
+            GLOBALS.ROBOT.rotate_power_degrees_IMU(17,-90)
+    return jsonify()
 
 @app.route('/manualcontrol', methods=['GET','POST'])
 def manualcontrol():
@@ -160,45 +196,30 @@ def sensorview():
 
 @app.route('/mission', methods=['GET','POST'])
 def mission():
+    data = None
+    if request.method == "POST":
+        UserID = session["userid"]
+        Notes = request.form.get('notes')
+        Location = request.form.get('location')
+        StartTime = datetime.now()
+        GLOBALS.DATABASE.ModifyQuery('INSERT INTO MissionTable (Location, Notes, UserID, StartTime) VALUES (?,?,?,?)', (Location, Notes, UserID, StartTime))
     return render_template("mission.html")
 
-# YOUR FLASK CODE------------------------------------------------------------------------
+@app.route('/sounds', methods=['GET','POST'])
+def sounds():
+    if request.method == 'POST':
+        song = request.form.get('song')
+        log(song)
+        GLOBALS.SOUND.load_mp3("static/music/" + song + ".mp3")
+        GLOBALS.SOUND.play_music(1)
+        GLOBALS.SOUND.set_volume(1)
+    return render_template('sounds.html')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@app.route('/stopsounds', methods=['GET','POST'])
+def stopsounds():
+    if request.method == 'POST':
+        GLOBALS.SOUND.stop_music()
+    return jsonify()
 
 
 # -----------------------------------------------------------------------------------

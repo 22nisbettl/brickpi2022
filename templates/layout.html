@@ -26,11 +26,13 @@
       
           <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link active" href="/" data-ol-has-click-handler="">Login
-                  <span class="visually-hidden">(current)</span>
-                </a>
-              </li>
+              {% if not 'userid' in session %}
+                <li class="nav-item">
+                  <a class="nav-link active" href="/" data-ol-has-click-handler="">Login
+                    <span class="visually-hidden">(current)</span>
+                  </a>
+                </li>
+              {% endif %}
               <li class="nav-item">
                 <a class="nav-link" href="/dashboard" data-ol-has-click-handler="">Dashboard</a>
               </li>
@@ -43,9 +45,14 @@
               <li class="nav-item">
                 <a class="nav-link" href="/manualcontrol" data-ol-has-click-handler="">Manual Control</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/sounds" data-ol-has-click-handler="">Sounds</a>
+              </li>
             </ul>
             <form class="d-flex">
+                {% if 'userid' in session %}
                   <a style="color: rgba(255, 255, 255, 0.55) !important" class="nav-link" href="/logout" data-ol-has-click-handler="">Log out</a>
+                {% endif%}
               <button class="btn btn-secondary my-2 my-sm-0" type="button" onclick="shutdown();">Exit</button>
             </form>
           </div>

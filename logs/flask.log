@@ -7837,3 +7837,581 @@ INFO:flask_app:-87.27799168229103
 INFO:werkzeug:10.10.41.50 - - [09/Mar/2022 12:59:08] "[37mPOST /left HTTP/1.1[0m" 200 -
 INFO:werkzeug:10.10.41.50 - - [09/Mar/2022 12:59:12] "[37mPOST /shootup HTTP/1.1[0m" 200 -
 INFO:werkzeug:10.10.41.50 - - [09/Mar/2022 12:59:14] "[37mPOST /shootup HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.41.50 - - [09/Mar/2022 13:28:19] "[37mGET /manualcontrol HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [09/Mar/2022 13:28:21] "[37mGET /static/css/custom.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [09/Mar/2022 13:28:21] "[37mGET /static/css/theme.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [09/Mar/2022 13:28:21] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [09/Mar/2022 13:28:21] "[37mGET /static/js/custom.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [09/Mar/2022 13:28:21] "[37mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [09/Mar/2022 13:28:21] "[37mGET /static/js/mapping.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [09/Mar/2022 13:28:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:10.10.41.50 - - [09/Mar/2022 13:28:26] "[37mGET /mission HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [09/Mar/2022 13:28:41] "[35m[1mPOST /mission HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [09/Mar/2022 13:28:49] "[37mGET /mission?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [09/Mar/2022 13:28:49] "[37mGET /mission?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [09/Mar/2022 13:28:49] "[37mGET /mission?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [09/Mar/2022 13:28:49] "[37mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [09/Mar/2022 13:28:50] "[37mGET /mission?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [09/Mar/2022 13:28:50] "[37mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:flask_app:FLASK_APP : Mission : Brisbane Dead victim 2022-03-09 13:29:43.096838
+INFO:werkzeug:10.10.41.50 - - [09/Mar/2022 13:29:43] "[37mPOST /mission HTTP/1.1[0m" 200 -
+INFO:flask_app:FLASK_APP : Mission : Brisbane Dead Victim 2022-03-09 13:29:52.282137
+INFO:werkzeug:10.10.41.50 - - [09/Mar/2022 13:29:52] "[37mPOST /mission HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:32:12] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:32:13] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:32:14] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:32:14] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:32:14] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:32:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:flask_app:[{'userid': 1, 'name': 'admin', 'permission': 'admin', 'password': 'raspassword', 'email': 'admin@admin'}]
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:32:21] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:32:23] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:32:23] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:32:23] "[36mGET /static/js/mapping.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-038-307
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:56:03] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:56:06] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:56:06] "[37mGET /static/css/theme.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:56:06] "[37mGET /static/js/custom.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:56:06] "[37mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:56:06] "[37mGET /static/css/custom.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:56:06] "[37mGET /static/js/mapping.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:56:06] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:56:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:56:11] "[37mGET /sounds HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:56:13] "[37mPOST /mission HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:56:16] "[37mGET /sounds HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:56:31] "[37mGET /sounds HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:56:31] "[37mGET /static/css/theme.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:56:31] "[37mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:56:31] "[37mGET /static/js/custom.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:56:31] "[37mGET /static/css/custom.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:56:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:56:33] "[35m[1mPOST /sounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:56:33] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:56:33] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:56:33] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:56:34] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:56:34] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:56:34] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:57:30] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:57:38] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:57:38] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:57:43] "[37mGET /sounds HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:57:44] "[35m[1mPOST /sounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:57:44] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:57:44] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:57:44] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:57:45] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:57:45] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:57:45] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-038-307
+INFO:flask_app:None
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:58:10] "[35m[1mPOST /sounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:58:11] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:58:11] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:58:11] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:58:12] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:58:12] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:58:12] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:58:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:58:20] "[37mGET /sounds HTTP/1.1[0m" 200 -
+INFO:flask_app:None
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:58:21] "[35m[1mPOST /sounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:58:22] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:58:22] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:58:22] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:58:22] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:58:22] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:58:22] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:flask_app:None
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:58:50] "[35m[1mPOST /sounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:58:50] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:58:50] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:58:50] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:58:50] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:58:50] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:58:51] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:58:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:58:53] "[37mGET /sounds HTTP/1.1[0m" 200 -
+INFO:flask_app:Pirate
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:58:54] "[35m[1mPOST /sounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:58:55] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:58:55] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:58:55] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:58:55] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:58:55] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:58:55] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-038-307
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:59:21] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:59:22] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:59:30] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:59:33] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:59:34] "[37mGET /sounds HTTP/1.1[0m" 200 -
+INFO:flask_app:Pirate
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:59:36] "[37mPOST /sounds HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:59:41] "[37mPOST /stopsounds HTTP/1.1[0m" 200 -
+INFO:flask_app:WiiSports
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:59:48] "[37mPOST /sounds HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:59:56] "[37mPOST /stopsounds HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 14:59:56] "[37mPOST /stopsounds HTTP/1.1[0m" 200 -
+INFO:flask_app:WiiSports
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 15:00:14] "[37mPOST /sounds HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 15:00:15] "[37mGET /static/css/custom.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 15:00:15] "[37mGET /static/css/theme.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 15:00:15] "[37mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 15:00:15] "[37mGET /static/js/custom.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 15:00:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 15:00:17] "[37mPOST /stopsounds HTTP/1.1[0m" 200 -
+INFO:flask_app:NielsenPresentation
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 15:00:23] "[37mPOST /sounds HTTP/1.1[0m" 200 -
+INFO:flask_app:AncientWords
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 15:00:48] "[37mPOST /sounds HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 15:01:17] "[37mGET /manualcontrol HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 15:01:18] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 15:01:24] "[37mPOST /shootup HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 15:01:27] "[37mPOST /shootdown HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 15:02:15] "[37mGET /sounds HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 15:02:16] "[37mPOST /stopsounds HTTP/1.1[0m" 200 -
+INFO:flask_app:NielsenPresentation
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 15:03:49] "[37mPOST /sounds HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 15:04:18] "[37mPOST /stopsounds HTTP/1.1[0m" 200 -
+INFO:flask_app:NielsenPresentation
+INFO:werkzeug:10.10.72.118 - - [10/Mar/2022 15:06:09] "[37mPOST /sounds HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 111-144-191
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:10:04] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:10:04] "[37mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:10:04] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:10:04] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:10:04] "[37mGET /static/js/custom.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:10:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:flask_app:[{'email': 'admin@admin', 'password': 'raspassword', 'name': 'admin', 'permission': 'admin', 'userid': 1}]
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:10:11] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:10:11] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:10:11] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:10:11] "[36mGET /static/js/mapping.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:10:18] "[37mGET /manualcontrol HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:10:26] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:10:27] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:10:37] "[37mPOST /shootup HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:10:39] "[37mPOST /shootup HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:12:39] "[37mPOST /shootup HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:12:39] "[37mPOST /shootup HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:12:43] "[37mPOST /shootup HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:13:29] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:14:02] "[37mPOST /shootup HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:14:17] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:14:22] "[37mPOST /shootup HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:14:25] "[37mPOST /shootup HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:16:52] "[37mGET /sounds HTTP/1.1[0m" 200 -
+INFO:flask_app:Pirate
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:16:57] "[37mPOST /sounds HTTP/1.1[0m" 200 -
+INFO:flask_app:WiiSports
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:17:20] "[37mPOST /sounds HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:17:45] "[37mPOST /stopsounds HTTP/1.1[0m" 200 -
+INFO:flask_app:WiiShop
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:17:46] "[37mPOST /sounds HTTP/1.1[0m" 200 -
+INFO:flask_app:Pirate
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:18:04] "[37mPOST /sounds HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.124 - - [14/Mar/2022 13:18:56] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.124 - - [14/Mar/2022 13:18:56] "[37mGET /static/css/theme.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.124 - - [14/Mar/2022 13:18:56] "[37mGET /static/css/custom.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.124 - - [14/Mar/2022 13:18:56] "[37mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.124 - - [14/Mar/2022 13:18:56] "[37mGET /static/js/custom.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.124 - - [14/Mar/2022 13:18:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:flask_app:False
+INFO:werkzeug:10.10.72.124 - - [14/Mar/2022 13:19:05] "[37mPOST / HTTP/1.1[0m" 200 -
+INFO:flask_app:AncientWords
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:19:11] "[37mPOST /sounds HTTP/1.1[0m" 200 -
+INFO:flask_app:[{'email': 'admin@admin', 'password': 'raspassword', 'name': 'admin', 'permission': 'admin', 'userid': 1}]
+INFO:werkzeug:10.10.72.124 - - [14/Mar/2022 13:19:13] "[37mPOST / HTTP/1.1[0m" 200 -
+INFO:flask_app:[{'email': 'admin@admin', 'password': 'raspassword', 'name': 'admin', 'permission': 'admin', 'userid': 1}]
+INFO:werkzeug:10.10.72.124 - - [14/Mar/2022 13:20:14] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:10.10.72.124 - - [14/Mar/2022 13:20:14] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.124 - - [14/Mar/2022 13:20:14] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.124 - - [14/Mar/2022 13:20:14] "[37mGET /static/js/mapping.js HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.124 - - [14/Mar/2022 13:20:15] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:SHUT DOWN EVERYTHING
+INFO:flask_app:BRICKPIINTERFACE: Exiting the Thermal Sensor Thread
+INFO:flask_app:Exiting
+INFO:werkzeug:10.10.72.124 - - [14/Mar/2022 13:20:20] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:root:CAMERA INTERFACE: Exiting Camera Thread
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.124 - - [14/Mar/2022 13:20:20] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.124 - - [14/Mar/2022 13:20:21] "[37mPOST /robotshutdown HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.124 - - [14/Mar/2022 13:20:40] "[37mGET /manualcontrol HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.124 - - [14/Mar/2022 13:20:41] "[37mGET /sounds HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:20:41] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:None
+INFO:werkzeug:10.10.72.124 - - [14/Mar/2022 13:20:44] "[35m[1mPOST /sounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.124 - - [14/Mar/2022 13:20:44] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.124 - - [14/Mar/2022 13:20:44] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.124 - - [14/Mar/2022 13:20:44] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.124 - - [14/Mar/2022 13:20:44] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.124 - - [14/Mar/2022 13:20:44] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:20:45] "[37mGET /manualcontrol HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.124 - - [14/Mar/2022 13:20:47] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.124 - - [14/Mar/2022 13:20:51] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.124 - - [14/Mar/2022 13:20:52] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.124 - - [14/Mar/2022 13:20:52] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.124 - - [14/Mar/2022 13:20:52] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.124 - - [14/Mar/2022 13:20:52] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.124 - - [14/Mar/2022 13:20:55] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:flask_app:NielsenPresentation
+INFO:werkzeug:10.10.72.124 - - [14/Mar/2022 13:20:56] "[35m[1mPOST /sounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.124 - - [14/Mar/2022 13:20:56] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.124 - - [14/Mar/2022 13:20:56] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.124 - - [14/Mar/2022 13:20:56] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.124 - - [14/Mar/2022 13:20:56] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.124 - - [14/Mar/2022 13:20:57] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:21:29] "[37mGET /manualcontrol HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:21:30] "[37mGET /sounds HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:21:44] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:21:46] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:21:46] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:21:48] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:21:48] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:21:48] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:21:48] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:21:48] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:21:48] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:21:48] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:21:48] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:21:48] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:21:48] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:21:49] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.41.50 - - [14/Mar/2022 13:21:49] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 111-144-191
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:31:15] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:31:25] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:31:25] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:31:36] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:31:42] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:31:46] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 111-144-191
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:36:33] "[35m[1mPOST /maze HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 111-144-191
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:37:47] "[35m[1mPOST /maze HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 111-144-191
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:38:15] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:38:15] "[37mGET /static/css/theme.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:38:15] "[37mGET /static/js/custom.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:38:15] "[37mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:38:15] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:38:15] "[37mGET /static/js/mapping.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:38:15] "[37mGET /static/css/custom.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:38:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:38:23] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:38:23] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:0.0
+INFO:flask_app:0.0
+INFO:flask_app:0.0
+INFO:flask_app:-0.02200070023536682
+INFO:flask_app:-0.09314870834350586
+INFO:flask_app:-0.20379531383514404
+INFO:flask_app:-0.7107378244400024
+INFO:flask_app:-1.3110032379627228
+INFO:flask_app:-2.5702424347400665
+INFO:flask_app:-3.514996975660324
+INFO:flask_app:-5.709570616483688
+INFO:flask_app:-6.576990574598312
+INFO:flask_app:-7.776469737291336
+INFO:flask_app:-8.517520636320114
+INFO:flask_app:-9.110587537288666
+INFO:flask_app:-9.776701271533966
+INFO:flask_app:-10.453195109963417
+INFO:flask_app:-11.249991789460182
+INFO:flask_app:-11.863751992583275
+INFO:flask_app:-12.475162073969841
+INFO:flask_app:-13.154500052332878
+INFO:flask_app:-13.795444741845131
+INFO:flask_app:-14.305999174714088
+INFO:flask_app:-14.947265520691872
+INFO:flask_app:-15.515932947397232
+INFO:flask_app:-16.063194379210472
+INFO:flask_app:-16.713400289416313
+INFO:flask_app:-17.336233466863632
+INFO:flask_app:-17.933492749929428
+INFO:flask_app:-18.576688557863235
+INFO:flask_app:-19.20116838812828
+INFO:flask_app:-19.896098881959915
+INFO:flask_app:-20.509888261556625
+INFO:flask_app:-21.207329124212265
+INFO:flask_app:-21.847980439662933
+INFO:flask_app:-22.502834409475327
+INFO:flask_app:-23.212987065315247
+INFO:flask_app:-23.829052656888962
+INFO:flask_app:-24.423905581235886
+INFO:flask_app:-25.021882489323616
+INFO:flask_app:-25.656149342656136
+INFO:flask_app:-26.24232928454876
+INFO:flask_app:-26.84936586022377
+INFO:flask_app:-27.38365848362446
+INFO:flask_app:-28.156380400061607
+INFO:flask_app:-28.80679677426815
+INFO:flask_app:-29.74056378006935
+INFO:flask_app:-30.421493858098984
+INFO:flask_app:-31.347064048051834
+INFO:flask_app:-32.14048030972481
+INFO:flask_app:-32.94383691251278
+INFO:flask_app:-33.64154563844204
+INFO:flask_app:-34.31469966471195
+INFO:flask_app:-34.996937826275826
+INFO:flask_app:-35.62896327674389
+INFO:flask_app:-36.29501762986183
+INFO:flask_app:-37.120782524347305
+INFO:flask_app:-37.837296575307846
+INFO:flask_app:-38.706951379776
+INFO:flask_app:-39.563940346241
+INFO:flask_app:-41.04447427392006
+INFO:flask_app:-42.377796709537506
+INFO:flask_app:-43.470285922288895
+INFO:flask_app:-44.11955353617668
+INFO:flask_app:-44.87147298455238
+INFO:flask_app:-45.57695618271828
+INFO:flask_app:-46.263000562787056
+INFO:flask_app:-46.99044258892536
+INFO:flask_app:-47.797646537423134
+INFO:flask_app:-48.57222357392311
+INFO:flask_app:-49.37768843770027
+INFO:flask_app:-50.19376304745674
+INFO:flask_app:-50.941856652498245
+INFO:flask_app:-51.590636521577835
+INFO:flask_app:-52.25141955912113
+INFO:flask_app:-53.07957649230957
+INFO:flask_app:-53.7893168926239
+INFO:flask_app:-54.503846645355225
+INFO:flask_app:-55.646276876330376
+INFO:flask_app:-56.869283720850945
+INFO:flask_app:-57.9348000138998
+INFO:flask_app:-59.11200712621212
+INFO:flask_app:-59.84771791100502
+INFO:flask_app:-60.63832229375839
+INFO:flask_app:-61.31868061423302
+INFO:flask_app:-62.066897839307785
+INFO:flask_app:-62.794792994856834
+INFO:flask_app:-63.41937963664532
+INFO:flask_app:-64.116748213768
+INFO:flask_app:-64.77440875768661
+INFO:flask_app:-65.46852511167526
+INFO:flask_app:-66.19544763863087
+INFO:flask_app:-66.97726435959339
+INFO:flask_app:-67.69537754356861
+INFO:flask_app:-68.4980254471302
+INFO:flask_app:-69.26917888224125
+INFO:flask_app:-69.95107199251652
+INFO:flask_app:-70.67299868166447
+INFO:flask_app:-71.58774729073048
+INFO:flask_app:-72.22699929773808
+INFO:flask_app:-72.91000385582447
+INFO:flask_app:-73.60813054442406
+INFO:flask_app:-74.32865831255913
+INFO:flask_app:-75.01367618143559
+INFO:flask_app:-75.74874655902386
+INFO:flask_app:-76.46979475021362
+INFO:flask_app:-77.51045590639114
+INFO:flask_app:-78.46400266885757
+INFO:flask_app:-79.41639906167984
+INFO:flask_app:-80.32351896166801
+INFO:flask_app:-81.37694761157036
+INFO:flask_app:-82.60412314534187
+INFO:flask_app:-83.46457915008068
+INFO:flask_app:-84.43541498482227
+INFO:flask_app:-85.78631383180618
+INFO:flask_app:-87.13555245101452
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 111-144-191
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 111-144-191
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:39:29] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:39:30] "[37mGET /static/css/theme.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:39:30] "[37mGET /static/css/custom.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:39:30] "[37mGET /static/js/custom.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:39:30] "[37mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:39:30] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:39:30] "[37mGET /static/js/mapping.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:39:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:39:37] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:39:38] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 111-144-191
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:40:11] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:40:12] "[37mGET /static/css/theme.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:40:12] "[37mGET /static/css/custom.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:40:12] "[37mGET /static/js/custom.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:40:12] "[37mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:40:12] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:40:12] "[37mGET /static/js/mapping.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:40:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:40:20] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:40:20] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:SHUT DOWN EVERYTHING
+INFO:flask_app:BRICKPIINTERFACE: Exiting the Thermal Sensor Thread
+INFO:flask_app:Exiting
+INFO:root:CAMERA INTERFACE: Exiting Camera Thread
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:40:32] "[37mPOST /robotshutdown HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:40:33] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:40:35] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:40:36] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:40:40] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:41:01] "[37mGET /sounds HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:41:04] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.118 - - [14/Mar/2022 13:41:04] "[37mGET /videofeed HTTP/1.1[0m" 200 -
