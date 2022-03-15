@@ -17935,3 +17935,29 @@ INFO:flask_app:LOADING THE SOUND
 INFO:werkzeug:127.0.0.1 - - [16/Mar/2022 09:34:07] "POST /robotload HTTP/1.1" 200 -
 INFO:flask_app:READING CAMERA
 INFO:werkzeug:127.0.0.1 - - [16/Mar/2022 09:34:07] "[35m[1mGET /videofeed HTTP/1.1[0m" 204 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2022 09:37:42] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2022 09:37:42] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2022 09:37:42] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2022 09:37:42] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2022 09:37:42] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2022 09:37:42] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2022 09:37:42] "[36mGET /static/js/mapping.js HTTP/1.1[0m" 304 -
+INFO:flask_app:LOADING CAMERA
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2022 09:37:43] "POST /robotload HTTP/1.1" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2022 09:37:43] "[35m[1mGET /videofeed HTTP/1.1[0m" 204 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2022 09:39:14] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2022 09:39:14] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2022 09:39:14] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2022 09:39:14] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2022 09:39:14] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2022 09:39:14] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2022 09:39:14] "[36mGET /static/js/mapping.js HTTP/1.1[0m" 304 -
+INFO:flask_app:LOADING CAMERA
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2022 09:39:16] "POST /robotload HTTP/1.1" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:127.0.0.1 - - [16/Mar/2022 09:39:16] "[35m[1mGET /videofeed HTTP/1.1[0m" 204 -
