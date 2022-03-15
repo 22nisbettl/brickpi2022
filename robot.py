@@ -14,7 +14,35 @@ class Robot(BrickPiInterface):
         
         
     #Create a function to move time and power which will stop if colour is detected or wall has been found
+    def quadrant_scan(self):
+        ultra = self.get_ultra_sensor()
+        if ultra < 10 and ultra != 0:
+            GLOBALS.DATABASE.ModifyQuery('INSERT INTO TileTable (Straight) VALUES (1)')
+        else:
+            GLOBALS.DATABASE.ModifyQuery('INSERT INTO TileTable (Straight) VALUES (0)')
+        self.rotate_power_degrees_IMU(17,-90)
+        if ultra < 10 and ultra != 0:
+            GLOBALS.DATABASE.ModifyQuery('INSERT INTO TileTable (Left) VALUES (1)')
+        else:
+            GLOBALS.DATABASE.ModifyQuery('INSERT INTO TileTable (Left) VALUES (0)')
+        self.rotate_power_degrees_IMU(17,-90)
+        if ultra < 10 and ultra != 0:
+            GLOBALS.DATABASE.ModifyQuery('INSERT INTO TileTable (Back) VALUES (1)')
+        else:
+            GLOBALS.DATABASE.ModifyQuery('INSERT INTO TileTable (Back) VALUES (0)')
+        self.rotate_power_degrees_IMU(17,-90)
+        if ultra < 10 and ultra != 0:
+            GLOBALS.DATABASE.ModifyQuery('INSERT INTO TileTable (Right) VALUES (1)')
+        else:
+            GLOBALS.DATABASE.ModifyQuery('INSERT INTO TileTable (Right) VALUES (0)')
+        self.rotate_power_degrees_IMU(17,-90)
+        return
     
+    def maze_solve(self):
+        GLOBALS.DATABASE.ModifyQuery('DELETE FROM TileTable')
+        
+        self.quadrant_scan()
+        
     
     
 

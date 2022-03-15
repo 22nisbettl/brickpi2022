@@ -73,37 +73,7 @@ def robotdashboard():
 
 @app.route('/maze', methods=['GET','POST'])
 def maze():
-    while True:
-        ultra = GLOBALS.ROBOT.get_ultra_sensor()
-        print(ultra)
-        one = False
-        two = False
-        three = False
-        four = False
-        if ultra < 15:
-            one = True
-            GLOBALS.ROBOT.rotate_power_degrees_IMU(17,-90)
-        else:
-            one = False
-            GLOBALS.ROBOT.rotate_power_degrees_IMU(17,-90)
-        if ultra < 15:
-            two = True
-            GLOBALS.ROBOT.rotate_power_degrees_IMU(17,-90)
-        else:
-            two = False
-            GLOBALS.ROBOT.rotate_power_degrees_IMU(17,-90)
-        if ultra < 15:
-            three = True
-            GLOBALS.ROBOT.rotate_power_degrees_IMU(17,-90)
-        else:
-            three = False
-            GLOBALS.ROBOT.rotate_power_degrees_IMU(17,-90)
-        if ultra < 15:
-            four = True
-            GLOBALS.ROBOT.rotate_power_degrees_IMU(17,-90)
-        else:
-            four = False
-            GLOBALS.ROBOT.rotate_power_degrees_IMU(17,-90)
+    GLOBALS.ROBOT.maze_solve()
     return jsonify()
 
 @app.route('/manualcontrol', methods=['GET','POST'])
