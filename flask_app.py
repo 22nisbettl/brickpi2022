@@ -1,9 +1,13 @@
 from flask import Flask, render_template, session, request, redirect, flash, url_for, jsonify, Response, logging
-from interfaces import databaseinterface, camerainterface, soundinterface, brickpiinterface
-import robot #robot is class that extends the brickpi class
+from interfaces import databaseinterface
 import global_vars as GLOBALS #load global variables
 import logging, time
 from datetime import *
+try:
+    import robot #robot is class that extends the brickpi class
+    from interfaces import camerainterface, soundinterface, brickpiinterface
+except:
+    print("Failed")
 
 #Creates the Flask Server Object
 app = Flask(__name__); app.debug = True
@@ -48,18 +52,30 @@ def robotload():
     sensordict = None
     if not GLOBALS.CAMERA:
         log("LOADING CAMERA")
-        GLOBALS.CAMERA = camerainterface.CameraInterface()
-        GLOBALS.CAMERA.start()
+        try:
+            GLOBALS.CAMERA = camerainterface.CameraInterface()
+            GLOBALS.CAMERA.start()
+        except:
+            print("Camera is a NO LOAD")
     if not GLOBALS.ROBOT: 
         log("LOADING THE ROBOT")
-        GLOBALS.ROBOT = robot.Robot(20, app.logger)
-        GLOBALS.ROBOT.configure_sensors() #defaults have been provided but you can 
-        GLOBALS.ROBOT.reconfig_IMU()
+        try:
+            GLOBALS.ROBOT = robot.Robot(20, app.logger)
+            GLOBALS.ROBOT.configure_sensors() #defaults have been provided but you can 
+            GLOBALS.ROBOT.reconfig_IMU()
+        except:
+            print("Robot is a NO LOAD")
     if not GLOBALS.SOUND:
         log("LOADING THE SOUND")
-        GLOBALS.SOUND = soundinterface.SoundInterface()
-        GLOBALS.SOUND.say("I am ready")
-    sensordict = GLOBALS.ROBOT.get_all_sensors()
+        try:
+            GLOBALS.SOUND = soundinterface.SoundInterface()
+            GLOBALS.SOUND.say("I am ready")
+        except:
+            print("Sound is a NO LOAD")
+    if GLOBALS.ROBOT:
+        sensordict = GLOBALS.ROBOT.get_all_sensors()
+    else:
+        sensordict = {}
     return jsonify(sensordict)
 
 # ---------------------------------------------------------------------------------------
