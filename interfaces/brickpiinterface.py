@@ -379,7 +379,7 @@ class BrickPiInterface():
 
     #--------------MOTOR COMMANDS-----------------#
     #simply turns motors on, dangerous because it does not turn them off
-    def move_power(self, power, deviation=-3):
+    def move_power(self, power, deviation=0):
         self.interrupt_previous_command()
         bp = self.BP
         self.CurrentCommand = "move_power"
@@ -394,7 +394,7 @@ class BrickPiInterface():
         return elapsedtime
 
     #moves for the specified time (seconds) and power - use negative power to reverse
-    def move_power_time(self, power, t, deviation=-2):
+    def move_power_time(self, power, t, deviation=0):
         self.interrupt_previous_command()
         bp = self.BP
         self.CurrentCommand = "move_power_time"

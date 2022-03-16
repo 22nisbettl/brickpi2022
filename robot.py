@@ -16,25 +16,25 @@ class Robot(BrickPiInterface):
     #Create a function to move time and power which will stop if colour is detected or wall has been found
     def quadrant_scan(self, tile):
         ultra = self.get_ultra_sensor()
-        if ultra < 10 and ultra != 0:
+        if ultra < 20 and ultra != 0:
             GLOBALS.DATABASE.ModifyQuery('UPDATE TileTable SET North = 1 WHERE TileID = ?', (tile,))
         else:
             GLOBALS.DATABASE.ModifyQuery('UPDATE TileTable SET North = 0 WHERE TileID = ?', (tile,))
         self.rotate_power_degrees_IMU(17,-90)
         ultra = self.get_ultra_sensor()
-        if ultra < 10 and ultra != 0:
+        if ultra < 20 and ultra != 0:
             GLOBALS.DATABASE.ModifyQuery('UPDATE TileTable SET West = 1 WHERE TileID = ?', (tile,))
         else:
             GLOBALS.DATABASE.ModifyQuery('UPDATE TileTable SET West = 0 WHERE TileID = ?', (tile,))
         self.rotate_power_degrees_IMU(17,-90)
         ultra = self.get_ultra_sensor()
-        if ultra < 10 and ultra != 0:
+        if ultra < 20 and ultra != 0:
             GLOBALS.DATABASE.ModifyQuery('UPDATE TileTable SET South = 1 WHERE TileID = ?', (tile,))
         else:
             GLOBALS.DATABASE.ModifyQuery('UPDATE TileTable SET South = 0 WHERE TileID = ?', (tile,))
         self.rotate_power_degrees_IMU(17,-90)
         ultra = self.get_ultra_sensor()
-        if ultra < 10 and ultra != 0:
+        if ultra < 20 and ultra != 0:
             GLOBALS.DATABASE.ModifyQuery('UPDATE TileTable SET East = 1 WHERE TileID = ?', (tile,))
         else:
             GLOBALS.DATABASE.ModifyQuery('UPDATE TileTable SET East = 0 WHERE TileID = ?', (tile,))
@@ -50,22 +50,26 @@ class Robot(BrickPiInterface):
             self.quadrant_scan(tile)
             walls = GLOBALS.DATABASE.ViewQuery('SELECT * FROM TileTable WHERE TileID = ?', (tile,))
             tilewalls = walls[0]
+            #0 means no wall
+            #1 means wall
+            print(tilewalls)
             North = tilewalls['North']
             West = tilewalls['West']
             South = tilewalls['South']
             East = tilewalls['East']
-            if North == '1':
+            print(North, West, South, East)
+            if North == 0:
                 self.move_power_time(20,2)
                 tile += 1
-            elif North == '0' and West == '1':
+            elif North == 1 and West == 0:
                 self.rotate_power_degrees_IMU(17,-90)
                 self.move_power_time(20,2)
                 tile += 1
-            elif North == '0' and West == '0' and South == '1':
+            elif North == 1 and West == 1 and South == 0:
                 self.rotate_power_degrees_IMU(17,-180)
                 self.move_power_time(20,2)
                 tile += 1
-            elif North == '0' and West == '0' and South == '0' and East == '1':
+            elif North == 1 and West == 1 and South == 1 and East == 0:
                 self.rotate_power_degrees_IMU(17,90)
                 self.move_power_time(20,2)
                 tile += 1

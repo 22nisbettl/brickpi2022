@@ -556,3 +556,4 @@ INFO:root:THERMAL READ: get_sensor error: Invalid sensor data
 INFO:root:THERMAL READ: get_sensor error: Invalid sensor data
 INFO:root:THERMAL READ: get_sensor error: Invalid sensor data
 INFO:root:THERMAL READ: get_sensor error: Invalid sensor data
+INFO:root:BRICKPIINTERFACE: Starting thermal sensor thread

@@ -92,6 +92,11 @@ def maze():
     GLOBALS.ROBOT.maze_solve()
     return jsonify()
 
+@app.route('/mazestop', methods=['GET','POST'])
+def mazestop():
+    GLOBALS.ROBOT.stop_routine()
+    return jsonify()
+
 @app.route('/manualcontrol', methods=['GET','POST'])
 def manualcontrol():
     if not 'userid' in session:
@@ -127,14 +132,14 @@ def sensors():
 def forward():
     data = {}
     if GLOBALS.ROBOT:
-        data['elapsedtime'] = GLOBALS.ROBOT.move_power(50)
+        data['elapsedtime'] = GLOBALS.ROBOT.move_power(20)
         data['heading'] = GLOBALS.ROBOT.get_compass_IMU()
     return jsonify(data)
 
 @app.route('/reverse', methods=['GET','POST'])
 def reverse():
     if GLOBALS.ROBOT:
-        GLOBALS.ROBOT.move_power(-50)
+        GLOBALS.ROBOT.move_power(-20)
     return jsonify()
 
 @app.route('/stopall', methods=['GET','POST'])
