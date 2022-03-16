@@ -9,13 +9,30 @@
         <button type="button" class="btn btn-success" onclick="load_robot();">Load Robot</button>
     </div>   
     <div id="dashboard">
-        <div class="row">
-            <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Shutdown Robot" onclick="shutdown_robot();"><i class="fa-solid fa-power-off"></i></button>
-            <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Reconfigure IMU" onclick="new_ajax_helper('/reconfig_IMU');"><i class="fa-solid fa-compass-drafting"></i></button>
-            <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Compass" onclick="new_ajax_helper('/compass');"><i class="fa-solid fa-compass"></i></button>
-            <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Sensors" onclick="new_ajax_helper('/sensors');"><i class="fa-solid fa-compass-drafting"></i></button>
-            <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Maze" onclick="new_ajax_helper('/maze');"><i class="fas fa-search-plus"></i></button>
-            <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Stop Maze" onclick="new_ajax_helper('/mazestop');"><i class="fas fa-search-minus"></i></button>
+        <div class="row d-flex justify-content-center">
+            <button type="button" class="btn btn-warning" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Shutdown Robot" onclick="shutdown_robot();"><i class="fa-solid fa-power-off"></i></button>
+            <button type="button" class="btn btn-danger" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Reconfigure IMU" onclick="new_ajax_helper('/reconfig_IMU');"><i class="fa-solid fa-compass-drafting"></i></button>
+            <button type="button" class="btn btn-info" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Compass" onclick="new_ajax_helper('/compass');"><i class="fa-solid fa-compass"></i></button>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <button type="button" class="btn btn-light" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Search Maze" onclick="new_ajax_helper('/maze');"><i class="fas fa-search-plus"></i></button>
+            <button type="button" class="btn btn-success" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Manual Control" onclick="toggle();"><i class="fa-solid fa-up-down-left-right"></i></button>
+            <button type="button" class="btn btn-dark" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Stop Searching Maze" onclick="new_ajax_helper('/mazestop');"><i class="fas fa-search-minus"></i></button>
+        </div>
+        <div id="manualhide" hidden="hidden">
+            <div class="row d-flex justify-content-center">
+                <button type="button" class="btn btn-warning" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Shoot Down" onclick="new_ajax_helper('/stopall');"><i class="fa-solid fa-circle-stop"></i></button>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <button type="button" class="btn btn-info" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Shoot Down" onclick="new_ajax_helper('/shootdown');"><i class="fa-solid fa-arrow-down-short-wide"></i></button>
+                <button type="button" class="btn btn-primary" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Move Forward" onclick="new_ajax_helper('/forward', mapforward);"><i class="fa-solid fa-circle-up"></i></button>
+                <button type="button" class="btn btn-info" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Shoot Up" onclick="new_ajax_helper('/shootup');"><i class="fa-solid fa-arrow-up-wide-short"></i></button>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <button type="button" class="btn btn-primary" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Turn Left" onclick="new_ajax_helper('/left');"><i class="fa-solid fa-rotate-left"></i></button>
+                <button type="button" class="btn btn-primary" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Reverse" onclick="new_ajax_helper('/reverse');"><i class="fa-solid fa-circle-down"></i></button>
+                <button type="button" class="btn btn-primary" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Turn Rightx" onclick="new_ajax_helper('/right');"><i class="fa-solid fa-rotate-right"></i></button>
+            </div>
         </div>
         <div class="row">
             <div id="videobox" class="col">
@@ -31,4 +48,17 @@
     <script> robot_enabled = {{robot_enabled}}; </script>
     <script src="/static/js/dashboard.js"></script> 
     <script src="/static/js/mapping.js"></script> 
+    <script>
+        let toggle = () => {
+      
+          let element = document.getElementById("manualhide");
+          let hidden = element.getAttribute("hidden");
+      
+          if (hidden) {
+             element.removeAttribute("hidden");
+          } else {
+             element.setAttribute("hidden", "hidden");
+          }
+        }
+      </script>
 {% endblock %}

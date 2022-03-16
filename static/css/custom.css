@@ -9,7 +9,7 @@
 .btn { max-width:150px; }
 .container { margin-top:0px; margin-left:10px; }
 .row h1 { padding-left:0px !important; }
-.row { padding:10px; padding-left:15px; }
+.row {padding-left:15px; }
 #message { float:left; min-width:200px; }
 .nav-link { padding-left:0px; }
 

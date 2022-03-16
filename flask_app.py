@@ -97,13 +97,6 @@ def mazestop():
     GLOBALS.ROBOT.stop_routine()
     return jsonify()
 
-@app.route('/manualcontrol', methods=['GET','POST'])
-def manualcontrol():
-    if not 'userid' in session:
-        return redirect('/')
-    enabled = int(GLOBALS.ROBOT != None)
-    return render_template('manualcontrol.html', robot_enabled = enabled )
-
 #Used for reconfiguring IMU
 @app.route('/reconfig_IMU', methods=['GET','POST'])
 def reconfig_IMU():
@@ -120,6 +113,10 @@ def compass():
     if GLOBALS.ROBOT:
         data['message'] = GLOBALS.ROBOT.calibrate_imu(10)
     return jsonify(data)
+
+@app.route('/manual', methods=['GET','POST'])
+def manual():
+    return jsonify()
 
 @app.route('/sensors', methods=['GET','POST'])
 def sensors():
