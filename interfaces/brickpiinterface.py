@@ -436,7 +436,7 @@ class BrickPiInterface():
         
     #Rotates the robot with power and degrees using the IMU sensor. Negative degrees = left.
     #the larger the number of degrees and the lower the power, the more accurate
-    def rotate_power_degrees_IMU(self, power, degrees, marginoferror=3):
+    def rotate_power_degrees_IMU(self, power, degrees, marginoferror=14):
         bp = self.BP
         if (self.config['imu'] >= SensorStatus.DISABLED):
             return

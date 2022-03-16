@@ -46,11 +46,31 @@ class Robot(BrickPiInterface):
         self.CurrentRoutine = "Searching"
         tile = 1
         while self.CurrentRoutine == "Searching":
+            GLOBALS.DATABASE.ModifyQuery('INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)', (tile,))
             self.quadrant_scan(tile)
             walls = GLOBALS.DATABASE.ViewQuery('SELECT * FROM TileTable WHERE TileID = ?', (tile,))
-            print(walls)
             tilewalls = walls[0]
-            print(tilewalls)
+            North = tilewalls['North']
+            West = tilewalls['West']
+            South = tilewalls['South']
+            East = tilewalls['East']
+            if North == '1':
+                self.move_power_time(20,2)
+                tile += 1
+            elif North == '0' and West == '1':
+                self.rotate_power_degrees_IMU(17,-90)
+                self.move_power_time(20,2)
+                tile += 1
+            elif North == '0' and West == '0' and South == '1':
+                self.rotate_power_degrees_IMU(17,-180)
+                self.move_power_time(20,2)
+                tile += 1
+            elif North == '0' and West == '0' and South == '0' and East == '1':
+                self.rotate_power_degrees_IMU(17,90)
+                self.move_power_time(20,2)
+                tile += 1
+            else:
+                self.quadrant_scan(tile)
 
     
     def stop_routine(self):
