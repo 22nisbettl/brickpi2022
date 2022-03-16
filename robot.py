@@ -14,35 +14,49 @@ class Robot(BrickPiInterface):
         
         
     #Create a function to move time and power which will stop if colour is detected or wall has been found
-    def quadrant_scan(self):
+    def quadrant_scan(self, tile):
         ultra = self.get_ultra_sensor()
         if ultra < 10 and ultra != 0:
-            GLOBALS.DATABASE.ModifyQuery('INSERT INTO TileTable (Straight) VALUES (1)')
+            GLOBALS.DATABASE.ModifyQuery('UPDATE TileTable SET North = 1 WHERE TileID = ?', (tile,))
         else:
-            GLOBALS.DATABASE.ModifyQuery('INSERT INTO TileTable (Straight) VALUES (0)')
+            GLOBALS.DATABASE.ModifyQuery('UPDATE TileTable SET North = 0 WHERE TileID = ?', (tile,))
         self.rotate_power_degrees_IMU(17,-90)
+        ultra = self.get_ultra_sensor()
         if ultra < 10 and ultra != 0:
-            GLOBALS.DATABASE.ModifyQuery('INSERT INTO TileTable (Left) VALUES (1)')
+            GLOBALS.DATABASE.ModifyQuery('UPDATE TileTable SET West = 1 WHERE TileID = ?', (tile,))
         else:
-            GLOBALS.DATABASE.ModifyQuery('INSERT INTO TileTable (Left) VALUES (0)')
+            GLOBALS.DATABASE.ModifyQuery('UPDATE TileTable SET West = 0 WHERE TileID = ?', (tile,))
         self.rotate_power_degrees_IMU(17,-90)
+        ultra = self.get_ultra_sensor()
         if ultra < 10 and ultra != 0:
-            GLOBALS.DATABASE.ModifyQuery('INSERT INTO TileTable (Back) VALUES (1)')
+            GLOBALS.DATABASE.ModifyQuery('UPDATE TileTable SET South = 1 WHERE TileID = ?', (tile,))
         else:
-            GLOBALS.DATABASE.ModifyQuery('INSERT INTO TileTable (Back) VALUES (0)')
+            GLOBALS.DATABASE.ModifyQuery('UPDATE TileTable SET South = 0 WHERE TileID = ?', (tile,))
         self.rotate_power_degrees_IMU(17,-90)
+        ultra = self.get_ultra_sensor()
         if ultra < 10 and ultra != 0:
-            GLOBALS.DATABASE.ModifyQuery('INSERT INTO TileTable (Right) VALUES (1)')
+            GLOBALS.DATABASE.ModifyQuery('UPDATE TileTable SET East = 1 WHERE TileID = ?', (tile,))
         else:
-            GLOBALS.DATABASE.ModifyQuery('INSERT INTO TileTable (Right) VALUES (0)')
+            GLOBALS.DATABASE.ModifyQuery('UPDATE TileTable SET East = 0 WHERE TileID = ?', (tile,))
         self.rotate_power_degrees_IMU(17,-90)
         return
     
     def maze_solve(self):
         GLOBALS.DATABASE.ModifyQuery('DELETE FROM TileTable')
-        
-        self.quadrant_scan()
-        
+        self.CurrentRoutine = "Searching"
+        tile = 1
+        while self.CurrentRoutine == "Searching":
+            self.quadrant_scan(tile)
+            walls = GLOBALS.DATABASE.ViewQuery('SELECT * FROM TileTable WHERE TileID = ?', (tile,))
+            print(walls)
+            tilewalls = walls[0]
+            print(tilewalls)
+
+    
+    def stop_routine(self):
+        self.CurrentRoutine = "Stop"
+        self.stop_all()
+        return
     
     
 

@@ -17961,3 +17961,941 @@ INFO:flask_app:LOADING THE SOUND
 INFO:werkzeug:127.0.0.1 - - [16/Mar/2022 09:39:16] "POST /robotload HTTP/1.1" 200 -
 INFO:flask_app:READING CAMERA
 INFO:werkzeug:127.0.0.1 - - [16/Mar/2022 09:39:16] "[35m[1mGET /videofeed HTTP/1.1[0m" 204 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:06:36] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:06:37] "[37mGET /static/css/theme.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:06:37] "[37mGET /static/css/custom.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:06:37] "[37mGET /static/js/custom.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:06:37] "[37mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:06:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:flask_app:[{'permission': 'admin', 'email': 'admin@admin', 'name': 'admin', 'userid': 1, 'password': 'raspassword'}]
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:06:54] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:06:54] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:06:55] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:06:55] "[37mGET /static/js/mapping.js HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:07:07] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:07:07] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: no such table: TileTable
+ERROR:flask_app:DELETE FROM TileTable
+ERROR:flask_app:DATABASE ERROR: no such table: TileTable
+ERROR:flask_app:INSERT INTO TileTable (Straight) VALUES (0)
+INFO:flask_app:0.0008994787931442261
+INFO:flask_app:0.001821279525756836
+INFO:flask_app:0.001821279525756836
+INFO:flask_app:-0.012967705726623535
+INFO:flask_app:-0.05874308943748474
+INFO:flask_app:-0.13008208572864532
+INFO:flask_app:-0.24309714138507843
+INFO:flask_app:-0.4493936449289322
+INFO:flask_app:-0.8411360830068588
+INFO:flask_app:-1.3692645132541656
+INFO:flask_app:-2.129946857690811
+INFO:flask_app:-3.1398937702178955
+INFO:flask_app:-4.3403529822826385
+INFO:flask_app:-5.744004338979721
+INFO:flask_app:-7.0757103860378265
+INFO:flask_app:-8.291300624608994
+INFO:flask_app:-9.45026096701622
+INFO:flask_app:-10.557649046182632
+INFO:flask_app:-11.41934847831726
+INFO:flask_app:-12.368099451065063
+INFO:flask_app:-13.327323988080025
+INFO:flask_app:-14.17819668352604
+INFO:flask_app:-15.169265568256378
+INFO:flask_app:-16.271154552698135
+INFO:flask_app:-17.39435987174511
+INFO:flask_app:-18.47586315870285
+INFO:flask_app:-19.696002513170242
+INFO:flask_app:-20.865042746067047
+INFO:flask_app:-22.03898476064205
+INFO:flask_app:-23.20023463666439
+INFO:flask_app:-24.350653752684593
+INFO:flask_app:-25.569574519991875
+INFO:flask_app:-26.575930580496788
+INFO:flask_app:-27.572388544678688
+INFO:flask_app:-28.598328605294228
+INFO:flask_app:-29.55800986289978
+INFO:flask_app:-30.455996602773666
+INFO:flask_app:-31.41195473074913
+INFO:flask_app:-32.34267944097519
+INFO:flask_app:-33.616921842098236
+INFO:flask_app:-35.21621297299862
+INFO:flask_app:-36.50620502233505
+INFO:flask_app:-37.92229975759983
+INFO:flask_app:-39.375009551644325
+INFO:flask_app:-40.770015969872475
+INFO:flask_app:-42.242090687155724
+INFO:flask_app:-44.17594617605209
+INFO:flask_app:-45.762305438518524
+INFO:flask_app:-47.412256330251694
+INFO:flask_app:-48.845887288451195
+INFO:flask_app:-50.34581610560417
+INFO:flask_app:-51.84587223827839
+INFO:flask_app:-53.479394152760506
+INFO:flask_app:-54.84485550224781
+INFO:flask_app:-57.912812039256096
+INFO:flask_app:-61.574299320578575
+INFO:flask_app:-63.29617169499397
+INFO:flask_app:-64.76585951447487
+INFO:flask_app:-66.04683390259743
+INFO:flask_app:-67.15733042359352
+INFO:flask_app:-68.52903173863888
+INFO:flask_app:-69.60792179405689
+INFO:flask_app:-70.75160156190395
+INFO:flask_app:-71.75472895801067
+INFO:flask_app:-72.86371599137783
+INFO:flask_app:-73.91118790209293
+INFO:flask_app:-75.0585508197546
+INFO:flask_app:-76.22141283750534
+INFO:flask_app:-77.79690934717655
+INFO:flask_app:-79.05354095995426
+INFO:flask_app:-80.36042170226574
+INFO:flask_app:-81.47776843607426
+INFO:flask_app:-82.87644092738628
+INFO:flask_app:-84.05089597404003
+INFO:flask_app:-85.17312370240688
+INFO:flask_app:-86.42798285186291
+INFO:flask_app:-87.51912759244442
+ERROR:flask_app:DATABASE ERROR: no such table: TileTable
+ERROR:flask_app:INSERT INTO TileTable (Left) VALUES (0)
+INFO:flask_app:-1.1111931800842285
+INFO:flask_app:-2.3941099494695663
+INFO:flask_app:-3.4579720944166183
+INFO:flask_app:-4.7087541073560715
+INFO:flask_app:-5.647356405854225
+INFO:flask_app:-6.714988008141518
+INFO:flask_app:-7.72076453268528
+INFO:flask_app:-8.747105777263641
+INFO:flask_app:-9.836005985736847
+INFO:flask_app:-10.919486105442047
+INFO:flask_app:-11.969010084867477
+INFO:flask_app:-13.137660294771194
+INFO:flask_app:-14.289778307080269
+INFO:flask_app:-15.312431618571281
+INFO:flask_app:-16.286303624510765
+INFO:flask_app:-17.23785635828972
+INFO:flask_app:-18.356656104326248
+INFO:flask_app:-19.50906154513359
+INFO:flask_app:-20.638499349355698
+INFO:flask_app:-21.693799883127213
+INFO:flask_app:-22.88372604548931
+INFO:flask_app:-23.940808981657028
+INFO:flask_app:-25.107157438993454
+INFO:flask_app:-26.4011849462986
+INFO:flask_app:-27.60950155556202
+INFO:flask_app:-28.841162279248238
+INFO:flask_app:-30.729423329234123
+INFO:flask_app:-32.49463514983654
+INFO:flask_app:-33.982100918889046
+INFO:flask_app:-35.638752564787865
+INFO:flask_app:-36.763126492500305
+INFO:flask_app:-37.917248621582985
+INFO:flask_app:-39.107342913746834
+INFO:flask_app:-40.22873215377331
+INFO:flask_app:-41.43244072794914
+INFO:flask_app:-42.63125006854534
+INFO:flask_app:-43.947707548737526
+INFO:flask_app:-45.26674012839794
+INFO:flask_app:-46.4388992190361
+INFO:flask_app:-47.57173377275467
+INFO:flask_app:-48.70087110996246
+INFO:flask_app:-49.86067542433739
+INFO:flask_app:-50.918548196554184
+INFO:flask_app:-52.075374096632004
+INFO:flask_app:-53.27778276801109
+INFO:flask_app:-55.94184798002243
+INFO:flask_app:-57.04679316282272
+INFO:flask_app:-58.697826862335205
+INFO:flask_app:-59.80873382091522
+INFO:flask_app:-61.023819610476494
+INFO:flask_app:-62.30965667963028
+INFO:flask_app:-63.56965547800064
+INFO:flask_app:-64.85367068648338
+INFO:flask_app:-66.09204342961311
+INFO:flask_app:-67.23047316074371
+INFO:flask_app:-68.39311867952347
+INFO:flask_app:-69.68875148892403
+INFO:flask_app:-70.76370015740395
+INFO:flask_app:-71.89010648429394
+INFO:flask_app:-73.02720861136913
+INFO:flask_app:-74.20620630681515
+INFO:flask_app:-75.33177411556244
+INFO:flask_app:-76.45590949058533
+INFO:flask_app:-77.5515056848526
+INFO:flask_app:-78.65405404567719
+INFO:flask_app:-79.66562458872795
+INFO:flask_app:-80.97457201778889
+INFO:flask_app:-81.95154863595963
+INFO:flask_app:-83.29147833585739
+INFO:flask_app:-84.39195255935192
+INFO:flask_app:-85.49098180234432
+INFO:flask_app:-86.44039495289326
+INFO:flask_app:-87.50204323232174
+ERROR:flask_app:DATABASE ERROR: no such table: TileTable
+ERROR:flask_app:INSERT INTO TileTable (Back) VALUES (0)
+INFO:flask_app:-1.1532140970230103
+INFO:flask_app:-2.3732749819755554
+INFO:flask_app:-3.833549350500107
+INFO:flask_app:-5.35882480442524
+INFO:flask_app:-6.469225540757179
+INFO:flask_app:-7.588609233498573
+INFO:flask_app:-8.722313821315765
+INFO:flask_app:-9.988339364528656
+INFO:flask_app:-11.173824563622475
+INFO:flask_app:-12.351673439145088
+INFO:flask_app:-13.502487644553185
+INFO:flask_app:-14.778994366526604
+INFO:flask_app:-16.165483340620995
+INFO:flask_app:-18.09302942454815
+INFO:flask_app:-19.87740807235241
+INFO:flask_app:-21.681792095303535
+INFO:flask_app:-23.24301417171955
+INFO:flask_app:-24.36359889805317
+INFO:flask_app:-25.513540759682655
+INFO:flask_app:-26.762940153479576
+INFO:flask_app:-28.116076961159706
+INFO:flask_app:-29.258126750588417
+INFO:flask_app:-30.542017325758934
+INFO:flask_app:-31.751086696982384
+INFO:flask_app:-33.06233401596546
+INFO:flask_app:-34.30653567612171
+INFO:flask_app:-35.58589716255665
+INFO:flask_app:-36.87578792870045
+INFO:flask_app:-38.158249482512474
+INFO:flask_app:-39.243812084198
+INFO:flask_app:-40.730238512158394
+INFO:flask_app:-41.88334806263447
+INFO:flask_app:-43.15006722509861
+INFO:flask_app:-44.35165752470493
+INFO:flask_app:-45.74778316915035
+INFO:flask_app:-47.13361516594887
+INFO:flask_app:-48.67845728993416
+INFO:flask_app:-49.7737355530262
+INFO:flask_app:-51.02469688653946
+INFO:flask_app:-52.34513175487518
+INFO:flask_app:-53.686416298151016
+INFO:flask_app:-55.05449262261391
+INFO:flask_app:-56.267739459872246
+INFO:flask_app:-57.50508867204189
+INFO:flask_app:-58.666284546256065
+INFO:flask_app:-59.85046775639057
+INFO:flask_app:-61.2200780659914
+INFO:flask_app:-62.44067357480526
+INFO:flask_app:-63.762749418616295
+INFO:flask_app:-65.00387467443943
+INFO:flask_app:-66.19470949470997
+INFO:flask_app:-67.34152966737747
+INFO:flask_app:-68.56564949452877
+INFO:flask_app:-69.73929806053638
+INFO:flask_app:-70.87723188102245
+INFO:flask_app:-72.1181702464819
+INFO:flask_app:-73.55431574583054
+INFO:flask_app:-74.87113419175148
+INFO:flask_app:-76.04531601071358
+INFO:flask_app:-77.35924017429352
+INFO:flask_app:-78.7290186882019
+INFO:flask_app:-80.12213003635406
+INFO:flask_app:-82.38690721988678
+INFO:flask_app:-84.38054396212101
+INFO:flask_app:-86.23756028711796
+INFO:flask_app:-88.01415871083736
+ERROR:flask_app:DATABASE ERROR: no such table: TileTable
+ERROR:flask_app:INSERT INTO TileTable (Right) VALUES (0)
+INFO:flask_app:-1.3248807191848755
+INFO:flask_app:-2.567761614918709
+INFO:flask_app:-3.981993392109871
+INFO:flask_app:-5.157998755574226
+INFO:flask_app:-6.343719989061356
+INFO:flask_app:-7.507793337106705
+INFO:flask_app:-8.80997160077095
+INFO:flask_app:-9.933391258120537
+INFO:flask_app:-11.190279766917229
+INFO:flask_app:-12.417195528745651
+INFO:flask_app:-13.740036651492119
+INFO:flask_app:-14.88775771856308
+INFO:flask_app:-16.128064006567
+INFO:flask_app:-17.359537601470947
+INFO:flask_app:-18.593052834272385
+INFO:flask_app:-19.833836019039154
+INFO:flask_app:-21.037822529673576
+INFO:flask_app:-22.398796185851097
+INFO:flask_app:-23.552174136042595
+INFO:flask_app:-24.743976697325706
+INFO:flask_app:-26.195885345339775
+INFO:flask_app:-27.239847406744957
+INFO:flask_app:-28.474939092993736
+INFO:flask_app:-29.554100781679153
+INFO:flask_app:-30.744113206863403
+INFO:flask_app:-31.838989555835724
+INFO:flask_app:-32.94352799654007
+INFO:flask_app:-34.00227792561054
+INFO:flask_app:-35.20355960726738
+INFO:flask_app:-36.35962650179863
+INFO:flask_app:-37.50434657931328
+INFO:flask_app:-38.613732770085335
+INFO:flask_app:-39.71441738307476
+INFO:flask_app:-41.037508979439735
+INFO:flask_app:-42.733584597706795
+INFO:flask_app:-44.30361120402813
+INFO:flask_app:-46.13003286719322
+INFO:flask_app:-47.37108740210533
+INFO:flask_app:-48.55724413692951
+INFO:flask_app:-49.76464320719242
+INFO:flask_app:-51.037108913064
+INFO:flask_app:-52.27716638147831
+INFO:flask_app:-53.411815136671066
+INFO:flask_app:-54.556068524718285
+INFO:flask_app:-55.711074844002724
+INFO:flask_app:-57.09273926913738
+INFO:flask_app:-58.685230419039726
+INFO:flask_app:-60.27730356156826
+INFO:flask_app:-61.5444882363081
+INFO:flask_app:-63.0847103446722
+INFO:flask_app:-64.20822136104107
+INFO:flask_app:-65.38200721144676
+INFO:flask_app:-66.52064743638039
+INFO:flask_app:-67.84489274024963
+INFO:flask_app:-69.11709666252136
+INFO:flask_app:-70.42370757460594
+INFO:flask_app:-71.60180529952049
+INFO:flask_app:-72.79451008141041
+INFO:flask_app:-73.94239844381809
+INFO:flask_app:-75.09568201005459
+INFO:flask_app:-76.15919151902199
+INFO:flask_app:-77.27478922903538
+INFO:flask_app:-78.35898892581463
+INFO:flask_app:-79.49832001328468
+INFO:flask_app:-80.61312654614449
+INFO:flask_app:-81.80681858956814
+INFO:flask_app:-82.98854279518127
+INFO:flask_app:-84.08178846538067
+INFO:flask_app:-85.24225322902203
+INFO:flask_app:-86.38353978097439
+INFO:flask_app:-87.5699595361948
+ERROR:flask_app:DATABASE ERROR: no such table: TileTable
+ERROR:flask_app:SELECT * FROM TileTable WHERE TileID = ?
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:07:19] "[35m[1mPOST /maze HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:07:41] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:07:42] "[37mGET /static/js/sensor.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:07:44] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:07:46] "[37mGET /manualcontrol HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:07:46] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:0.0
+INFO:flask_app:-0.001613318920135498
+INFO:flask_app:0.001039251685142517
+INFO:flask_app:0.0021285712718963623
+INFO:flask_app:0.025591015815734863
+INFO:flask_app:0.06053364276885986
+INFO:flask_app:0.18140287697315216
+INFO:flask_app:0.6112966686487198
+INFO:flask_app:1.2647792398929596
+INFO:flask_app:2.5537118017673492
+INFO:flask_app:4.2045208513736725
+INFO:flask_app:6.6459996700286865
+INFO:flask_app:8.79554596543312
+INFO:flask_app:10.56197452545166
+INFO:flask_app:12.151182845234871
+INFO:flask_app:14.202857717871666
+INFO:flask_app:15.502867951989174
+INFO:flask_app:16.845781460404396
+INFO:flask_app:19.187088951468468
+INFO:flask_app:21.620921030640602
+INFO:flask_app:23.862019076943398
+INFO:flask_app:25.929235339164734
+INFO:flask_app:27.68174135684967
+INFO:flask_app:28.78118397295475
+INFO:flask_app:29.920114651322365
+INFO:flask_app:30.9698523581028
+INFO:flask_app:32.2168283611536
+INFO:flask_app:33.30455470085144
+INFO:flask_app:34.547788977622986
+INFO:flask_app:35.681539207696915
+INFO:flask_app:36.928121879696846
+INFO:flask_app:38.188389763236046
+INFO:flask_app:39.34129595756531
+INFO:flask_app:40.52873983979225
+INFO:flask_app:41.79966887831688
+INFO:flask_app:43.05320927500725
+INFO:flask_app:44.31510207056999
+INFO:flask_app:45.404913917183876
+INFO:flask_app:46.53309752047062
+INFO:flask_app:47.55991964042187
+INFO:flask_app:48.570831045508385
+INFO:flask_app:49.90164868533611
+INFO:flask_app:51.09720008075237
+INFO:flask_app:52.476538226008415
+INFO:flask_app:53.702471658587456
+INFO:flask_app:54.92536544799805
+INFO:flask_app:56.2264963388443
+INFO:flask_app:57.33513528108597
+INFO:flask_app:58.58205223083496
+INFO:flask_app:59.82260477542877
+INFO:flask_app:60.96955235302448
+INFO:flask_app:62.158859848976135
+INFO:flask_app:63.39840725064278
+INFO:flask_app:64.62077429890633
+INFO:flask_app:65.8199790418148
+INFO:flask_app:66.98019805550575
+INFO:flask_app:68.01514074206352
+INFO:flask_app:69.09748235344887
+INFO:flask_app:70.3229493200779
+INFO:flask_app:71.46224366128445
+INFO:flask_app:72.80647848546505
+INFO:flask_app:74.03915533423424
+INFO:flask_app:75.22953030467033
+INFO:flask_app:76.41628035902977
+INFO:flask_app:77.76563104987144
+INFO:flask_app:78.94498427212238
+INFO:flask_app:80.24677474796772
+INFO:flask_app:81.4150628298521
+INFO:flask_app:82.73272973299026
+INFO:flask_app:84.40866899490356
+INFO:flask_app:86.51116412878036
+INFO:flask_app:88.01281207799911
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:07:49] "[37mPOST /right HTTP/1.1[0m" 200 -
+INFO:flask_app:0.0010160505771636963
+INFO:flask_app:0.00020326673984527588
+INFO:flask_app:-0.0007274597883224487
+INFO:flask_app:-0.0038437098264694214
+INFO:flask_app:-0.013471364974975586
+INFO:flask_app:-0.033680692315101624
+INFO:flask_app:-0.15423454344272614
+INFO:flask_app:-0.36739814281463623
+INFO:flask_app:-0.9512434005737305
+INFO:flask_app:-1.7320982217788696
+INFO:flask_app:-2.723727896809578
+INFO:flask_app:-3.7843363732099533
+INFO:flask_app:-5.043911784887314
+INFO:flask_app:-6.294969290494919
+INFO:flask_app:-7.603217452764511
+INFO:flask_app:-9.025511652231216
+INFO:flask_app:-10.485361605882645
+INFO:flask_app:-12.365737050771713
+INFO:flask_app:-13.901367336511612
+INFO:flask_app:-15.451997146010399
+INFO:flask_app:-17.218591317534447
+INFO:flask_app:-18.926381558179855
+INFO:flask_app:-20.291852980852127
+INFO:flask_app:-21.73598001897335
+INFO:flask_app:-23.739831253886223
+INFO:flask_app:-25.417173013091087
+INFO:flask_app:-27.12720374763012
+INFO:flask_app:-28.7216707020998
+INFO:flask_app:-30.181963995099068
+INFO:flask_app:-32.08547666668892
+INFO:flask_app:-33.558899596333504
+INFO:flask_app:-35.11680181324482
+INFO:flask_app:-37.384805113077164
+INFO:flask_app:-39.85233172774315
+INFO:flask_app:-41.96509286761284
+INFO:flask_app:-43.62791374325752
+INFO:flask_app:-44.80323764681816
+INFO:flask_app:-45.99302980303764
+INFO:flask_app:-47.3864671587944
+INFO:flask_app:-48.564776599407196
+INFO:flask_app:-49.67236915230751
+INFO:flask_app:-50.918258011341095
+INFO:flask_app:-52.15168496966362
+INFO:flask_app:-53.193288654088974
+INFO:flask_app:-54.56942754983902
+INFO:flask_app:-55.61051803827286
+INFO:flask_app:-56.7534316778183
+INFO:flask_app:-57.861617401242256
+INFO:flask_app:-58.939685717225075
+INFO:flask_app:-60.09014245867729
+INFO:flask_app:-61.33660468459129
+INFO:flask_app:-62.52418304979801
+INFO:flask_app:-63.77058304846287
+INFO:flask_app:-64.8540829718113
+INFO:flask_app:-65.97880813479424
+INFO:flask_app:-67.26784574985504
+INFO:flask_app:-68.46509802341461
+INFO:flask_app:-69.66965866088867
+INFO:flask_app:-70.98639440536499
+INFO:flask_app:-72.29517605900764
+INFO:flask_app:-73.47976675629616
+INFO:flask_app:-74.89706395566463
+INFO:flask_app:-76.11173211038113
+INFO:flask_app:-77.25443263351917
+INFO:flask_app:-78.33002795279026
+INFO:flask_app:-79.36679382622242
+INFO:flask_app:-80.59217147529125
+INFO:flask_app:-81.72602169215679
+INFO:flask_app:-82.79363252222538
+INFO:flask_app:-84.31157971918583
+INFO:flask_app:-85.40031071007252
+INFO:flask_app:-86.50147642195225
+INFO:flask_app:-87.559993237257
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:07:52] "[37mPOST /left HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:11:15] "[32mGET /sensorview HTTP/1.1[0m" 302 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:11:15] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:11:18] "[32mGET /sensorview HTTP/1.1[0m" 302 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:11:19] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:11:21] "[35m[1mGET /sensorview HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:11:21] "[37mGET /sensorview?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:11:21] "[37mGET /sensorview?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:11:21] "[37mGET /sensorview?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:11:21] "[37mGET /sensorview?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:11:21] "[37mGET /sensorview?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:11:21] "[37mGET /sensorview?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:11:25] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:11:26] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:11:28] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:11:30] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:11:31] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:11:33] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:11:36] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:11:38] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:11:40] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:11:46] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:11:46] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:11:51] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:11:51] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:11:52] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:11:54] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:11:59] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:11:59] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:12:00] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:12:05] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:12:05] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:12:06] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:12:08] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:14:25] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:14:25] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:14:30] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:14:30] "[32mGET /sensorview HTTP/1.1[0m" 302 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:14:30] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:14:31] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:14:31] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:14:31] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:14:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:14:41] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:14:41] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: no such table: TileTable
+ERROR:flask_app:DELETE FROM TileTable
+ERROR:flask_app:DATABASE ERROR: no such table: TileTable
+ERROR:flask_app:UPDATE TileTable SET North = 0 WHERE TileID = ?
+INFO:flask_app:-0.0019211173057556152
+INFO:flask_app:-0.003309205174446106
+INFO:flask_app:-0.02333064377307892
+INFO:flask_app:-0.05574886500835419
+INFO:flask_app:-0.12241584062576294
+INFO:flask_app:-0.2275351881980896
+INFO:flask_app:-0.6084020286798477
+INFO:flask_app:-1.2558964043855667
+INFO:flask_app:-2.111528232693672
+INFO:flask_app:-3.082307830452919
+INFO:flask_app:-4.501058593392372
+INFO:flask_app:-5.804516330361366
+INFO:flask_app:-7.185193255543709
+INFO:flask_app:-8.45598754286766
+INFO:flask_app:-9.647570818662643
+INFO:flask_app:-10.883364647626877
+INFO:flask_app:-11.90022400021553
+INFO:flask_app:-12.901433676481247
+INFO:flask_app:-13.811741977930069
+INFO:flask_app:-14.716344445943832
+INFO:flask_app:-15.683718889951706
+INFO:flask_app:-16.85999496281147
+INFO:flask_app:-17.872583284974098
+INFO:flask_app:-19.011886432766914
+INFO:flask_app:-20.140218809247017
+INFO:flask_app:-21.304340973496437
+INFO:flask_app:-22.43256326019764
+INFO:flask_app:-23.546069249510765
+INFO:flask_app:-24.80467303097248
+INFO:flask_app:-25.876047000288963
+INFO:flask_app:-26.999941930174828
+INFO:flask_app:-28.08777342736721
+INFO:flask_app:-29.06563052535057
+INFO:flask_app:-30.084274023771286
+INFO:flask_app:-31.00694051384926
+INFO:flask_app:-31.95641426742077
+INFO:flask_app:-33.05219893157482
+INFO:flask_app:-34.082431986927986
+INFO:flask_app:-35.2156148403883
+INFO:flask_app:-36.29103782773018
+INFO:flask_app:-37.40603053569794
+INFO:flask_app:-38.52552378177643
+INFO:flask_app:-39.74336293339729
+INFO:flask_app:-40.88953152298927
+INFO:flask_app:-42.03856934607029
+INFO:flask_app:-43.188433185219765
+INFO:flask_app:-44.26115362346172
+INFO:flask_app:-45.51059080660343
+INFO:flask_app:-46.64600636065006
+INFO:flask_app:-47.785863161087036
+INFO:flask_app:-48.89382000267506
+INFO:flask_app:-50.22209979593754
+INFO:flask_app:-51.5207464247942
+INFO:flask_app:-52.870720997452736
+INFO:flask_app:-54.68060366809368
+INFO:flask_app:-56.174606159329414
+INFO:flask_app:-57.68394035100937
+INFO:flask_app:-59.408532217144966
+INFO:flask_app:-60.84108744561672
+INFO:flask_app:-62.332980647683144
+INFO:flask_app:-63.736964508891106
+INFO:flask_app:-65.09884943068027
+INFO:flask_app:-66.77160382270813
+INFO:flask_app:-68.18637609481812
+INFO:flask_app:-69.94659148156643
+INFO:flask_app:-72.09946809709072
+INFO:flask_app:-74.89850725233555
+INFO:flask_app:-76.74804148077965
+INFO:flask_app:-78.03874589502811
+INFO:flask_app:-79.17415489256382
+INFO:flask_app:-80.33108270168304
+INFO:flask_app:-81.59479881823063
+INFO:flask_app:-82.81013856828213
+INFO:flask_app:-83.94016082584858
+INFO:flask_app:-85.02961476147175
+INFO:flask_app:-86.13207338750362
+INFO:flask_app:-87.29185251891613
+ERROR:flask_app:DATABASE ERROR: no such table: TileTable
+ERROR:flask_app:UPDATE TileTable SET West = 0 WHERE TileID = ?
+INFO:flask_app:0.021024569869041443
+INFO:flask_app:-0.017507508397102356
+INFO:flask_app:-0.06126976013183594
+INFO:flask_app:-0.07452322542667389
+INFO:flask_app:-0.058988943696022034
+INFO:flask_app:-0.05059035122394562
+INFO:flask_app:-0.13333368301391602
+INFO:flask_app:-0.28848597407341003
+INFO:flask_app:-0.5657937824726105
+INFO:flask_app:-1.1643399000167847
+INFO:flask_app:-2.054966777563095
+INFO:flask_app:-3.0471006333827972
+INFO:flask_app:-4.1190241277217865
+INFO:flask_app:-5.232767462730408
+INFO:flask_app:-6.392496153712273
+INFO:flask_app:-7.5321077555418015
+INFO:flask_app:-8.68875141441822
+INFO:flask_app:-10.19867505133152
+INFO:flask_app:-12.183995321393013
+INFO:flask_app:-13.784244373440742
+INFO:flask_app:-15.176133289933205
+INFO:flask_app:-16.507722720503807
+INFO:flask_app:-17.75717167556286
+INFO:flask_app:-18.748440727591515
+INFO:flask_app:-19.97519014775753
+INFO:flask_app:-21.1284549087286
+INFO:flask_app:-22.410571739077568
+INFO:flask_app:-23.541183188557625
+INFO:flask_app:-24.796058401465416
+INFO:flask_app:-25.92632757127285
+INFO:flask_app:-27.11553530395031
+INFO:flask_app:-28.219442903995514
+INFO:flask_app:-29.597224459052086
+INFO:flask_app:-30.80047057569027
+INFO:flask_app:-32.037426471710205
+INFO:flask_app:-33.15815997123718
+INFO:flask_app:-34.256081998348236
+INFO:flask_app:-35.41435748338699
+INFO:flask_app:-36.808227837085724
+INFO:flask_app:-38.29930904507637
+INFO:flask_app:-39.6241240799427
+INFO:flask_app:-40.73312012851238
+INFO:flask_app:-41.98079006373882
+INFO:flask_app:-43.05030660331249
+INFO:flask_app:-44.120283886790276
+INFO:flask_app:-45.244795337319374
+INFO:flask_app:-46.42119599878788
+INFO:flask_app:-47.613033190369606
+INFO:flask_app:-48.77967090904713
+INFO:flask_app:-49.99860443174839
+INFO:flask_app:-51.05801306664944
+INFO:flask_app:-52.16574202477932
+INFO:flask_app:-53.33674930036068
+INFO:flask_app:-54.44506600499153
+INFO:flask_app:-55.58002182841301
+INFO:flask_app:-56.805678740143776
+INFO:flask_app:-57.97989842295647
+INFO:flask_app:-59.17047838866711
+INFO:flask_app:-60.301101580262184
+INFO:flask_app:-61.504451259970665
+INFO:flask_app:-62.66471226513386
+INFO:flask_app:-63.983885422348976
+INFO:flask_app:-65.061059191823
+INFO:flask_app:-66.3515193015337
+INFO:flask_app:-67.4404781460762
+INFO:flask_app:-68.63280014693737
+INFO:flask_app:-69.87780110538006
+INFO:flask_app:-71.02661447227001
+INFO:flask_app:-72.24144195020199
+INFO:flask_app:-73.78650878369808
+INFO:flask_app:-75.21986018121243
+INFO:flask_app:-76.84058080613613
+INFO:flask_app:-78.19222293794155
+INFO:flask_app:-79.46894074976444
+INFO:flask_app:-80.85468553006649
+INFO:flask_app:-82.43265242874622
+INFO:flask_app:-83.64217081665993
+INFO:flask_app:-84.95864662528038
+INFO:flask_app:-86.33546987175941
+INFO:flask_app:-87.82375665009022
+ERROR:flask_app:DATABASE ERROR: no such table: TileTable
+ERROR:flask_app:UPDATE TileTable SET South = 0 WHERE TileID = ?
+INFO:flask_app:-0.034058839082717896
+INFO:flask_app:-0.040534138679504395
+INFO:flask_app:0.0003457367420196533
+INFO:flask_app:-0.09144289791584015
+INFO:flask_app:-0.6535533219575882
+INFO:flask_app:-2.000897243618965
+INFO:flask_app:-3.612478882074356
+INFO:flask_app:-5.523283243179321
+INFO:flask_app:-6.798290342092514
+INFO:flask_app:-8.417649447917938
+INFO:flask_app:-9.544073283672333
+INFO:flask_app:-10.648519217967987
+INFO:flask_app:-11.660325556993484
+INFO:flask_app:-12.802188411355019
+INFO:flask_app:-13.68191173672676
+INFO:flask_app:-14.63317422568798
+INFO:flask_app:-15.643782839179039
+INFO:flask_app:-16.657949909567833
+INFO:flask_app:-17.67393635213375
+INFO:flask_app:-18.599417194724083
+INFO:flask_app:-19.660328522324562
+INFO:flask_app:-20.71550203859806
+INFO:flask_app:-21.78203083574772
+INFO:flask_app:-22.886644020676613
+INFO:flask_app:-24.17376084625721
+INFO:flask_app:-25.337866380810738
+INFO:flask_app:-26.54629461467266
+INFO:flask_app:-27.72601217031479
+INFO:flask_app:-28.98221179842949
+INFO:flask_app:-30.072139635682106
+INFO:flask_app:-31.201457038521767
+INFO:flask_app:-32.34634192287922
+INFO:flask_app:-33.38309080898762
+INFO:flask_app:-34.39154909551144
+INFO:flask_app:-36.24200214445591
+INFO:flask_app:-37.40964339673519
+INFO:flask_app:-38.59340147674084
+INFO:flask_app:-39.71168375015259
+INFO:flask_app:-40.96177892386913
+INFO:flask_app:-42.39679895341396
+INFO:flask_app:-43.75948868691921
+INFO:flask_app:-45.294480219483376
+INFO:flask_app:-46.514864176511765
+INFO:flask_app:-47.75376072525978
+INFO:flask_app:-48.967992052435875
+INFO:flask_app:-50.2186306566
+INFO:flask_app:-51.356485679745674
+INFO:flask_app:-52.53075395524502
+INFO:flask_app:-53.75980694591999
+INFO:flask_app:-54.962037697434425
+INFO:flask_app:-56.082804679870605
+INFO:flask_app:-57.19576808810234
+INFO:flask_app:-58.28245568275452
+INFO:flask_app:-59.7084781229496
+INFO:flask_app:-61.58969584107399
+INFO:flask_app:-63.17686426639557
+INFO:flask_app:-64.53702318668365
+INFO:flask_app:-66.13511738181114
+INFO:flask_app:-67.65148815512657
+INFO:flask_app:-69.4342401176691
+INFO:flask_app:-70.77779926359653
+INFO:flask_app:-72.20581968128681
+INFO:flask_app:-73.97503365576267
+INFO:flask_app:-75.97930029034615
+INFO:flask_app:-77.59378814697266
+INFO:flask_app:-79.20432814955711
+INFO:flask_app:-81.22886943817139
+INFO:flask_app:-82.62841540575027
+INFO:flask_app:-87.08513617515564
+ERROR:flask_app:DATABASE ERROR: no such table: TileTable
+ERROR:flask_app:UPDATE TileTable SET East = 0 WHERE TileID = ?
+INFO:flask_app:0.0
+INFO:flask_app:-0.009937703609466553
+INFO:flask_app:-0.04419916868209839
+INFO:flask_app:-0.07842621207237244
+INFO:flask_app:-0.05505336821079254
+INFO:flask_app:-0.018064454197883606
+INFO:flask_app:-0.051422715187072754
+INFO:flask_app:-0.14234638214111328
+INFO:flask_app:-0.47980135679244995
+INFO:flask_app:-0.9333597868680954
+INFO:flask_app:-1.7653271555900574
+INFO:flask_app:-2.6252353191375732
+INFO:flask_app:-3.8704766035079956
+INFO:flask_app:-4.939576804637909
+INFO:flask_app:-6.129941612482071
+INFO:flask_app:-7.438230484724045
+INFO:flask_app:-8.703896939754486
+INFO:flask_app:-10.079852759838104
+INFO:flask_app:-11.444658800959587
+INFO:flask_app:-12.77420298755169
+INFO:flask_app:-14.006078645586967
+INFO:flask_app:-15.103095337748528
+INFO:flask_app:-16.13265085220337
+INFO:flask_app:-17.19068180024624
+INFO:flask_app:-18.158639326691628
+INFO:flask_app:-19.303950130939484
+INFO:flask_app:-20.518177568912506
+INFO:flask_app:-21.661172553896904
+INFO:flask_app:-22.77862522006035
+INFO:flask_app:-23.888758569955826
+INFO:flask_app:-25.176876574754715
+INFO:flask_app:-27.547315537929535
+INFO:flask_app:-29.54604910314083
+INFO:flask_app:-31.049469232559204
+INFO:flask_app:-32.175592601299286
+INFO:flask_app:-33.42083902657032
+INFO:flask_app:-34.6336594671011
+INFO:flask_app:-36.00765885412693
+INFO:flask_app:-37.15320558845997
+INFO:flask_app:-38.57086789608002
+INFO:flask_app:-39.68331864476204
+INFO:flask_app:-40.931470066308975
+INFO:flask_app:-42.063853934407234
+INFO:flask_app:-43.29286400973797
+INFO:flask_app:-44.379693165421486
+INFO:flask_app:-45.553603902459145
+INFO:flask_app:-46.734395891427994
+INFO:flask_app:-48.19174090027809
+INFO:flask_app:-49.82054762542248
+INFO:flask_app:-51.36708475649357
+INFO:flask_app:-53.54760195314884
+INFO:flask_app:-55.093955501914024
+INFO:flask_app:-56.28880310058594
+INFO:flask_app:-57.66074287891388
+INFO:flask_app:-58.812949657440186
+INFO:flask_app:-59.85194680094719
+INFO:flask_app:-60.94853666424751
+INFO:flask_app:-62.114371597766876
+INFO:flask_app:-63.23697854578495
+INFO:flask_app:-64.43535640835762
+INFO:flask_app:-65.59412658214569
+INFO:flask_app:-66.70666666328907
+INFO:flask_app:-67.95998175442219
+INFO:flask_app:-69.29250265657902
+INFO:flask_app:-70.34720094501972
+INFO:flask_app:-71.56627164781094
+INFO:flask_app:-72.65827776491642
+INFO:flask_app:-73.81411352753639
+INFO:flask_app:-74.99195867776871
+INFO:flask_app:-76.22694918513298
+INFO:flask_app:-77.26907950639725
+INFO:flask_app:-78.41183391213417
+INFO:flask_app:-79.47909232974052
+INFO:flask_app:-80.56530699133873
+INFO:flask_app:-81.71634802222252
+INFO:flask_app:-83.14309188723564
+INFO:flask_app:-84.33561453223228
+INFO:flask_app:-85.38092932105064
+INFO:flask_app:-86.60912273824215
+INFO:flask_app:-88.06685803830624
+ERROR:flask_app:DATABASE ERROR: no such table: TileTable
+ERROR:flask_app:SELECT * FROM TileTable WHERE TileID = ?
+INFO:werkzeug:10.10.72.118 - - [16/Mar/2022 10:14:58] "[35m[1mPOST /maze HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
