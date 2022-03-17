@@ -43038,3 +43038,4 @@ INFO:werkzeug:10.10.72.118 - - [18/Mar/2022 09:02:58] "[35m[1mPOST /sounds HTT
 INFO:werkzeug:10.10.72.118 - - [18/Mar/2022 09:03:03] "[37mPOST /robotload HTTP/1.1[0m" 200 -
 INFO:flask_app:READING CAMERA
 INFO:werkzeug:10.10.72.118 - - [18/Mar/2022 09:03:03] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.118 - - [18/Mar/2022 09:03:40] "[37mPOST /stopsounds HTTP/1.1[0m" 200 -
