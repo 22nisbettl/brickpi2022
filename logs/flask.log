@@ -42358,3 +42358,48 @@ INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 10:29:08] "GET /admin?__debugger__=yes&
 INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 10:29:08] "GET /admin?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 10:29:08] "GET /admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 10:29:09] "GET /admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 841-981-795
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.10.72.118:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 11:16:29] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 11:16:29] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 11:16:29] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 11:16:29] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 11:16:29] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 11:16:29] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 11:16:29] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 11:16:29] "[36mGET /static/js/mapping.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 11:16:31] "GET /sounds HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 11:16:31] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 11:16:31] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 11:16:31] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 11:16:31] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 11:16:33] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 11:16:33] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 11:16:33] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 11:16:33] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 11:16:33] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 11:16:33] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 11:16:33] "[36mGET /static/js/mapping.js HTTP/1.1[0m" 304 -
+INFO:flask_app:LOADING CAMERA
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 11:16:34] "POST /robotload HTTP/1.1" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 11:16:34] "[35m[1mGET /videofeed HTTP/1.1[0m" 204 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 11:18:44] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 11:18:44] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 11:18:44] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 11:18:44] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 11:18:44] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 11:18:44] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 11:18:44] "[36mGET /static/js/mapping.js HTTP/1.1[0m" 304 -
+INFO:flask_app:LOADING CAMERA
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 11:18:46] "POST /robotload HTTP/1.1" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 11:18:46] "[35m[1mGET /videofeed HTTP/1.1[0m" 204 -
