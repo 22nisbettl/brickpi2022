@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <ul class="nav nav-tabs">
+        <li class="nav-item active">
+            <a class="nav-link active" data-bs-toggle="tab" href="#user">User Table</a>
+        </li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade show active" id="user">
+            {% if UserData %}
+                <form action="/admin" method="POST">
+                    <table style="width:100%" class="table table-hover">
+                        <tr class="table-primary">
+                            <th>Select</th>
+                            <th>User ID</th>
+                            <th>First Name</th>
+                            <th>Surname</th>
+                            <th>Email</th>
+                            <th>Password</th>
+                            <th>Permission</th>
+                        </tr>
+                        {% for User in UserData %}
+                            <tr class="table-secondary">
+                                <td>
+                                {% if User['UserID'] != 1 %}
+                                    <input type="checkbox" name="selectedusers" value={{User['UserID']}}></td>
+                                {% endif %}
+                                <td>{{User['UserID']}}</td>
+                                <td>{{User['FirstName']}}</td>
+                                <td>{{User['Surname']}}</td>
+                                <td>{{User['Email']}}</td>
+                                <td>{{User['Password']}}</td>
+                                <td>{{User['Permission']}}</td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                    <br>
+                    <input type="submit" name="Delete" class="btn btn-danger" value="Delete">
+                </form>
+            {% endif %}
+        </div>
+    </div>
+
+{% endblock %}

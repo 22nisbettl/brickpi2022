@@ -24,24 +24,25 @@ def log(message):
 #create a login page
 @app.route('/', methods=['GET','POST'])
 def login():
-    if 'userid' in session:
+    if 'UserID' in session:
         return redirect('/dashboard')
     message = ""
     if request.method == "POST":
-        email = request.form.get("email")
-        userdetails = GLOBALS.DATABASE.ViewQuery("SELECT * FROM UserTable WHERE email = ?", (email,))
-        log(userdetails)
-        if userdetails:
-            user = userdetails[0] #get first row in results
-            if user['password'] == request.form.get("password"):
-                session['userid'] = user['userid']
-                session['permission'] = user['permission']
-                session['name'] = user['name']
+        Email = request.form.get("Email")
+        Userdetails = GLOBALS.DATABASE.ViewQuery("SELECT * FROM UserTable WHERE Email = ?", (Email,))
+        log(Userdetails)
+        if Userdetails:
+            User = Userdetails[0] #get first row in results
+            if User['Password'] == request.form.get("Password"):
+                session['UserID'] = User['UserID']
+                session['Permission'] = User['Permission']
+                session['FirstName'] = User['FirstName']
+                session['Surname'] = User['Surname']
                 return redirect('/dashboard')
-            else:
+            '''else:
                 message = "Login Unsuccessful"
-                password = GLOBALS.DATABASE.ViewQuery("SELECT password FROM UserTable WHERE email = ?", ('admin@admin',))
-                print(password)
+                password = GLOBALS.DATABASE.ViewQuery("SELECT password FROM UserTable WHERE Email = ?", ('admin@admin',))
+                print(password)'''
         else:
             message = "Login Unsuccessful"
     return render_template('login.html', data = message)    
@@ -82,7 +83,7 @@ def robotload():
 # Dashboard
 @app.route('/dashboard', methods=['GET','POST'])
 def robotdashboard():
-    if not 'userid' in session:
+    if not 'UserID' in session:
         return redirect('/')
     enabled = int(GLOBALS.ROBOT != None)
     return render_template('dashboard.html', robot_enabled = enabled )
@@ -90,11 +91,11 @@ def robotdashboard():
 @app.route('/admin', methods=["POST","GET"])
 def admin():
     UserResults = GLOBALS.DATABASE.ViewQuery('SELECT * FROM UserTable')
-    if 'permission' in session:
-        if session['permission'] != 'admin':
+    if 'Permission' in session:
+        if session['Permission'] != 'admin':
             return redirect('/dashboard')
     else:
-        return redirect('/login')
+        return redirect('/')
     return render_template('admin.html', UserData = UserResults)
 
 @app.route('/maze', methods=['GET','POST'])
@@ -196,7 +197,7 @@ def sensorview():
 def mission():
     data = None
     if request.method == "POST":
-        UserID = session["userid"]
+        UserID = session["UserID"]
         Notes = request.form.get('notes')
         Location = request.form.get('location')
         StartTime = datetime.now()
