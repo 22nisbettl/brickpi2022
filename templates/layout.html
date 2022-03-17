@@ -61,10 +61,13 @@
               </li>
             </ul>
             <form class="d-flex">
+                {% if session['permission'] == 'admin' %}
+                  <a style="color: rgba(255, 255, 255, 0.55) !important" class="nav-link" href="/admin" data-ol-has-click-handler="">Admin</a>
+                {% endif %}
                 {% if 'userid' in session %}
                   <a style="color: rgba(255, 255, 255, 0.55) !important" class="nav-link" href="/logout" data-ol-has-click-handler="">Log out</a>
                 {% endif%}
-              <button class="btn btn-secondary my-2 my-sm-0" type="button" onclick="shutdown();">Exit</button>
+              <button class="btn btn-warning my-2 my-sm-0" type="button" onclick="shutdown();">Quit</button>
             </form>
           </div>
         </div>

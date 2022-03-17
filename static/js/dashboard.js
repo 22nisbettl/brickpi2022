@@ -3,6 +3,7 @@
 function load_robot()
 {
     document.getElementById("load").style.display = 'none';
+    document.getElementById("load").className = '';
     new_ajax_helper('/robotload', show_dashboard);
 }
 
@@ -32,6 +33,7 @@ function show_dashboard(results)
 function hide_dashboard()
 {
     document.getElementById("load").style.display = 'block';
+    document.getElementById("load").className = "row d-flex justify-content-center";
     document.getElementById("dashboard").style.display = 'none';
     document.getElementById("videofeed").innerHTML = "";
 }

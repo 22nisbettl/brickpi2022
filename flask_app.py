@@ -87,6 +87,16 @@ def robotdashboard():
     enabled = int(GLOBALS.ROBOT != None)
     return render_template('dashboard.html', robot_enabled = enabled )
 
+@app.route('/admin', methods=["POST","GET"])
+def admin():
+    UserResults = GLOBALS.DATABASE.ViewQuery('SELECT * FROM UserTable')
+    if 'permission' in session:
+        if session['permission'] != 'admin':
+            return redirect('/dashboard')
+    else:
+        return redirect('/login')
+    return render_template('admin.html', UserData = UserResults)
+
 @app.route('/maze', methods=['GET','POST'])
 def maze():
     GLOBALS.ROBOT.maze_solve()
