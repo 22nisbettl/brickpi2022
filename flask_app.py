@@ -223,7 +223,6 @@ def stopsounds():
         GLOBALS.SOUND.stop_music()
     return jsonify()
 
-
 # -----------------------------------------------------------------------------------
 # CAMERA CODE-----------------------------------------------------------------------
 # Continually gets the frame from the pi camera
