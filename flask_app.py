@@ -91,12 +91,14 @@ def robotdashboard():
 @app.route('/admin', methods=["POST","GET"])
 def admin():
     UserResults = GLOBALS.DATABASE.ViewQuery('SELECT * FROM UserTable')
+    MissionResults = GLOBALS.DATABASE.ViewQuery('SELECT * FROM MissionTable')
+    TileResults = GLOBALS.DATABASE.ViewQuery('SELECT * FROM TileTable')
     if 'Permission' in session:
         if session['Permission'] != 'admin':
             return redirect('/dashboard')
     else:
         return redirect('/')
-    return render_template('admin.html', UserData = UserResults)
+    return render_template('admin.html', UserData = UserResults, MissionData = MissionResults, TileData = TileResults)
 
 @app.route('/maze', methods=['GET','POST'])
 def maze():

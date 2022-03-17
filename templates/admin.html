@@ -3,8 +3,14 @@
 {% block content %}
 
     <ul class="nav nav-tabs">
-        <li class="nav-item active">
+        <li class="nav-item ">
             <a class="nav-link active" data-bs-toggle="tab" href="#user">User Table</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#mission">Mission Table</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#tile">Tile Table</a>
         </li>
     </ul>
     <div id="myTabContent" class="tab-content">
@@ -33,6 +39,62 @@
                                 <td>{{User['Email']}}</td>
                                 <td>{{User['Password']}}</td>
                                 <td>{{User['Permission']}}</td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                    <br>
+                    <input type="submit" name="Delete" class="btn btn-danger" value="Delete">
+                </form>
+            {% endif %}
+        </div>
+        <div class="tab-pane fade" id="mission">
+            {% if MissionData %}
+                <form action="/admin" method="POST">
+                    <table style="width:100%" class="table table-hover">
+                        <tr class="table-primary">
+                            <th>Select</th>
+                            <th>Mission ID</th>
+                            <th>User ID</th>
+                            <th>Start Time</th>
+                            <th>Location</th>
+                            <th>End Time</th>
+                        </tr>
+                        {% for Mission in MissionData %}
+                            <tr class="table-secondary">
+                                <td><input type="checkbox" name="selectedmissions" value={{Mission['MissionID']}}></td>
+                                <td>{{Mission['MissionID']}}</td>
+                                <td>{{Mission['UserID']}}</td>
+                                <td>{{Mission['StartTime']}}</td>
+                                <td>{{Mission['Location']}}</td>
+                                <td>{{Mission['EndTime']}}</td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                    <br>
+                    <input type="submit" name="Delete" class="btn btn-danger" value="Delete">
+                </form>
+            {% endif %}
+        </div>
+        <div class="tab-pane fade" id="tile">
+            {% if TileData %}
+                <form action="/admin" method="POST">
+                    <table style="width:100%" class="table table-hover">
+                        <tr class="table-primary">
+                            <th>Select</th>
+                            <th>Tile ID</th>
+                            <th>North</th>
+                            <th>West</th>
+                            <th>South</th>
+                            <th>East</th>
+                        </tr>
+                        {% for Tile in TileData %}
+                            <tr class="table-secondary">
+                                <td><input type="checkbox" name="selectedtiles" value={{Tile['TileID']}}></td>
+                                <td>{{Tile['TileID']}}</td>
+                                <td>{{Tile['North']}}</td>
+                                <td>{{Tile['West']}}</td>
+                                <td>{{Tile['South']}}</td>
+                                <td>{{Tile['West']}}</td>
                             </tr>
                         {% endfor %}
                     </table>
