@@ -42578,3 +42578,76 @@ INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:53:26] "GET /static/css/theme.css HT
 INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:53:26] "GET /static/js/new_ajax_helper.js HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:53:26] "GET /static/js/custom.js HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:53:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 841-981-795
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.10.72.118:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:55:42] "[32mGET /admin HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:55:42] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:55:42] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:55:42] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:55:42] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:55:42] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:flask_app:[{'UserID': 1, 'FirstName': 'admin', 'Surname': None, 'Email': 'admin@admin', 'Password': 'raspassword', 'Permission': 'admin'}]
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:56:53] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:56:55] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:56:55] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:56:55] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:56:55] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:56:55] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:56:55] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:56:55] "[36mGET /static/js/mapping.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:57:00] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:57:00] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:57:00] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:57:00] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:57:00] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:57:34] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:57:34] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:57:34] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:57:34] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:57:34] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:57:38] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:57:38] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:57:38] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:57:38] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:57:38] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:57:41] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:57:41] "GET /static/css/theme.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:57:41] "GET /static/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:57:41] "GET /static/js/new_ajax_helper.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:57:41] "GET /static/js/custom.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:57:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:58:02] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:58:02] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:58:02] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:58:02] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:58:02] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:58:55] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:58:55] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:58:55] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:58:55] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:58:55] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:59:01] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:59:02] "GET /static/css/theme.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:59:02] "GET /static/js/new_ajax_helper.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:59:02] "GET /static/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:59:02] "GET /static/js/custom.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 15:59:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 16:00:37] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 16:00:37] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 16:00:37] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 16:00:37] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 16:00:37] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 16:02:57] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 16:02:57] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 16:02:57] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 16:02:57] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 16:02:57] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 16:04:18] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 16:04:18] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 16:04:18] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 16:04:18] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2022 16:04:18] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
