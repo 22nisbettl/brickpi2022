@@ -211,11 +211,14 @@ def mission():
 def sounds():
     if request.method == 'POST':
         song = request.form.get('song')
-        log(song)
-        GLOBALS.SOUND.load_mp3("static/music/" + song + ".mp3")
-        GLOBALS.SOUND.play_music(1)
-        GLOBALS.SOUND.set_volume(1)
-    return jsonify()
+        if song == 'None':
+            pass
+        else:
+            log(song)
+            GLOBALS.SOUND.load_mp3("static/music/" + song + ".mp3")
+            GLOBALS.SOUND.play_music(1)
+            GLOBALS.SOUND.set_volume(1)
+    return render_template('dashboard.html')
 
 @app.route('/stopsounds', methods=['GET','POST'])
 def stopsounds():

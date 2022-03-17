@@ -12,16 +12,18 @@
         <div id="musichidden" hidden="hidden">
             <div class="row d-flex justify-content-center">
                 <label for="song" class="form-label mt-4 d-flex justify-content-center">Music Selection</label>
-                <button type="button" class="btn btn-success" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Play" onclick="new_ajax_helper('/sounds');"><i class="fa-solid fa-circle-play"></i></button>
-                <select class="form-select" id="song" name="song" style="width: fit-content;">
-                    <option>None</option>
-                    <option>Pirate</option>
-                    <option>WiiSports</option>
-                    <option>NielsenPresentation</option>
-                    <option>WiiShop</option>
-                    <option>AncientWords</option>
-                </select>
-                <button type="button" class="btn btn-danger" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Pause" onclick="new_ajax_helper('/stopsounds');"><i class="fa-solid fa-circle-pause"></i></button>
+                <form action="/sounds" method="POST" class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-success" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Play" onclick="new_ajax_helper('/sounds');"><i class="fa-solid fa-circle-play"></i></button>
+                    <select class="form-select" id="song" name="song" style="width: fit-content;">
+                        <option>None</option>
+                        <option>Pirate</option>
+                        <option>WiiSports</option>
+                        <option>NielsenPresentation</option>
+                        <option>WiiShop</option>
+                        <option>AncientWords</option>
+                    </select>
+                    <button type="button" class="btn btn-danger" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Pause" onclick="new_ajax_helper('/stopsounds');"><i class="fa-solid fa-circle-pause"></i></button>
+                </form>
             </div>
         </div>
         <div class="row d-flex justify-content-center">
