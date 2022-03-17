@@ -16,14 +16,16 @@ class Robot(BrickPiInterface):
     #Create a function to move time and power which will stop if colour is detected or wall has been found
     def quadrant_scan(self, tile):
         direction = ["North","West","South","East"]
-        for i in range(len(direction)):
+        for i in direction:
             if self.CurrentRoutine != 'Searching':
                 self.stop_routine()
             ultra = self.get_ultra_sensor()
+            print(ultra, i)
             if ultra < 20 and ultra != 0:
-                GLOBALS.DATABASE.ModifyQuery('UPDATE TileTable SET ? = 1 WHERE TileID = ?', (direction[i],tile))
+                self.log('UPDATE TileTable SET ' + i + ' = 1 WHERE TileID = ?')
+                GLOBALS.DATABASE.ModifyQuery('UPDATE TileTable SET ' + i + ' = 1 WHERE TileID = ?', (tile,))
             else:
-                GLOBALS.DATABASE.ModifyQuery('UPDATE TileTable SET ? = 0 WHERE TileID = ?', (direction[i],tile))
+                GLOBALS.DATABASE.ModifyQuery('UPDATE TileTable SET ' + i + ' = 0 WHERE TileID = ?', (tile,))
             self.rotate_power_degrees_IMU(17,-90)
         '''
         ultra = self.get_ultra_sensor()
@@ -71,19 +73,19 @@ class Robot(BrickPiInterface):
             East = tilewalls['East']
             print(North, West, South, East)
             if North == 0 and self.CurrentRoutine == "Searching":
-                self.move_power_time(20,2)
+                self.move_power_time(20,3)
                 tile += 1
             elif North == 1 and West == 0 and self.CurrentRoutine == "Searching":
                 self.rotate_power_degrees_IMU(17,-90)
-                self.move_power_time(20,2)
+                self.move_power_time(20,3)
                 tile += 1
             elif North == 1 and West == 1 and South == 0 and self.CurrentRoutine == "Searching":
                 self.rotate_power_degrees_IMU(17,-180)
-                self.move_power_time(20,2)
+                self.move_power_time(20,3)
                 tile += 1
             elif North == 1 and West == 1 and South == 1 and East == 0 and self.CurrentRoutine == "Searching":
                 self.rotate_power_degrees_IMU(17,90)
-                self.move_power_time(20,2)
+                self.move_power_time(20,3)
                 tile += 1
             elif self.CurrentRoutine != "Searching":
                 self.stop_routine()

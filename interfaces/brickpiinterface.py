@@ -463,7 +463,7 @@ class BrickPiInterface():
             lastrun = time.time()
             gyrospeed = self.get_gyro_sensor_IMU()[2] #rotate around z-axis
             totaldegreesrotated += (time.time() - lastrun)*gyrospeed
-            self.log(totaldegreesrotated)
+            #self.log(totaldegreesrotated)
         self.stop_all()
 
         data['action'] = self.CurrentCommand
@@ -472,7 +472,7 @@ class BrickPiInterface():
         return data
 
     #rotates the robot until faces targetheading - only works for a heading between 0 - 360
-    def rotate_power_heading_IMU(self, power, targetheading, marginoferror=-1):
+    def rotate_power_heading_IMU(self, power, targetheading, marginoferror=-19):
         if (self.config['imu'] >= SensorStatus.DISABLED):
             return
         self.interrupt_previous_command()
@@ -504,7 +504,7 @@ class BrickPiInterface():
         bp.set_motor_power(self.leftmotor, power)
         while (eval(expression) and (self.CurrentCommand == "rotate_power_heading") and (time.time() < timelimit) and (self.config['imu'] < SensorStatus.DISABLED)):
             heading = self.get_compass_IMU()
-            self.log("Current heading: " + str(heading))
+            #self.log("Current heading: " + str(heading))
         self.stop_all()
         elapsedtime = time.time() - starttime
         return elapsedtime
