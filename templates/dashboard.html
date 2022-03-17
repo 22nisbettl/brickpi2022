@@ -9,11 +9,26 @@
         <button type="button" class="btn btn-success" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Load Robot"  onclick="load_robot();"><i class="fa-solid fa-robot fa-5x"></i></button>
     </div>   
     <div id="dashboard">
+        <div id="musichidden" hidden="hidden">
+            <div class="row d-flex justify-content-center">
+                <label for="song" class="form-label mt-4 d-flex justify-content-center">Music Selection</label>
+                <button type="button" class="btn btn-success" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Play" onclick="new_ajax_helper('/sounds');"><i class="fa-solid fa-circle-play"></i></button>
+                <select class="form-select" id="song" name="song" style="width: fit-content;">
+                    <option>None</option>
+                    <option>Pirate</option>
+                    <option>WiiSports</option>
+                    <option>NielsenPresentation</option>
+                    <option>WiiShop</option>
+                    <option>AncientWords</option>
+                </select>
+                <button type="button" class="btn btn-danger" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Pause" onclick="new_ajax_helper('/stopsounds');"><i class="fa-solid fa-circle-pause"></i></button>
+            </div>
+        </div>
         <div class="row d-flex justify-content-center">
             <button type="button" class="btn btn-warning" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Shutdown Robot" onclick="shutdown_robot();"><i class="fa-solid fa-power-off"></i></button>
             <button type="button" class="btn btn-danger" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Reconfigure IMU" onclick="new_ajax_helper('/reconfig_IMU');"><i class="fa-solid fa-compass-drafting"></i></button>
             <button type="button" class="btn btn-info" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Compass" onclick="new_ajax_helper('/compass');"><i class="fa-solid fa-compass"></i></button>
-            <button type="button" class="btn btn-info" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Compass" onclick="new_ajax_helper('/music');"><i class="fa-solid fa-music"></i></button>
+            <button type="button" class="btn btn-info" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Music" onclick="musictoggle();"><i class="fa-solid fa-music"></i></button>
         </div>
         <div class="row d-flex justify-content-center">
             <button type="button" class="btn btn-light" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Search Maze" onclick="new_ajax_helper('/maze');"><i class="fas fa-search-plus"></i></button>
@@ -60,6 +75,18 @@
           } else {
              element.setAttribute("hidden", "hidden");
           }
+        }
+        let musictoggle = () => {
+      
+            let element = document.getElementById("musichidden");
+            let hidden = element.getAttribute("hidden");
+      
+            if (hidden) {
+                element.removeAttribute("hidden");
+            } 
+            else {
+                element.setAttribute("hidden", "hidden");
+            }
         }
       </script>
 {% endblock %}

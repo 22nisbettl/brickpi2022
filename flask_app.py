@@ -1,4 +1,5 @@
 from flask import Flask, render_template, session, request, redirect, flash, url_for, jsonify, Response, logging
+from itsdangerous import JSONWebSignatureSerializer
 from interfaces import databaseinterface
 import global_vars as GLOBALS #load global variables
 import logging, time
@@ -214,7 +215,7 @@ def sounds():
         GLOBALS.SOUND.load_mp3("static/music/" + song + ".mp3")
         GLOBALS.SOUND.play_music(1)
         GLOBALS.SOUND.set_volume(1)
-    return render_template('sounds.html')
+    return jsonify()
 
 @app.route('/stopsounds', methods=['GET','POST'])
 def stopsounds():
