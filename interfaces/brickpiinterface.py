@@ -379,7 +379,7 @@ class BrickPiInterface():
 
     #--------------MOTOR COMMANDS-----------------#
     #simply turns motors on, dangerous because it does not turn them off
-    def move_power(self, power, deviation=0):
+    def move_power(self, power, deviation=-1.5):
         self.interrupt_previous_command()
         bp = self.BP
         self.CurrentCommand = "move_power"
@@ -394,7 +394,7 @@ class BrickPiInterface():
         return elapsedtime
 
     #moves for the specified time (seconds) and power - use negative power to reverse
-    def move_power_time(self, power, t, deviation=0):
+    def move_power_time(self, power, t, deviation=-1.5):
         self.interrupt_previous_command()
         bp = self.BP
         self.CurrentCommand = "move_power_time"
@@ -436,7 +436,7 @@ class BrickPiInterface():
         
     #Rotates the robot with power and degrees using the IMU sensor. Negative degrees = left.
     #the larger the number of degrees and the lower the power, the more accurate
-    def rotate_power_degrees_IMU(self, power, degrees, marginoferror=14):
+    def rotate_power_degrees_IMU(self, power, degrees, marginoferror=9):
         bp = self.BP
         if (self.config['imu'] >= SensorStatus.DISABLED):
             return

@@ -1,5 +1,7 @@
 #This is where your main robot code resides. It extendeds from the BrickPi Interface File
 #It includes all the code inside brickpiinterface. The CurrentCommand and CurrentRoutine are important because they can keep track of robot functions and commands. Remember Flask is using Threading (e.g. more than once process which can confuse the robot)
+from sqlite3 import DataError
+from urllib.request import DataHandler
 from interfaces.brickpiinterface import *
 import global_vars as GLOBALS
 import logging
@@ -59,6 +61,7 @@ class Robot(BrickPiInterface):
         GLOBALS.DATABASE.ModifyQuery('DELETE FROM TileTable')
         self.CurrentRoutine = "Searching"
         tile = 1
+
         while self.CurrentRoutine == "Searching":
             GLOBALS.DATABASE.ModifyQuery('INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)', (tile,))
             self.quadrant_scan(tile)
@@ -73,19 +76,20 @@ class Robot(BrickPiInterface):
             East = tilewalls['East']
             print(North, West, South, East)
             if North == 0 and self.CurrentRoutine == "Searching":
-                self.move_power_time(20,3)
+                self.get_camera_colour((50,50,150),(128,128,255))
+                self.move_power_until_detect(20,5)
                 tile += 1
             elif North == 1 and West == 0 and self.CurrentRoutine == "Searching":
                 self.rotate_power_degrees_IMU(17,-90)
-                self.move_power_time(20,3)
+                self.move_power_until_detect(20,5)
                 tile += 1
-            elif North == 1 and West == 1 and South == 0 and self.CurrentRoutine == "Searching":
-                self.rotate_power_degrees_IMU(17,-180)
-                self.move_power_time(20,3)
-                tile += 1
-            elif North == 1 and West == 1 and South == 1 and East == 0 and self.CurrentRoutine == "Searching":
+            elif North == 1 and West == 1 and East == 0 and self.CurrentRoutine == "Searching":
                 self.rotate_power_degrees_IMU(17,90)
-                self.move_power_time(20,3)
+                self.move_power_until_detect(20,5)
+                tile += 1
+            elif North == 1 and West == 1 and East == 1 and South == 0 and self.CurrentRoutine == "Searching":
+                self.rotate_power_degrees_IMU(17,-1800)
+                self.move_power_until_detect(20,5)
                 tile += 1
             elif self.CurrentRoutine != "Searching":
                 self.stop_routine()
@@ -100,7 +104,29 @@ class Robot(BrickPiInterface):
     
     
 
-    #Create a function to search for victim
+    #moves for the specified time (seconds) and power - use negative power to reverse
+    def move_power_until_detect(self, power, t, deviation=-1.5):
+        self.interrupt_previous_command()
+        bp = self.BP
+        self.CurrentCommand = "move_power_time"
+        timelimit = time.time() + t
+        bp.set_motor_power(self.rightmotor, power)
+        bp.set_motor_power(self.leftmotor, power + deviation)
+        t = time.time()
+        data = {}
+        while (t < timelimit) and (self.CurrentCommand == "move_power_time"):
+            if self.get_colour_sensor == "black":
+                data['color'] = 'black'
+                self.move_power_time(-power, elapsed)
+                break
+            distance = self.get_ultra_sensor
+            if distance < 20 and distance != 0:
+                data['distance'] = distance
+                break
+            elapsed = time.time() - t
+        data['elapsed'] = elapsed
+        self.stop_all()
+        return data
     
 
     

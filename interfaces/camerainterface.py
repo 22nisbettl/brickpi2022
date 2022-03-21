@@ -65,13 +65,10 @@ class CameraInterface(object):
         return
     
     #detect if there is a colour in the image
-    def get_camera_colour(self):
+    def get_camera_colour(self, lowcolor, highcolor):
         if not self.frame: #hasnt read a frame from camera
             return "camera is not running yet"
         img = cv2.imdecode(numpy.fromstring(self.frame, dtype=numpy.uint8), 1)
-        # set red range
-        lowcolor = (50,50,150)
-        highcolor = (128,128,255)
 
         # threshold
         thresh = cv2.inRange(img, lowcolor, highcolor)
