@@ -76,7 +76,7 @@ class Robot(BrickPiInterface):
             East = tilewalls['East']
             print(North, West, South, East)
             if North == 0 and self.CurrentRoutine == "Searching":
-                self.get_camera_colour((50,50,150),(128,128,255))
+                GLOBALS.CAMERA.get_camera_colour((50,50,150),(128,128,255))
                 self.move_power_until_detect(20,5)
                 tile += 1
             elif North == 1 and West == 0 and self.CurrentRoutine == "Searching":
