@@ -644,3 +644,36 @@ INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', rel
 INFO:werkzeug: * Restarting with stat
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 840-565-028
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.10.72.118:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [01/Apr/2022 09:29:36] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/Apr/2022 09:29:36] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [01/Apr/2022 09:29:36] "GET /static/js/new_ajax_helper.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/Apr/2022 09:29:36] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [01/Apr/2022 09:29:36] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [01/Apr/2022 09:29:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:flask_app:[{'UserID': 1, 'FirstName': 'admin', 'Surname': None, 'Email': 'admin@admin', 'Password': 'raspassword', 'Permission': 'admin'}]
+INFO:werkzeug:127.0.0.1 - - [01/Apr/2022 09:29:42] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/Apr/2022 09:29:42] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [01/Apr/2022 09:29:42] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [01/Apr/2022 09:29:42] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [01/Apr/2022 09:29:42] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:flask_app:[{'UserID': 1, 'FirstName': 'admin', 'Surname': None, 'Email': 'admin@admin', 'Password': 'raspassword', 'Permission': 'admin'}]
+INFO:werkzeug:127.0.0.1 - - [01/Apr/2022 09:29:48] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [01/Apr/2022 09:29:50] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/Apr/2022 09:29:50] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [01/Apr/2022 09:29:50] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [01/Apr/2022 09:29:50] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [01/Apr/2022 09:29:50] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [01/Apr/2022 09:29:50] "[36mGET /static/js/mapping.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [01/Apr/2022 09:29:50] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+INFO:flask_app:LOADING CAMERA
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:127.0.0.1 - - [01/Apr/2022 09:29:52] "POST /robotload HTTP/1.1" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:127.0.0.1 - - [01/Apr/2022 09:29:52] "[35m[1mGET /videofeed HTTP/1.1[0m" 204 -
