@@ -87,7 +87,7 @@ def robotdashboard():
     if not 'UserID' in session:
         return redirect('/')
     enabled = int(GLOBALS.ROBOT != None)
-    return render_template('dashboard.html', robot_enabled = enabled )
+    return render_template('dashboard.html', robot_enabled = enabled)
 
 @app.route('/admin', methods=["POST","GET"])
 def admin():
@@ -209,22 +209,28 @@ def mission():
 
 @app.route('/sounds', methods=['GET','POST'])
 def sounds():
+    speaker = False
     if request.method == 'POST':
-        song = request.form.get('song')
-        if song == 'None':
-            pass
-        else:
-            log(song)
-            GLOBALS.SOUND.load_mp3("static/music/" + song + ".mp3")
-            GLOBALS.SOUND.play_music(1)
-            GLOBALS.SOUND.set_volume(1)
-    return render_template('dashboard.html')
+        try:
+            GLOBALS.SOUND = soundinterface.SoundInterface()
+            speaker = True
+            song = request.form.get('song')
+            if song == 'None':
+                pass
+            else:
+                log(song)
+                GLOBALS.SOUND.load_mp3("static/music/" + song + ".mp3")
+                GLOBALS.SOUND.play_music(1)
+                GLOBALS.SOUND.set_volume(1)
+        except:
+            speaker = False
+    return redirect('/dashboard')
 
 @app.route('/stopsounds', methods=['GET','POST'])
 def stopsounds():
     if request.method == 'POST':
         GLOBALS.SOUND.stop_music()
-    return render_template('dashboard.html')
+    return
 
 # -----------------------------------------------------------------------------------
 # CAMERA CODE-----------------------------------------------------------------------

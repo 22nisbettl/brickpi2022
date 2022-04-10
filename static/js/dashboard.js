@@ -20,6 +20,11 @@ function showloadbutton()
     document.getElementById("load").style.display = 'block';
 }
 
+function hideloadbutton()
+{
+    document.getElementById("load").style.display = 'hidden';
+}
+
 //Show the dashboard
 function show_dashboard(results)
 {
@@ -41,6 +46,7 @@ function hide_dashboard()
 //hide or show dashboard based on initial value from server on page load
 if (robot_enabled == 1) {
     show_dashboard();
+    hideloadbutton();
 } else {
     hide_dashboard();
 }

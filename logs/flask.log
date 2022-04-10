@@ -804,3 +804,236 @@ INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:24:48] "[37mPOST /stopall HTTP/
 INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:24:48] "[37mPOST /forward HTTP/1.1[0m" 200 -
 INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:24:52] "[37mPOST /stopall HTTP/1.1[0m" 200 -
 INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:24:52] "[37mPOST /reverse HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:32:16] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:32:21] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:32:24] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:32:25] "[37mGET /static/css/theme.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:32:25] "[37mGET /static/js/custom.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:32:25] "[37mGET /static/css/custom.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:32:25] "[37mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:32:25] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:32:25] "[37mGET /static/js/mapping.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:32:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:32:27] "[37mPOST /forward HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:32:29] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:33:02] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:33:02] "[37mGET /static/css/theme.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:33:02] "[37mGET /static/css/custom.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:33:02] "[37mGET /static/js/mapping.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:33:02] "[37mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:33:02] "[37mGET /static/js/custom.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:33:02] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:33:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:33:07] "[37mPOST /forward HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:34:01] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:35:13] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:35:21] "[35m[1mPOST /robotload HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:39:53] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:40:04] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:40:04] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:Pirate
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:40:09] "[37mPOST /sounds HTTP/1.1[0m" 200 -
+INFO:flask_app:None
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:40:09] "[35m[1mPOST /sounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:40:14] "[37mPOST /stopsounds HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:40:15] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:40:15] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:WiiSports
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:40:34] "[37mPOST /sounds HTTP/1.1[0m" 200 -
+INFO:flask_app:None
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:40:34] "[35m[1mPOST /sounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:40:39] "[37mPOST /stopsounds HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:flask_app:WiiSports
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:43:48] "[35m[1mPOST /sounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:43:48] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:43:48] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:43:48] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:43:49] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:43:49] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:43:49] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:43:58] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:43:59] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:44:05] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:44:05] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:44:08] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:flask_app:WiiShop
+INFO:flask_app:None
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:44:12] "[35m[1mPOST /sounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:44:12] "[35m[1mPOST /sounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:44:12] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:44:12] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:44:12] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:44:12] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:44:12] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:44:17] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:44:18] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:44:18] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:44:20] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:44:37] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:44:44] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:44:44] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:WiiSports
+INFO:flask_app:None
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:44:50] "[35m[1mPOST /sounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:44:50] "[35m[1mPOST /sounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:44:50] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:44:50] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:44:50] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:44:50] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:44:50] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:44:54] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:44:54] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:44:54] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:45:13] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:45:14] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:45:14] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:45:14] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:45:15] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:45:15] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:45:15] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:45:35] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:45:35] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:None
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:45:38] "[35m[1mPOST /sounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:45:40] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:None
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:45:41] "[35m[1mPOST /sounds HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:45:53] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:46:00] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:46:01] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:None
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:46:04] "[35m[1mPOST /sounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:46:56] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:46:57] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:46:58] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:WiiSports
+INFO:flask_app:None
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:47:00] "[35m[1mPOST /sounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:47:00] "[35m[1mPOST /sounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:47:00] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:47:00] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:47:00] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:47:01] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:47:01] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:47:02] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:47:04] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:flask_app:WiiSports
+INFO:flask_app:None
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:47:05] "[35m[1mPOST /sounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:47:05] "[35m[1mPOST /sounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:47:05] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:47:05] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:47:06] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:47:06] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:47:06] "[37mGET /sounds?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:47:07] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:47:45] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:47:52] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:47:52] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:WiiSports
+INFO:flask_app:None
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:47:56] "[32mPOST /sounds HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:47:56] "[32mPOST /sounds HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:47:56] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:47:56] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:47:56] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [11/Apr/2022 09:47:58] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
