@@ -1,0 +1,9 @@
+1. Ensure robot moves perfectly straight and turns perfectly left or right
+    Can use compass or gyro to do this
+2. Camera search for specific number of pixels
+3. Launch package on camera detection
+4. Refine maze searcing
+5. Back track maze through database
+6. Interfaces
+7. Update mission page interface
+8. Missions need to start and end at times
