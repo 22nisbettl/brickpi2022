@@ -61,9 +61,9 @@ class Robot(BrickPiInterface):
         GLOBALS.DATABASE.ModifyQuery('DELETE FROM TileTable')
         self.CurrentRoutine = "Searching"
         tile = 1
-
         while self.CurrentRoutine == "Searching":
-            GLOBALS.DATABASE.ModifyQuery('INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)', (tile,))
+            compass = self.get_compass_IMU()
+            GLOBALS.DATABASE.ModifyQuery('INSERT INTO TileTable (TileID, North, West, South, East, Compass) VALUES (?,0,0,0,0,?)', (tile,compass))
             self.quadrant_scan(tile)
             walls = GLOBALS.DATABASE.ViewQuery('SELECT * FROM TileTable WHERE TileID = ?', (tile,))
             tilewalls = walls[0]
@@ -76,7 +76,11 @@ class Robot(BrickPiInterface):
             East = tilewalls['East']
             print(North, West, South, East)
             if North == 0 and self.CurrentRoutine == "Searching":
-                GLOBALS.CAMERA.get_camera_colour((50,50,150),(128,128,255))
+                #GLOBALS.CAMERA.get_camera_colour((50,50,150),(128,128,255))
+                compasscheck = GLOBALS.DATABASE.ViewQuery('SELECT Compass FROM TileTable WHERE TileID = ?', (tile,))
+                currentcompass = self.get_compass_IMU()
+                if currentcompass != compasscheck:
+                    self.rotate_power_heading_IMU(17,compasscheck)
                 self.move_power_until_detect(20,5)
                 tile += 1
             elif North == 1 and West == 0 and self.CurrentRoutine == "Searching":
@@ -101,8 +105,6 @@ class Robot(BrickPiInterface):
         self.CurrentRoutine = "Stop"
         self.stop_all()
         return
-    
-    
 
     #moves for the specified time (seconds) and power - use negative power to reverse
     def move_power_until_detect(self, power, t, deviation=-1.5):
@@ -145,11 +147,6 @@ if __name__ == '__main__':
     ROBOT = Robot(timelimit=0)  #10 second timelimit before
     bp = ROBOT.BP
     ROBOT.configure_sensors() #This takes 4 seconds
-    ROBOT.rotate_power_degrees_IMU(20,-90)
-    start = time.time()
-    limit = start + 10
-    while (time.time() < limit):
-        compass = ROBOT.get_compass_IMU()
-        print(compass)
-    sensordict = ROBOT.get_all_sensors()
+    print(ROBOT.get_compass_IMU())
+    ROBOT.rotate_power_heading_IMU(17,0)
     ROBOT.safe_exit()

@@ -1,0 +1,56 @@
+INFO:root:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:root:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:root:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:root:Starting Heading: 341 with Power: 17
+INFO:root:Rotating while heading <= 360
+INFO:root:BRICKPIINTERFACE: Exiting the Thermal Sensor Thread
+INFO:root:Exiting
+INFO:root:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:root:Starting Heading: 343 with Power: 17
+INFO:root:Rotating while heading <= 360
+INFO:root:BRICKPIINTERFACE: Exiting the Thermal Sensor Thread
+INFO:root:Exiting
+INFO:root:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:root:Starting Heading: 343 with Power: -17
+INFO:root:Rotating while heading >= 0
+INFO:root:BRICKPIINTERFACE: Exiting the Thermal Sensor Thread
+INFO:root:Exiting
+INFO:root:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:root:Starting Heading: 343 with Power: -17
+INFO:root:Rotating while heading >= 0
+INFO:root:BRICKPIINTERFACE: Exiting the Thermal Sensor Thread
+INFO:root:Exiting
+INFO:root:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:root:Starting Heading: 338 with Power: -17
+INFO:root:Rotating while heading >= 0
+INFO:root:BRICKPIINTERFACE: Exiting the Thermal Sensor Thread
+INFO:root:Exiting
+INFO:root:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:root:Starting Heading: 208 with Power: 17
+INFO:root:Rotating while heading <= 343
+INFO:root:BRICKPIINTERFACE: Exiting the Thermal Sensor Thread
+INFO:root:Exiting
+INFO:root:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:root:Starting Heading: 11 with Power: -17
+INFO:root:Rotating while heading >= 0
+INFO:root:Starting Heading: 85 with Power: 17
+INFO:root:Rotating while heading <= 90
+INFO:root:Starting Heading: 95 with Power: 17
+INFO:root:Rotating while heading <= 180
+INFO:root:Starting Heading: 185 with Power: 17
+INFO:root:Rotating while heading <= 270
+INFO:root:BRICKPIINTERFACE: Exiting the Thermal Sensor Thread
+INFO:root:Exiting
+INFO:root:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:root:Starting Heading: 266 with Power: -17
+INFO:root:Rotating while heading >= 0
+INFO:root:Starting Heading: 166 with Power: -17
+INFO:root:Rotating while heading >= 90
+INFO:root:Starting Heading: 82 with Power: 17
+INFO:root:Rotating while heading <= 180
+INFO:root:Starting Heading: 165 with Power: 17
+INFO:root:Rotating while heading <= 270
+INFO:root:Starting Heading: 343 with Power: 17
+INFO:root:Rotating while heading <= 360
+INFO:root:BRICKPIINTERFACE: Exiting the Thermal Sensor Thread
+INFO:root:Exiting

@@ -472,7 +472,7 @@ class BrickPiInterface():
         return data
 
     #rotates the robot until faces targetheading - only works for a heading between 0 - 360
-    def rotate_power_heading_IMU(self, power, targetheading, marginoferror=-19):
+    def rotate_power_heading_IMU(self, power, targetheading, marginoferror=0):
         if (self.config['imu'] >= SensorStatus.DISABLED):
             return
         self.interrupt_previous_command()
@@ -604,14 +604,14 @@ if __name__ == '__main__':
     ROBOT = BrickPiInterface(timelimit=1)  #20 second timelimit before
     bp = ROBOT.BP; bp.reset_all(); time.sleep(0) #this will halt previou program is still running
     ROBOT.configure_sensors() #This takes 4 seconds
-    i = 0
-    for i in range(10):
-        input("Press enter to start: ")
-        #ROBOT.move_power_time(50,2)
-        ROBOT.spin_medium_motor(-360)
-        ROBOT.spin_medium_motor(-360)
-        ROBOT.spin_medium_motor(-360)
-        i += 1
-    #ROBOT.rotate_power_degrees_IMU(17,90)
-    #print(ROBOT.get_all_sensors())
+    ROBOT.rotate_power_heading_IMU(17,0)
+    time.sleep(1)
+    ROBOT.rotate_power_heading_IMU(17,90)
+    time.sleep(1)
+    ROBOT.rotate_power_heading_IMU(17,180)
+    time.sleep(1)
+    ROBOT.rotate_power_heading_IMU(17,270)
+    time.sleep(1)
+    ROBOT.rotate_power_heading_IMU(17,360)
+    time.sleep(1)
     ROBOT.safe_exit()
