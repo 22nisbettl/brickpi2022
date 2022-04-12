@@ -1342,3 +1342,49 @@ INFO:werkzeug:192.168.1.118 - - [12/Apr/2022 18:42:57] "[37mPOST /sensors HTTP/
 INFO:werkzeug:192.168.1.118 - - [12/Apr/2022 18:42:59] "[37mPOST /sensors HTTP/1.1[0m" 200 -
 INFO:werkzeug:192.168.1.118 - - [12/Apr/2022 18:43:01] "[37mPOST /sensors HTTP/1.1[0m" 200 -
 INFO:werkzeug:192.168.1.118 - - [12/Apr/2022 18:43:03] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:192.168.1.118 - - [12/Apr/2022 18:52:37] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [12/Apr/2022 18:52:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:flask_app:[{'Surname': None, 'Permission': 'admin', 'UserID': 1, 'Password': 'raspassword', 'Email': 'admin@admin', 'FirstName': 'admin'}]
+INFO:werkzeug:192.168.1.118 - - [12/Apr/2022 18:52:40] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.1.118 - - [12/Apr/2022 18:52:41] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:192.168.1.118 - - [12/Apr/2022 18:52:48] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:192.168.1.118 - - [12/Apr/2022 18:52:48] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:Starting Heading: 81 with Power: 17
+INFO:flask_app:Rotating while heading <= 84
+INFO:root:RED PIXELS: 517990
+INFO:werkzeug:192.168.1.118 - - [12/Apr/2022 18:53:01] "[35m[1mPOST /maze HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.118 - - [12/Apr/2022 18:53:14] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:flask_app:SHUT DOWN EVERYTHING
+INFO:flask_app:BRICKPIINTERFACE: Exiting the Thermal Sensor Thread
+INFO:flask_app:Exiting
+INFO:root:CAMERA INTERFACE: Exiting Camera Thread
+INFO:werkzeug:192.168.1.118 - - [12/Apr/2022 18:53:26] "[37mPOST /robotshutdown HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
