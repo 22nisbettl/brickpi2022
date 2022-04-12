@@ -1388,3 +1388,571 @@ INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', rel
 INFO:werkzeug: * Restarting with stat
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 08:54:05] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 08:54:05] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 08:54:05] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 08:54:06] "[37mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 08:54:06] "[37mGET /static/js/custom.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 08:54:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:flask_app:[{'Password': 'raspassword', 'Surname': None, 'Email': 'admin@admin', 'UserID': 1, 'Permission': 'admin', 'FirstName': 'admin'}]
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 08:54:11] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 08:54:11] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 08:54:11] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 08:54:11] "[37mGET /static/js/mapping.js HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 08:54:19] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 08:54:19] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/interfaces/soundinterface.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/interfaces/soundinterface.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 08:57:43] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 08:57:50] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 08:57:50] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 08:57:57] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:flask_app:SHUT DOWN EVERYTHING
+INFO:flask_app:BRICKPIINTERFACE: Exiting the Thermal Sensor Thread
+INFO:flask_app:Exiting
+INFO:flask_app:COLOUR: get_sensor error: Sensor not configured or not supported.
+INFO:flask_app:ULTRASONIC: get_sensor error: Sensor not configured or not supported.
+INFO:flask_app:THERMAL READ: get_sensor error: Sensor not configured or not supported.
+INFO:flask_app:IMU Acceleration: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU: [Errno 5] Input/output error
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 08:58:02] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 08:58:02] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:root:CAMERA INTERFACE: Exiting Camera Thread
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 08:58:03] "[37mPOST /robotshutdown HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 08:58:22] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 08:58:25] "[37mPOST /right HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 08:58:46] "[37mPOST /right HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 08:58:49] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 08:58:49] "[37mPOST /reverse HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 08:59:28] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 08:59:28] "[37mPOST /forward HTTP/1.1[0m" 200 -
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:Starting Heading: 343 with Power: 17
+INFO:flask_app:Rotating while heading <= 345
+INFO:root:RED PIXELS: 0
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 08:59:48] "[35m[1mPOST /maze HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 08:59:50] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 08:59:59] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 08:59:59] "[37mGET /static/js/sensor.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:00:02] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:00:04] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:00:07] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:00:09] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:00:11] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:00:11] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:00:11] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:00:14] "[37mPOST /right HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:00:16] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:00:19] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:00:21] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:00:23] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:00:25] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:00:27] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:00:29] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:00:29] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:00:29] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:00:30] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:Move around the robot to calibrate the Compass Sensor...
+INFO:flask_app:IMU Compass Sensor has been calibrated
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:00:32] "[37mPOST /compass HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:01:13] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:01:15] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:01:18] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:01:20] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:01:21] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:01:23] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:01:25] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:01:28] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:01:30] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:01:32] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:01:34] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:01:36] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:01:37] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:01:40] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:01:42] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:01:43] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:01:46] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:01:48] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:01:49] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:01:51] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:01:53] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:01:55] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:01:57] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:01:59] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:02:02] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:02:03] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:02:06] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:02:08] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:02:10] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:02:12] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:02:14] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:02:16] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:02:18] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:02:20] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:02:22] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:02:23] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:02:25] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:02:28] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:02:30] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:02:31] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:02:34] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:02:35] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:02:38] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:02:39] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:02:41] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:02:43] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:02:46] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:02:47] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:02:49] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:02:51] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:02:54] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:02:56] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:02:58] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:03:00] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:03:02] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:03:04] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:03:06] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:03:07] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:03:10] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:03:12] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:03:13] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:03:16] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:03:18] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:03:19] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:03:21] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:03:23] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:03:25] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:03:27] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:03:29] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:03:31] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:03:33] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:03:35] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:03:37] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:03:39] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:03:42] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:03:44] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:03:45] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:03:48] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:03:50] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:03:52] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:03:54] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:03:56] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:03:58] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:03:59] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:04:01] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:04:03] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:04:05] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:04:07] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:04:09] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:04:12] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:04:14] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:04:16] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:04:18] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:04:20] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:04:22] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:04:24] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:04:26] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:04:28] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:04:30] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:04:32] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:04:34] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:04:36] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:04:38] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:04:40] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:04:42] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:04:43] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:04:46] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:04:48] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:04:49] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:04:51] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:04:53] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:04:56] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:04:58] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:04:59] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:05:02] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:05:04] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:05:05] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:05:08] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:05:10] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:05:11] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:05:13] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:05:15] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:05:18] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:05:20] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:05:22] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:05:23] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:05:25] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:05:28] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:05:30] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:05:31] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:05:34] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:05:36] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:05:38] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:05:40] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:05:42] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:05:44] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:05:46] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:05:48] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:05:50] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:05:51] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:05:53] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:05:55] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:05:57] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:05:59] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:06:01] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:06:04] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:06:06] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:06:07] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:06:09] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:06:12] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:06:14] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:06:15] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:06:17] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:06:20] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:06:22] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:06:23] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:06:25] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:06:27] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:06:29] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:06:32] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:06:34] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:06:36] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:06:38] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:06:39] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:06:42] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:06:43] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:06:46] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:06:48] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:06:50] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:06:51] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:06:54] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:06:56] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:06:58] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:07:00] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:07:02] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:07:04] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:07:06] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:07:08] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:07:09] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:07:12] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:07:14] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:07:15] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:07:17] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:07:19] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:07:21] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:07:23] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:07:25] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:07:28] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:07:30] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:07:32] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:07:33] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:07:36] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:07:38] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:07:40] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:07:42] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:07:43] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:07:46] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:07:48] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:07:49] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:07:51] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:07:52] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:07:52] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:07:55] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:Starting Heading: 311 with Power: 17
+INFO:flask_app:Rotating while heading <= 318
+INFO:root:RED PIXELS: 0
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:08:03] "[35m[1mPOST /maze HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.40.12 - - [13/Apr/2022 09:08:08] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:17:42] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:18:30] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:18:30] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:Move around the robot to calibrate the Compass Sensor...
+INFO:flask_app:IMU Compass Sensor has been calibrated
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:18:41] "[37mPOST /compass HTTP/1.1[0m" 200 -
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:IMU: 'int' object is not iterable
+INFO:flask_app:Starting Heading: 999 with Power: -17
+INFO:flask_app:Rotating while heading >= 294
+INFO:flask_app:IMU: [Errno 5] Input/output error
+INFO:flask_app:IMU: [Errno 5] Input/output error
+INFO:root:RED PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:19:15] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:19:15] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:19:25] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:19:27] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:19:30] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:19:31] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:19:34] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:19:36] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:19:38] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:19:39] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:19:42] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:19:44] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:19:45] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:23:56] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:23:56] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:23:57] "[32mGET /sensorview HTTP/1.1[0m" 302 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:23:57] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:23:57] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:24:05] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:24:05] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:Starting Heading: 302 with Power: -17
+INFO:flask_app:Rotating while heading >= 5.5
+INFO:root:RED PIXELS: 9038
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:24:28] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:24:29] "[35m[1mPOST /maze HTTP/1.1[0m" 500 -
+INFO:flask_app:SHUT DOWN EVERYTHING
+INFO:flask_app:BRICKPIINTERFACE: Exiting the Thermal Sensor Thread
+INFO:flask_app:Exiting
+INFO:root:CAMERA INTERFACE: Exiting Camera Thread
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:24:32] "[37mPOST /robotshutdown HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:33:57] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:34:06] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:34:06] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:Move around the robot to calibrate the Compass Sensor...
+INFO:flask_app:IMU Compass Sensor has been calibrated
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:34:12] "[37mPOST /compass HTTP/1.1[0m" 200 -
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:Starting Heading: 291 with Power: -17
+INFO:flask_app:Rotating while heading >= 4.0
+INFO:root:RED PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:34:49] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:34:49] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:35:28] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:35:41] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:35:41] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:Starting Heading: 295 with Power: -17
+INFO:flask_app:Rotating while heading >= 283.0
+INFO:root:RED PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:36:11] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:36:11] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:38:20] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:38:29] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:38:29] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:Starting Heading: 309 with Power: -5
+INFO:flask_app:Rotating while heading >= 297.0
+INFO:root:RED PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:38:50] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:38:50] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:39:19] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:39:27] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:39:27] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:Starting Heading: 304 with Power: -17
+INFO:flask_app:Rotating while heading >= 296.0
+INFO:root:RED PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:39:47] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 09:39:47] "[37mPOST /maze HTTP/1.1[0m" 200 -

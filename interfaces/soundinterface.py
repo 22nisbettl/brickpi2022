@@ -6,7 +6,7 @@ class SoundInterface():
     
     def __init__(self):
         self.engine = speake3.Speake()
-        self.engine.set('voice', 'en-scotish')
+        self.engine.set('voice', 'en-sc')
         self.engine.set('speed', '200')
         self.engine.set('pitch', '80')
         #load music player
@@ -61,5 +61,5 @@ class SoundInterface():
 if __name__ == "__main__":
     SOUND = SoundInterface()
     #SOUND.load_mp3("static/music/inspectorgadget.mp3")
-    #SOUND.say("I am Luke's robot. How are you")
+    SOUND.say("Brad, Brad")
     #SOUND.stop_music()

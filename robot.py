@@ -61,7 +61,10 @@ class Robot(BrickPiInterface):
         GLOBALS.DATABASE.ModifyQuery('DELETE FROM TileTable')
         self.CurrentRoutine = "Searching"
         tile = 1
-        startcompass = self.get_compass_IMU()
+        startcompass1 = self.get_compass_IMU()
+        time.sleep(2)
+        startcompass2 = self.get_compass_IMU()
+        scv = (startcompass1 + startcompass2) / 2
         while self.CurrentRoutine == "Searching":
             GLOBALS.DATABASE.ModifyQuery('INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)', (tile,))
             self.quadrant_scan(tile)
@@ -74,7 +77,7 @@ class Robot(BrickPiInterface):
             South = tilewalls['South']
             East = tilewalls['East']
             print(North, West, South, East)
-            self.rotate_power_heading_IMU(17,startcompass)
+            self.rotate_power_heading_IMU(17,scv)
             if North == 0 and self.CurrentRoutine == "Searching":
                 camval = GLOBALS.CAMERA.get_camera_colour((50,50,150),(128,128,255))
                 if camval == "True":
@@ -82,7 +85,7 @@ class Robot(BrickPiInterface):
                     self.spin_medium_motor(-360)
                     self.spin_medium_motor(-360)
                 GLOBALS.DATABASE.ModifyQuery('INSERT INTO MapMovementTable (TileID, Wall) VALUES (?,?)', (tile,"North"))
-                self.move_power_until_detect(20,3)
+                self.move_power_until_detect(20,2)
                 tile += 1
             elif North == 1 and West == 0 and self.CurrentRoutine == "Searching":
                 self.rotate_power_degrees_IMU(17,-90)
@@ -92,7 +95,7 @@ class Robot(BrickPiInterface):
                     self.spin_medium_motor(-360)
                     self.spin_medium_motor(-360)
                 GLOBALS.DATABASE.ModifyQuery('INSERT INTO MapMovementTable (TileID, Wall) VALUES (?,?)', (tile,"West"))
-                self.move_power_until_detect(20,3)
+                self.move_power_until_detect(20,2)
                 tile += 1
             elif North == 1 and West == 1 and East == 0 and self.CurrentRoutine == "Searching":
                 self.rotate_power_degrees_IMU(17,90)
@@ -102,7 +105,7 @@ class Robot(BrickPiInterface):
                     self.spin_medium_motor(-360)
                     self.spin_medium_motor(-360)
                 GLOBALS.DATABASE.ModifyQuery('INSERT INTO MapMovementTable (TileID, Wall) VALUES (?,?)', (tile,"East"))
-                self.move_power_until_detect(20,3)
+                self.move_power_until_detect(20,2)
                 tile += 1
             elif North == 1 and West == 1 and East == 1 and South == 0 and self.CurrentRoutine == "Searching":
                 self.rotate_power_degrees_IMU(17,-1800)
@@ -112,7 +115,7 @@ class Robot(BrickPiInterface):
                     self.spin_medium_motor(-360)
                     self.spin_medium_motor(-360)
                 GLOBALS.DATABASE.ModifyQuery('INSERT INTO MapMovementTable (TileID, Wall) VALUES (?,?)', (tile,"South"))
-                self.move_power_until_detect(20,3)
+                self.move_power_until_detect(20,2)
                 tile += 1
             elif self.CurrentRoutine != "Searching":
                 self.stop_routine()
@@ -128,22 +131,21 @@ class Robot(BrickPiInterface):
     def move_power_until_detect(self, power, t, deviation=-1.5):
         self.interrupt_previous_command()
         bp = self.BP
-        self.CurrentCommand = "move_power_time"
-        timelimit = time.time() + t
-        bp.set_motor_power(self.rightmotor, power)
-        bp.set_motor_power(self.leftmotor, power + deviation)
-        t = time.time()
+        self.CurrentCommand = "move_power_until_detect"
+        self.move_power(power, deviation)
+        currenttime = time.time()
+        timelimit = currenttime + t
         data = {}
-        while (t < timelimit) and (self.CurrentCommand == "move_power_time"):
+        while (time.time() < timelimit) and (self.CurrentCommand == "move_power_until_detect"):
             if self.get_colour_sensor == "black":
                 data['color'] = 'black'
-                self.move_power_time(-power, elapsed)
+                #maybe reverse back to middle
                 break
-            distance = self.get_ultra_sensor
+            distance = self.get_ultra_sensor()
             if distance < 20 and distance != 0:
                 data['distance'] = distance
                 break
-            elapsed = time.time() - t
+        elapsed = time.time() - currenttime
         data['elapsed'] = elapsed
         self.stop_all()
         return data
