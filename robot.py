@@ -3,6 +3,7 @@
 from sqlite3 import DataError
 from urllib.request import DataHandler
 from interfaces.brickpiinterface import *
+from interfaces import camerainterface
 import global_vars as GLOBALS
 import logging
 
@@ -13,7 +14,6 @@ class Robot(BrickPiInterface):
         self.CurrentCommand = "stop" #use this to stop or start functions
         self.CurrentRoutine = "stop" #use this stop or start routines
         return
-        
         
     #Create a function to move time and power which will stop if colour is detected or wall has been found
     def quadrant_scan(self, tile):
@@ -61,38 +61,38 @@ class Robot(BrickPiInterface):
         GLOBALS.DATABASE.ModifyQuery('DELETE FROM TileTable')
         self.CurrentRoutine = "Searching"
         tile = 1
+        startcompass = self.get_compass_IMU()
         while self.CurrentRoutine == "Searching":
-            compass = self.get_compass_IMU()
-            GLOBALS.DATABASE.ModifyQuery('INSERT INTO TileTable (TileID, North, West, South, East, Compass) VALUES (?,0,0,0,0,?)', (tile,compass))
+            GLOBALS.DATABASE.ModifyQuery('INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)', (tile,))
             self.quadrant_scan(tile)
             walls = GLOBALS.DATABASE.ViewQuery('SELECT * FROM TileTable WHERE TileID = ?', (tile,))
             tilewalls = walls[0]
             #0 means no wall
             #1 means wall
-            print(tilewalls)
             North = tilewalls['North']
             West = tilewalls['West']
             South = tilewalls['South']
             East = tilewalls['East']
             print(North, West, South, East)
+            self.rotate_power_heading_IMU(17,startcompass)
             if North == 0 and self.CurrentRoutine == "Searching":
                 #GLOBALS.CAMERA.get_camera_colour((50,50,150),(128,128,255))
-                compasscheck = GLOBALS.DATABASE.ViewQuery('SELECT Compass FROM TileTable WHERE TileID = ?', (tile,))
-                currentcompass = self.get_compass_IMU()
-                if currentcompass != compasscheck:
-                    self.rotate_power_heading_IMU(17,compasscheck)
+                GLOBALS.DATABASE.ModifyQuery('INSERT INTO MapMovementTable (TileID, Wall) VALUES (?,?)', (tile,"North"))
                 self.move_power_until_detect(20,5)
                 tile += 1
             elif North == 1 and West == 0 and self.CurrentRoutine == "Searching":
                 self.rotate_power_degrees_IMU(17,-90)
+                GLOBALS.DATABASE.ModifyQuery('INSERT INTO MapMovementTable (TileID, Wall) VALUES (?,?)', (tile,"West"))
                 self.move_power_until_detect(20,5)
                 tile += 1
             elif North == 1 and West == 1 and East == 0 and self.CurrentRoutine == "Searching":
                 self.rotate_power_degrees_IMU(17,90)
+                GLOBALS.DATABASE.ModifyQuery('INSERT INTO MapMovementTable (TileID, Wall) VALUES (?,?)', (tile,"East"))
                 self.move_power_until_detect(20,5)
                 tile += 1
             elif North == 1 and West == 1 and East == 1 and South == 0 and self.CurrentRoutine == "Searching":
                 self.rotate_power_degrees_IMU(17,-1800)
+                GLOBALS.DATABASE.ModifyQuery('INSERT INTO MapMovementTable (TileID, Wall) VALUES (?,?)', (tile,"South"))
                 self.move_power_until_detect(20,5)
                 tile += 1
             elif self.CurrentRoutine != "Searching":
@@ -100,7 +100,6 @@ class Robot(BrickPiInterface):
             else:
                 self.quadrant_scan(tile)
 
-    
     def stop_routine(self):
         self.CurrentRoutine = "Stop"
         self.stop_all()
@@ -129,24 +128,15 @@ class Robot(BrickPiInterface):
         data['elapsed'] = elapsed
         self.stop_all()
         return data
-    
-
-    
-    
-    
-    #Create a routine that will effective search the maze and keep track of where the robot has been.
-
-
-
-
-
 
 # Only execute if this is the main file, good for testing code
 if __name__ == '__main__':
     logging.basicConfig(filename='logs/robot.log', level=logging.INFO)
     ROBOT = Robot(timelimit=0)  #10 second timelimit before
     bp = ROBOT.BP
+    GLOBALS.CAMERA = camerainterface.CameraInterface()
+    GLOBALS.CAMERA.start()
     ROBOT.configure_sensors() #This takes 4 seconds
-    print(ROBOT.get_compass_IMU())
-    ROBOT.rotate_power_heading_IMU(17,0)
+    value = GLOBALS.CAMERA.get_camera_colour((50,50,150),(128,128,255))
+    print(value)
     ROBOT.safe_exit()

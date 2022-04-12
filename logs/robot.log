@@ -54,3 +54,17 @@ INFO:root:Starting Heading: 343 with Power: 17
 INFO:root:Rotating while heading <= 360
 INFO:root:BRICKPIINTERFACE: Exiting the Thermal Sensor Thread
 INFO:root:Exiting
+INFO:root:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:root:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:root:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:root:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:root:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:root:RED PIXELS: 9209
+INFO:root:BRICKPIINTERFACE: Exiting the Thermal Sensor Thread
+INFO:root:Exiting
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:root:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:root:RED PIXELS: 0
+INFO:root:BRICKPIINTERFACE: Exiting the Thermal Sensor Thread
+INFO:root:Exiting

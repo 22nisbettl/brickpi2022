@@ -1,5 +1,6 @@
 1. Ensure robot moves perfectly straight and turns perfectly left or right
     Can use compass or gyro to do this
+    Ask Sir why the compass isn't working
 2. Camera search for specific number of pixels
 3. Launch package on camera detection
 4. Refine maze searcing
