@@ -379,7 +379,7 @@ class BrickPiInterface():
 
     #--------------MOTOR COMMANDS-----------------#
     #simply turns motors on, dangerous because it does not turn them off
-    def move_power(self, power, deviation=-1.5):
+    def move_power(self, power, deviation=-3.17):
         self.interrupt_previous_command()
         bp = self.BP
         self.CurrentCommand = "move_power"
@@ -394,7 +394,7 @@ class BrickPiInterface():
         return elapsedtime
 
     #moves for the specified time (seconds) and power - use negative power to reverse
-    def move_power_time(self, power, t, deviation=-1.5):
+    def move_power_time(self, power, t, deviation=-3.17):
         self.interrupt_previous_command()
         bp = self.BP
         self.CurrentCommand = "move_power_time"
@@ -604,14 +604,7 @@ if __name__ == '__main__':
     ROBOT = BrickPiInterface(timelimit=1)  #20 second timelimit before
     bp = ROBOT.BP; bp.reset_all(); time.sleep(0) #this will halt previou program is still running
     ROBOT.configure_sensors() #This takes 4 seconds
-    ROBOT.rotate_power_heading_IMU(17,0)
-    time.sleep(1)
-    ROBOT.rotate_power_heading_IMU(17,90)
-    time.sleep(1)
-    ROBOT.rotate_power_heading_IMU(17,180)
-    time.sleep(1)
-    ROBOT.rotate_power_heading_IMU(17,270)
-    time.sleep(1)
-    ROBOT.rotate_power_heading_IMU(17,360)
-    time.sleep(1)
+    ROBOT.move_power(50)
+    time.sleep(3)
+    ROBOT.stop_all()
     ROBOT.safe_exit()
