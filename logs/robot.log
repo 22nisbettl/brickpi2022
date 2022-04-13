@@ -173,3 +173,51 @@ INFO:root:CAMERA INTERFACE: Started Camera Thread
 INFO:root:BRICKPIINTERFACE: Starting thermal sensor thread
 INFO:root:BRICKPIINTERFACE: Exiting the Thermal Sensor Thread
 INFO:root:Exiting
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:root:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:root:BRICKPIINTERFACE: Exiting the Thermal Sensor Thread
+INFO:root:Exiting
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:root:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:root:BRICKPIINTERFACE: Exiting the Thermal Sensor Thread
+INFO:root:Exiting
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:root:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:root:ULTRASONIC: get_sensor error: Invalid sensor data
+INFO:root:ULTRASONIC: get_sensor error: Invalid sensor data
+INFO:root:ULTRASONIC: get_sensor error: Invalid sensor data
+INFO:root:ULTRASONIC: get_sensor error: Invalid sensor data
+INFO:root:BRICKPIINTERFACE: Exiting the Thermal Sensor Thread
+INFO:root:Exiting
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:root:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:root:ULTRASONIC: get_sensor error: Invalid sensor data
+INFO:root:ULTRASONIC: get_sensor error: Invalid sensor data
+INFO:root:ULTRASONIC: get_sensor error: Invalid sensor data
+INFO:root:ULTRASONIC: get_sensor error: Invalid sensor data
+INFO:root:BRICKPIINTERFACE: Exiting the Thermal Sensor Thread
+INFO:root:Exiting
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:root:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:root:ULTRASONIC: get_sensor error: Invalid sensor data
+INFO:root:ULTRASONIC: get_sensor error: Invalid sensor data
+INFO:root:ULTRASONIC: get_sensor error: Invalid sensor data
+INFO:root:ULTRASONIC: get_sensor error: Invalid sensor data
+INFO:root:BRICKPIINTERFACE: Exiting the Thermal Sensor Thread
+INFO:root:Exiting
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:root:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:root:ULTRASONIC: get_sensor error: Invalid sensor data
+INFO:root:ULTRASONIC: get_sensor error: Invalid sensor data
+INFO:root:ULTRASONIC: get_sensor error: Invalid sensor data
+INFO:root:ULTRASONIC: get_sensor error: Invalid sensor data
+INFO:root:BRICKPIINTERFACE: Exiting the Thermal Sensor Thread
+INFO:root:Exiting
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:root:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:root:BRICKPIINTERFACE: Exiting the Thermal Sensor Thread
+INFO:root:Exiting
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:root:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:root:BRICKPIINTERFACE: Exiting the Thermal Sensor Thread
+INFO:root:Exiting

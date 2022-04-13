@@ -130,23 +130,25 @@ class Robot(BrickPiInterface):
     #moves for the specified time (seconds) and power - use negative power to reverse
     def move_power_until_detect(self, power, t, deviation=-3.17):
         self.interrupt_previous_command()
-        bp = self.BP
         self.CurrentCommand = "move_power_until_detect"
-        self.move_power(power, deviation)
         currenttime = time.time()
+        bp = self.BP
         timelimit = currenttime + t
         print(currenttime)
         print(timelimit)
         data = {}
+        print((time.time() < timelimit), (self.CurrentCommand == "move_power_until_detect"))
         while (time.time() < timelimit) and (self.CurrentCommand == "move_power_until_detect"):
-            print("In loop")
+            bp.set_motor_power(self.rightmotor, power)
+            bp.set_motor_power(self.leftmotor, power + deviation)
             if self.get_colour_sensor == "black":
                 data['color'] = 'black'
                 #maybe reverse back to middle
                 print("Black")
                 break
             distance = self.get_ultra_sensor()
-            if distance < 20 and distance != 0:
+            print(distance)
+            if distance < 20 and distance not in [0,999]:
                 data['distance'] = distance
                 print("Less than")
                 break
@@ -164,5 +166,6 @@ if __name__ == '__main__':
     GLOBALS.CAMERA = camerainterface.CameraInterface()
     GLOBALS.CAMERA.start()
     ROBOT.configure_sensors() #This takes 4 seconds
+    time.sleep(2)
     ROBOT.move_power_until_detect(30,4)
     ROBOT.safe_exit()
