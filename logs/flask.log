@@ -2271,3 +2271,594 @@ INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:51:01] "[37mPOST /sensors HTTP/1.
 INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:51:03] "[37mPOST /sensors HTTP/1.1[0m" 200 -
 INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:51:05] "[37mPOST /sensors HTTP/1.1[0m" 200 -
 INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:51:07] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:58:42] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:58:42] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:58:42] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:58:44] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:58:45] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:58:47] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:58:47] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:58:55] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:58:55] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:None
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:58:59] "[32mPOST /sounds HTTP/1.1[0m" 302 -
+INFO:flask_app:Pirate
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:59:00] "[32mPOST /sounds HTTP/1.1[0m" 302 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:59:00] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:59:01] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:59:01] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:59:16] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:59:17] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:None
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:59:22] "[32mPOST /sounds HTTP/1.1[0m" 302 -
+INFO:flask_app:WiiSports
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:59:22] "[32mPOST /sounds HTTP/1.1[0m" 302 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:59:24] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:59:26] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:59:29] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:59:35] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:59:37] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:59:39] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:59:39] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:59:39] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:59:40] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:flask_app:NielsenPresentation
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:59:41] "[32mPOST /sounds HTTP/1.1[0m" 302 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:59:41] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:59:41] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:59:42] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:59:42] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:59:42] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:flask_app:None
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:59:42] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:59:42] "[32mPOST /sounds HTTP/1.1[0m" 302 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:59:44] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:59:48] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:NielsenPresentation
+INFO:flask_app:None
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:59:59] "[32mPOST /sounds HTTP/1.1[0m" 302 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 10:59:59] "[32mPOST /sounds HTTP/1.1[0m" 302 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:00:01] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:00:03] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:00:06] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:00:07] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:00:36] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:00:37] "[32mPOST /sounds HTTP/1.1[0m" 302 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:00:37] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:00:37] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:00:37] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:00:38] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:00:38] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:00:38] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:00:38] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:00:38] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:00:38] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:00:38] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:00:39] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:00:39] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:00:39] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:00:39] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:00:40] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:00:40] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:00:40] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:flask_app:SHUT DOWN EVERYTHING
+INFO:flask_app:None
+INFO:flask_app:BRICKPIINTERFACE: Exiting the Thermal Sensor Thread
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:00:58] "[32mPOST /sounds HTTP/1.1[0m" 302 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:00:58] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:00:58] "[35m[1mPOST /stopsounds HTTP/1.1[0m" 500 -
+INFO:flask_app:THERMAL READ: get_sensor error: Sensor not configured or not supported.
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:00:58] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:flask_app:Exiting
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:00:59] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:root:CAMERA INTERFACE: Exiting Camera Thread
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:01:01] "[37mPOST /robotshutdown HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:01:09] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:01:45] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:01:56] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:02:13] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:Starting Heading: 248 with Power: -17
+INFO:flask_app:Rotating while heading >= 202.125
+INFO:root:RED PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:02:28] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:02:37] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:flask_app:Starting Heading: 172 with Power: 17
+INFO:flask_app:Rotating while heading <= 202.125
+INFO:flask_app:IMU: 'int' object is not iterable
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:02:40] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:11:07] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:11:15] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:11:16] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:11:20] "[37mPOST /right HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:11:25] "[37mPOST /left HTTP/1.1[0m" 200 -
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:11:28] "[37mPOST /left HTTP/1.1[0m" 200 -
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:Starting Heading: 240 with Power: -17
+INFO:flask_app:Rotating while heading >= 172.6875
+INFO:root:RED PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:11:54] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:11:54] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:11:54] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:11:55] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:11:55] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:flask_app:Starting Heading: 233 with Power: -17
+INFO:flask_app:Rotating while heading >= 172.6875
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:11:55] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:11:55] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:11:55] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:11:55] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:12:23] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:12:26] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:12:28] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:12:30] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:12:34] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:12:34] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:12:37] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:12:38] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:12:40] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:12:42] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:12:44] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:12:46] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:12:48] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:12:51] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:12:52] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:12:54] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:12:56] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:12:58] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:13:00] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:13:02] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:13:04] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:13:06] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:13:09] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:13:10] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:13:12] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:13:14] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:13:16] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:13:18] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:13:20] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:13:22] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/interfaces/brickpiinterface.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:13:34] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:13:34] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:13:34] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:13:41] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:13:42] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:root:RED PIXELS: 1465
+INFO:root:RED PIXELS: 1926
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:13:47] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:13:48] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:root:RED PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:root:RED PIXELS: 0
+INFO:root:RED PIXELS: 0
+INFO:root:RED PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:root:RED PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:14:06] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:14:07] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:14:07] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:14:07] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:root:RED PIXELS: 0
+INFO:root:RED PIXELS: 0
+INFO:root:RED PIXELS: 0
+INFO:root:RED PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:15:19] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:15:19] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:16:30] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:16:38] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:16:39] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:Starting Heading: 210 with Power: -17
+INFO:flask_app:Rotating while heading >= 37.9375
+INFO:flask_app:IMU: [Errno 5] Input/output error
+INFO:root:RED PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:16:54] "[35m[1mPOST /mazestop HTTP/1.1[0m" 500 -
+INFO:flask_app:SHUT DOWN EVERYTHING
+INFO:flask_app:BRICKPIINTERFACE: Exiting the Thermal Sensor Thread
+INFO:flask_app:Exiting
+INFO:root:CAMERA INTERFACE: Exiting Camera Thread
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:17:00] "[37mPOST /robotshutdown HTTP/1.1[0m" 200 -
+INFO:flask_app:Starting Heading: 136 with Power: -17
+INFO:flask_app:Rotating while heading >= 37.9375
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:17:20] "[35m[1mPOST /maze HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:20:27] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:20:51] "[35m[1mPOST /maze HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/interfaces/brickpiinterface.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:21:29] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:21:36] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:21:36] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:Starting Heading: 312.875 with Power: -17
+INFO:flask_app:Rotating while heading >= 302.6875
+INFO:root:RED PIXELS: 4612
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:Starting Heading: 320.6875 with Power: -17
+INFO:flask_app:Rotating while heading >= 302.6875
+INFO:root:RED PIXELS: 5360
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:22:21] "[35m[1mPOST /mazestop HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:22:24] "[35m[1mPOST /mazestop HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:22:24] "[35m[1mPOST /maze HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:23:52] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:23:59] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:23:59] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:Starting Heading: 46.8125 with Power: -17
+INFO:flask_app:Rotating while heading >= 29.5625
+INFO:root:RED PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:24:21] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:flask_app:Starting Heading: 301.875 with Power: -17
+INFO:flask_app:Rotating while heading >= 29.5625
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:24:23] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:26:42] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:26:50] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:26:50] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:Starting Heading: 73.1875 with Power: -17
+INFO:flask_app:Rotating while heading >= 26.5625
+INFO:root:RED PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:Starting Heading: 269.0625 with Power: -17
+INFO:flask_app:Rotating while heading >= 26.5625
+INFO:root:RED PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:27:35] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:flask_app:SHUT DOWN EVERYTHING
+INFO:flask_app:BRICKPIINTERFACE: Exiting the Thermal Sensor Thread
+INFO:flask_app:Exiting
+INFO:root:CAMERA INTERFACE: Exiting Camera Thread
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:27:47] "[37mPOST /robotshutdown HTTP/1.1[0m" 200 -
+INFO:flask_app:ULTRASONIC: get_sensor error: Sensor not configured or not supported.
+INFO:flask_app:Starting Heading: 148.875 with Power: -17
+INFO:flask_app:Rotating while heading >= 26.5625
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:28:09] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:28:46] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:28:52] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:flask_app:Starting Heading: 34.375 with Power: -17
+INFO:flask_app:Rotating while heading >= 16.0
+INFO:flask_app:IMU: 'int' object is not iterable
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:29:05] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:Starting Heading: 105.9375 with Power: -17
+INFO:flask_app:Rotating while heading >= 94.125
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:root:RED PIXELS: 0
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:29:53] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:flask_app:SHUT DOWN EVERYTHING
+INFO:flask_app:BRICKPIINTERFACE: Exiting the Thermal Sensor Thread
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:Exiting
+INFO:root:CAMERA INTERFACE: Exiting Camera Thread
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:29:58] "[37mPOST /robotshutdown HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:31:59] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:32:06] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:32:06] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:Starting Heading: 185.6875 with Power: -10
+INFO:flask_app:Rotating while heading >= 181.3125
+INFO:root:RED PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:32:27] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:32:42] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:32:42] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:32:42] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:flask_app:Starting Heading: 128.6875 with Power: 10
+INFO:flask_app:Rotating while heading <= 181.3125
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:32:42] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:35:23] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:35:31] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:35:31] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:root:RED PIXELS: 7814
+INFO:flask_app:Starting Heading: 178.1875 with Power: -20
+INFO:flask_app:Rotating while heading >= 173.3125
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:root:RED PIXELS: 0
+INFO:flask_app:Starting Heading: 156.25 with Power: 20
+INFO:flask_app:Rotating while heading <= 173.3125
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:root:RED PIXELS: 4693
+INFO:flask_app:Starting Heading: 181.3125 with Power: -20
+INFO:flask_app:Rotating while heading >= 173.3125
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:root:RED PIXELS: 0
+INFO:flask_app:Starting Heading: 125.8125 with Power: 20
+INFO:flask_app:Rotating while heading <= 173.3125
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:36:51] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:root:RED PIXELS: 9695
+INFO:flask_app:Starting Heading: 88.8125 with Power: 20
+INFO:flask_app:Rotating while heading <= 173.3125
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:36:58] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:38:28] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:38:36] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:38:37] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:root:RED PIXELS: 334
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:Starting Heading: 206.5625 with Power: -20
+INFO:flask_app:Rotating while heading >= 161.8125
+INFO:root:RED PIXELS: 0
+INFO:flask_app:Starting Heading: 183.6875 with Power: -20
+INFO:flask_app:Rotating while heading >= 161.8125
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:root:RED PIXELS: 25381
+INFO:flask_app:Starting Heading: 107.25 with Power: 20
+INFO:flask_app:Rotating while heading <= 161.8125
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:39:42] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:39:42] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:SHUT DOWN EVERYTHING
+INFO:flask_app:BRICKPIINTERFACE: Exiting the Thermal Sensor Thread
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:Exiting
+INFO:root:CAMERA INTERFACE: Exiting Camera Thread
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:39:45] "[37mPOST /robotshutdown HTTP/1.1[0m" 200 -
+INFO:flask_app:ULTRASONIC: get_sensor error: Sensor not configured or not supported.
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:40:36] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:Cannot initialise IMU Sensor now trying to reconfig
+INFO:flask_app:IMU RECONFIG HAS FAILED 'int' object has no attribute 'BNO055'
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:IMU RECONFIG HAS FAILED 'int' object has no attribute 'BNO055'
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:40:47] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:40:50] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:40:51] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:40:52] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:40:52] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:41:05] "[37mPOST /shootdown HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:41:10] "[37mPOST /shootdown HTTP/1.1[0m" 200 -

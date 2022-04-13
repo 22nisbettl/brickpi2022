@@ -103,13 +103,15 @@ def admin():
 
 @app.route('/maze', methods=['GET','POST'])
 def maze():
+    data = {}
     GLOBALS.ROBOT.maze_solve()
-    return jsonify()
+    return data
 
 @app.route('/mazestop', methods=['GET','POST'])
 def mazestop():
+    data = {}
     GLOBALS.ROBOT.stop_routine()
-    return jsonify()
+    return data
 
 #Used for reconfiguring IMU
 @app.route('/reconfig_IMU', methods=['GET','POST'])

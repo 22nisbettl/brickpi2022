@@ -482,7 +482,7 @@ class BrickPiInterface():
             targetheading += 360
         elif targetheading > 360:
             targetheading -= 360
-        heading = self.get_compass_IMU()
+        heading = self.get_orientation_IMU()[0]
         time.sleep(0.3)
         if heading == targetheading:
             return
@@ -604,9 +604,10 @@ if __name__ == '__main__':
     ROBOT = BrickPiInterface(timelimit=1)  #20 second timelimit before
     bp = ROBOT.BP; bp.reset_all(); time.sleep(0) #this will halt previou program is still running
     ROBOT.configure_sensors() #This takes 4 seconds
-    orient = ROBOT.get_orientation_IMU()[0]
-    print(orient)
-    ROBOT.rotate_power_degrees_IMU(20,180)
-    ROBOT.rotate_power_heading_IMU(17,orient)
+    #orient = ROBOT.get_orientation_IMU()[0]
+    #print(orient)
+    ROBOT.rotate_power_degrees_IMU(17,90)
+    #time.sleep(2)
+    #ROBOT.rotate_power_heading_IMU(17,orient)
     ROBOT.stop_all()
     ROBOT.safe_exit()

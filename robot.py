@@ -61,7 +61,9 @@ class Robot(BrickPiInterface):
         GLOBALS.DATABASE.ModifyQuery('DELETE FROM TileTable')
         self.CurrentRoutine = "Searching"
         tile = 1
+        time.sleep(2)
         orient = self.get_orientation_IMU()[0]
+        print(orient)
         while self.CurrentRoutine == "Searching":
             GLOBALS.DATABASE.ModifyQuery('INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)', (tile,))
             self.quadrant_scan(tile)
@@ -74,50 +76,57 @@ class Robot(BrickPiInterface):
             South = tilewalls['South']
             East = tilewalls['East']
             print(North, West, South, East)
-            self.rotate_power_heading_IMU(17,orient)
             if North == 0 and self.CurrentRoutine == "Searching":
                 camval = GLOBALS.CAMERA.get_camera_colour((50,50,150),(128,128,255))
+                print("Going North")
                 if camval == "True":
                     self.spin_medium_motor(-360)
                     self.spin_medium_motor(-360)
                     self.spin_medium_motor(-360)
                 GLOBALS.DATABASE.ModifyQuery('INSERT INTO MapMovementTable (TileID, Wall) VALUES (?,?)', (tile,"North"))
-                self.move_power_until_detect(20,2)
+                self.move_power_until_detect(20,5)
                 tile += 1
             elif North == 1 and West == 0 and self.CurrentRoutine == "Searching":
                 self.rotate_power_degrees_IMU(17,-90)
                 camval = GLOBALS.CAMERA.get_camera_colour((50,50,150),(128,128,255))
+                print("Going West")
                 if camval == "True":
                     self.spin_medium_motor(-360)
                     self.spin_medium_motor(-360)
                     self.spin_medium_motor(-360)
                 GLOBALS.DATABASE.ModifyQuery('INSERT INTO MapMovementTable (TileID, Wall) VALUES (?,?)', (tile,"West"))
-                self.move_power_until_detect(20,2)
+                self.move_power_until_detect(20,5)
                 tile += 1
             elif North == 1 and West == 1 and East == 0 and self.CurrentRoutine == "Searching":
                 self.rotate_power_degrees_IMU(17,90)
                 camval = GLOBALS.CAMERA.get_camera_colour((50,50,150),(128,128,255))
+                print("Going East")
                 if camval == "True":
                     self.spin_medium_motor(-360)
                     self.spin_medium_motor(-360)
                     self.spin_medium_motor(-360)
                 GLOBALS.DATABASE.ModifyQuery('INSERT INTO MapMovementTable (TileID, Wall) VALUES (?,?)', (tile,"East"))
-                self.move_power_until_detect(20,2)
+                self.move_power_until_detect(20,5)
                 tile += 1
             elif North == 1 and West == 1 and East == 1 and South == 0 and self.CurrentRoutine == "Searching":
                 self.rotate_power_degrees_IMU(17,-1800)
                 camval = GLOBALS.CAMERA.get_camera_colour((50,50,150),(128,128,255))
+                print("Going South")
                 if camval == "True":
                     self.spin_medium_motor(-360)
                     self.spin_medium_motor(-360)
                     self.spin_medium_motor(-360)
                 GLOBALS.DATABASE.ModifyQuery('INSERT INTO MapMovementTable (TileID, Wall) VALUES (?,?)', (tile,"South"))
-                self.move_power_until_detect(20,2)
+                self.move_power_until_detect(20,5)
                 tile += 1
             elif self.CurrentRoutine != "Searching":
                 self.stop_routine()
             else:
                 self.quadrant_scan(tile)
+            self.rotate_power_degrees_IMU(20,45)
+            time.sleep(1)
+            self.rotate_power_heading_IMU(20,orient)
+        return
 
     def stop_routine(self):
         self.CurrentRoutine = "Stop"
