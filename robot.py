@@ -76,6 +76,7 @@ class Robot(BrickPiInterface):
             South = tilewalls['South']
             East = tilewalls['East']
             print(North, West, South, East)
+            self.rotate_power_heading_IMU(17,orient)
             if North == 0 and self.CurrentRoutine == "Searching":
                 camval = GLOBALS.CAMERA.get_camera_colour((50,50,150),(128,128,255))
                 print("Going North")
@@ -123,9 +124,7 @@ class Robot(BrickPiInterface):
                 self.stop_routine()
             else:
                 self.quadrant_scan(tile)
-            self.rotate_power_degrees_IMU(20,45)
-            time.sleep(1)
-            self.rotate_power_heading_IMU(20,orient)
+            self.rotate_power_heading_IMU(17,orient)
         return
 
     def stop_routine(self):

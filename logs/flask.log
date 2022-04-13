@@ -2862,3 +2862,374 @@ INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:40:52] "[37mPOST /stopall HTTP/1.
 INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:40:52] "[37mPOST /stopall HTTP/1.1[0m" 200 -
 INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:41:05] "[37mPOST /shootdown HTTP/1.1[0m" 200 -
 INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:41:10] "[37mPOST /shootdown HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:43:46] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:43:56] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:43:56] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:root:RED PIXELS: 0
+INFO:flask_app:Starting Heading: 320.125 with Power: -20
+INFO:flask_app:Rotating while heading >= 266.25
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:44:33] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:44:33] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:44:33] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:44:36] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:44:36] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:44:36] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:44:37] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:44:41] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:44:41] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:44:41] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:44:41] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:44:41] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:44:41] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:44:41] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:flask_app:Starting Heading: 126.0625 with Power: 20
+INFO:flask_app:Rotating while heading <= 266.25
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:44:49] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:44:49] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:44:49] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:44:49] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:44:49] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:44:49] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:44:49] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:44:50] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:44:50] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:44:50] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:44:51] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:44:51] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:44:51] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:44:51] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:44:51] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:48:26] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:48:34] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:48:35] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:Starting Heading: 173.25 with Power: 20
+INFO:flask_app:Rotating while heading <= 196.8125
+INFO:root:RED PIXELS: 22110
+INFO:flask_app:Starting Heading: 188.5 with Power: 20
+INFO:flask_app:Rotating while heading <= 196.8125
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:49:03] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:49:03] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:49:03] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:49:03] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:49:04] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:49:05] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:49:05] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:49:05] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:flask_app:Starting Heading: 0.0 with Power: 20
+INFO:flask_app:Rotating while heading <= 196.8125
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:49:05] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:flask_app:Starting Heading: 136.9375 with Power: 20
+INFO:flask_app:Rotating while heading <= 196.8125
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:49:05] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.40.14 - - [13/Apr/2022 11:49:09] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:50:03] "[37mPOST /shootdown HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:53:18] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:53:27] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:53:29] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:53:31] "[37mPOST /shootdown HTTP/1.1[0m" 200 -
+INFO:flask_app:IMU: [Errno 5] Input/output error
+INFO:flask_app:IMU: [Errno 5] Input/output error
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:53:44] "[37mPOST /forward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:53:44] "[37mPOST /forward HTTP/1.1[0m" 200 -
+INFO:flask_app:IMU: [Errno 5] Input/output error
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:53:47] "[37mPOST /forward HTTP/1.1[0m" 200 -
+INFO:flask_app:IMU: [Errno 5] Input/output error
+INFO:flask_app:IMU: [Errno 5] Input/output error
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:53:47] "[37mPOST /forward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:53:47] "[37mPOST /forward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:53:53] "[37mPOST /forward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:53:53] "[37mPOST /forward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:53:53] "[37mPOST /forward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:53:53] "[37mPOST /forward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:53:53] "[37mPOST /forward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:54:14] "[37mPOST /forward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:54:14] "[37mPOST /forward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:54:14] "[37mPOST /forward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:54:14] "[37mPOST /forward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:54:14] "[37mPOST /forward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:54:19] "[37mPOST /forward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:54:19] "[37mPOST /forward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:54:21] "[37mPOST /forward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:54:21] "[37mPOST /forward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:54:21] "[37mPOST /forward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:54:23] "[37mPOST /forward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:54:23] "[37mPOST /forward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:54:23] "[37mPOST /reverse HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:54:26] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:54:26] "[37mPOST /reverse HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:54:26] "[37mPOST /reverse HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:54:26] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:54:26] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:54:28] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:54:28] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:54:28] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:54:28] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:54:28] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:54:31] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:54:31] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:54:37] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:54:37] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:54:37] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:54:37] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:54:37] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:54:37] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:54:37] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:54:38] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:54:38] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 11:59:08] "[37mPOST /shootdown HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:03:55] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:04:04] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:04:05] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:Starting Heading: 201.3125 with Power: -20
+INFO:flask_app:Rotating while heading >= 183.6875
+INFO:root:RED PIXELS: 0
+INFO:flask_app:Starting Heading: 169.375 with Power: 20
+INFO:flask_app:Rotating while heading <= 183.6875
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:Starting Heading: 200.4375 with Power: -20
+INFO:flask_app:Rotating while heading >= 183.6875
+INFO:flask_app:IMU Orientation: 'int' object is not iterable
+INFO:root:RED PIXELS: 69767
+INFO:flask_app:Starting Heading: 175.9375 with Power: 20
+INFO:flask_app:Rotating while heading <= 183.6875
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:Starting Heading: 176.0625 with Power: 20
+INFO:flask_app:Rotating while heading <= 183.6875
+INFO:root:RED PIXELS: 687364
+INFO:flask_app:Starting Heading: 193.5 with Power: -20
+INFO:flask_app:Rotating while heading >= 183.6875
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:05:19] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:05:19] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:05:19] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:05:19] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:Starting Heading: 346.0625 with Power: -20
+INFO:flask_app:Rotating while heading >= 183.6875
+INFO:flask_app:Starting Heading: 181.5625 with Power: 20
+INFO:flask_app:Rotating while heading <= 183.6875
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:05:43] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:07:52] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:08:12] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:08:13] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:Starting Heading: 212.1875 with Power: -17
+INFO:flask_app:Rotating while heading >= 192.0
+INFO:root:RED PIXELS: 0
+INFO:flask_app:Starting Heading: 201.4375 with Power: -17
+INFO:flask_app:Rotating while heading >= 192.0
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:Starting Heading: 198.9375 with Power: -17
+INFO:flask_app:Rotating while heading >= 192.0
+INFO:root:RED PIXELS: 0
+INFO:flask_app:Starting Heading: 227.625 with Power: -17
+INFO:flask_app:Rotating while heading >= 192.0
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:09:08] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:flask_app:Starting Heading: 241.375 with Power: -17
+INFO:flask_app:Rotating while heading >= 192.0
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:09:10] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:10:03] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:10:11] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:10:11] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:Starting Heading: 193.125 with Power: -17
+INFO:flask_app:Rotating while heading >= 181.9375
+INFO:root:RED PIXELS: 0
+INFO:flask_app:Starting Heading: 158.5625 with Power: 17
+INFO:flask_app:Rotating while heading <= 181.9375
+INFO:flask_app:IMU Orientation: 'int' object is not iterable
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:Starting Heading: 172.1875 with Power: 17
+INFO:flask_app:Rotating while heading <= 181.9375
+INFO:root:RED PIXELS: 405
+INFO:flask_app:Starting Heading: 97.25 with Power: 17
+INFO:flask_app:Rotating while heading <= 181.9375
+INFO:flask_app:IMU Orientation: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:Starting Heading: 118.6875 with Power: 17
+INFO:flask_app:Rotating while heading <= 181.9375
+INFO:root:RED PIXELS: 35535
+INFO:flask_app:Starting Heading: 189.8125 with Power: -17
+INFO:flask_app:Rotating while heading >= 181.9375
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:Starting Heading: 163.8125 with Power: 17
+INFO:flask_app:Rotating while heading <= 181.9375
+INFO:root:RED PIXELS: 6932
+INFO:flask_app:Starting Heading: 86.0 with Power: 17
+INFO:flask_app:Rotating while heading <= 181.9375
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:Starting Heading: 208.0 with Power: -17
+INFO:flask_app:Rotating while heading >= 181.9375
+INFO:root:RED PIXELS: 6162
+INFO:flask_app:Starting Heading: 77.5 with Power: 17
+INFO:flask_app:Rotating while heading <= 181.9375
+INFO:flask_app:IMU Orientation: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:Starting Heading: 155.75 with Power: 17
+INFO:flask_app:Rotating while heading <= 181.9375
+INFO:root:RED PIXELS: 3746
+INFO:flask_app:Starting Heading: 188.5 with Power: -17
+INFO:flask_app:Rotating while heading >= 181.9375
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:Starting Heading: 194.4375 with Power: -17
+INFO:flask_app:Rotating while heading >= 181.9375
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:root:RED PIXELS: 0
+INFO:flask_app:Starting Heading: 248.9375 with Power: -17
+INFO:flask_app:Rotating while heading >= 181.9375
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:Starting Heading: 174.5 with Power: 17
+INFO:flask_app:Rotating while heading <= 181.9375
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:root:RED PIXELS: 2489
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:13:09] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:flask_app:Starting Heading: 79.5625 with Power: 17
+INFO:flask_app:Rotating while heading <= 181.9375
+INFO:flask_app:IMU Orientation: [Errno 5] Input/output error
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:13:18] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:Starting Heading: 164.5 with Power: 17
+INFO:flask_app:Rotating while heading <= 181.125
+INFO:root:RED PIXELS: 0
+INFO:flask_app:Starting Heading: 185.3125 with Power: -17
+INFO:flask_app:Rotating while heading >= 181.125
+INFO:flask_app:IMU Orientation: 'int' object is not iterable
+INFO:flask_app:IMU Orientation: [Errno 5] Input/output error
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:Starting Heading: 192.1875 with Power: -17
+INFO:flask_app:Rotating while heading >= 181.125
+INFO:root:RED PIXELS: 0
+INFO:flask_app:Starting Heading: 175.25 with Power: 17
+INFO:flask_app:Rotating while heading <= 181.125
+INFO:flask_app:Starting Heading: 204.125 with Power: -17
+INFO:flask_app:Rotating while heading >= 181.125
+INFO:root:RED PIXELS: 0
+INFO:flask_app:Starting Heading: 176.3125 with Power: 17
+INFO:flask_app:Rotating while heading <= 181.125
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:Starting Heading: 178.375 with Power: 17
+INFO:flask_app:Rotating while heading <= 181.125
+INFO:flask_app:IMU Orientation: 'int' object is not iterable
+INFO:root:RED PIXELS: 4062
+INFO:flask_app:Starting Heading: 92.375 with Power: 17
+INFO:flask_app:Rotating while heading <= 181.125
+INFO:flask_app:IMU Orientation: 'int' object is not iterable
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:Starting Heading: 184.625 with Power: -17
+INFO:flask_app:Rotating while heading >= 181.125
+INFO:root:RED PIXELS: 1986

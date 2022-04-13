@@ -503,7 +503,7 @@ class BrickPiInterface():
         bp.set_motor_power(self.rightmotor, -power)
         bp.set_motor_power(self.leftmotor, power)
         while (eval(expression) and (self.CurrentCommand == "rotate_power_heading") and (time.time() < timelimit) and (self.config['imu'] < SensorStatus.DISABLED)):
-            heading = self.get_compass_IMU()
+            heading = self.get_orientation_IMU()[0]
             #self.log("Current heading: " + str(heading))
         self.stop_all()
         elapsedtime = time.time() - starttime
