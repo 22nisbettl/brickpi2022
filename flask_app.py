@@ -150,7 +150,7 @@ def forward():
 @app.route('/reverse', methods=['GET','POST'])
 def reverse():
     if GLOBALS.ROBOT:
-        GLOBALS.ROBOT.move_power(-20)
+        GLOBALS.ROBOT.move_power(-20, 3.17)
     return jsonify()
 
 @app.route('/stopall', methods=['GET','POST'])

@@ -61,10 +61,7 @@ class Robot(BrickPiInterface):
         GLOBALS.DATABASE.ModifyQuery('DELETE FROM TileTable')
         self.CurrentRoutine = "Searching"
         tile = 1
-        startcompass1 = self.get_compass_IMU()
-        time.sleep(2)
-        startcompass2 = self.get_compass_IMU()
-        scv = (startcompass1 + startcompass2) / 2
+        orient = self.get_orientation_IMU()[0]
         while self.CurrentRoutine == "Searching":
             GLOBALS.DATABASE.ModifyQuery('INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)', (tile,))
             self.quadrant_scan(tile)
@@ -77,7 +74,7 @@ class Robot(BrickPiInterface):
             South = tilewalls['South']
             East = tilewalls['East']
             print(North, West, South, East)
-            self.rotate_power_heading_IMU(17,scv)
+            self.rotate_power_heading_IMU(17,orient)
             if North == 0 and self.CurrentRoutine == "Searching":
                 camval = GLOBALS.CAMERA.get_camera_colour((50,50,150),(128,128,255))
                 if camval == "True":
@@ -137,25 +134,22 @@ class Robot(BrickPiInterface):
         print(currenttime)
         print(timelimit)
         data = {}
-        print((time.time() < timelimit), (self.CurrentCommand == "move_power_until_detect"))
         while (time.time() < timelimit) and (self.CurrentCommand == "move_power_until_detect"):
             bp.set_motor_power(self.rightmotor, power)
             bp.set_motor_power(self.leftmotor, power + deviation)
             if self.get_colour_sensor == "black":
                 data['color'] = 'black'
-                #maybe reverse back to middle
-                print("Black")
+                elapsedt = time.time() - currenttime
+                self.move_power_time(-20,elapsedt, 3.17)
                 break
             distance = self.get_ultra_sensor()
             print(distance)
             if distance < 20 and distance not in [0,999]:
                 data['distance'] = distance
-                print("Less than")
                 break
         elapsed = time.time() - currenttime
         data['elapsed'] = elapsed
         self.stop_all()
-        print("Got to end")
         return data
 
 # Only execute if this is the main file, good for testing code
@@ -167,5 +161,8 @@ if __name__ == '__main__':
     GLOBALS.CAMERA.start()
     ROBOT.configure_sensors() #This takes 4 seconds
     time.sleep(2)
-    ROBOT.move_power_until_detect(30,4)
+    orient = ROBOT.get_orientation_IMU()[0]
+    print(orient)
+    ROBOT.rotate_power_degrees_IMU(20,180)
+    ROBOT.rotate_power_heading_IMU(17,orient)
     ROBOT.safe_exit()
