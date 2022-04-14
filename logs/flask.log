@@ -3233,3 +3233,522 @@ INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
 INFO:flask_app:Starting Heading: 184.625 with Power: -17
 INFO:flask_app:Rotating while heading >= 181.125
 INFO:root:RED PIXELS: 1986
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:19:01] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:19:12] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:19:15] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:Starting Heading: 85.5 with Power: -17
+INFO:flask_app:Rotating while heading >= 82.4375
+INFO:root:RED PIXELS: 25455
+INFO:flask_app:Starting Heading: 72.1875 with Power: 17
+INFO:flask_app:Rotating while heading <= 82.4375
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:Starting Heading: 97.9375 with Power: -17
+INFO:flask_app:Rotating while heading >= 82.4375
+INFO:root:RED PIXELS: 0
+INFO:flask_app:Starting Heading: 96.0625 with Power: -17
+INFO:flask_app:Rotating while heading >= 82.4375
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:Starting Heading: 87.0625 with Power: -17
+INFO:flask_app:Rotating while heading >= 82.4375
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:20:50] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:root:RED PIXELS: 619
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:21:08] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:21:08] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:flask_app:Starting Heading: 246.3125 with Power: -17
+INFO:flask_app:Rotating while heading >= 82.4375
+INFO:flask_app:IMU Orientation: 'int' object is not iterable
+INFO:flask_app:IMU Orientation: [Errno 5] Input/output error
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:root:RED PIXELS: 15359
+INFO:root:RED PIXELS: 13354
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:21:24] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:21:24] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:21:27] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:21:27] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:21:27] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:21:27] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:21:51] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:Cannot initialise IMU Sensor now trying to reconfig
+INFO:flask_app:IMU RECONFIG HAS FAILED 'int' object has no attribute 'BNO055'
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:IMU RECONFIG HAS FAILED 'int' object has no attribute 'BNO055'
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:22:00] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:22:01] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:root:RED PIXELS: 0
+INFO:root:RED PIXELS: 0
+INFO:root:RED PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:SHUT DOWN EVERYTHING
+INFO:flask_app:BRICKPIINTERFACE: Exiting the Thermal Sensor Thread
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:Exiting
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:ULTRASONIC: get_sensor error: Sensor not configured or not supported.
+INFO:flask_app:ULTRASONIC: get_sensor error: Sensor not configured or not supported.
+INFO:flask_app:ULTRASONIC: get_sensor error: Sensor not configured or not supported.
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:flask_app:ULTRASONIC: get_sensor error: Sensor not configured or not supported.
+INFO:root:RED PIXELS: 0
+INFO:root:CAMERA INTERFACE: Exiting Camera Thread
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:22:45] "[37mPOST /robotshutdown HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:22:49] "[35m[1mPOST /maze HTTP/1.1[0m" 500 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:Cannot initialise IMU Sensor now trying to reconfig
+INFO:flask_app:IMU RECONFIG HAS FAILED 'int' object has no attribute 'BNO055'
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:IMU RECONFIG HAS FAILED 'int' object has no attribute 'BNO055'
+INFO:flask_app:LOADING THE SOUND
+INFO:flask_app:ULTRASONIC: get_sensor error: Invalid sensor data
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:23:10] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:root:RED PIXELS: 0
+INFO:root:RED PIXELS: 0
+INFO:root:RED PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:23:50] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:23:50] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:23:51] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:23:53] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:24:38] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:24:57] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:24:57] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:IMU Orientation: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:root:RED PIXELS: 10953
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:root:RED PIXELS: 0
+INFO:root:RED PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:27:03] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:27:03] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:flask_app:SHUT DOWN EVERYTHING
+INFO:flask_app:BRICKPIINTERFACE: Exiting the Thermal Sensor Thread
+INFO:flask_app:Exiting
+INFO:root:CAMERA INTERFACE: Exiting Camera Thread
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:27:09] "[37mPOST /robotshutdown HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 111-144-191
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:31:33] "[37mPOST /robotload HTTP/1.1[0m" 200 -

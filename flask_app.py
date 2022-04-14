@@ -151,9 +151,11 @@ def forward():
 
 @app.route('/reverse', methods=['GET','POST'])
 def reverse():
+    data = {}
     if GLOBALS.ROBOT:
-        GLOBALS.ROBOT.move_power(-20, 3.17)
-    return jsonify()
+        data['elapsedtime'] = GLOBALS.ROBOT.move_power(-20, 3.17)
+        data['heading'] = GLOBALS.ROBOT.get_compass_IMU()
+    return jsonify(data)
 
 @app.route('/stopall', methods=['GET','POST'])
 def stopall():

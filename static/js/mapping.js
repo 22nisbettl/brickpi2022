@@ -34,4 +34,10 @@ function mapforward(results)
    turtle.forward(results.elapsedtime*30);
 }
 
+function mapbackward(results)
+{
+   turtle.lookTo(results.heading);
+   turtle.backward(results.elapsedtime*30);
+}
+
 load_map();
