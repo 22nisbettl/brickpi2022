@@ -78,7 +78,8 @@ class Robot(BrickPiInterface):
             print(North, West, South, East)
             self.rotate_power_heading_IMU(17,orient)
             if North == 0 and self.CurrentRoutine == "Searching":
-                camval = GLOBALS.CAMERA.get_camera_colour((50,50,150),(128,128,255))
+                #camval = GLOBALS.CAMERA.get_camera_colour((50,50,150),(128,128,255)) Red detection
+                camval = GLOBALS.CAMERA.get_camera_colour((14,143,134),(17,145,134)) #Yeloow detection
                 print("Going North")
                 if camval == "True":
                     self.spin_medium_motor(-360)
@@ -89,7 +90,7 @@ class Robot(BrickPiInterface):
                 tile += 1
             elif North == 1 and West == 0 and self.CurrentRoutine == "Searching":
                 self.rotate_power_degrees_IMU(17,-90)
-                camval = GLOBALS.CAMERA.get_camera_colour((50,50,150),(128,128,255))
+                camval = GLOBALS.CAMERA.get_camera_colour((14,143,134),(17,145,134))
                 print("Going West")
                 if camval == "True":
                     self.spin_medium_motor(-360)
@@ -100,7 +101,7 @@ class Robot(BrickPiInterface):
                 tile += 1
             elif North == 1 and West == 1 and East == 0 and self.CurrentRoutine == "Searching":
                 self.rotate_power_degrees_IMU(17,90)
-                camval = GLOBALS.CAMERA.get_camera_colour((50,50,150),(128,128,255))
+                camval = GLOBALS.CAMERA.get_camera_colour((14,143,134),(17,145,134))
                 print("Going East")
                 if camval == "True":
                     self.spin_medium_motor(-360)
@@ -111,7 +112,7 @@ class Robot(BrickPiInterface):
                 tile += 1
             elif North == 1 and West == 1 and East == 1 and South == 0 and self.CurrentRoutine == "Searching":
                 self.rotate_power_degrees_IMU(17,-1800)
-                camval = GLOBALS.CAMERA.get_camera_colour((50,50,150),(128,128,255))
+                camval = GLOBALS.CAMERA.get_camera_colour((14,143,134),(17,145,134))
                 print("Going South")
                 if camval == "True":
                     self.spin_medium_motor(-360)
@@ -168,9 +169,10 @@ if __name__ == '__main__':
     GLOBALS.CAMERA = camerainterface.CameraInterface()
     GLOBALS.CAMERA.start()
     ROBOT.configure_sensors() #This takes 4 seconds
-    time.sleep(2)
-    orient = ROBOT.get_orientation_IMU()[0]
-    print(orient)
-    ROBOT.rotate_power_degrees_IMU(20,180)
-    ROBOT.rotate_power_heading_IMU(17,orient)
+    camval = GLOBALS.CAMERA.get_camera_colour((134,143,14),(134,145,17))
+    if camval == "True":
+        print("Yellow detected")
+        ROBOT.spin_medium_motor(-360)
+        ROBOT.spin_medium_motor(-360)
+        ROBOT.spin_medium_motor(-360)
     ROBOT.safe_exit()

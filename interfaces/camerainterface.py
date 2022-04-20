@@ -76,7 +76,7 @@ class CameraInterface(object):
         cv2.imwrite("threshold.jpg", thresh)
 
         count = numpy.sum(numpy.nonzero(thresh))
-        self.log("RED PIXELS: " + str(count))
+        self.log("COLOUR PIXELS: " + str(count))
         if count > 300: #more than 300 pixels are between the low and high color
             return "True"
         return "False"

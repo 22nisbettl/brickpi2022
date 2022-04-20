@@ -3752,3 +3752,272 @@ INFO:flask_app:LOADING THE ROBOT
 INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
 INFO:flask_app:LOADING THE SOUND
 INFO:werkzeug:10.10.72.21 - - [13/Apr/2022 12:31:33] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-038-307
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:16:24] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:16:24] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:16:24] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:16:24] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:16:24] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:16:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:flask_app:[{'FirstName': 'admin', 'Password': 'raspassword', 'Surname': None, 'Permission': 'admin', 'Email': 'admin@admin', 'UserID': 1}]
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:16:35] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:16:35] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:16:35] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:16:35] "[37mGET /static/js/mapping.js HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:flask_app:ULTRASONIC: get_sensor error: Invalid sensor data
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:16:45] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:16:45] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:ULTRASONIC: get_sensor error: Invalid sensor data
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:17:28] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:17:28] "[36mGET /static/js/sensor.js HTTP/1.1[0m" 304 -
+INFO:flask_app:ULTRASONIC: get_sensor error: Invalid sensor data
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:17:30] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:flask_app:ULTRASONIC: get_sensor error: Invalid sensor data
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:17:32] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:17:35] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:17:37] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:17:39] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:17:41] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:17:43] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:17:45] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:17:47] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:17:49] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:17:51] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:17:53] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:17:55] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:17:56] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:17:56] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:17:56] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:18:03] "[37mPOST /shootdown HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:18:06] "[37mPOST /shootdown HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:18:29] "[37mPOST /shootdown HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-038-307
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:flask_app:ULTRASONIC: get_sensor error: Invalid sensor data
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:19:47] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:19:49] "[35m[1mPOST /shootdown HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-038-307
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-038-307
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:22:59] "[37mPOST /shootdown HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:23:03] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:flask_app:ULTRASONIC: get_sensor error: Invalid sensor data
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:23:11] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:23:11] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:23:22] "[37mPOST /shootdown HTTP/1.1[0m" 200 -
+INFO:flask_app:ULTRASONIC: get_sensor error: Invalid sensor data
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:23:53] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:flask_app:ULTRASONIC: get_sensor error: Invalid sensor data
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:23:55] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:flask_app:ULTRASONIC: get_sensor error: Invalid sensor data
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:23:57] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:23:59] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:24:01] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:24:03] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:24:05] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:24:07] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:24:09] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:24:11] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:24:13] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:24:15] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:24:17] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:24:19] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:24:21] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:24:23] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:24:25] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:24:27] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:24:29] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:24:31] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:24:33] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:24:35] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:24:37] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:24:39] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:24:41] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:24:43] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:24:45] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:24:47] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:24:49] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:24:51] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:24:53] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:24:55] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:24:57] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:24:59] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:25:01] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:25:03] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:25:05] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:25:07] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:25:09] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:25:11] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:25:13] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:25:15] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:25:17] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:25:17] "[37mPOST /reconfig_IMU HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:25:19] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:25:21] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-038-307
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:26:23] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:26:23] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:26:24] "[32mGET /sensorview HTTP/1.1[0m" 302 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:26:25] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:26:25] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:26:33] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:26:33] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:26:35] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:26:38] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:26:40] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:26:42] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:26:44] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:26:46] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:26:48] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:26:50] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:26:52] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:26:54] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:26:56] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:26:58] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:27:00] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:27:02] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:27:04] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:27:06] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:27:08] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:27:10] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:27:12] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:27:14] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:27:16] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:27:18] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:27:19] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:27:20] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:27:20] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/interfaces/camerainterface.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-038-307
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-038-307
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:28:25] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:28:33] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:28:33] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-038-307
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-038-307
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-038-307
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-038-307
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:30:41] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:30:49] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:30:49] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-038-307
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-038-307
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-038-307
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-038-307
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-038-307
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:35:38] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:35:45] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:35:46] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:root:COLOUR PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:35:48] "[37mPOST /shootdown HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-038-307
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:47:14] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:47:29] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:47:29] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:root:COLOUR PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:47:34] "[37mPOST /shootdown HTTP/1.1[0m" 200 -
+INFO:root:COLOUR PIXELS: 520
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:47:48] "[37mPOST /shootdown HTTP/1.1[0m" 200 -
+INFO:root:COLOUR PIXELS: 761
+INFO:werkzeug:10.10.72.21 - - [20/Apr/2022 12:47:52] "[37mPOST /shootdown HTTP/1.1[0m" 200 -
