@@ -146,8 +146,8 @@ class Robot(BrickPiInterface):
         while (time.time() < timelimit) and (self.CurrentCommand == "move_power_until_detect"):
             bp.set_motor_power(self.rightmotor, power)
             bp.set_motor_power(self.leftmotor, power + deviation)
-            if self.get_colour_sensor == "black":
-                data['color'] = 'black'
+            if self.get_colour_sensor == "brown":
+                data['color'] = 'brown'
                 elapsedt = time.time() - currenttime
                 self.move_power_time(-20,elapsedt, 3.17)
                 break

@@ -234,7 +234,7 @@ def sounds():
 def stopsounds():
     if request.method == 'POST':
         GLOBALS.SOUND.stop_music()
-    return
+    return jsonify()
 
 # -----------------------------------------------------------------------------------
 # CAMERA CODE-----------------------------------------------------------------------

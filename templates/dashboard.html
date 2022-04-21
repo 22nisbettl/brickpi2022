@@ -5,6 +5,25 @@
             <h1 style="text-align: center;">Robot Dashboard</h1>
         </div>
     </div>
+    <div class="modal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true"></span>
+              </button>
+            </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="row d-flex justify-content-center" id="load">
         <button type="button" class="btn btn-success" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Load Robot"  onclick="load_robot();"><i class="fa-solid fa-robot fa-5x"></i></button>
     </div>          
@@ -33,9 +52,10 @@
             <button type="button" class="btn btn-info" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Music" onclick="musictoggle();"><i class="fa-solid fa-music"></i></button>
         </div>
         <div class="row d-flex justify-content-center">
-            <button type="button" class="btn btn-light" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Search Maze" onclick="new_ajax_helper('/maze');"><i class="fas fa-search-plus"></i></button>
+            <button type="button" id="mazebutton" class="btn btn-light" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Search Maze" onclick="new_ajax_helper('/maze');"><i class="fas fa-search-plus"></i></button>
+            <input id="missionid" type="hidden" value="{{session['MissionID']}}">
             <button type="button" class="btn btn-success" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Manual Control" onclick="toggle();"><i class="fa-solid fa-up-down-left-right"></i></button>
-            <button type="button" class="btn btn-dark" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Stop Searching Maze" onclick="new_ajax_helper('/mazestop');"><i class="fas fa-search-minus"></i></button>
+            <button type="button" id="mazebutton" class="btn btn-dark" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Stop Searching Maze" onclick="new_ajax_helper('/mazestop');"><i class="fas fa-search-minus"></i></button>
         </div>
         <div id="manualhide" hidden="hidden">
             <div class="row d-flex justify-content-center">
@@ -89,6 +109,12 @@
             else {
                 element.setAttribute("hidden", "hidden");
             }
+        }
+        mission = document.getElementById('mission')
+        if (mission == null) {
+            alert("No Mission");
+            let button = document.getElementById('mazebutton');
+            button.setAttribute('disabled','disabled');
         }
       </script>
 {% endblock %}
