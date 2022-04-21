@@ -84,6 +84,7 @@ def robotload():
 # Dashboard
 @app.route('/dashboard', methods=['GET','POST'])
 def robotdashboard():
+    print(session['MissionID'])
     if not 'UserID' in session:
         return redirect('/')
     enabled = int(GLOBALS.ROBOT != None)
@@ -203,13 +204,23 @@ def sensorview():
 @app.route('/mission', methods=['GET','POST'])
 def mission():
     data = None
+    NonMiss = GLOBALS.DATABASE.ViewQuery('SELECT * FROM MissionTable WHERE Completed = 0')
     if request.method == "POST":
-        UserID = session["UserID"]
-        Notes = request.form.get('notes')
-        Location = request.form.get('location')
-        StartTime = datetime.now()
-        GLOBALS.DATABASE.ModifyQuery('INSERT INTO MissionTable (Location, Notes, UserID, StartTime) VALUES (?,?,?,?)', (Location, Notes, UserID, StartTime))
-    return render_template("mission.html")
+        query = request.form.get('query')
+        if query == 'create':
+            UserID = session["UserID"]
+            Notes = request.form.get('notes')
+            Location = request.form.get('location')
+            StartTime = datetime.now()
+            GLOBALS.DATABASE.ModifyQuery('INSERT INTO MissionTable (Location, Notes, UserID, StartTime, Completed) VALUES (?,?,?,?,0)', (Location, Notes, UserID, StartTime))
+            MissionID = GLOBALS.DATABASE.ViewQuery('SELECT MissionID FROM MissionTable WHERE EndTime = NULL')
+            session['MissionID'] = MissionID
+        elif query == 'complete':
+            completemission = request.form.getlist('selectedmissions')
+            for mission in completemission:
+                endtime = datetime.now()
+                GLOBALS.DATABASE.ModifyQuery('UPDATE MissionTable SET Completed = 1, EndTime = ? WHERE MissionID = ?', (endtime, mission))
+    return render_template("mission.html", NonMiss = NonMiss)
 
 @app.route('/sounds', methods=['GET','POST'])
 def sounds():

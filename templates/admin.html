@@ -58,6 +58,7 @@
                             <th>Start Time</th>
                             <th>Location</th>
                             <th>End Time</th>
+                            <th>Completed</th>
                         </tr>
                         {% for Mission in MissionData %}
                             <tr class="table-secondary">
@@ -67,6 +68,7 @@
                                 <td>{{Mission['StartTime']}}</td>
                                 <td>{{Mission['Location']}}</td>
                                 <td>{{Mission['EndTime']}}</td>
+                                <td>{{Mission['Completed']}}</td>
                             </tr>
                         {% endfor %}
                     </table>
@@ -82,19 +84,23 @@
                         <tr class="table-primary">
                             <th>Select</th>
                             <th>Tile ID</th>
+                            <th>Mission ID</th>
                             <th>North</th>
                             <th>West</th>
                             <th>South</th>
                             <th>East</th>
+                            <th>Orientation</th>
                         </tr>
                         {% for Tile in TileData %}
                             <tr class="table-secondary">
                                 <td><input type="checkbox" name="selectedtiles" value={{Tile['TileID']}}></td>
                                 <td>{{Tile['TileID']}}</td>
+                                <td>{{Tile['MissionID']}}</td>
                                 <td>{{Tile['North']}}</td>
                                 <td>{{Tile['West']}}</td>
                                 <td>{{Tile['South']}}</td>
                                 <td>{{Tile['West']}}</td>
+                                <td>{{Tile['Orientation']}}</td>
                             </tr>
                         {% endfor %}
                     </table>
