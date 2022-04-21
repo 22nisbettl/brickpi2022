@@ -88,6 +88,8 @@ def robotdashboard():
     if not 'UserID' in session:
         return redirect('/')
     enabled = int(GLOBALS.ROBOT != None)
+    MissionID = GLOBALS.DATABASE.ViewQuery('SELECT MissionID FROM MissionTable WHERE EndTime = NULL')
+    session['MissionID'] = MissionID
     return render_template('dashboard.html', robot_enabled = enabled)
 
 @app.route('/admin', methods=["POST","GET"])
@@ -213,13 +215,13 @@ def mission():
             Location = request.form.get('location')
             StartTime = datetime.now()
             GLOBALS.DATABASE.ModifyQuery('INSERT INTO MissionTable (Location, Notes, UserID, StartTime, Completed) VALUES (?,?,?,?,0)', (Location, Notes, UserID, StartTime))
-            MissionID = GLOBALS.DATABASE.ViewQuery('SELECT MissionID FROM MissionTable WHERE EndTime = NULL')
-            session['MissionID'] = MissionID
         elif query == 'complete':
             completemission = request.form.getlist('selectedmissions')
             for mission in completemission:
                 endtime = datetime.now()
                 GLOBALS.DATABASE.ModifyQuery('UPDATE MissionTable SET Completed = 1, EndTime = ? WHERE MissionID = ?', (endtime, mission))
+                misid = session['MissionID']
+                print(misid)
     return render_template("mission.html", NonMiss = NonMiss)
 
 @app.route('/sounds', methods=['GET','POST'])
