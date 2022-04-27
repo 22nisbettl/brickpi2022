@@ -84,12 +84,12 @@ def robotload():
 # Dashboard
 @app.route('/dashboard', methods=['GET','POST'])
 def robotdashboard():
-    print(session['MissionID'])
     if not 'UserID' in session:
         return redirect('/')
     enabled = int(GLOBALS.ROBOT != None)
     MissionID = GLOBALS.DATABASE.ViewQuery('SELECT MissionID FROM MissionTable WHERE EndTime = NULL')
     session['MissionID'] = MissionID
+    print(session['MissionID'])
     return render_template('dashboard.html', robot_enabled = enabled)
 
 @app.route('/admin', methods=["POST","GET"])

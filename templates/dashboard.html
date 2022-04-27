@@ -110,11 +110,11 @@
                 element.setAttribute("hidden", "hidden");
             }
         }
-        mission = document.getElementById('missionid')
-        if (mission == null) {
+        let mission = document.getElementById('missionid').value;
+        if (mission == 'False') {
             alert("No Mission");
             let button = document.getElementById('mazebutton');
-            button.setAttribute('disabled','disabled');
+            button.setAttribute('disabled', '');
         }
       </script>
 {% endblock %}
