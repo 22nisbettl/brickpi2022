@@ -87,7 +87,7 @@ def robotdashboard():
     if not 'UserID' in session:
         return redirect('/')
     enabled = int(GLOBALS.ROBOT != None)
-    MissionID = GLOBALS.DATABASE.ViewQuery('SELECT MissionID FROM MissionTable WHERE EndTime = NULL')
+    MissionID = GLOBALS.DATABASE.ViewQuery('SELECT MissionID FROM MissionTable WHERE EndTime IS NULL')
     session['MissionID'] = MissionID
     print(session['MissionID'])
     return render_template('dashboard.html', robot_enabled = enabled)
