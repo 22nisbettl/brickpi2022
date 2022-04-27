@@ -1,10 +1,6 @@
-1. Ensure robot moves perfectly straight and turns perfectly left or right
-    Optimise the orientation part of the IMU
-    Ask Sir why the compass isn't working
-2. Camera search for specific number of pixels
-3. Launch package on camera detection
-4. Refine maze searcing
-5. Back track maze through database
-6. Interfaces
-7. Update mission page interface
-8. Missions need to start and end at times
+1. Back track maze through database
+2. Map movement table and action table
+3. Delete sensor table
+4. Folio
+5. Mission count how many victims
+6. Video
