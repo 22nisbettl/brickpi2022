@@ -21,6 +21,7 @@ class Robot(BrickPiInterface):
         for i in direction:
             if self.CurrentRoutine != 'Searching':
                 self.stop_routine()
+            self.search_harmed((14,143,134),(17,145,134))
             ultra = self.get_ultra_sensor()
             print(ultra, i)
             if ultra < 20 and ultra != 0:
@@ -29,32 +30,6 @@ class Robot(BrickPiInterface):
             else:
                 GLOBALS.DATABASE.ModifyQuery('UPDATE TileTable SET ' + i + ' = 0 WHERE TileID = ?', (tile,))
             self.rotate_power_degrees_IMU(17,-90)
-        '''
-        ultra = self.get_ultra_sensor()
-        if ultra < 20 and ultra != 0 and self.CurrentRoutine == "Searching":
-            GLOBALS.DATABASE.ModifyQuery('UPDATE TileTable SET North = 1 WHERE TileID = ?', (tile,))
-        else:
-            GLOBALS.DATABASE.ModifyQuery('UPDATE TileTable SET North = 0 WHERE TileID = ?', (tile,))
-        self.rotate_power_degrees_IMU(17,-90)
-        ultra = self.get_ultra_sensor()
-        if ultra < 20 and ultra != 0 and self.CurrentRoutine == "Searching":
-            GLOBALS.DATABASE.ModifyQuery('UPDATE TileTable SET West = 1 WHERE TileID = ?', (tile,))
-        else:
-            GLOBALS.DATABASE.ModifyQuery('UPDATE TileTable SET West = 0 WHERE TileID = ?', (tile,))
-        self.rotate_power_degrees_IMU(17,-90)
-        ultra = self.get_ultra_sensor()
-        if ultra < 20 and ultra != 0 and self.CurrentRoutine == "Searching":
-            GLOBALS.DATABASE.ModifyQuery('UPDATE TileTable SET South = 1 WHERE TileID = ?', (tile,))
-        else:
-            GLOBALS.DATABASE.ModifyQuery('UPDATE TileTable SET South = 0 WHERE TileID = ?', (tile,))
-        self.rotate_power_degrees_IMU(17,-90)
-        ultra = self.get_ultra_sensor()
-        if ultra < 20 and ultra != 0 and self.CurrentRoutine == "Searching":
-            GLOBALS.DATABASE.ModifyQuery('UPDATE TileTable SET East = 1 WHERE TileID = ?', (tile,))
-        else:
-            GLOBALS.DATABASE.ModifyQuery('UPDATE TileTable SET East = 0 WHERE TileID = ?', (tile,))
-        self.rotate_power_degrees_IMU(17,-90)
-        '''
         return
     
     def maze_solve(self):
@@ -79,45 +54,29 @@ class Robot(BrickPiInterface):
             self.rotate_power_heading_IMU(17,orient)
             if North == 0 and self.CurrentRoutine == "Searching":
                 #camval = GLOBALS.CAMERA.get_camera_colour((50,50,150),(128,128,255)) Red detection
-                camval = GLOBALS.CAMERA.get_camera_colour((14,143,134),(17,145,134)) #Yeloow detection
+                self.search_harmed((14,143,134),(17,145,134)) #Yeloow detection
                 print("Going North")
-                if camval == "True":
-                    self.spin_medium_motor(-360)
-                    self.spin_medium_motor(-360)
-                    self.spin_medium_motor(-360)
                 GLOBALS.DATABASE.ModifyQuery('INSERT INTO MapMovementTable (TileID, Wall) VALUES (?,?)', (tile,"North"))
                 self.move_power_until_detect(20,5)
                 tile += 1
             elif North == 1 and West == 0 and self.CurrentRoutine == "Searching":
                 self.rotate_power_degrees_IMU(17,-90)
-                camval = GLOBALS.CAMERA.get_camera_colour((14,143,134),(17,145,134))
+                self.search_harmed((14,143,134),(17,145,134))
                 print("Going West")
-                if camval == "True":
-                    self.spin_medium_motor(-360)
-                    self.spin_medium_motor(-360)
-                    self.spin_medium_motor(-360)
                 GLOBALS.DATABASE.ModifyQuery('INSERT INTO MapMovementTable (TileID, Wall) VALUES (?,?)', (tile,"West"))
                 self.move_power_until_detect(20,5)
                 tile += 1
             elif North == 1 and West == 1 and East == 0 and self.CurrentRoutine == "Searching":
                 self.rotate_power_degrees_IMU(17,90)
-                camval = GLOBALS.CAMERA.get_camera_colour((14,143,134),(17,145,134))
+                self.search_harmed((14,143,134),(17,145,134))
                 print("Going East")
-                if camval == "True":
-                    self.spin_medium_motor(-360)
-                    self.spin_medium_motor(-360)
-                    self.spin_medium_motor(-360)
                 GLOBALS.DATABASE.ModifyQuery('INSERT INTO MapMovementTable (TileID, Wall) VALUES (?,?)', (tile,"East"))
                 self.move_power_until_detect(20,5)
                 tile += 1
             elif North == 1 and West == 1 and East == 1 and South == 0 and self.CurrentRoutine == "Searching":
                 self.rotate_power_degrees_IMU(17,-1800)
-                camval = GLOBALS.CAMERA.get_camera_colour((14,143,134),(17,145,134))
+                self.search_harmed((14,143,134),(17,145,134))
                 print("Going South")
-                if camval == "True":
-                    self.spin_medium_motor(-360)
-                    self.spin_medium_motor(-360)
-                    self.spin_medium_motor(-360)
                 GLOBALS.DATABASE.ModifyQuery('INSERT INTO MapMovementTable (TileID, Wall) VALUES (?,?)', (tile,"South"))
                 self.move_power_until_detect(20,5)
                 tile += 1
@@ -133,6 +92,15 @@ class Robot(BrickPiInterface):
         self.stop_all()
         return
 
+    def search_harmed(self, low, high):
+        print("Checking for coloured pixels within range")
+        camval = GLOBALS.CAMERA.get_camera_colour(low, high)
+        if camval == "True":
+            self.spin_medium_motor(-360)
+            self.spin_medium_motor(-360)
+            self.spin_medium_motor(-360)
+        return
+
     #moves for the specified time (seconds) and power - use negative power to reverse
     def move_power_until_detect(self, power, t, deviation=-0.8):
         self.interrupt_previous_command()
@@ -140,8 +108,6 @@ class Robot(BrickPiInterface):
         currenttime = time.time()
         bp = self.BP
         timelimit = currenttime + t
-        print(currenttime)
-        print(timelimit)
         data = {}
         while (time.time() < timelimit) and (self.CurrentCommand == "move_power_until_detect"):
             bp.set_motor_power(self.rightmotor, power)
