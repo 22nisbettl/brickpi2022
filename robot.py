@@ -1,6 +1,7 @@
 #This is where your main robot code resides. It extendeds from the BrickPi Interface File
 #It includes all the code inside brickpiinterface. The CurrentCommand and CurrentRoutine are important because they can keep track of robot functions and commands. Remember Flask is using Threading (e.g. more than once process which can confuse the robot)
 from sqlite3 import DataError
+from tracemalloc import start
 from urllib.request import DataHandler
 from interfaces.brickpiinterface import *
 from interfaces import camerainterface
@@ -29,11 +30,14 @@ class Robot(BrickPiInterface):
                 GLOBALS.DATABASE.ModifyQuery('UPDATE TileTable SET ' + i + ' = 1 WHERE TileID = ?', (tile,))
             else:
                 GLOBALS.DATABASE.ModifyQuery('UPDATE TileTable SET ' + i + ' = 0 WHERE TileID = ?', (tile,))
+            start_rotate_time = time.time()
             self.rotate_power_degrees_IMU(17,-90)
+            self.recordaction(self.missionid, "Left and Right", "17", self.get_orientation_IMU(), start_rotate_time, (start_rotate_time - time.time()), "Rotated -90 degrees")
         return
     
-    def maze_solve(self):
+    def maze_solve(self, missionid):
         GLOBALS.DATABASE.ModifyQuery('DELETE FROM TileTable')
+        self.missionid = missionid
         self.CurrentRoutine = "Searching"
         tile = 1
         time.sleep(2)
@@ -51,45 +55,55 @@ class Robot(BrickPiInterface):
             South = tilewalls['South']
             East = tilewalls['East']
             print(North, West, South, East)
+            start_rotate_time = time.time()
             self.rotate_power_heading_IMU(17,orient)
+            self.recordaction(self.missionid, "Left and Right", "17", self.get_orientation_IMU(), start_rotate_time, (start_rotate_time- time.time()), "Rotated to beginning heading")
             if North == 0 and self.CurrentRoutine == "Searching":
                 #camval = GLOBALS.CAMERA.get_camera_colour((50,50,150),(128,128,255)) Red detection
                 self.search_harmed((14,143,134),(17,145,134)) #Yeloow detection
                 print("Going North")
-                GLOBALS.DATABASE.ModifyQuery('INSERT INTO MapMovementTable (TileID, Wall) VALUES (?,?)', (tile,"North"))
                 self.move_power_until_detect(20,5)
                 tile += 1
             elif North == 1 and West == 0 and self.CurrentRoutine == "Searching":
+                starttime = time.time()
                 self.rotate_power_degrees_IMU(17,-90)
+                self.recordaction(self.missionid, "Left and Right", "17", self.get_orientation_IMU(), starttime, (starttime - time.time()), "Rotated -90 degrees")
                 self.search_harmed((14,143,134),(17,145,134))
                 print("Going West")
-                GLOBALS.DATABASE.ModifyQuery('INSERT INTO MapMovementTable (TileID, Wall) VALUES (?,?)', (tile,"West"))
                 self.move_power_until_detect(20,5)
                 tile += 1
             elif North == 1 and West == 1 and East == 0 and self.CurrentRoutine == "Searching":
+                starttime = time.time()
                 self.rotate_power_degrees_IMU(17,90)
+                self.recordaction(self.missionid, "Left and Right", "17", self.get_orientation_IMU(), starttime, (starttime - time.time()), "Rotated 90 degrees")
                 self.search_harmed((14,143,134),(17,145,134))
                 print("Going East")
-                GLOBALS.DATABASE.ModifyQuery('INSERT INTO MapMovementTable (TileID, Wall) VALUES (?,?)', (tile,"East"))
                 self.move_power_until_detect(20,5)
                 tile += 1
             elif North == 1 and West == 1 and East == 1 and South == 0 and self.CurrentRoutine == "Searching":
-                self.rotate_power_degrees_IMU(17,-1800)
+                starttime = time.time()
+                self.rotate_power_degrees_IMU(17,-180)
+                self.recordaction(self.missionid, "Left and Right", "17", self.get_orientation_IMU(), starttime, (starttime - time.time()), "Rotated -180 degrees")
                 self.search_harmed((14,143,134),(17,145,134))
                 print("Going South")
-                GLOBALS.DATABASE.ModifyQuery('INSERT INTO MapMovementTable (TileID, Wall) VALUES (?,?)', (tile,"South"))
                 self.move_power_until_detect(20,5)
                 tile += 1
             elif self.CurrentRoutine != "Searching":
                 self.stop_routine()
             else:
                 self.quadrant_scan(tile)
+            start_rotate_time = time.time()
             self.rotate_power_heading_IMU(17,orient)
+            self.recordaction(self.missionid, "Left and Right", "17", self.get_orientation_IMU(), start_rotate_time, (start_rotate_time- time.time()), "Rotated to beginning heading")
         return
 
     def stop_routine(self):
         self.CurrentRoutine = "Stop"
         self.stop_all()
+        return
+
+    def recordaction(missionid, motor, power, orientation, starttime, elapsedtime, type):
+        GLOBALS.DATABASE.ModifyQuery('INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)', (missionid, motor, power, orientation, starttime, elapsedtime, type))
         return
 
     def search_harmed(self, low, high):
@@ -99,6 +113,7 @@ class Robot(BrickPiInterface):
             self.spin_medium_motor(-360)
             self.spin_medium_motor(-360)
             self.spin_medium_motor(-360)
+            self.recordaction(self.missionid, "Medium", "-360", self.get_orientation_IMU(), time.time(), 0, "Shot cannon using medium motor. Victim Found!")
         return
 
     #moves for the specified time (seconds) and power - use negative power to reverse
@@ -124,6 +139,7 @@ class Robot(BrickPiInterface):
                 break
         elapsed = time.time() - currenttime
         data['elapsed'] = elapsed
+        self.recordaction(self.missionid, "Left and Right", power, self.get_orientation_IMU(), currenttime, elapsed, ("Moved power until detect for " + t))
         self.stop_all()
         return data
 
