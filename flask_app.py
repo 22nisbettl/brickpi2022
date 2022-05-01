@@ -3,7 +3,7 @@ from itsdangerous import JSONWebSignatureSerializer
 from interfaces import databaseinterface
 import global_vars as GLOBALS #load global variables
 import logging, time
-from datetime import *
+#from datetime import *
 try:
     import robot #robot is class that extends the brickpi class
     from interfaces import camerainterface, soundinterface, brickpiinterface
@@ -97,12 +97,13 @@ def admin():
     UserResults = GLOBALS.DATABASE.ViewQuery('SELECT * FROM UserTable')
     MissionResults = GLOBALS.DATABASE.ViewQuery('SELECT * FROM MissionTable')
     TileResults = GLOBALS.DATABASE.ViewQuery('SELECT * FROM TileTable')
+    MovementResults = GLOBALS.DATABASE.ViewQuery('SELECT * FROM MovementHistoryTable')
     if 'Permission' in session:
         if session['Permission'] != 'admin':
             return redirect('/dashboard')
     else:
         return redirect('/')
-    return render_template('admin.html', UserData = UserResults, MissionData = MissionResults, TileData = TileResults)
+    return render_template('admin.html', UserData = UserResults, MissionData = MissionResults, TileData = TileResults, MovementData = MovementResults)
 
 @app.route('/maze', methods=['GET','POST'])
 def maze():
@@ -145,7 +146,7 @@ def forward():
     data = {}
     if GLOBALS.ROBOT:
         start_time = time.time()
-        data['elapsedtime'] = GLOBALS.ROBOT.move_power(20)
+        data['elapsedtime'] = GLOBALS.ROBOT.move_forward(10)
         data['heading'] = GLOBALS.ROBOT.get_orientation_IMU()
         GLOBALS.ROBOT.recordaction(session['MissionID'], "Left and Right", "20", data['heading'], start_time, data['elapsedtime'], "Robot manually moved forward")
     return jsonify(data)
@@ -190,8 +191,10 @@ def shootdown():
 def left():
     if GLOBALS.ROBOT:
         starttime = time.time()
-        GLOBALS.ROBOT.rotate_power_degrees_IMU(17,-90)
-        GLOBALS.ROBOT.recordaction(session['MissionID'], "Left and Right", "17", GLOBALS.ROBOT.get_orientation_IMU(), starttime, (starttime - time.time()), "Rotated -90 degrees")
+        GLOBALS.ROBOT.rotate_left(90)
+        #GLOBALS.ROBOT.rotate_power_degrees_IMU(17,-90)
+        finish_rotate_time = starttime - time.time()
+        GLOBALS.ROBOT.recordaction(session['MissionID'], "Left and Right", "17", GLOBALS.ROBOT.get_orientation_IMU(), starttime, finish_rotate_time, "Rotated -90 degrees")
     return jsonify()
 
 @app.route('/right', methods=['GET','POST'])
@@ -199,7 +202,8 @@ def right():
     if GLOBALS.ROBOT:
         starttime = time.time()
         GLOBALS.ROBOT.rotate_power_degrees_IMU(17,90)
-        GLOBALS.ROBOT.recordaction(session['MissionID'], "Left and Right", "17", GLOBALS.ROBOT.get_orientation_IMU(), starttime, (starttime - time.time()), "Rotated 90 degrees")
+        finish_rotate_time = starttime - time.time()
+        GLOBALS.ROBOT.recordaction(session['MissionID'], "Left and Right", "17", GLOBALS.ROBOT.get_orientation_IMU(), starttime, finish_rotate_time, "Rotated 90 degrees")
     return jsonify()
 
 @app.route('/sensorview', methods=['GET','POST'])

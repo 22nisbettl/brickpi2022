@@ -8,6 +8,7 @@ except ImportError:
     print("BrickPi not installed") #module not found
     
 import time, math, sys, logging, threading
+import numpy
 
 MAGNETIC_DECLINATION = 11 #set for different magnetic fields based on location
 USEMUTEX = True #avoid threading issues

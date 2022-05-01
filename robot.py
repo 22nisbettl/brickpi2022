@@ -32,7 +32,8 @@ class Robot(BrickPiInterface):
                 GLOBALS.DATABASE.ModifyQuery('UPDATE TileTable SET ' + i + ' = 0 WHERE TileID = ?', (tile,))
             start_rotate_time = time.time()
             self.rotate_power_degrees_IMU(17,-90)
-            self.recordaction(self.missionid, "Left and Right", "17", self.get_orientation_IMU(), start_rotate_time, (start_rotate_time - time.time()), "Rotated -90 degrees")
+            finish_rotate_time = start_rotate_time - time.time()
+            self.recordaction((self.missionid), "Left and Right", "17", (self.get_orientation_IMU()), start_rotate_time, finish_rotate_time, "Rotated -90 degrees")
         return
     
     def maze_solve(self, missionid):
@@ -57,7 +58,8 @@ class Robot(BrickPiInterface):
             print(North, West, South, East)
             start_rotate_time = time.time()
             self.rotate_power_heading_IMU(17,orient)
-            self.recordaction(self.missionid, "Left and Right", "17", self.get_orientation_IMU(), start_rotate_time, (start_rotate_time- time.time()), "Rotated to beginning heading")
+            finish_rotate_time = start_rotate_time - time.time()
+            self.recordaction(self.missionid, "Left and Right", "17", self.get_orientation_IMU(), start_rotate_time, finish_rotate_time, "Rotated to beginning heading")
             if North == 0 and self.CurrentRoutine == "Searching":
                 #camval = GLOBALS.CAMERA.get_camera_colour((50,50,150),(128,128,255)) Red detection
                 self.search_harmed((14,143,134),(17,145,134)) #Yeloow detection
@@ -67,7 +69,8 @@ class Robot(BrickPiInterface):
             elif North == 1 and West == 0 and self.CurrentRoutine == "Searching":
                 starttime = time.time()
                 self.rotate_power_degrees_IMU(17,-90)
-                self.recordaction(self.missionid, "Left and Right", "17", self.get_orientation_IMU(), starttime, (starttime - time.time()), "Rotated -90 degrees")
+                finish_rotate_time = start_rotate_time - time.time()
+                self.recordaction(self.missionid, "Left and Right", "17", self.get_orientation_IMU(), starttime, finish_rotate_time, "Rotated -90 degrees")
                 self.search_harmed((14,143,134),(17,145,134))
                 print("Going West")
                 self.move_power_until_detect(20,5)
@@ -75,7 +78,8 @@ class Robot(BrickPiInterface):
             elif North == 1 and West == 1 and East == 0 and self.CurrentRoutine == "Searching":
                 starttime = time.time()
                 self.rotate_power_degrees_IMU(17,90)
-                self.recordaction(self.missionid, "Left and Right", "17", self.get_orientation_IMU(), starttime, (starttime - time.time()), "Rotated 90 degrees")
+                finish_rotate_time = start_rotate_time - time.time()
+                self.recordaction(self.missionid, "Left and Right", "17", self.get_orientation_IMU(), starttime, finish_rotate_time, "Rotated 90 degrees")
                 self.search_harmed((14,143,134),(17,145,134))
                 print("Going East")
                 self.move_power_until_detect(20,5)
@@ -83,7 +87,8 @@ class Robot(BrickPiInterface):
             elif North == 1 and West == 1 and East == 1 and South == 0 and self.CurrentRoutine == "Searching":
                 starttime = time.time()
                 self.rotate_power_degrees_IMU(17,-180)
-                self.recordaction(self.missionid, "Left and Right", "17", self.get_orientation_IMU(), starttime, (starttime - time.time()), "Rotated -180 degrees")
+                finish_rotate_time = start_rotate_time - time.time()
+                self.recordaction(self.missionid, "Left and Right", "17", self.get_orientation_IMU(), starttime, finish_rotate_time, "Rotated -180 degrees")
                 self.search_harmed((14,143,134),(17,145,134))
                 print("Going South")
                 self.move_power_until_detect(20,5)
@@ -94,7 +99,8 @@ class Robot(BrickPiInterface):
                 self.quadrant_scan(tile)
             start_rotate_time = time.time()
             self.rotate_power_heading_IMU(17,orient)
-            self.recordaction(self.missionid, "Left and Right", "17", self.get_orientation_IMU(), start_rotate_time, (start_rotate_time- time.time()), "Rotated to beginning heading")
+            finish_rotate_time = start_rotate_time - time.time()
+            self.recordaction(self.missionid, "Left and Right", "17", self.get_orientation_IMU(), start_rotate_time, finish_rotate_time, "Rotated to beginning heading")
         return
 
     def stop_routine(self):
@@ -102,8 +108,8 @@ class Robot(BrickPiInterface):
         self.stop_all()
         return
 
-    def recordaction(missionid, motor, power, orientation, starttime, elapsedtime, type):
-        GLOBALS.DATABASE.ModifyQuery('INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)', (missionid, motor, power, orientation, starttime, elapsedtime, type))
+    def recordaction(self, missionid, motor, power, orientation, starttime, elapsedtime, typetext):
+        GLOBALS.DATABASE.ModifyQuery('INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)', (missionid, motor, power, orientation, starttime, elapsedtime, typetext))
         return
 
     def search_harmed(self, low, high):
@@ -139,17 +145,91 @@ class Robot(BrickPiInterface):
                 break
         elapsed = time.time() - currenttime
         data['elapsed'] = elapsed
-        self.recordaction(self.missionid, "Left and Right", power, self.get_orientation_IMU(), currenttime, elapsed, ("Moved power until detect for " + t))
+        self.recordaction(self.missionid, "Left and Right", power, self.get_orientation_IMU(), currenttime, elapsed, ("Moved power until detect for " + str(t)))
         self.stop_all()
         return data
+
+    def move_forward(self, distance, speed=100, power=100):
+        distance = distance * 360 / (numpy.pi * 5.6)
+        starttime = time.time()
+        BP = self.BP
+        try:
+            BP.offset_motor_encoder(BP.PORT_A, BP.get_motor_encoder(BP.PORT_A)) # reset encoder A
+            BP.offset_motor_encoder(BP.PORT_D, BP.get_motor_encoder(BP.PORT_D)) # reset encoder D
+            BP.set_motor_limits(BP.PORT_A, power, speed)          # optionally set a power limit (in percent) and a speed limit (in Degrees Per Second)
+            BP.set_motor_limits(BP.PORT_D, power, speed)      
+            while True:
+                BP.set_motor_position(BP.PORT_A, distance-10)
+                BP.set_motor_position(BP.PORT_D, distance-10)
+                time.sleep(0.02)
+                if BP.get_motor_encoder(BP.PORT_D) <= distance or BP.get_motor_encoder(BP.PORT_A) <= distance:
+                    break
+        except KeyboardInterrupt: # except the program gets interrupted by Ctrl+C on the keyboard.
+            BP.reset_all()
+        elapsedtime = time.time() - starttime
+        return elapsedtime
+
+    def move_backward(self, distance, speed=100, power=100):
+        distance = -distance * 360 / (numpy.pi * 5.6)
+        BP = self.BP
+        try:
+            BP.offset_motor_encoder(BP.PORT_A, BP.get_motor_encoder(BP.PORT_A)) # reset encoder A
+            BP.offset_motor_encoder(BP.PORT_D, BP.get_motor_encoder(BP.PORT_D)) # reset encoder D
+            BP.set_motor_limits(BP.PORT_A, power, speed)          # optionally set a power limit (in percent) and a speed limit (in Degrees Per Second)
+            BP.set_motor_limits(BP.PORT_D, power, speed)      
+            while True:
+                BP.set_motor_position(BP.PORT_A, distance+10)
+                BP.set_motor_position(BP.PORT_D, distance+10)
+                time.sleep(0.02)
+                if BP.get_motor_encoder(BP.PORT_D) >= distance or BP.get_motor_encoder(BP.PORT_A) >= distance:
+                    break
+
+        except KeyboardInterrupt: # except the program gets interrupted by Ctrl+C on the keyboard.
+            BP.reset_all() 
+
+    def rotate_left(self, angle, speed=100, power=100):
+        degrees = angle * 2
+        BP = self.BP
+        try:
+            BP.offset_motor_encoder(BP.PORT_A, BP.get_motor_encoder(BP.PORT_A))
+            BP.offset_motor_encoder(BP.PORT_D, BP.get_motor_encoder(BP.PORT_D))
+            BP.set_motor_limits(BP.PORT_D, -power, speed)
+            BP.set_motor_limits(BP.PORT_A, power, speed)      
+            while True:
+                BP.set_motor_position(BP.PORT_D, degrees+5)
+                BP.set_motor_position(BP.PORT_A, -degrees-5)
+                time.sleep(0.02)
+                if BP.get_motor_encoder(BP.PORT_D) >= degrees or BP.get_motor_encoder(BP.PORT_A) <= -degrees:
+                    break
+
+        except KeyboardInterrupt:
+            BP.reset_all() 
+
+    def rotate_right(self, angle, speed=100, power=100):
+        degrees = angle * 2 + 5
+        BP = self.BP
+        try:
+            BP.offset_motor_encoder(BP.PORT_A, BP.get_motor_encoder(BP.PORT_A))
+            BP.offset_motor_encoder(BP.PORT_D, BP.get_motor_encoder(BP.PORT_D))
+            BP.set_motor_limits(BP.PORT_D, -power, speed)
+            BP.set_motor_limits(BP.PORT_A, power, speed)      
+            while True:
+                BP.set_motor_position(BP.PORT_D, degrees+10)
+                BP.set_motor_position(BP.PORT_A, -degrees-10)
+                time.sleep(0.02)
+                if BP.get_motor_encoder(BP.PORT_D) >= degrees or BP.get_motor_encoder(BP.PORT_A) <= -degrees:
+                    break
+
+        except KeyboardInterrupt:
+            BP.reset_all() 
 
 # Only execute if this is the main file, good for testing code
 if __name__ == '__main__':
     logging.basicConfig(filename='logs/robot.log', level=logging.INFO)
-    ROBOT = Robot(timelimit=0)  #10 second timelimit before
+    ROBOT = Robot(timelimit=0)
     bp = ROBOT.BP
     GLOBALS.CAMERA = camerainterface.CameraInterface()
     GLOBALS.CAMERA.start()
-    ROBOT.configure_sensors() #This takes 4 seconds
-    ROBOT.move_power_until_detect(20,5)
+    ROBOT.configure_sensors()
+    ROBOT.rotate_left(90)
     ROBOT.safe_exit()

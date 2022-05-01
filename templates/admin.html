@@ -12,6 +12,9 @@
         <li class="nav-item">
             <a class="nav-link" data-bs-toggle="tab" href="#tile">Tile Table</a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#movement">Movement History Table</a>
+        </li>
     </ul>
     <div id="myTabContent" class="tab-content">
         <div class="tab-pane fade show active" id="user">
@@ -101,6 +104,40 @@
                                 <td>{{Tile['South']}}</td>
                                 <td>{{Tile['West']}}</td>
                                 <td>{{Tile['Orientation']}}</td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                    <br>
+                    <input type="submit" name="Delete" class="btn btn-danger" value="Delete">
+                </form>
+            {% endif %}
+        </div>
+        <div class="tab-pane fade" id="movement">
+            {% if MovementData %}
+                <form action="/admin" method="POST">
+                    <table style="width:100%" class="table table-hover">
+                        <tr class="table-primary">
+                            <th>Select</th>
+                            <th>Action ID</th>
+                            <th>Mission ID</th>
+                            <th>Motor</th>
+                            <th>Power</th>
+                            <th>Orientation</th>
+                            <th>Start Time</th>
+                            <th>Elapsed Time</th>
+                            <th>Type</th>
+                        </tr>
+                        {% for Movement in MovementData %}
+                            <tr class="table-secondary">
+                                <td><input type="checkbox" name="selectedmissions" value={{Movement['ActionID']}}></td>
+                                <td>{{Movement['ActionID']}}</td>
+                                <td>{{Movement['MissionID']}}</td>
+                                <td>{{Movement['Motor']}}</td>
+                                <td>{{Movement['Power']}}</td>
+                                <td>{{Movement['Orientation']}}</td>
+                                <td>{{Movement['StartTime']}}</td>
+                                <td>{{Movement['ElapsedTime']}}</td>
+                                <td>{{Movement['Type']}}</td>
                             </tr>
                         {% endfor %}
                     </table>
