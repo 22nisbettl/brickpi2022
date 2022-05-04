@@ -8057,3 +8057,267 @@ INFO:werkzeug: * Debugger PIN: 297-823-214
 WARNING:werkzeug: * Running on all addresses.
    WARNING: This is a development server. Do not use it in a production deployment.
 INFO:werkzeug: * Running on http://10.10.72.21:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:192.168.1.118 - - [04/May/2022 17:19:05] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [04/May/2022 17:19:05] "[37mGET /static/css/theme.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [04/May/2022 17:19:05] "[37mGET /static/css/custom.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [04/May/2022 17:19:05] "[37mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [04/May/2022 17:19:05] "[37mGET /static/js/custom.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [04/May/2022 17:19:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:flask_app:[{'Permission': 'admin', 'FirstName': 'Almighty', 'Password': 'raspassword', 'UserID': 1, 'Surname': 'Admin', 'Email': 'admin@admin'}]
+INFO:werkzeug:192.168.1.118 - - [04/May/2022 17:19:10] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.1.118 - - [04/May/2022 17:19:11] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [04/May/2022 17:19:12] "[37mGET /static/js/mapping.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.1.118 - - [04/May/2022 17:19:12] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:192.168.1.118 - - [04/May/2022 17:19:21] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:192.168.1.118 - - [04/May/2022 17:19:21] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 84.375 with Power: 17
+INFO:flask_app:Rotating while heading <= 121.5625
+INFO:root:COLOUR PIXELS: 0
+INFO:werkzeug:192.168.1.118 - - [04/May/2022 17:19:35] "[35m[1mPOST /maze HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:192.168.1.118 - - [04/May/2022 17:20:27] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:192.168.1.118 - - [04/May/2022 17:20:34] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:192.168.1.118 - - [04/May/2022 17:20:34] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 100.9375 with Power: 17
+INFO:flask_app:Rotating while heading <= 128.5625
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 124.375 with Power: 17
+INFO:flask_app:Rotating while heading <= 128.5625
+INFO:werkzeug:192.168.1.118 - - [04/May/2022 17:20:51] "[35m[1mPOST /mazestop HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.118 - - [04/May/2022 17:20:51] "[37mPOST /maze HTTP/1.1[0m" 200 -
+ERROR:werkzeug:Error on request:
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/werkzeug/serving.py", line 323, in run_wsgi
+    execute(self.server.app)
+  File "/home/pi/.local/lib/python3.5/site-packages/werkzeug/serving.py", line 315, in execute
+    write(data)
+  File "/home/pi/.local/lib/python3.5/site-packages/werkzeug/serving.py", line 296, in write
+    self.wfile.write(data)
+  File "/usr/lib/python3.5/socket.py", line 594, in write
+    return self._sock.send(b)
+OSError: [Errno 113] No route to host
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:192.168.1.118 - - [04/May/2022 18:30:05] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:192.168.1.118 - - [04/May/2022 18:30:14] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:192.168.1.118 - - [04/May/2022 18:30:14] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:Starting Heading: 72.75 with Power: 17
+INFO:flask_app:Rotating while heading <= 74.625
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 78.375 with Power: -17
+INFO:flask_app:Rotating while heading >= 74.625
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 64.375 with Power: 17
+INFO:flask_app:Rotating while heading <= 74.625
+ERROR:flask_app:DATABASE ERROR: unrecognized token: ""Direction%: ORDER BY DESC LIMIT 1"
+ERROR:flask_app:SELECT Comments FROM MovementHistoryTable WHERE MissionID = ? AND Type LIKE "Direction%: ORDER BY DESC LIMIT 1
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 72.5 with Power: 17
+INFO:flask_app:Rotating while heading <= 74.625
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 88.9375 with Power: -17
+INFO:flask_app:Rotating while heading >= 74.625
+ERROR:flask_app:DATABASE ERROR: unrecognized token: ""Direction%: ORDER BY DESC LIMIT 1"
+ERROR:flask_app:SELECT Comments FROM MovementHistoryTable WHERE MissionID = ? AND Type LIKE "Direction%: ORDER BY DESC LIMIT 1
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 242.4375 with Power: -17
+INFO:flask_app:Rotating while heading >= 74.625
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 77.75 with Power: -17
+INFO:flask_app:Rotating while heading >= 74.625
+ERROR:flask_app:DATABASE ERROR: unrecognized token: ""Direction%: ORDER BY DESC LIMIT 1"
+ERROR:flask_app:SELECT Comments FROM MovementHistoryTable WHERE MissionID = ? AND Type LIKE "Direction%: ORDER BY DESC LIMIT 1
+INFO:root:COLOUR PIXELS: 0
+INFO:werkzeug:192.168.1.118 - - [04/May/2022 18:31:15] "[35m[1mPOST /mazestop HTTP/1.1[0m" 500 -
+INFO:flask_app:Starting Heading: 66.4375 with Power: 17
+INFO:flask_app:Rotating while heading <= 74.625
+INFO:werkzeug:192.168.1.118 - - [04/May/2022 18:31:16] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:192.168.1.118 - - [04/May/2022 18:32:26] "[35m[1mPOST /maze HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.118 - - [04/May/2022 18:32:36] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:192.168.1.118 - - [04/May/2022 18:32:45] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:192.168.1.118 - - [04/May/2022 18:32:45] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 73.1875 with Power: -17
+INFO:flask_app:Rotating while heading >= 63.875
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 45.5625 with Power: 17
+INFO:flask_app:Rotating while heading <= 63.875
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 74.625 with Power: -17
+INFO:flask_app:Rotating while heading >= 63.875
+ERROR:flask_app:DATABASE ERROR: unrecognized token: ""%Direction%: ORDER BY DESC LIMIT 1"
+ERROR:flask_app:SELECT Comments FROM MovementHistoryTable WHERE MissionID = ? AND Type LIKE "%Direction%: ORDER BY DESC LIMIT 1
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:root:COLOUR PIXELS: 0
+INFO:werkzeug:192.168.1.118 - - [04/May/2022 18:33:16] "[35m[1mPOST /mazestop HTTP/1.1[0m" 500 -
+INFO:flask_app:Starting Heading: 134.4375 with Power: -17
+INFO:flask_app:Rotating while heading >= 63.875
+INFO:flask_app:IMU Orientation: 'int' object is not iterable
+INFO:werkzeug:192.168.1.118 - - [04/May/2022 18:33:18] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:192.168.1.118 - - [04/May/2022 18:35:44] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:192.168.1.118 - - [04/May/2022 18:35:51] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:192.168.1.118 - - [04/May/2022 18:35:52] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:Starting Heading: 51.875 with Power: 17
+INFO:flask_app:Rotating while heading <= 56.9375
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 58.875 with Power: -17
+INFO:flask_app:Rotating while heading >= 56.9375
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 35.25 with Power: 17
+INFO:flask_app:Rotating while heading <= 56.9375
+ERROR:flask_app:DATABASE ERROR: no such column: DESC
+ERROR:flask_app:SELECT Comments FROM MovementHistoryTable WHERE MissionID = ? AND Type LIKE "%Direction%" ORDER BY DESC LIMIT 1
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:Starting Heading: 61.9375 with Power: -17
+INFO:flask_app:Rotating while heading >= 56.9375
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 58.75 with Power: -17
+INFO:flask_app:Rotating while heading >= 56.9375
+ERROR:flask_app:DATABASE ERROR: no such column: DESC
+ERROR:flask_app:SELECT Comments FROM MovementHistoryTable WHERE MissionID = ? AND Type LIKE "%Direction%" ORDER BY DESC LIMIT 1
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 230.875 with Power: -17
+INFO:flask_app:Rotating while heading >= 56.9375
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 30.125 with Power: 17
+INFO:flask_app:Rotating while heading <= 56.9375
+ERROR:flask_app:DATABASE ERROR: no such column: DESC
+ERROR:flask_app:SELECT Comments FROM MovementHistoryTable WHERE MissionID = ? AND Type LIKE "%Direction%" ORDER BY DESC LIMIT 1
+INFO:root:COLOUR PIXELS: 0
+INFO:werkzeug:192.168.1.118 - - [04/May/2022 18:36:52] "[35m[1mPOST /mazestop HTTP/1.1[0m" 500 -
+INFO:flask_app:Starting Heading: 60.4375 with Power: -17
+INFO:flask_app:Rotating while heading >= 56.9375
+INFO:werkzeug:192.168.1.118 - - [04/May/2022 18:36:53] "[37mPOST /maze HTTP/1.1[0m" 200 -
