@@ -5812,3 +5812,2207 @@ INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', rel
 INFO:werkzeug: * Restarting with stat
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:15:04] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:15:05] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:15:05] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:15:05] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:15:05] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:15:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:flask_app:[{'Permission': 'admin', 'Email': 'admin@admin', 'UserID': 1, 'Surname': 'Admin', 'Password': 'raspassword', 'FirstName': 'Almighty'}]
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:15:23] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:15:24] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:15:25] "[36mGET /static/js/mapping.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:15:25] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:15:37] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:15:37] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 346.3125 with Power: -17
+INFO:flask_app:Rotating while heading >= 9.9375
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 1.5 with Power: 17
+INFO:flask_app:Rotating while heading <= 9.9375
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 356.0 with Power: -17
+INFO:flask_app:Rotating while heading >= 9.9375
+INFO:flask_app:IMU Orientation: [Errno 5] Input/output error
+INFO:flask_app:IMU Orientation: [Errno 5] Input/output error
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 2.625 with Power: 17
+INFO:flask_app:Rotating while heading <= 9.9375
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:16:21] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:flask_app:Starting Heading: 74.3125 with Power: -17
+INFO:flask_app:Rotating while heading >= 9.9375
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 88.875 with Power: -17
+INFO:flask_app:Rotating while heading >= 9.9375
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:16:26] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:16:26] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:16:27] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:17:30] "[37mPOST /forward HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:17:53] "[37mPOST /forward HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:18:40] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:18:47] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:18:47] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:18:56] "[37mPOST /forward HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:21:31] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:21:39] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:21:39] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:21:42] "[37mPOST /forward HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:22:54] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:23:02] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:23:02] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:23:19] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:23:26] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:23:26] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:23:28] "[37mPOST /forward HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:24:20] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:24:42] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:24:43] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:24:48] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:24:51] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:24:52] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:24:52] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:24:53] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:24:54] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:24:54] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:24:54] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:24:55] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:24:55] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:flask_app:Starting Heading: 346.9375 with Power: -17
+INFO:flask_app:Rotating while heading >= 8.3125
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:24:55] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:flask_app:Starting Heading: 342.6875 with Power: -17
+INFO:flask_app:Rotating while heading >= 8.3125
+INFO:flask_app:IMU Orientation: [Errno 5] Input/output error
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:24:55] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 324.3125 with Power: 17
+INFO:flask_app:Rotating while heading <= 344.125
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 351.25 with Power: -17
+INFO:flask_app:Rotating while heading >= 344.125
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 316.4375 with Power: 17
+INFO:flask_app:Rotating while heading <= 344.125
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 352.0625 with Power: -17
+INFO:flask_app:Rotating while heading >= 344.125
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 313.4375 with Power: 17
+INFO:flask_app:Rotating while heading <= 344.125
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 351.4375 with Power: -17
+INFO:flask_app:Rotating while heading >= 344.125
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:25:45] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:25:45] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:25:45] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:25:45] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:25:46] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:25:46] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:25:46] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:25:46] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:25:47] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:25:48] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:25:49] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:25:49] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:25:49] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:25:49] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:25:50] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 15.5625 with Power: 17
+INFO:flask_app:Rotating while heading <= 344.125
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:25:50] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:25:51] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:25:51] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:flask_app:Starting Heading: 14.5625 with Power: 17
+INFO:flask_app:Rotating while heading <= 344.125
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:25:51] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:25:52] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:27:28] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:27:35] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:27:36] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 141.75 with Power: -17
+INFO:flask_app:Rotating while heading >= 106.3125
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 101.5 with Power: 17
+INFO:flask_app:Rotating while heading <= 106.3125
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:27:53] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:27:53] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:27:53] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:27:53] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 151.5 with Power: -17
+INFO:flask_app:Rotating while heading >= 106.3125
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 104.6875 with Power: 17
+INFO:flask_app:Rotating while heading <= 106.3125
+INFO:flask_app:IMU Orientation: [Errno 5] Input/output error
+INFO:flask_app:IMU Orientation: [Errno 5] Input/output error
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:28:00] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:28:01] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:28:01] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:28:02] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:28:44] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:28:53] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:28:53] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:28:55] "[37mPOST /forward HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:29:39] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:29:52] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:29:52] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 142.5625 with Power: -17
+INFO:flask_app:Rotating while heading >= 100.4375
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 93.8125 with Power: 17
+INFO:flask_app:Rotating while heading <= 100.4375
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:30:14] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:30:14] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:30:15] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:30:15] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:30:15] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:30:16] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:30:16] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:30:16] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 146.375 with Power: -17
+INFO:flask_app:Rotating while heading >= 100.4375
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 96.875 with Power: 17
+INFO:flask_app:Rotating while heading <= 100.4375
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:30:22] "[37mPOST /maze HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:30:38] "[37mPOST /shootup HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:32:38] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:32:45] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:32:46] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 282.3125 with Power: -17
+INFO:flask_app:Rotating while heading >= 226.75
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 217.6875 with Power: 17
+INFO:flask_app:Rotating while heading <= 226.75
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 326.0 with Power: -17
+INFO:flask_app:Rotating while heading >= 226.75
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:42:30] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:42:38] "[35m[1mGET /sensorview HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:42:38] "[37mGET /sensorview?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:42:38] "[37mGET /sensorview?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:42:38] "[37mGET /sensorview?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:42:39] "[37mGET /sensorview?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:42:39] "[37mGET /sensorview?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:42:39] "[37mGET /sensorview?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:42:41] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:42:43] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:SHUT DOWN EVERYTHING
+INFO:flask_app:BRICKPIINTERFACE: Exiting the Thermal Sensor Thread
+INFO:flask_app:Exiting
+INFO:flask_app:COLOUR: get_sensor error: Sensor not configured or not supported.
+INFO:flask_app:ULTRASONIC: get_sensor error: Sensor not configured or not supported.
+INFO:flask_app:THERMAL READ: get_sensor error: Sensor not configured or not supported.
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:42:47] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:42:47] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:root:CAMERA INTERFACE: Exiting Camera Thread
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:42:48] "[37mPOST /robotshutdown HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:42:48] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:42:48] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:42:48] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:42:49] "[37mPOST /compass HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:42:51] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:42:51] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:42:59] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:42:59] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:45:48] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:45:55] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:45:55] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 311.0 with Power: -17
+INFO:flask_app:Rotating while heading >= 271.75
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 264.25 with Power: 17
+INFO:flask_app:Rotating while heading <= 271.75
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:46:15] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:46:15] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:46:15] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:46:15] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:46:16] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:46:16] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:46:18] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:46:18] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 327.75 with Power: -17
+INFO:flask_app:Rotating while heading >= 271.75
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 269.6875 with Power: 17
+INFO:flask_app:Rotating while heading <= 271.75
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:46:21] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:49:01] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:49:03] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:49:04] "[37mGET /videofeed HTTP/1.1[0m" 204 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:49:16] "[35m[1mPOST /maze HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:50:41] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:50:49] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:50:49] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 344.1875 with Power: -17
+INFO:flask_app:Rotating while heading >= 13.0625
+INFO:flask_app:IMU Orientation: 'int' object is not iterable
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 4.8125 with Power: 17
+INFO:flask_app:Rotating while heading <= 13.0625
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 352.8125 with Power: -17
+INFO:flask_app:Rotating while heading >= 13.0625
+INFO:flask_app:IMU Orientation: [Errno 5] Input/output error
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 241.9375 with Power: -17
+INFO:flask_app:Rotating while heading >= 13.0625
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 336.1875 with Power: -17
+INFO:flask_app:Rotating while heading >= 13.0625
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 353.6875 with Power: -17
+INFO:flask_app:Rotating while heading >= 13.0625
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:52:22] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:52:22] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:52:22] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:52:22] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:52:27] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:52:28] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 57.5 with Power: -17
+INFO:flask_app:Rotating while heading >= 13.0625
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:52:29] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 54.5 with Power: -17
+INFO:flask_app:Rotating while heading >= 13.0625
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:52:31] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:52:31] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:52:31] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:52:31] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:52:31] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:52:31] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:52:31] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:53:45] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:53:52] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:53:52] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 319.75 with Power: 17
+INFO:flask_app:Rotating while heading <= 341.6875
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 357.875 with Power: -17
+INFO:flask_app:Rotating while heading >= 341.6875
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 345.0 with Power: -17
+INFO:flask_app:Rotating while heading >= 341.6875
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 353.3125 with Power: -17
+INFO:flask_app:Rotating while heading >= 341.6875
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:54:54] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:54:55] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:54:55] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:54:55] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:54:55] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:54:55] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:54:56] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 289.0 with Power: 17
+INFO:flask_app:Rotating while heading <= 341.6875
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:54:58] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:54:58] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:54:58] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:flask_app:Starting Heading: 292.875 with Power: 17
+INFO:flask_app:Rotating while heading <= 341.6875
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:54:58] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:57:02] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:57:11] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:57:11] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 81.125 with Power: -17
+INFO:flask_app:Rotating while heading >= 72.125
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 74.3125 with Power: -17
+INFO:flask_app:Rotating while heading >= 72.125
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 92.6875 with Power: -17
+INFO:flask_app:Rotating while heading >= 72.125
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU Orientation: [Errno 5] Input/output error
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:58:04] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:58:04] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:58:04] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:58:05] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:58:06] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 12:58:06] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:00:51] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:00:59] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:00:59] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 85.125 with Power: -17
+INFO:flask_app:Rotating while heading >= 64.625
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 54.6875 with Power: 17
+INFO:flask_app:Rotating while heading <= 64.625
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 120.5 with Power: -17
+INFO:flask_app:Rotating while heading >= 64.625
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 56.0 with Power: 17
+INFO:flask_app:Rotating while heading <= 64.625
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:04:43] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:04:52] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:04:52] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:04:56] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:04:56] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 85.6875 with Power: 17
+INFO:flask_app:Rotating while heading <= 103.25
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 165.8125 with Power: -17
+INFO:flask_app:Rotating while heading >= 103.25
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 108.1875 with Power: -17
+INFO:flask_app:Rotating while heading >= 103.25
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 13.25 with Power: 17
+INFO:flask_app:Rotating while heading <= 103.25
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 93.375 with Power: 17
+INFO:flask_app:Rotating while heading <= 103.25
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:06:46] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:06:46] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:06:46] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:flask_app:Starting Heading: 86.4375 with Power: 17
+INFO:flask_app:Rotating while heading <= 103.25
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:06:47] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:06:47] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:06:47] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:08:07] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:08:16] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:08:16] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:08:20] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:08:20] "[37mGET /static/js/sensor.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:08:21] "[37mPOST /reconfig_IMU HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:08:22] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:08:24] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:08:26] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:08:28] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:08:28] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:08:28] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:08:32] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 85.0625 with Power: -17
+INFO:flask_app:Rotating while heading >= 69.4375
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 83.625 with Power: -17
+INFO:flask_app:Rotating while heading >= 69.4375
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 82.25 with Power: -17
+INFO:flask_app:Rotating while heading >= 69.4375
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 195.0 with Power: -17
+INFO:flask_app:Rotating while heading >= 69.4375
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 70.625 with Power: -17
+INFO:flask_app:Rotating while heading >= 69.4375
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 66.4375 with Power: 17
+INFO:flask_app:Rotating while heading <= 69.4375
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 94.625 with Power: -17
+INFO:flask_app:Rotating while heading >= 69.4375
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 11.5 with Power: 17
+INFO:flask_app:Rotating while heading <= 69.4375
+INFO:flask_app:IMU Orientation: [Errno 5] Input/output error
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 28.125 with Power: 17
+INFO:flask_app:Rotating while heading <= 69.4375
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 272.8125 with Power: -17
+INFO:flask_app:Rotating while heading >= 69.4375
+INFO:flask_app:IMU Orientation: 'int' object is not iterable
+INFO:flask_app:IMU Orientation: [Errno 5] Input/output error
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 67.5625 with Power: 17
+INFO:flask_app:Rotating while heading <= 69.4375
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 92.8125 with Power: -17
+INFO:flask_app:Rotating while heading >= 69.4375
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 67.3125 with Power: 17
+INFO:flask_app:Rotating while heading <= 69.4375
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 192.625 with Power: -17
+INFO:flask_app:Rotating while heading >= 69.4375
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 61.1875 with Power: 17
+INFO:flask_app:Rotating while heading <= 69.4375
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 12.5 with Power: 17
+INFO:flask_app:Rotating while heading <= 69.4375
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:10:53] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:10:54] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:10:54] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 261.5625 with Power: -17
+INFO:flask_app:Rotating while heading >= 69.4375
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:10:56] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:10:56] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:flask_app:Starting Heading: 276.9375 with Power: -17
+INFO:flask_app:Rotating while heading >= 69.4375
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type) VALUES (?,?,?,?,?,?,?)
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:10:56] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:14:51] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:14:53] "[37mGET /admin HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:15:05] "[37mGET /admin HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:15:06] "[37mGET /static/css/theme.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:15:06] "[37mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:15:06] "[37mGET /static/css/custom.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:15:06] "[37mGET /static/js/custom.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:15:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:31:51] "[37mGET /admin HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:31:52] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:32:00] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:32:01] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 307.0625 with Power: -17
+INFO:flask_app:Rotating while heading >= 289.0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:32:27] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:32:27] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:flask_app:Starting Heading: 205.3125 with Power: 17
+INFO:flask_app:Rotating while heading <= 289.0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:32:28] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET West = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 99.9375 with Power: -17
+INFO:flask_app:Rotating while heading >= 87.5
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 148.6875 with Power: -17
+INFO:flask_app:Rotating while heading >= 87.5
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET North = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET South = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:UPDATE TileTable SET East = 1 WHERE TileID = ?
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 89.75 with Power: -17
+INFO:flask_app:Rotating while heading >= 87.5
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+ERROR:flask_app:DATABASE ERROR: unrecognized token: ""Direction%: ORDER BY DESC LIMIT 1"
+ERROR:flask_app:SELECT Comments FROM MovementHistoryTable WHERE MissionID = ? AND Type LIKE "Direction%: ORDER BY DESC LIMIT 1
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 327.6875 with Power: -17
+INFO:flask_app:Rotating while heading >= 87.5
+INFO:flask_app:IMU Orientation: 'int' object is not iterable
+INFO:flask_app:IMU Orientation: [Errno 5] Input/output error
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:33:44] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:33:45] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:33:45] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:33:45] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:33:45] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:33:45] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:36:33] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:36:41] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:36:42] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 108.5 with Power: -17
+INFO:flask_app:Rotating while heading >= 92.3125
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 7.875 with Power: 17
+INFO:flask_app:Rotating while heading <= 92.3125
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 104.125 with Power: -17
+INFO:flask_app:Rotating while heading >= 92.3125
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+ERROR:flask_app:DATABASE ERROR: unrecognized token: ""Direction%: ORDER BY DESC LIMIT 1"
+ERROR:flask_app:SELECT Comments FROM MovementHistoryTable WHERE MissionID = ? AND Type LIKE "Direction%: ORDER BY DESC LIMIT 1
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 189.6875 with Power: -17
+INFO:flask_app:Rotating while heading >= 92.3125
+INFO:flask_app:IMU Orientation: 'int' object is not iterable
+INFO:flask_app:IMU Orientation: 'int' object is not iterable
+INFO:flask_app:IMU Orientation: [Errno 5] Input/output error
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:37:27] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:37:27] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:37:27] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:37:28] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:37:28] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:37:30] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:37:32] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 130.8125 with Power: -17
+INFO:flask_app:Rotating while heading >= 92.3125
+INFO:flask_app:IMU Orientation: [Errno 5] Input/output error
+INFO:flask_app:IMU Orientation: [Errno 5] Input/output error
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:37:32] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+ERROR:flask_app:DATABASE ERROR: unrecognized token: ""Direction%: ORDER BY DESC LIMIT 1"
+ERROR:flask_app:SELECT Comments FROM MovementHistoryTable WHERE MissionID = ? AND Type LIKE "Direction%: ORDER BY DESC LIMIT 1
+INFO:flask_app:Starting Heading: 130.75 with Power: -17
+INFO:flask_app:Rotating while heading >= 92.3125
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:37:33] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:37:33] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:39:30] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:39:39] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:39:39] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 97.4375 with Power: -17
+INFO:flask_app:Rotating while heading >= 86.5625
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 14.25 with Power: 17
+INFO:flask_app:Rotating while heading <= 86.5625
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 107.0625 with Power: -17
+INFO:flask_app:Rotating while heading >= 86.5625
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+ERROR:flask_app:DATABASE ERROR: unrecognized token: ""Direction%: ORDER BY DESC LIMIT 1"
+ERROR:flask_app:SELECT Comments FROM MovementHistoryTable WHERE MissionID = ? AND Type LIKE "Direction%: ORDER BY DESC LIMIT 1
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:root:COLOUR PIXELS: 0
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:flask_app:Starting Heading: 207.25 with Power: -17
+INFO:flask_app:Rotating while heading >= 86.5625
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:40:37] "[37mPOST /mazestop HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:40:37] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:46:42] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:46:49] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:46:49] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:46:54] "[37mPOST /forward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:46:56] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:49:51] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:49:59] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:50:00] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:50:03] "[37mPOST /stopall HTTP/1.1[0m" 200 -
+ERROR:flask_app:DATABASE ERROR: Error binding parameter 0 - probably unsupported type.
+ERROR:flask_app:INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:50:03] "[37mPOST /forward HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:52:06] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:52:14] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:52:15] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:52:33] "[35m[1mGET /dashboard HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:52:34] "[37mGET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:52:34] "[37mGET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:52:34] "[37mGET /dashboard?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:52:35] "[37mGET /dashboard?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:52:35] "[37mGET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:52:36] "[37mGET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:53:08] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [04/May/2022 13:53:18] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 492-839-683
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat

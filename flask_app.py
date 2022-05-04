@@ -88,8 +88,10 @@ def robotdashboard():
         return redirect('/')
     enabled = int(GLOBALS.ROBOT != None)
     MissionID = GLOBALS.DATABASE.ViewQuery('SELECT MissionID FROM MissionTable WHERE EndTime IS NULL')
+    if MissionID:
+        MissionID = MissionID[0]
     session['MissionID'] = MissionID
-    print(session['MissionID'])
+    print(session['MissionID']['MissionID'])
     return render_template('dashboard.html', robot_enabled = enabled)
 
 @app.route('/admin', methods=["POST","GET"])
@@ -108,7 +110,7 @@ def admin():
 @app.route('/maze', methods=['GET','POST'])
 def maze():
     data = {}
-    GLOBALS.ROBOT.maze_solve(session['MissionID'])
+    GLOBALS.ROBOT.maze_solve(session['MissionID']['MissionID'])
     return data
 
 @app.route('/mazestop', methods=['GET','POST'])
@@ -146,9 +148,9 @@ def forward():
     data = {}
     if GLOBALS.ROBOT:
         start_time = time.time()
-        data['elapsedtime'] = GLOBALS.ROBOT.move_forward(10)
-        data['heading'] = GLOBALS.ROBOT.get_orientation_IMU()
-        GLOBALS.ROBOT.recordaction(session['MissionID'], "Left and Right", "20", data['heading'], start_time, data['elapsedtime'], "Robot manually moved forward")
+        data['elapsedtime'] = GLOBALS.ROBOT.move_power(20)
+        data['heading'] = GLOBALS.ROBOT.get_orientation_IMU()[0]
+        GLOBALS.ROBOT.recordaction(session['MissionID'], "Left and Right", "20", data['heading'], start_time, data['elapsedtime'], "Robot manually moved forward","")
     return jsonify(data)
 
 @app.route('/reverse', methods=['GET','POST'])
@@ -157,8 +159,8 @@ def reverse():
     if GLOBALS.ROBOT:
         start_time = time.time()
         data['elapsedtime'] = GLOBALS.ROBOT.move_power(-20, 3.17)
-        data['heading'] = GLOBALS.ROBOT.get_orientation_IMU()
-        GLOBALS.ROBOT.recordaction(session['MissionID'], "Left and Right", "-20", data['heading'], start_time, data['elapsedtime'], "Robot manually reversed")
+        data['heading'] = GLOBALS.ROBOT.get_orientation_IMU()[0]
+        GLOBALS.ROBOT.recordaction(session['MissionID'], "Left and Right", "-20", data['heading'], start_time, data['elapsedtime'], "Robot manually reversed", "")
     return jsonify(data)
 
 @app.route('/stopall', methods=['GET','POST'])
@@ -174,7 +176,7 @@ def shootup():
         GLOBALS.ROBOT.spin_medium_motor(360)
         GLOBALS.ROBOT.spin_medium_motor(360)
         GLOBALS.ROBOT.spin_medium_motor(360)
-        GLOBALS.ROBOT.recordaction(session['MissionID'], "Medium", "360", GLOBALS.ROBOT.get_orientation_IMU(), start_time, 0, "Manually shot cannon upwards")
+        GLOBALS.ROBOT.recordaction(session['MissionID'], "Medium", "360", GLOBALS.ROBOT.get_orientation_IMU()[0], start_time, 0, "Manually shot cannon upwards", "")
     return jsonify()
 
 @app.route('/shootdown', methods=['GET','POST'])
@@ -184,7 +186,7 @@ def shootdown():
         GLOBALS.ROBOT.spin_medium_motor(-360)
         GLOBALS.ROBOT.spin_medium_motor(-360)
         GLOBALS.ROBOT.spin_medium_motor(-360)
-        GLOBALS.ROBOT.recordaction(session['MissionID'], "Medium", "-360", GLOBALS.ROBOT.get_orientation_IMU(), start_time, 0, "Manually shot cannon downwards")
+        GLOBALS.ROBOT.recordaction(session['MissionID'], "Medium", "-360", GLOBALS.ROBOT.get_orientation_IMU()[0], start_time, 0, "Manually shot cannon downwards", "")
     return jsonify()
 
 @app.route('/left', methods=['GET','POST'])
@@ -194,7 +196,7 @@ def left():
         GLOBALS.ROBOT.rotate_left(90)
         #GLOBALS.ROBOT.rotate_power_degrees_IMU(17,-90)
         finish_rotate_time = starttime - time.time()
-        GLOBALS.ROBOT.recordaction(session['MissionID'], "Left and Right", "17", GLOBALS.ROBOT.get_orientation_IMU(), starttime, finish_rotate_time, "Rotated -90 degrees")
+        GLOBALS.ROBOT.recordaction(session['MissionID'], "Left and Right", "17", GLOBALS.ROBOT.get_orientation_IMU()[0], starttime, finish_rotate_time, "Rotated -90 degrees", "")
     return jsonify()
 
 @app.route('/right', methods=['GET','POST'])
@@ -203,7 +205,7 @@ def right():
         starttime = time.time()
         GLOBALS.ROBOT.rotate_power_degrees_IMU(17,90)
         finish_rotate_time = starttime - time.time()
-        GLOBALS.ROBOT.recordaction(session['MissionID'], "Left and Right", "17", GLOBALS.ROBOT.get_orientation_IMU(), starttime, finish_rotate_time, "Rotated 90 degrees")
+        GLOBALS.ROBOT.recordaction(session['MissionID'], "Left and Right", "17", GLOBALS.ROBOT.get_orientation_IMU()[0], starttime, finish_rotate_time, "Rotated 90 degrees", "")
     return jsonify()
 
 @app.route('/sensorview', methods=['GET','POST'])
@@ -225,7 +227,7 @@ def mission():
             UserID = session["UserID"]
             Notes = request.form.get('notes')
             Location = request.form.get('location')
-            StartTime = time.time)
+            StartTime = time.time
             GLOBALS.DATABASE.ModifyQuery('INSERT INTO MissionTable (Location, Notes, UserID, StartTime, Completed) VALUES (?,?,?,?,0)', (Location, Notes, UserID, StartTime))
         elif query == 'complete':
             completemission = request.form.getlist('selectedmissions')

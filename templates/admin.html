@@ -126,6 +126,7 @@
                             <th>Start Time</th>
                             <th>Elapsed Time</th>
                             <th>Type</th>
+                            <th>Comments</th>
                         </tr>
                         {% for Movement in MovementData %}
                             <tr class="table-secondary">
@@ -138,6 +139,7 @@
                                 <td>{{Movement['StartTime']}}</td>
                                 <td>{{Movement['ElapsedTime']}}</td>
                                 <td>{{Movement['Type']}}</td>
+                                <td>{{Movement['Comments']}}</td>
                             </tr>
                         {% endfor %}
                     </table>
