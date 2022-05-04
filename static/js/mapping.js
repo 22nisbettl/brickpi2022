@@ -40,4 +40,14 @@ function mapbackward(results)
    turtle.backward(results.elapsedtime*30);
 }
 
+function maptile()
+{
+   turtle.penup()
+   turtle.right(90)
+   turtle.forward()
+   turtle.pendown()
+   turtle.left(2.5*30)
+   turtle.left(5*30)
+}
+
 load_map();

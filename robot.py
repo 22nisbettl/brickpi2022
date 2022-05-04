@@ -22,7 +22,7 @@ class Robot(BrickPiInterface):
         direction = ["North","West","South","East"]
         for i in direction:
             if self.CurrentRoutine != 'Searching':
-                self.stop_routine()
+                self.stop_all()
             self.search_harmed((14,143,134),(17,145,134))
             ultra = self.get_ultra_sensor()
             print(ultra, i)
@@ -64,7 +64,7 @@ class Robot(BrickPiInterface):
             finish_rotate_time = start_rotate_time - time.time()
             self.recordaction(self.missionid, "Left and Right", "17", self.get_orientation_IMU()[0], start_rotate_time, finish_rotate_time, "Rotated to beginning heading", "")
             if tile != 1:
-                self.last_direction = GLOBALS.DATABASE.ViewQuery('SELECT Comments FROM MovementHistoryTable WHERE MissionID = ? AND Type LIKE "Direction%: ORDER BY DESC LIMIT 1', (missionid,))
+                self.last_direction = GLOBALS.DATABASE.ViewQuery('SELECT Comments FROM MovementHistoryTable WHERE MissionID = ? AND Type LIKE "Direction%: ORDER BY DESC LIMIT 1', (self.missionid,))
             print(self.last_direction)
             if North == 0 and self.CurrentRoutine == "Searching" and self.last_direction != "South":
                 #camval = GLOBALS.CAMERA.get_camera_colour((50,50,150),(128,128,255)) Red detection
@@ -112,13 +112,24 @@ class Robot(BrickPiInterface):
                 #time.sleep(4)
                 tile += 1
             elif self.CurrentRoutine != "Searching":
-                self.stop_routine()
+                self.stop_all()
             else:
                 self.quadrant_scan(tile)
             start_rotate_time = time.time()
             self.rotate_power_heading_IMU(17,orient)
             finish_rotate_time = start_rotate_time - time.time()
             self.recordaction(self.missionid, "Left and Right", "17", self.get_orientation_IMU()[0], start_rotate_time, finish_rotate_time, "Rotated to beginning heading", "")
+        return
+    
+    def auto_map(self):
+        tiles = GLOBALS.DATABASE.ViewQuery('SELECT * FROM TileTable')
+        a_map = {}
+        
+        return
+
+    def retrace(self):
+        self.CurrentRoutine == "Retracing"
+        self.steps = GLOBALS.DATABASE.ViewQuery('SELECT * FROM MovementHistoryTable WHERE MissionID = ? AND Type NOT LIKE "%heading%" ORDER BY DESC', (self.missionid,))
         return
 
     def stop_routine(self):

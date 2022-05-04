@@ -115,9 +115,8 @@ def maze():
 
 @app.route('/mazestop', methods=['GET','POST'])
 def mazestop():
-    data = {}
     GLOBALS.ROBOT.stop_routine()
-    return data
+    return
 
 #Used for reconfiguring IMU
 @app.route('/reconfig_IMU', methods=['GET','POST'])
