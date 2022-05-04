@@ -225,12 +225,12 @@ def mission():
             UserID = session["UserID"]
             Notes = request.form.get('notes')
             Location = request.form.get('location')
-            StartTime = datetime.now()
+            StartTime = time.time)
             GLOBALS.DATABASE.ModifyQuery('INSERT INTO MissionTable (Location, Notes, UserID, StartTime, Completed) VALUES (?,?,?,?,0)', (Location, Notes, UserID, StartTime))
         elif query == 'complete':
             completemission = request.form.getlist('selectedmissions')
             for mission in completemission:
-                endtime = datetime.now()
+                endtime = time.time()
                 GLOBALS.DATABASE.ModifyQuery('UPDATE MissionTable SET Completed = 1, EndTime = ? WHERE MissionID = ?', (endtime, mission))
                 misid = session['MissionID']
                 print(misid)

@@ -31,7 +31,8 @@ class Robot(BrickPiInterface):
             else:
                 GLOBALS.DATABASE.ModifyQuery('UPDATE TileTable SET ' + i + ' = 0 WHERE TileID = ?', (tile,))
             start_rotate_time = time.time()
-            self.rotate_power_degrees_IMU(17,-90)
+            #self.rotate_power_degrees_IMU(17,-90)
+            self.rotate_left(90)
             finish_rotate_time = start_rotate_time - time.time()
             self.recordaction((self.missionid), "Left and Right", "17", (self.get_orientation_IMU()), start_rotate_time, finish_rotate_time, "Rotated -90 degrees")
         return
@@ -64,34 +65,41 @@ class Robot(BrickPiInterface):
                 #camval = GLOBALS.CAMERA.get_camera_colour((50,50,150),(128,128,255)) Red detection
                 self.search_harmed((14,143,134),(17,145,134)) #Yeloow detection
                 print("Going North")
-                self.move_power_until_detect(20,5)
+                #self.move_power_until_detect(20,5)
+                self.move_forward(42)
                 tile += 1
             elif North == 1 and West == 0 and self.CurrentRoutine == "Searching":
                 starttime = time.time()
-                self.rotate_power_degrees_IMU(17,-90)
+                #self.rotate_power_degrees_IMU(17,-90)
+                self.rotate_left(90)
                 finish_rotate_time = start_rotate_time - time.time()
                 self.recordaction(self.missionid, "Left and Right", "17", self.get_orientation_IMU(), starttime, finish_rotate_time, "Rotated -90 degrees")
                 self.search_harmed((14,143,134),(17,145,134))
                 print("Going West")
-                self.move_power_until_detect(20,5)
+                #self.move_power_until_detect(20,5)
+                self.move_forward(42)
                 tile += 1
             elif North == 1 and West == 1 and East == 0 and self.CurrentRoutine == "Searching":
                 starttime = time.time()
-                self.rotate_power_degrees_IMU(17,90)
+                #self.rotate_power_degrees_IMU(17,90)
+                self.rotate_right(90)
                 finish_rotate_time = start_rotate_time - time.time()
                 self.recordaction(self.missionid, "Left and Right", "17", self.get_orientation_IMU(), starttime, finish_rotate_time, "Rotated 90 degrees")
                 self.search_harmed((14,143,134),(17,145,134))
                 print("Going East")
-                self.move_power_until_detect(20,5)
+                #self.move_power_until_detect(20,5)
+                self.move_forward(42)
                 tile += 1
             elif North == 1 and West == 1 and East == 1 and South == 0 and self.CurrentRoutine == "Searching":
                 starttime = time.time()
-                self.rotate_power_degrees_IMU(17,-180)
+                #self.rotate_power_degrees_IMU(17,-180)
+                self.rotate_left(180)
                 finish_rotate_time = start_rotate_time - time.time()
                 self.recordaction(self.missionid, "Left and Right", "17", self.get_orientation_IMU(), starttime, finish_rotate_time, "Rotated -180 degrees")
                 self.search_harmed((14,143,134),(17,145,134))
                 print("Going South")
-                self.move_power_until_detect(20,5)
+                #self.move_power_until_detect(20,5)
+                self.move_forward(42)
                 tile += 1
             elif self.CurrentRoutine != "Searching":
                 self.stop_routine()
