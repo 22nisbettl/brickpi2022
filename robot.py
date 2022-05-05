@@ -66,7 +66,7 @@ class Robot(BrickPiInterface):
             if tile != 1:
                 self.last_direction = GLOBALS.DATABASE.ViewQuery('SELECT Comments FROM MovementHistoryTable WHERE MissionID = ? AND Type LIKE "%Direction%" ORDER BY ActionID DESC LIMIT 1', (self.missionid,))[0]['Comments']
             print(self.last_direction)
-            if (North == 0 and West == 1 and East == 1 and South == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "West" and West == 1 and North == 0 and South == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "East" and East == 1 and North == 0 and South == 1 and self.CurrentRoutine == "Searching"):
+            if (North == 0 and West == 1 and East == 1 and South == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "West" and West == 1 and North == 0 and South == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "East" and East == 1 and North == 0 and South == 1 and self.CurrentRoutine == "Searching") or (North == 0 and West == 1 and East == 1 and South == 0 and self.last_direction == "North" and self.CurrentRoutine == "Searching"):
                 #camval = GLOBALS.CAMERA.get_camera_colour((50,50,150),(128,128,255)) Red detection
                 self.search_harmed((14,143,134),(17,145,134)) #Yeloow detection
                 print("Going North")
@@ -76,7 +76,7 @@ class Robot(BrickPiInterface):
                 #self.move_forward(42,220,300)
                 #time.sleep(4)
                 tile += 1
-            elif (North == 1 and West == 0 and East == 1 and South == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "North" and North == 1 and West == 0 and East == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "South" and West == 0 and East == 1 and South == 1 and self.CurrentRoutine == "Searching"):
+            elif (North == 1 and West == 0 and East == 1 and South == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "North" and North == 1 and West == 0 and East == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "South" and West == 0 and East == 1 and South == 1 and self.CurrentRoutine == "Searching") or (North == 1 and West == 0 and East == 0 and South ==10 and self.last_direction == "West" and self.CurrentRoutine == "Searching"):
                 starttime = time.time()
                 self.rotate_power_degrees_IMU(17,-90)
                 #self.rotate_left(90)
@@ -89,7 +89,7 @@ class Robot(BrickPiInterface):
                 #self.move_forward(42)
                 #time.sleep(4)
                 tile += 1
-            elif (North == 1 and West == 1 and East == 0 and South == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "North" and North == 1 and East == 0 and West == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "South" and South == 1 and East == 0 and West == 1 and self.CurrentRoutine == "Searching"):
+            elif (North == 1 and West == 1 and East == 0 and South == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "North" and North == 1 and East == 0 and West == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "South" and South == 1 and East == 0 and West == 1 and self.CurrentRoutine == "Searching")  or (North == 1 and West == 0 and East == 0 and South == 1 and self.last_direction == "East" and self.CurrentRoutine == "Searching"):
                 starttime = time.time()
                 self.rotate_power_degrees_IMU(17,-270)
                 #self.rotate_right(90)
@@ -102,7 +102,7 @@ class Robot(BrickPiInterface):
                 #self.move_forward(42)
                 #time.sleep(4)
                 tile += 1
-            elif (North == 1 and West == 1 and East == 1 and South == 0 and self.CurrentRoutine == "Searching") or (self.last_direction == "West" and North == 1 and South == 0 and West == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "East" and North == 1 and South == 0 and East == 1 and self.CurrentRoutine == "Searching"):
+            elif (North == 1 and West == 1 and East == 1 and South == 0 and self.CurrentRoutine == "Searching") or (self.last_direction == "West" and North == 1 and South == 0 and West == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "East" and North == 1 and South == 0 and East == 1 and self.CurrentRoutine == "Searching") or (North == 0 and West == 1 and East == 1 and South == 0 and self.last_direction == "South" and self.CurrentRoutine == "Searching"):
                 starttime = time.time()
                 self.rotate_power_degrees_IMU(17,-180)
                 #self.rotate_left(180)
