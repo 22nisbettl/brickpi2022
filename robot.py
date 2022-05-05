@@ -153,12 +153,6 @@ class Robot(BrickPiInterface):
             finish_rotate_time = start_rotate_time - time.time()
             self.recordaction(self.missionid, "Left and Right", "17", self.get_orientation_IMU()[0], start_rotate_time, finish_rotate_time, "Rotated to beginning heading", "")
         return
-    
-    def auto_map(self):
-        tiles = GLOBALS.DATABASE.ViewQuery('SELECT * FROM TileTable')
-        a_map = {}
-        
-        return
 
     def retrace(self):
         self.CurrentRoutine == "Retracing"
