@@ -8321,3 +8321,552 @@ INFO:werkzeug:192.168.1.118 - - [04/May/2022 18:36:52] "[35m[1mPOST /mazestop 
 INFO:flask_app:Starting Heading: 60.4375 with Power: -17
 INFO:flask_app:Rotating while heading >= 56.9375
 INFO:werkzeug:192.168.1.118 - - [04/May/2022 18:36:53] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-038-307
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:41:03] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:41:03] "[37mGET /static/css/theme.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:41:03] "[37mGET /static/css/custom.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:41:03] "[37mGET /static/js/custom.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:41:03] "[37mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:41:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:flask_app:[{'UserID': 1, 'Surname': 'Admin', 'Password': 'raspassword', 'Email': 'admin@admin', 'FirstName': 'Almighty', 'Permission': 'admin'}]
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:41:11] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:41:11] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:41:11] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:41:11] "[37mGET /static/js/mapping.js HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:flask_app:ULTRASONIC: get_sensor error: Invalid sensor data
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:41:19] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:41:19] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:ULTRASONIC: get_sensor error: Invalid sensor data
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:ULTRASONIC: get_sensor error: Invalid sensor data
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:ULTRASONIC: get_sensor error: Invalid sensor data
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 302.625 with Power: -17
+INFO:flask_app:Rotating while heading >= 286.5625
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 122.6875 with Power: 17
+INFO:flask_app:Rotating while heading <= 286.5625
+INFO:flask_app:IMU Orientation: 'int' object is not iterable
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:41:46] "[35m[1mPOST /mazestop HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:41:46] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:41:46] "[35m[1mPOST /mazestop HTTP/1.1[0m" 500 -
+INFO:flask_app:IMU Orientation: [Errno 5] Input/output error
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 103.875 with Power: 17
+INFO:flask_app:Rotating while heading <= 639
+INFO:flask_app:IMU Orientation: [Errno 5] Input/output error
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 38.0625 with Power: 17
+INFO:flask_app:Rotating while heading <= 639
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:42:24] "[35m[1mPOST /mazestop HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:42:24] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:42:41] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:42:41] "[37mGET /static/js/sensor.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:42:44] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:42:45] "[37mPOST /reconfig_IMU HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:42:45] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:42:48] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:42:50] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:42:52] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:42:54] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:42:54] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:42:54] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:SHUT DOWN EVERYTHING
+INFO:flask_app:BRICKPIINTERFACE: Exiting the Thermal Sensor Thread
+INFO:flask_app:Exiting
+INFO:flask_app:COLOUR: get_sensor error: Sensor not configured or not supported.
+INFO:flask_app:THERMAL READ: get_sensor error: Sensor not configured or not supported.
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:42:56] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:root:CAMERA INTERFACE: Exiting Camera Thread
+INFO:flask_app:SHUT DOWN EVERYTHING
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:42:58] "[37mPOST /robotshutdown HTTP/1.1[0m" 200 -
+INFO:flask_app:Exiting
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:42:59] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:43:00] "[37mPOST /robotshutdown HTTP/1.1[0m" 200 -
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:43:06] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:43:06] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:43:08] "[37mGET /sensorview HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:43:11] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:43:11] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:43:11] "[37mPOST /sensors HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:43:14] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 100.875 with Power: -17
+INFO:flask_app:Rotating while heading >= 96.875
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 92.3125 with Power: 17
+INFO:flask_app:Rotating while heading <= 96.875
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 105.6875 with Power: -17
+INFO:flask_app:Rotating while heading >= 96.875
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 1.0 with Power: 17
+INFO:flask_app:Rotating while heading <= 96.875
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 0.6875 with Power: 17
+INFO:flask_app:Rotating while heading <= 96.875
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 272.75 with Power: -17
+INFO:flask_app:Rotating while heading >= 96.875
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 102.1875 with Power: -17
+INFO:flask_app:Rotating while heading >= 96.875
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 92.0625 with Power: 17
+INFO:flask_app:Rotating while heading <= 96.875
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 110.3125 with Power: -17
+INFO:flask_app:Rotating while heading >= 96.875
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 173.625 with Power: -17
+INFO:flask_app:Rotating while heading >= 96.875
+INFO:flask_app:IMU Orientation: [Errno 5] Input/output error
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 96.1875 with Power: 17
+INFO:flask_app:Rotating while heading <= 96.875
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 318.5625 with Power: -17
+INFO:flask_app:Rotating while heading >= 96.875
+INFO:flask_app:IMU Orientation: [Errno 5] Input/output error
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:44:57] "[35m[1mPOST /mazestop HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:44:57] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-038-307
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-038-307
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:45:51] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:45:58] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:45:58] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 307.375 with Power: -17
+INFO:flask_app:Rotating while heading >= 299.9375
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 29.75 with Power: 17
+INFO:flask_app:Rotating while heading <= 299.9375
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:47:09] "[35m[1mPOST /mazestop HTTP/1.1[0m" 500 -
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 271.5 with Power: 17
+INFO:flask_app:Rotating while heading <= 299.9375
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:47:16] "[35m[1mPOST /maze HTTP/1.1[0m" 500 -
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:47:33] "[35m[1mPOST /mazestop HTTP/1.1[0m" 500 -
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 108.5 with Power: -17
+INFO:flask_app:Rotating while heading >= 95.4375
+INFO:flask_app:Starting Heading: 90.5 with Power: 17
+INFO:flask_app:Rotating while heading <= 95.4375
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:47:39] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-038-307
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:47:50] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:47:57] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:47:57] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:Starting Heading: 99.5625 with Power: -17
+INFO:flask_app:Rotating while heading >= 96.8125
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 98.0625 with Power: -17
+INFO:flask_app:Rotating while heading >= 96.8125
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 81.5 with Power: 17
+INFO:flask_app:Rotating while heading <= 96.8125
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:48:22] "[35m[1mPOST /maze HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-038-307
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-038-307
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:49:15] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:49:22] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:49:22] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 91.875 with Power: -17
+INFO:flask_app:Rotating while heading >= 82.5
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 78.9375 with Power: 17
+INFO:flask_app:Rotating while heading <= 82.5
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 88.0 with Power: -17
+INFO:flask_app:Rotating while heading >= 82.5
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 336.375 with Power: -17
+INFO:flask_app:Rotating while heading >= 82.5
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 83.5 with Power: -17
+INFO:flask_app:Rotating while heading >= 82.5
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 158.375 with Power: -17
+INFO:flask_app:Rotating while heading >= 82.5
+INFO:flask_app:IMU Orientation: 'int' object is not iterable
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:Starting Heading: 82.625 with Power: -17
+INFO:flask_app:Rotating while heading >= 82.5
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 336.1875 with Power: -17
+INFO:flask_app:Rotating while heading >= 82.5
+INFO:flask_app:IMU Orientation: [Errno 5] Input/output error
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 86.0625 with Power: -17
+INFO:flask_app:Rotating while heading >= 82.5
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 6.375 with Power: 17
+INFO:flask_app:Rotating while heading <= 82.5
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:50:52] "[35m[1mPOST /mazestop HTTP/1.1[0m" 500 -
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 310.625 with Power: -17
+INFO:flask_app:Rotating while heading >= 82.5
+INFO:flask_app:IMU Orientation: 'int' object is not iterable
+INFO:flask_app:Starting Heading: 15.625 with Power: 17
+INFO:flask_app:Rotating while heading <= 82.5
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 10:51:01] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-038-307
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-038-307
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-038-307
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-038-307
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-038-307
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 11:03:41] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 11:03:56] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 11:03:56] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 105.3125 with Power: -17
+INFO:flask_app:Rotating while heading >= 101.125
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 90.1875 with Power: 17
+INFO:flask_app:Rotating while heading <= 101.125
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 108.875 with Power: -17
+INFO:flask_app:Rotating while heading >= 101.125
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 76.0 with Power: 17
+INFO:flask_app:Rotating while heading <= 101.125
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 104.0 with Power: -17
+INFO:flask_app:Rotating while heading >= 101.125
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 67.0 with Power: 17
+INFO:flask_app:Rotating while heading <= 101.125
+ERROR:flask_app:DATABASE ERROR: UNIQUE constraint failed: TileTable.TileID
+ERROR:flask_app:INSERT INTO TileTable (TileID, North, West, South, East) VALUES (?,0,0,0,0)
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 123.5625 with Power: -17
+INFO:flask_app:Rotating while heading >= 101.125
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 346.625 with Power: -17
+INFO:flask_app:Rotating while heading >= 101.125
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 107.5625 with Power: -17
+INFO:flask_app:Rotating while heading >= 101.125
+INFO:root:COLOUR PIXELS: 0
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-038-307
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 11:10:35] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 11:10:51] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 11:10:51] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 11:10:53] "[35m[1mPOST /mazestop HTTP/1.1[0m" 500 -
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:Starting Heading: 63.0 with Power: 17
+INFO:flask_app:Rotating while heading <= 127.5625
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 99.25 with Power: 17
+INFO:flask_app:Rotating while heading <= 127.5625
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 132.625 with Power: -17
+INFO:flask_app:Rotating while heading >= 127.5625
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 117.5625 with Power: 17
+INFO:flask_app:Rotating while heading <= 127.5625
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 11:11:41] "[35m[1mPOST /mazestop HTTP/1.1[0m" 500 -
+INFO:root:COLOUR PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 11:11:43] "[35m[1mPOST /mazestop HTTP/1.1[0m" 500 -
+INFO:flask_app:Starting Heading: 247.75 with Power: -17
+INFO:flask_app:Rotating while heading >= 127.5625
+INFO:flask_app:Starting Heading: 244.1875 with Power: -17
+INFO:flask_app:Rotating while heading >= 127.5625
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 11:11:44] "[35m[1mPOST /mazestop HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 11:11:44] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 116.25 with Power: -17
+INFO:flask_app:Rotating while heading >= 107.0625
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 94.1875 with Power: 17
+INFO:flask_app:Rotating while heading <= 107.0625
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 122.625 with Power: -17
+INFO:flask_app:Rotating while heading >= 107.0625
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 174.75 with Power: -17
+INFO:flask_app:Rotating while heading >= 107.0625
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:Starting Heading: 107.1875 with Power: -17
+INFO:flask_app:Rotating while heading >= 107.0625
+INFO:root:COLOUR PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 11:12:53] "[35m[1mPOST /mazestop HTTP/1.1[0m" 500 -
+INFO:flask_app:Starting Heading: 3.9375 with Power: 17
+INFO:flask_app:Rotating while heading <= 107.0625
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 11:12:55] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-038-307
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 11:14:12] "[35m[1mPOST /maze HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-038-307
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 11:14:40] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:LOADING THE ROBOT
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:LOADING THE SOUND
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 11:14:48] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:READING CAMERA
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 11:14:48] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 89.125 with Power: -17
+INFO:flask_app:Rotating while heading >= 70.0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 170.1875 with Power: -17
+INFO:flask_app:Rotating while heading >= 70.0
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 68.6875 with Power: 17
+INFO:flask_app:Rotating while heading <= 70.0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:Starting Heading: 76.6875 with Power: -17
+INFO:flask_app:Rotating while heading >= 70.0
+INFO:root:COLOUR PIXELS: 0
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 11:15:22] "[35m[1mPOST /mazestop HTTP/1.1[0m" 500 -
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:root:COLOUR PIXELS: 0
+INFO:root:COLOUR PIXELS: 0
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:Starting Heading: 47.75 with Power: 17
+INFO:flask_app:Rotating while heading <= 70.0
+INFO:flask_app:Starting Heading: 76.25 with Power: -17
+INFO:flask_app:Rotating while heading >= 70.0
+INFO:werkzeug:10.10.72.21 - - [05/May/2022 11:15:31] "[37mPOST /maze HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/brickpi2022/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-038-307

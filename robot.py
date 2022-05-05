@@ -64,13 +64,14 @@ class Robot(BrickPiInterface):
             finish_rotate_time = start_rotate_time - time.time()
             self.recordaction(self.missionid, "Left and Right", "17", self.get_orientation_IMU()[0], start_rotate_time, finish_rotate_time, "Rotated to beginning heading", "")
             if tile != 1:
-                self.last_direction = GLOBALS.DATABASE.ViewQuery('SELECT Comments FROM MovementHistoryTable WHERE MissionID = ? AND Type LIKE "%Direction%" ORDER BY DESC LIMIT 1', (self.missionid,))
+                self.last_direction = GLOBALS.DATABASE.ViewQuery('SELECT Comments FROM MovementHistoryTable WHERE MissionID = ? AND Type LIKE "%Direction%" ORDER BY ActionID DESC LIMIT 1', (self.missionid,))[0]['Comments']
             print(self.last_direction)
             if North == 0 and self.CurrentRoutine == "Searching" and self.last_direction != "South":
                 #camval = GLOBALS.CAMERA.get_camera_colour((50,50,150),(128,128,255)) Red detection
                 self.search_harmed((14,143,134),(17,145,134)) #Yeloow detection
                 print("Going North")
                 self.recordaction(self.missionid, "Left and Right", "20", self.get_orientation_IMU()[0], "", "", "Direction Forward", "North")
+                print(str(GLOBALS.DATABASE.ViewQuery("SELECT * FROM MovementHistoryTable WHERE Type LIKE '%Direction%'")))
                 self.move_power_until_detect(20, 5, False)
                 #self.move_forward(42,220,300)
                 #time.sleep(4)
@@ -81,6 +82,7 @@ class Robot(BrickPiInterface):
                 #self.rotate_left(90)
                 finish_rotate_time = start_rotate_time - time.time()
                 self.recordaction(self.missionid, "Left and Right", "17", self.get_orientation_IMU()[0], starttime, finish_rotate_time, "Direction Rotated -90 degrees", "West")
+                print(str(GLOBALS.DATABASE.ViewQuery("SELECT * FROM MovementHistoryTable WHERE Type LIKE '%Direction%'")))
                 self.search_harmed((14,143,134),(17,145,134))
                 print("Going West")
                 self.move_power_until_detect(20, 5, True)
@@ -93,6 +95,7 @@ class Robot(BrickPiInterface):
                 #self.rotate_right(90)
                 finish_rotate_time = start_rotate_time - time.time()
                 self.recordaction(self.missionid, "Left and Right", "17", self.get_orientation_IMU()[0], starttime, finish_rotate_time, "Direction Rotated 90 degrees", "East")
+                print(str(GLOBALS.DATABASE.ViewQuery("SELECT * FROM MovementHistoryTable WHERE Type LIKE '%Direction%'")))
                 self.search_harmed((14,143,134),(17,145,134))
                 print("Going East")
                 self.move_power_until_detect(20, 5, True)
@@ -105,6 +108,7 @@ class Robot(BrickPiInterface):
                 #self.rotate_left(180)
                 finish_rotate_time = start_rotate_time - time.time()
                 self.recordaction(self.missionid, "Left and Right", "17", self.get_orientation_IMU()[0], starttime, finish_rotate_time, "Direction Rotated -180 degrees", "South")
+                print(str(GLOBALS.DATABASE.ViewQuery("SELECT * FROM MovementHistoryTable WHERE Type LIKE '%Direction%'")))
                 self.search_harmed((14,143,134),(17,145,134))
                 print("Going South")
                 self.move_power_until_detect(20, 5, True)
