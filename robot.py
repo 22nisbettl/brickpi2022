@@ -245,7 +245,7 @@ class Robot(BrickPiInterface):
 
     def rotate_left(self, angle, speed=100, power=100):
         self.interrupt_previous_command()
-        degrees = angle * 2
+        degrees = angle * 2 - 5
         BP = self.BP
         self.CurrentCommand = "Turning_Left"
         try:
@@ -265,19 +265,19 @@ class Robot(BrickPiInterface):
 
     def rotate_right(self, angle, speed=100, power=100):
         self.interrupt_previous_command()
-        degrees = angle * 2 + 5
+        degrees = angle * 2 - 5
         BP = self.BP
         self.CurrentCommand = "Turning_Right"
         try:
             BP.offset_motor_encoder(BP.PORT_A, BP.get_motor_encoder(BP.PORT_A))
             BP.offset_motor_encoder(BP.PORT_D, BP.get_motor_encoder(BP.PORT_D))
-            BP.set_motor_limits(BP.PORT_D, -power, speed)
-            BP.set_motor_limits(BP.PORT_A, power, speed)      
+            BP.set_motor_limits(BP.PORT_A, power, speed)
+            BP.set_motor_limits(BP.PORT_D, -1*power, speed)      
             while self.CurrentCommand == "Turning_Right":
-                BP.set_motor_position(BP.PORT_D, degrees+10)
-                BP.set_motor_position(BP.PORT_A, -degrees-10)
+                BP.set_motor_position(BP.PORT_A, degrees+10)
+                BP.set_motor_position(BP.PORT_D, -degrees-10)
                 time.sleep(0.02)
-                if BP.get_motor_encoder(BP.PORT_D) >= degrees or BP.get_motor_encoder(BP.PORT_A) <= -degrees:
+                if BP.get_motor_encoder(BP.PORT_A) >= degrees or BP.get_motor_encoder(BP.PORT_D) <= -degrees:
                     break
 
         except KeyboardInterrupt:
@@ -288,8 +288,9 @@ if __name__ == '__main__':
     logging.basicConfig(filename='logs/robot.log', level=logging.INFO)
     ROBOT = Robot(timelimit=0)
     bp = ROBOT.BP
-    GLOBALS.CAMERA = camerainterface.CameraInterface()
-    GLOBALS.CAMERA.start()
+    #GLOBALS.CAMERA = camerainterface.CameraInterface()
+    #GLOBALS.CAMERA.start()
     ROBOT.configure_sensors()
-    ROBOT.rotate_left(90)
+    #ROBOT.rotate_left(90)
+    ROBOT.rotate_right(90)
     ROBOT.safe_exit()
