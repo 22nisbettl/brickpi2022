@@ -31,11 +31,9 @@ class Robot(BrickPiInterface):
                 GLOBALS.DATABASE.ModifyQuery('UPDATE TileTable SET ' + i + ' = 1 WHERE TileID = ?', (tile,))
             else:
                 GLOBALS.DATABASE.ModifyQuery('UPDATE TileTable SET ' + i + ' = 0 WHERE TileID = ?', (tile,))
-            start_rotate_time = time.time()
             self.rotate_power_degrees_IMU(17,-90)
             #self.rotate_left(90)
-            finish_rotate_time = start_rotate_time - time.time()
-            self.recordaction((self.missionid), "Left and Right", "17", (self.get_orientation_IMU()[0]), start_rotate_time, finish_rotate_time, "Rotated -90 degrees", "")
+            self.recordaction((self.missionid), "Rotate Left", "17", (self.get_orientation_IMU()[0]), "Rotation -90 degrees", "")
         return
     
     def maze_solve(self, missionid):
@@ -59,10 +57,8 @@ class Robot(BrickPiInterface):
             South = tilewalls['South']
             East = tilewalls['East']
             print(North, West, South, East)
-            start_rotate_time = time.time()
             self.rotate_power_heading_IMU(17,orient)
-            finish_rotate_time = start_rotate_time - time.time()
-            self.recordaction(self.missionid, "Left and Right", "17", self.get_orientation_IMU()[0], start_rotate_time, finish_rotate_time, "Rotated to beginning heading", "")
+            self.recordaction(self.missionid, "Orientation", "17", self.get_orientation_IMU()[0], start_rotate_time, finish_rotate_time, "Rotatation to beginning heading", "")
             if tile != 1:
                 self.last_direction = GLOBALS.DATABASE.ViewQuery('SELECT Comments FROM MovementHistoryTable WHERE MissionID = ? AND Type LIKE "%Direction%" ORDER BY ActionID DESC LIMIT 1', (self.missionid,))[0]['Comments']
             print(self.last_direction)
@@ -70,48 +66,45 @@ class Robot(BrickPiInterface):
                 #camval = GLOBALS.CAMERA.get_camera_colour((50,50,150),(128,128,255)) Red detection
                 self.search_harmed((14,143,134),(17,145,134)) #Yeloow detection
                 print("Going North")
-                self.recordaction(self.missionid, "Left and Right", "20", self.get_orientation_IMU()[0], "", "", "Direction Forward", "North")
                 #print(str(GLOBALS.DATABASE.ViewQuery("SELECT * FROM MovementHistoryTable WHERE Type LIKE '%Direction%'")))
                 self.move_power_until_detect(20, 5, False)
+                self.recordaction(self.missionid, "Move Forward", "20", self.get_orientation_IMU()[0], "Direction Forward", "North")
                 #self.move_forward(42,220,300)
                 #time.sleep(4)
                 tile += 1
             elif (North == 1 and West == 0 and East == 1 and South == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "North" and North == 1 and West == 0 and East == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "South" and West == 0 and East == 1 and South == 1 and self.CurrentRoutine == "Searching") or (North == 1 and West == 0 and East == 0 and South ==10 and self.last_direction == "West" and self.CurrentRoutine == "Searching"):
-                starttime = time.time()
                 self.rotate_power_degrees_IMU(17,-90)
                 #self.rotate_left(90)
-                finish_rotate_time = start_rotate_time - time.time()
-                self.recordaction(self.missionid, "Left and Right", "17", self.get_orientation_IMU()[0], starttime, finish_rotate_time, "Direction Rotated -90 degrees", "West")
+                self.recordaction(self.missionid, "Rotation Left", "17", self.get_orientation_IMU()[0], "Direction Rotated -90 degrees", "West")
                 #print(str(GLOBALS.DATABASE.ViewQuery("SELECT * FROM MovementHistoryTable WHERE Type LIKE '%Direction%'")))
                 self.search_harmed((14,143,134),(17,145,134))
                 print("Going West")
                 self.move_power_until_detect(20, 5, True)
+                self.recordaction(self.missionid, "Move Forward", "20", self.get_orientation_IMU()[0], "Movement Forward", "")
                 #self.move_forward(42)
                 #time.sleep(4)
                 tile += 1
             elif (North == 1 and West == 1 and East == 0 and South == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "North" and North == 1 and East == 0 and West == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "South" and South == 1 and East == 0 and West == 1 and self.CurrentRoutine == "Searching")  or (North == 1 and West == 0 and East == 0 and South == 1 and self.last_direction == "East" and self.CurrentRoutine == "Searching"):
-                starttime = time.time()
                 self.rotate_power_degrees_IMU(17,-270)
                 #self.rotate_right(90)
-                finish_rotate_time = start_rotate_time - time.time()
-                self.recordaction(self.missionid, "Left and Right", "17", self.get_orientation_IMU()[0], starttime, finish_rotate_time, "Direction Rotated 90 degrees", "East")
+                self.recordaction(self.missionid, "Rotation Right", "17", self.get_orientation_IMU()[0], "Direction Rotated 90 degrees", "East")
                 #print(str(GLOBALS.DATABASE.ViewQuery("SELECT * FROM MovementHistoryTable WHERE Type LIKE '%Direction%'")))
                 self.search_harmed((14,143,134),(17,145,134))
                 print("Going East")
                 self.move_power_until_detect(20, 5, True)
+                self.recordaction(self.missionid, "Move Forward", "20", self.get_orientation_IMU()[0], "Movement Forward", "")
                 #self.move_forward(42)
                 #time.sleep(4)
                 tile += 1
             elif (North == 1 and West == 1 and East == 1 and South == 0 and self.CurrentRoutine == "Searching") or (self.last_direction == "West" and North == 1 and South == 0 and West == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "East" and North == 1 and South == 0 and East == 1 and self.CurrentRoutine == "Searching") or (North == 0 and West == 1 and East == 1 and South == 0 and self.last_direction == "South" and self.CurrentRoutine == "Searching"):
-                starttime = time.time()
-                self.rotate_power_degrees_IMU(17,-180)
                 #self.rotate_left(180)
-                finish_rotate_time = start_rotate_time - time.time()
-                self.recordaction(self.missionid, "Left and Right", "17", self.get_orientation_IMU()[0], starttime, finish_rotate_time, "Direction Rotated -180 degrees", "South")
+                self.rotate_power_degrees_IMU(17, -180)
+                self.recordaction(self.missionid, "Rotation Back", "17", self.get_orientation_IMU()[0], "Direction Rotated -180 degrees", "South")
                 #print(str(GLOBALS.DATABASE.ViewQuery("SELECT * FROM MovementHistoryTable WHERE Type LIKE '%Direction%'")))
                 self.search_harmed((14,143,134),(17,145,134))
                 print("Going South")
                 self.move_power_until_detect(20, 5, True)
+                self.recordaction(self.missionid, "Move Forward", "20", self.get_orientation_IMU()[0], "Movement Forward", "")
                 #self.move_forward(42)
                 #time.sleep(4)
                 tile += 1
@@ -122,36 +115,37 @@ class Robot(BrickPiInterface):
                     #camval = GLOBALS.CAMERA.get_camera_colour((50,50,150),(128,128,255)) Red detection
                     self.search_harmed((14,143,134),(17,145,134)) #Yeloow detection
                     print("Going North")
-                    self.recordaction(self.missionid, "Left and Right", "20", self.get_orientation_IMU()[0], "", "", "Direction Forward", "North")
                     self.move_power_until_detect(20,5, False)
+                    self.recordaction(self.missionid, "Move Forward", "20", self.get_orientation_IMU()[0], "Direction Forward", "North")
                     tile += 1
                 elif North == 1 and West == 0 and self.CurrentRoutine == "Searching":
                     self.rotate_power_degrees_IMU(17,-90)
-                    self.recordaction(self.missionid, "Left and Right", "17", self.get_orientation_IMU()[0], '', '', "Direction Rotated -90 degrees", "West")
+                    self.recordaction(self.missionid, "Rotation Left", "17", self.get_orientation_IMU()[0], "Direction Rotated -90 degrees", "West")
                     self.search_harmed((14,143,134),(17,145,134))
                     print("Going West")
                     self.move_power_until_detect(20,5, True)
+                    self.recordaction(self.missionid, "Move Forward", "20", self.get_orientation_IMU()[0], "Movement Forward", "")
                     tile += 1
                 elif North == 1 and West == 1 and East == 0 and self.CurrentRoutine == "Searching":
                     self.rotate_power_degrees_IMU(17,90)
-                    self.recordaction(self.missionid, "Left and Right", "17", self.get_orientation_IMU()[0], '', '', "Direction Rotated 90 degrees", "East")
+                    self.recordaction(self.missionid, "Rotation Right", "17", self.get_orientation_IMU()[0], "Direction Rotated 90 degrees", "East")
                     self.search_harmed((14,143,134),(17,145,134))
                     print("Going East")
                     self.move_power_until_detect(20,5, True)
+                    self.recordaction(self.missionid, "Move Forward", "20", self.get_orientation_IMU()[0], "Movement Forward", "")
                     tile += 1
                 elif North == 1 and West == 1 and East == 1 and South == 0 and self.CurrentRoutine == "Searching":
                     self.rotate_power_degrees_IMU(17,-180)
-                    self.recordaction(self.missionid, "Left and Right", "17", self.get_orientation_IMU()[0], '', '', "Direction Rotated 180 degrees", "South")
+                    self.recordaction(self.missionid, "Rotation Back", "17", self.get_orientation_IMU()[0], "Direction Rotated 180 degrees", "South")
                     self.search_harmed((14,143,134),(17,145,134))
                     print("Going South")
                     self.move_power_until_detect(20,5, True)
+                    self.recordaction(self.missionid, "Move Forward", "20", self.get_orientation_IMU()[0], "Movement Forward", "")
                     tile += 1
                 else:
                     self.quadrant_scan(tile)
-            start_rotate_time = time.time()
             self.rotate_power_heading_IMU(17,orient)
-            finish_rotate_time = start_rotate_time - time.time()
-            self.recordaction(self.missionid, "Left and Right", "17", self.get_orientation_IMU()[0], start_rotate_time, finish_rotate_time, "Rotated to beginning heading", "")
+            self.recordaction(self.missionid, "Orientation", "17", self.get_orientation_IMU()[0], "Rotation to beginning heading", "")
         return
 
     def retrace(self):
@@ -164,9 +158,9 @@ class Robot(BrickPiInterface):
         self.stop_all()
         return
 
-    def recordaction(self, missionid, motor, power, orientation, starttime, elapsedtime, typetext, comment):
-        print(missionid, motor, power, orientation, starttime, elapsedtime, typetext, comment)
-        GLOBALS.DATABASE.ModifyQuery('INSERT INTO MovementHistoryTable (MissionID, Motor, Power, Orientation, StartTime, ElapsedTime, Type, Comments) VALUES (?,?,?,?,?,?,?,?)', (missionid, motor, power, orientation, starttime, elapsedtime, typetext, comment))
+    def recordaction(self, missionid, motor, power, orientation, typetext, comment):
+        print(missionid, motor, power, orientation, typetext, comment)
+        GLOBALS.DATABASE.ModifyQuery('INSERT INTO MovementHistoryTable (MissionID, Direction, Power, Orientation, Type, Comments) VALUES (?,?,?,?,?,?,?,?)', (missionid, motor, power, orientation, typetext, comment))
         return
 
     def search_harmed(self, low, high):
@@ -176,7 +170,7 @@ class Robot(BrickPiInterface):
             self.spin_medium_motor(-360)
             self.spin_medium_motor(-360)
             self.spin_medium_motor(-360)
-            self.recordaction(self.missionid, "Medium", "-360", self.get_orientation_IMU()[0], time.time(), 0, "Shot cannon using medium motor. Victim Found!", "")
+            self.recordaction(self.missionid, "Medium", "-360", self.get_orientation_IMU()[0], "Medium shot cannon, Victim Found!", "")
         return
 
     #moves for the specified time (seconds) and power - use negative power to reverse
@@ -202,8 +196,6 @@ class Robot(BrickPiInterface):
                 break
         elapsed = time.time() - currenttime
         data['elapsed'] = elapsed
-        if record == True:
-            self.recordaction(self.missionid, "Left and Right", power, self.get_orientation_IMU()[0], currenttime, elapsed, ("Moved power until detect for " + str(t)), "")
         self.stop_all()
         return data
 
