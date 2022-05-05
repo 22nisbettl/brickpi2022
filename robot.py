@@ -118,7 +118,36 @@ class Robot(BrickPiInterface):
             elif self.CurrentRoutine != "Searching":
                 self.stop_all()
             else:
-                self.quadrant_scan(tile)
+                if North == 0 and self.CurrentRoutine == "Searching":
+                    #camval = GLOBALS.CAMERA.get_camera_colour((50,50,150),(128,128,255)) Red detection
+                    self.search_harmed((14,143,134),(17,145,134)) #Yeloow detection
+                    print("Going North")
+                    self.recordaction(self.missionid, "Left and Right", "20", self.get_orientation_IMU()[0], "", "", "Direction Forward", "North")
+                    self.move_power_until_detect(20,5, False)
+                    tile += 1
+                elif North == 1 and West == 0 and self.CurrentRoutine == "Searching":
+                    self.rotate_power_degrees_IMU(17,-90)
+                    self.recordaction(self.missionid, "Left and Right", "17", self.get_orientation_IMU()[0], '', '', "Direction Rotated -90 degrees", "West")
+                    self.search_harmed((14,143,134),(17,145,134))
+                    print("Going West")
+                    self.move_power_until_detect(20,5, True)
+                    tile += 1
+                elif North == 1 and West == 1 and East == 0 and self.CurrentRoutine == "Searching":
+                    self.rotate_power_degrees_IMU(17,90)
+                    self.recordaction(self.missionid, "Left and Right", "17", self.get_orientation_IMU()[0], '', '', "Direction Rotated 90 degrees", "East")
+                    self.search_harmed((14,143,134),(17,145,134))
+                    print("Going East")
+                    self.move_power_until_detect(20,5, True)
+                    tile += 1
+                elif North == 1 and West == 1 and East == 1 and South == 0 and self.CurrentRoutine == "Searching":
+                    self.rotate_power_degrees_IMU(17,-180)
+                    self.recordaction(self.missionid, "Left and Right", "17", self.get_orientation_IMU()[0], '', '', "Direction Rotated 180 degrees", "South")
+                    self.search_harmed((14,143,134),(17,145,134))
+                    print("Going South")
+                    self.move_power_until_detect(20,5, True)
+                    tile += 1
+                else:
+                    self.quadrant_scan(tile)
             start_rotate_time = time.time()
             self.rotate_power_heading_IMU(17,orient)
             finish_rotate_time = start_rotate_time - time.time()

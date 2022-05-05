@@ -110,7 +110,8 @@ def admin():
 @app.route('/maze', methods=['GET','POST'])
 def maze():
     data = {}
-    GLOBALS.ROBOT.maze_solve(session['MissionID']['MissionID'])
+    if GLOBALS.ROBOT:
+        GLOBALS.ROBOT.maze_solve(session['MissionID']['MissionID'])
     return data
 
 @app.route('/mazestop', methods=['GET','POST'])
