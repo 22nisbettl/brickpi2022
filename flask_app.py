@@ -196,7 +196,8 @@ def left():
 @app.route('/right', methods=['GET','POST'])
 def right():
     if GLOBALS.ROBOT:
-        GLOBALS.ROBOT.rotate_power_degrees_IMU(17,90)
+        #GLOBALS.ROBOT.rotate_power_degrees_IMU(17,90)
+        GLOBALS.ROBOT.rotate_right(90)
         GLOBALS.ROBOT.recordaction(session['MissionID']['MissionID'], "Left and Right", "17", GLOBALS.ROBOT.get_orientation_IMU()[0], "Rotation 90 degrees", "")
     return jsonify()
 

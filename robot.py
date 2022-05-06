@@ -25,7 +25,7 @@ class Robot(BrickPiInterface):
                 self.stop_all()
             self.search_harmed((14,143,134),(17,145,134))
             ultra = self.get_ultra_sensor()
-            print(ultra, i)
+            #print(ultra, i)
             if ultra < 40 and ultra != 0:
                 #self.log('UPDATE TileTable SET ' + i + ' = 1 WHERE TileID = ?')
                 GLOBALS.DATABASE.ModifyQuery('UPDATE TileTable SET ' + i + ' = 1 WHERE TileID = ?', (tile,))
@@ -56,13 +56,13 @@ class Robot(BrickPiInterface):
             West = tilewalls['West']
             South = tilewalls['South']
             East = tilewalls['East']
-            print(North, West, South, East)
+            #print(North, West, South, East)
             self.rotate_power_heading_IMU(17,orient)
-            self.recordaction(self.missionid, "Orientation", "17", self.get_orientation_IMU()[0], start_rotate_time, finish_rotate_time, "Rotatation to beginning heading", "")
+            self.recordaction(self.missionid, "Orientation", "17", self.get_orientation_IMU()[0], "Rotatation to beginning heading", "")
             if tile != 1:
                 self.last_direction = GLOBALS.DATABASE.ViewQuery('SELECT Comments FROM MovementHistoryTable WHERE MissionID = ? AND Type LIKE "%Direction%" ORDER BY ActionID DESC LIMIT 1', (self.missionid,))[0]['Comments']
             print(self.last_direction)
-            if (North == 0 and West == 1 and East == 1 and South == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "West" and West == 1 and North == 0 and South == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "East" and East == 1 and North == 0 and South == 1 and self.CurrentRoutine == "Searching") or (North == 0 and West == 1 and East == 1 and South == 0 and self.last_direction == "North" and self.CurrentRoutine == "Searching"):
+            if (North == 0 and West == 1 and East == 1 and South == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "West" and West == 1 and North == 0 and South == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "East" and East == 1 and North == 0 and South == 1 and self.CurrentRoutine == "Searching") or (North == 0 and West == 1 and South == 0 and self.last_direction == "North" and self.CurrentRoutine == "Searching")or (North == 0 and East == 1 and South == 0 and self.last_direction == "North" and self.CurrentRoutine == "Searching"):
                 #camval = GLOBALS.CAMERA.get_camera_colour((50,50,150),(128,128,255)) Red detection
                 self.search_harmed((14,143,134),(17,145,134)) #Yeloow detection
                 print("Going North")
@@ -72,7 +72,7 @@ class Robot(BrickPiInterface):
                 #self.move_forward(42,220,300)
                 #time.sleep(4)
                 tile += 1
-            elif (North == 1 and West == 0 and East == 1 and South == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "North" and North == 1 and West == 0 and East == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "South" and West == 0 and East == 1 and South == 1 and self.CurrentRoutine == "Searching") or (North == 1 and West == 0 and East == 0 and South ==10 and self.last_direction == "West" and self.CurrentRoutine == "Searching"):
+            elif (North == 1 and West == 0 and East == 1 and South == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "North" and North == 1 and West == 0 and East == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "South" and West == 0 and East == 1 and South == 1 and self.CurrentRoutine == "Searching") or (North == 1 and West == 0 and East == 0 and self.last_direction == "West" and self.CurrentRoutine == "Searching") or (South == 1 and West == 0 and East == 0 and self.last_direction == "West" and self.CurrentRoutine == "Searching"):
                 self.rotate_power_degrees_IMU(17,-90)
                 #self.rotate_left(90)
                 self.recordaction(self.missionid, "Rotation Left", "17", self.get_orientation_IMU()[0], "Direction Rotated -90 degrees", "West")
@@ -84,7 +84,7 @@ class Robot(BrickPiInterface):
                 #self.move_forward(42)
                 #time.sleep(4)
                 tile += 1
-            elif (North == 1 and West == 1 and East == 0 and South == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "North" and North == 1 and East == 0 and West == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "South" and South == 1 and East == 0 and West == 1 and self.CurrentRoutine == "Searching")  or (North == 1 and West == 0 and East == 0 and South == 1 and self.last_direction == "East" and self.CurrentRoutine == "Searching"):
+            elif (North == 1 and West == 1 and East == 0 and South == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "North" and North == 1 and East == 0 and West == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "South" and South == 1 and East == 0 and West == 1 and self.CurrentRoutine == "Searching")  or (North == 1 and West == 0 and East == 0 and self.last_direction == "East" and self.CurrentRoutine == "Searching"):
                 self.rotate_power_degrees_IMU(17,-270)
                 #self.rotate_right(90)
                 self.recordaction(self.missionid, "Rotation Right", "17", self.get_orientation_IMU()[0], "Direction Rotated 90 degrees", "East")
@@ -96,7 +96,7 @@ class Robot(BrickPiInterface):
                 #self.move_forward(42)
                 #time.sleep(4)
                 tile += 1
-            elif (North == 1 and West == 1 and East == 1 and South == 0 and self.CurrentRoutine == "Searching") or (self.last_direction == "West" and North == 1 and South == 0 and West == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "East" and North == 1 and South == 0 and East == 1 and self.CurrentRoutine == "Searching") or (North == 0 and West == 1 and East == 1 and South == 0 and self.last_direction == "South" and self.CurrentRoutine == "Searching"):
+            elif (North == 1 and West == 1 and East == 1 and South == 0 and self.CurrentRoutine == "Searching") or (self.last_direction == "West" and North == 1 and South == 0 and West == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "East" and North == 1 and South == 0 and East == 1 and self.CurrentRoutine == "Searching") or (North == 0 and East == 1 and South == 0 and self.last_direction == "South" and self.CurrentRoutine == "Searching") or (West == 1 and East == 1 and South == 0 and self.last_direction == "South" and self.CurrentRoutine == "Searching"):
                 #self.rotate_left(180)
                 self.rotate_power_degrees_IMU(17, -180)
                 self.recordaction(self.missionid, "Rotation Back", "17", self.get_orientation_IMU()[0], "Direction Rotated -180 degrees", "South")
@@ -111,6 +111,7 @@ class Robot(BrickPiInterface):
             elif self.CurrentRoutine != "Searching":
                 self.stop_all()
             else:
+                print("In else")
                 if North == 0 and self.CurrentRoutine == "Searching":
                     #camval = GLOBALS.CAMERA.get_camera_colour((50,50,150),(128,128,255)) Red detection
                     self.search_harmed((14,143,134),(17,145,134)) #Yeloow detection
@@ -160,7 +161,7 @@ class Robot(BrickPiInterface):
 
     def recordaction(self, missionid, motor, power, orientation, typetext, comment):
         print(missionid, motor, power, orientation, typetext, comment)
-        GLOBALS.DATABASE.ModifyQuery('INSERT INTO MovementHistoryTable (MissionID, Direction, Power, Orientation, Type, Comments) VALUES (?,?,?,?,?,?,?,?)', (missionid, motor, power, orientation, typetext, comment))
+        GLOBALS.DATABASE.ModifyQuery('INSERT INTO MovementHistoryTable (MissionID, Direction, Power, Orientation, Type, Comments) VALUES (?,?,?,?,?,?)', (missionid, motor, power, orientation, typetext, comment))
         return
 
     def search_harmed(self, low, high):
@@ -199,49 +200,49 @@ class Robot(BrickPiInterface):
         self.stop_all()
         return data
 
-    def move_forward(self, distance, speed=220, power=300):
+    def move_forward(self, distanceCm, speed=220, power=300):
         self.interrupt_previous_command()
-        distance = distance * 360 / (numpy.pi * 5.6)
-        starttime = time.time()
+        distance = distanceCm * 360 / (numpy.pi * 5.6)
         BP = self.BP
         self.CurrentCommand = "Moving_Forward"
         try:
             BP.offset_motor_encoder(BP.PORT_A, BP.get_motor_encoder(BP.PORT_A)) # reset encoder A
             BP.offset_motor_encoder(BP.PORT_D, BP.get_motor_encoder(BP.PORT_D)) # reset encoder D
-            BP.set_motor_limits(BP.PORT_A, power, speed)          # optionally set a power limit (in percent) and a speed limit (in Degrees Per Second)
-            BP.set_motor_limits(BP.PORT_D, power, speed)      
+            BP.set_motor_limits(BP.PORT_A, power, speed)    # float motor D
+            BP.set_motor_limits(BP.PORT_D, power, speed)          # optionally set a power limit (in percent) and a speed limit (in Degrees Per Second)
             while self.CurrentCommand == "Moving_Forward":
-                BP.set_motor_position(BP.PORT_A, distance-10)
-                BP.set_motor_position(BP.PORT_D, distance-10)
-                time.sleep(0.02)
-                print("A: " + str(distance-10) + " " + str(BP.get_motor_encoder(BP.PORT_A)))
-                print("D: " + str(distance-10) + " " + str(BP.get_motor_encoder(BP.PORT_D)))
-                if BP.get_motor_encoder(BP.PORT_D) <= distance or BP.get_motor_encoder(BP.PORT_A) <= distance:
+                BP.set_motor_position(BP.PORT_D, distance+10)    # set motor A's target position to the current position of motor D
+                BP.set_motor_position(BP.PORT_A, distance+10)
+                time.sleep(0.02) 
+                if BP.get_motor_encoder(BP.PORT_D) >= distance or BP.get_motor_encoder(BP.PORT_A) >= distance:
                     break
+                #print("A:  " + str(distance+10) + "   " + str(BP.get_motor_encoder(BP.PORT_A)))
+                #print("D:  " + str(distance+10) + "   " + str(BP.get_motor_encoder(BP.PORT_D)))
         except KeyboardInterrupt: # except the program gets interrupted by Ctrl+C on the keyboard.
             BP.reset_all()
-        elapsedtime = time.time() - starttime
-        return elapsedtime
+        return
 
     def move_backward(self, distance, speed=100, power=100):
         self.interrupt_previous_command()
-        distance = -distance * 360 / (numpy.pi * 5.6)
+        distance = -1*distanceCm * 360 / (np.pi * 5.6)
         BP = self.BP
         self.CurrentCommand = "Moving_Backward"
         try:
             BP.offset_motor_encoder(BP.PORT_A, BP.get_motor_encoder(BP.PORT_A)) # reset encoder A
             BP.offset_motor_encoder(BP.PORT_D, BP.get_motor_encoder(BP.PORT_D)) # reset encoder D
-            BP.set_motor_limits(BP.PORT_A, power, speed)          # optionally set a power limit (in percent) and a speed limit (in Degrees Per Second)
-            BP.set_motor_limits(BP.PORT_D, power, speed)      
+            BP.set_motor_limits(BP.PORT_A, power, speed)    # float motor D
+            BP.set_motor_limits(BP.PORT_D, power, speed)          # optionally set a power limit (in percent) and a speed limit (in Degrees Per Second)
             while self.CurrentCommand == "Moving_Backward":
-                BP.set_motor_position(BP.PORT_A, distance+10)
-                BP.set_motor_position(BP.PORT_D, distance+10)
-                time.sleep(0.02)
-                if BP.get_motor_encoder(BP.PORT_D) >= distance or BP.get_motor_encoder(BP.PORT_A) >= distance:
+                BP.set_motor_position(BP.PORT_D, distance-10)    # set motor A's target position to the current position of motor D
+                BP.set_motor_position(BP.PORT_A, distance-10)
+                time.sleep(0.02) 
+                if BP.get_motor_encoder(BP.PORT_D) <= distance or BP.get_motor_encoder(BP.PORT_A) <= distance:
                     break
-
+                #print("A:  " + str(distance+10) + "   " + str(BP.get_motor_encoder(BP.PORT_A)))
+                #print("D:  " + str(distance+10) + "   " + str(BP.get_motor_encoder(BP.PORT_D)))
         except KeyboardInterrupt: # except the program gets interrupted by Ctrl+C on the keyboard.
-            BP.reset_all() 
+            BP.reset_all()
+        return
 
     def rotate_left(self, angle, speed=100, power=100):
         self.interrupt_previous_command()
@@ -262,6 +263,7 @@ class Robot(BrickPiInterface):
 
         except KeyboardInterrupt:
             BP.reset_all() 
+        return
 
     def rotate_right(self, angle, speed=100, power=100):
         self.interrupt_previous_command()
@@ -282,6 +284,7 @@ class Robot(BrickPiInterface):
 
         except KeyboardInterrupt:
             BP.reset_all() 
+        return
 
 # Only execute if this is the main file, good for testing code
 if __name__ == '__main__':
@@ -292,5 +295,6 @@ if __name__ == '__main__':
     #GLOBALS.CAMERA.start()
     ROBOT.configure_sensors()
     #ROBOT.rotate_left(90)
-    ROBOT.rotate_right(90)
+    #ROBOT.rotate_right(90)
+    ROBOT.move_forward(15)
     ROBOT.safe_exit()
