@@ -1,19 +1,19 @@
 from flask import Flask, render_template, session, request, redirect, flash, url_for, jsonify, Response, logging
 from itsdangerous import JSONWebSignatureSerializer
 from interfaces import databaseinterface
-import global_vars as GLOBALS #load global variables
+import global_vars as GLOBALS #Load global variables
 import logging, time
-#from datetime import *
-try:
-    import robot #robot is class that extends the brickpi class
+
+try: #Checks if robot can be imported
+    import robot #Robot is class that extends the brickpi class
     from interfaces import camerainterface, soundinterface, brickpiinterface
 except:
     print("Failed")
 
 #Creates the Flask Server Object
 app = Flask(__name__); app.debug = True
-SECRET_KEY = 'my random key can be anything' #this is used for encrypting sessions
-app.config.from_object(__name__) #Set app configuration using above SETTINGS
+SECRET_KEY = 'my random key can be anything'
+app.config.from_object(__name__)
 logging.basicConfig(filename='logs/flask.log', level=logging.INFO)
 GLOBALS.DATABASE = databaseinterface.DatabaseInterface('databases/RobotDatabase.db', app.logger)
 
@@ -22,7 +22,7 @@ def log(message):
     app.logger.info(message)
     return
 
-#create a login page
+#Login page with session componenets
 @app.route('/', methods=['GET','POST'])
 def login():
     if 'UserID' in session:
@@ -48,7 +48,7 @@ def login():
             message = "Login Unsuccessful"
     return render_template('login.html', data = message)    
 
-# Load the ROBOT
+# Loads the ROBOT, try statements check the robot is connected
 @app.route('/robotload', methods=['GET','POST'])
 def robotload():
     sensordict = None
@@ -63,7 +63,7 @@ def robotload():
         log("LOADING THE ROBOT")
         try:
             GLOBALS.ROBOT = robot.Robot(20, app.logger)
-            GLOBALS.ROBOT.configure_sensors() #defaults have been provided but you can 
+            GLOBALS.ROBOT.configure_sensors()
             GLOBALS.ROBOT.reconfig_IMU()
         except:
             print("Robot is a NO LOAD")
@@ -80,13 +80,13 @@ def robotload():
         sensordict = {}
     return jsonify(sensordict)
 
-# ---------------------------------------------------------------------------------------
-# Dashboard
+#Dashboard, passes the mission id to the session to be used in robot.py
 @app.route('/dashboard', methods=['GET','POST'])
 def robotdashboard():
     if not 'UserID' in session:
         return redirect('/')
     enabled = int(GLOBALS.ROBOT != None)
+    #Current mission has an EndTime of NULl. Only one mission active at one time.
     MissionID = GLOBALS.DATABASE.ViewQuery('SELECT MissionID FROM MissionTable WHERE EndTime IS NULL')
     if MissionID:
         MissionID = MissionID[0]
@@ -94,6 +94,7 @@ def robotdashboard():
     print(session['MissionID']['MissionID'])
     return render_template('dashboard.html', robot_enabled = enabled)
 
+#Admin page displays all table data
 @app.route('/admin', methods=["POST","GET"])
 def admin():
     UserResults = GLOBALS.DATABASE.ViewQuery('SELECT * FROM UserTable')
@@ -107,6 +108,7 @@ def admin():
         return redirect('/')
     return render_template('admin.html', UserData = UserResults, MissionData = MissionResults, TileData = TileResults, MovementData = MovementResults)
 
+#Enables the maze search function, updates the Current Routine
 @app.route('/maze', methods=['GET','POST'])
 def maze():
     data = {}
@@ -114,19 +116,20 @@ def maze():
         GLOBALS.ROBOT.maze_solve(session['MissionID']['MissionID'])
     return data
 
+#Stops the maze search function by changing the Current Routine
 @app.route('/mazestop', methods=['GET','POST'])
 def mazestop():
     data = {}
     GLOBALS.ROBOT.stop_routine()
     return data
-
+#Begins the retrace function, also changes the Current Routine
 @app.route('/retrace', methods=['GET','POST'])
 def retrace():
     data = {}
     GLOBALS.ROBOT.retrace(session['MissionID']['MissionID'])
     return data
 
-#Used for reconfiguring IMU
+#Reconfigures IMU, button on HTML page
 @app.route('/reconfig_IMU', methods=['GET','POST'])
 def reconfig_IMU():
     if GLOBALS.ROBOT:
@@ -135,7 +138,7 @@ def reconfig_IMU():
         return jsonify(sensorconfig)
     return jsonify({'message':'ROBOT not loaded'})
 
-#calibrates the compass but takes about 10 seconds, rotate in a small 360 degrees rotation
+#Calibrates the compass, button on HTML page
 @app.route('/compass', methods=['GET','POST'])
 def compass():
     data = {}
@@ -143,13 +146,7 @@ def compass():
         data['message'] = GLOBALS.ROBOT.calibrate_imu(10)
     return jsonify(data)
 
-@app.route('/sensors', methods=['GET','POST'])
-def sensors():
-    data = {}
-    if GLOBALS.ROBOT:
-        data = GLOBALS.ROBOT.get_all_sensors()
-    return jsonify(data)
-
+#Moves the robot forward, twenty power, button on HTML page. Maps movement
 @app.route('/forward', methods=['GET','POST'])
 def forward():
     data = {}
@@ -159,6 +156,7 @@ def forward():
         GLOBALS.ROBOT.recordaction(session['MissionID']['MissionID'], "Move Forward", "20", data['heading'], "Movement Manual Forward","")
     return jsonify(data)
 
+#Moves the robot backwards, twenty power, button on HTML page. Maps movement
 @app.route('/reverse', methods=['GET','POST'])
 def reverse():
     data = {}
@@ -168,12 +166,14 @@ def reverse():
         GLOBALS.ROBOT.recordaction(session['MissionID']['MissionID'], "Move Backward", "-20", data['heading'], "Movement Manual Backward", "")
     return jsonify(data)
 
+#Stops all movement, button on HTML page
 @app.route('/stopall', methods=['GET','POST'])
 def stopall():
     if GLOBALS.ROBOT:
         GLOBALS.ROBOT.stop_all()
     return jsonify()
 
+#Launches medical package upwards, button on HTML page
 @app.route('/shootup', methods=['GET','POST'])
 def shootup():
     if GLOBALS.ROBOT:
@@ -183,6 +183,7 @@ def shootup():
         GLOBALS.ROBOT.recordaction(session['MissionID']['MissionID'], "Medium", "360", GLOBALS.ROBOT.get_orientation_IMU()[0], "Medium shot cannon upwards", "")
     return jsonify()
 
+#Launches medical package downwards, button on HTML page
 @app.route('/shootdown', methods=['GET','POST'])
 def shootdown():
     if GLOBALS.ROBOT:
@@ -192,22 +193,23 @@ def shootdown():
         GLOBALS.ROBOT.recordaction(session['MissionID']['MissionID'], "Medium", "-360", GLOBALS.ROBOT.get_orientation_IMU()[0], "Medium shot cannon downwards", "")
     return jsonify()
 
+#Rotates robot left ninety degrees, button on HTML page
 @app.route('/left', methods=['GET','POST'])
 def left():
     if GLOBALS.ROBOT:
         GLOBALS.ROBOT.rotate_left(90)
-        #GLOBALS.ROBOT.rotate_power_degrees_IMU(17,-90)
         GLOBALS.ROBOT.recordaction(session['MissionID']['MissionID'], "Rotation Left", "17", GLOBALS.ROBOT.get_orientation_IMU()[0], "Rotation -90 degrees", "")
     return jsonify()
 
+#Rotates robot right ninety degrees, button on HTML page
 @app.route('/right', methods=['GET','POST'])
 def right():
     if GLOBALS.ROBOT:
-        #GLOBALS.ROBOT.rotate_power_degrees_IMU(17,90)
         GLOBALS.ROBOT.rotate_right(90)
         GLOBALS.ROBOT.recordaction(session['MissionID']['MissionID'], "Left and Right", "17", GLOBALS.ROBOT.get_orientation_IMU()[0], "Rotation 90 degrees", "")
     return jsonify()
 
+#Goes to sensor view page, sends data to page
 @app.route('/sensorview', methods=['GET','POST'])
 def sensorview():
     data = None
@@ -217,20 +219,20 @@ def sensorview():
         return redirect('/dashboard')
     return render_template("sensors.html", data=data)
 
+#Goes to missionn page, create and complete mission using form and table
 @app.route('/mission', methods=['GET','POST'])
 def mission():
     data = None
     NonMiss = GLOBALS.DATABASE.ViewQuery('SELECT * FROM MissionTable WHERE Completed = 0')
     if request.method == "POST":
         query = request.form.get('query')
-        if query == 'create':
+        if query == 'create': #Create using form
             UserID = session["UserID"]
-            #print(UserID)
             Notes = request.form.get('notes')
             Location = request.form.get('location')
             StartTime = time.time()
             GLOBALS.DATABASE.ModifyQuery('INSERT INTO MissionTable (UserID, StartTime, Notes, Location, Completed) VALUES (?,?,?,?,0)', (UserID, StartTime, Notes, Location))
-        elif query == 'complete':
+        elif query == 'complete': #Complete when table row is selected
             completemission = request.form.getlist('selectedmissions')
             for mission in completemission:
                 endtime = time.time()
@@ -239,6 +241,7 @@ def mission():
                 print(misid)
     return render_template("mission.html", NonMiss = NonMiss)
 
+#Sounds button, song request on HTML page
 @app.route('/sounds', methods=['GET','POST'])
 def sounds():
     speaker = False
@@ -258,6 +261,7 @@ def sounds():
             speaker = False
     return redirect('/dashboard')
 
+#Stops all sounds, button on HTML page
 @app.route('/stopsounds', methods=['GET','POST'])
 def stopsounds():
     if request.method == 'POST':
