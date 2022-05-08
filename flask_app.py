@@ -91,7 +91,6 @@ def robotdashboard():
     if MissionID:
         MissionID = MissionID[0]
     session['MissionID'] = MissionID
-    print(session['MissionID']['MissionID'])
     return render_template('dashboard.html', robot_enabled = enabled)
 
 #Admin page displays all table data
