@@ -116,8 +116,15 @@ def maze():
 
 @app.route('/mazestop', methods=['GET','POST'])
 def mazestop():
+    data = {}
     GLOBALS.ROBOT.stop_routine()
-    return
+    return data
+
+@app.route('/retrace', methods=['GET','POST'])
+def retrace():
+    data = {}
+    GLOBALS.ROBOT.retrace(session['MissionID']['MissionID'])
+    return data
 
 #Used for reconfiguring IMU
 @app.route('/reconfig_IMU', methods=['GET','POST'])
@@ -218,10 +225,11 @@ def mission():
         query = request.form.get('query')
         if query == 'create':
             UserID = session["UserID"]
+            #print(UserID)
             Notes = request.form.get('notes')
             Location = request.form.get('location')
-            StartTime = time.time
-            GLOBALS.DATABASE.ModifyQuery('INSERT INTO MissionTable (Location, Notes, UserID, StartTime, Completed) VALUES (?,?,?,?,0)', (Location, Notes, UserID, StartTime))
+            StartTime = time.time()
+            GLOBALS.DATABASE.ModifyQuery('INSERT INTO MissionTable (UserID, StartTime, Notes, Location, Completed) VALUES (?,?,?,?,0)', (UserID, StartTime, Notes, Location))
         elif query == 'complete':
             completemission = request.form.getlist('selectedmissions')
             for mission in completemission:

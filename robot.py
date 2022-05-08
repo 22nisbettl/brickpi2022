@@ -153,9 +153,31 @@ class Robot(BrickPiInterface):
             self.recordaction(self.missionid, "Orientation", "17", self.get_orientation_IMU()[0], "Rotation to beginning heading", "")
         return
 
-    def retrace(self):
+    def retrace(self, missionid):
         self.CurrentRoutine == "Retracing"
-        self.steps = GLOBALS.DATABASE.ViewQuery('SELECT * FROM MovementHistoryTable WHERE MissionID = ? AND Type NOT LIKE "%heading%" ORDER BY DESC', (self.missionid,))
+        steps = GLOBALS.DATABASE.ViewQuery('SELECT Comments FROM MovementHistoryTable WHERE MissionID = ? AND Type LIKE "%Direction%" ORDER BY ActionID DESC', (missionid,))
+        orient = GLOBALS.DATABASE.ViewQuery('SELECT Orientation FROM MovementHistoryTable WHERE MissionID = ? AND Type LIKE "Rotation to beginning heading" ORDER BY ActionID ASC LIMIT 1', (missionid,))[0]['Orientation']
+        for i in steps:
+            self.rotate_power_heading_IMU(17, float(orient))
+            #print(i['Comments'])
+            if i['Comments'] == "North":
+                self.rotate_power_degrees_IMU(17,-180)
+                self.recordaction(missionid, "Rotation Back", "17", self.get_orientation_IMU()[0], "Direction Rotated -180 degrees", "Retrace")
+                self.move_forward(42)
+                self.recordaction(missionid, "Move Forward", "20", self.get_orientation_IMU()[0], "Movement Forward", "")
+            elif i['Comments'] == "West":
+                self.rotate_power_degrees_IMU(17,90)
+                self.recordaction(missionid, "Rotation Right", "17", self.get_orientation_IMU()[0], "Direction Rotated 90 degrees", "Retrace")
+                self.move_forward(42)
+                self.recordaction(missionid, "Move Forward", "20", self.get_orientation_IMU()[0], "Movement Forward", "")
+            elif i['Comments'] == "East":
+                self.rotate_power_degrees_IMU(17,-90)
+                self.recordaction(missionid, "Rotation Left", "17", self.get_orientation_IMU()[0], "Direction Rotated -90 degrees", "Retrace")
+                self.move_forward(42)
+                self.recordaction(missionid, "Move Forward", "20", self.get_orientation_IMU()[0], "Movement Forward", "")
+            elif i['Comments'] == "South":
+                self.move_forward(42)
+                self.recordaction(missionid, "Move Forward", "20", self.get_orientation_IMU()[0], "Movement Forward", "")
         return
 
     def stop_routine(self):
@@ -164,7 +186,7 @@ class Robot(BrickPiInterface):
         return
 
     def recordaction(self, missionid, motor, power, orientation, typetext, comment):
-        print(missionid, motor, power, orientation, typetext, comment)
+        #print(missionid, motor, power, orientation, typetext, comment)
         GLOBALS.DATABASE.ModifyQuery('INSERT INTO MovementHistoryTable (MissionID, Direction, Power, Orientation, Type, Comments) VALUES (?,?,?,?,?,?)', (missionid, motor, power, orientation, typetext, comment))
         return
 

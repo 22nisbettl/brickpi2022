@@ -48,14 +48,15 @@
         <div class="row d-flex justify-content-center">
             <button type="button" class="btn btn-warning" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Shutdown Robot" onclick="shutdown_robot();"><i class="fa-solid fa-power-off"></i></button>
             <button type="button" class="btn btn-danger" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Reconfigure IMU" onclick="new_ajax_helper('/reconfig_IMU');"><i class="fa-solid fa-compass-drafting"></i></button>
-            <button type="button" class="btn btn-info" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Compass" onclick="new_ajax_helper('/compass');"><i class="fa-solid fa-compass"></i></button>
+            <button type="button" class="btn btn-danger" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Compass" onclick="new_ajax_helper('/compass');"><i class="fa-solid fa-compass"></i></button>
             <button type="button" class="btn btn-info" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Music" onclick="musictoggle();"><i class="fa-solid fa-music"></i></button>
         </div>
         <div class="row d-flex justify-content-center">
             <button type="button" id="mazebutton" class="btn btn-light" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Search Maze" onclick="new_ajax_helper('/maze');"><i class="fas fa-search-plus"></i></button>
+            <button type="button" id="retracae" class="btn btn-secondary" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Retrace" onclick="new_ajax_helper('/retrace');"><i class="fa-solid fa-flag-checkered"></i></button>
             <input id="missionid" type="hidden" value="{{session['MissionID']}}">
             <button type="button" class="btn btn-success" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Manual Control" onclick="toggle();"><i class="fa-solid fa-up-down-left-right"></i></button>
-            <button type="button" id="mazebutton" class="btn btn-dark" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Stop Searching Maze" onclick="new_ajax_helper('/mazestop');"><i class="fas fa-search-minus"></i></button>
+            <button type="button" id="mazebackbutton" class="btn btn-dark" style="width: fit-content;" data-toggle="tooltip" data-placement="top" title="Stop Searching Maze" onclick="new_ajax_helper('/mazestop');"><i class="fas fa-search-minus"></i></button>
         </div>
         <div id="manualhide" hidden="hidden">
             <div class="row d-flex justify-content-center">
