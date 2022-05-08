@@ -21,7 +21,7 @@ class Robot(BrickPiInterface):
         for i in direction:
             if self.CurrentRoutine != 'Searching': #Checks if routine has been changed or stopped
                 self.stop_all()
-            self.search_harmed((14,143,134),(17,145,134))
+            self.search_harmed((120, 120, 120), (170,170,170))
             ultra = self.get_ultra_sensor()
             if ultra < 40 and ultra != 0:
                 GLOBALS.DATABASE.ModifyQuery('UPDATE TileTable SET ' + i + ' = 1 WHERE TileID = ?', (tile,))
@@ -62,7 +62,7 @@ class Robot(BrickPiInterface):
             print(self.last_direction)
             #Intersection code determines which direction the robot rotates and moves
             if (North == 0 and West == 1 and East == 1 and South == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "West" and West == 1 and North == 0 and South == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "East" and East == 1 and North == 0 and South == 1 and self.CurrentRoutine == "Searching") or (North == 0 and West == 1 and South == 0 and self.last_direction == "North" and self.CurrentRoutine == "Searching")or (North == 0 and East == 1 and South == 0 and self.last_direction == "North" and self.CurrentRoutine == "Searching"):
-                self.search_harmed((14,143,134),(17,145,134)) #Yeloow detection
+                self.search_harmed((120, 120, 120), (170,170,170)) #Yeloow detection
                 print("Going North")
                 self.move_forward(42)
                 self.recordaction(self.missionid, "Move Forward", "20", self.get_orientation_IMU()[0], "Direction Forward", "North")
@@ -70,7 +70,7 @@ class Robot(BrickPiInterface):
             elif (North == 1 and West == 0 and East == 1 and South == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "North" and North == 1 and West == 0 and East == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "South" and West == 0 and East == 1 and South == 1 and self.CurrentRoutine == "Searching") or (North == 1 and West == 0 and East == 0 and self.last_direction == "West" and self.CurrentRoutine == "Searching") or (South == 1 and West == 0 and East == 0 and self.last_direction == "West" and self.CurrentRoutine == "Searching"):
                 self.rotate_power_degrees_IMU(17,-90)
                 self.recordaction(self.missionid, "Rotation Left", "17", self.get_orientation_IMU()[0], "Direction Rotated -90 degrees", "West")
-                self.search_harmed((14,143,134),(17,145,134))
+                self.search_harmed((120, 120, 120), (170,170,170))
                 print("Going West")
                 self.move_forward(42)
                 self.recordaction(self.missionid, "Move Forward", "20", self.get_orientation_IMU()[0], "Movement Forward", "")
@@ -78,7 +78,7 @@ class Robot(BrickPiInterface):
             elif (North == 1 and West == 1 and East == 0 and South == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "North" and North == 1 and East == 0 and West == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "South" and South == 1 and East == 0 and West == 1 and self.CurrentRoutine == "Searching")  or (North == 1 and West == 0 and East == 0 and self.last_direction == "East" and self.CurrentRoutine == "Searching"):
                 self.rotate_power_degrees_IMU(17,-270)
                 self.recordaction(self.missionid, "Rotation Right", "17", self.get_orientation_IMU()[0], "Direction Rotated 90 degrees", "East")
-                self.search_harmed((14,143,134),(17,145,134))
+                self.search_harmed((120, 120, 120), (170,170,170))
                 print("Going East")
                 self.move_forward(42)
                 self.recordaction(self.missionid, "Move Forward", "20", self.get_orientation_IMU()[0], "Movement Forward", "")
@@ -86,7 +86,7 @@ class Robot(BrickPiInterface):
             elif (North == 1 and West == 1 and East == 1 and South == 0 and self.CurrentRoutine == "Searching") or (self.last_direction == "West" and North == 1 and South == 0 and West == 1 and self.CurrentRoutine == "Searching") or (self.last_direction == "East" and North == 1 and South == 0 and East == 1 and self.CurrentRoutine == "Searching") or (North == 0 and East == 1 and South == 0 and self.last_direction == "South" and self.CurrentRoutine == "Searching") or (West == 1 and East == 1 and South == 0 and self.last_direction == "South" and self.CurrentRoutine == "Searching"):
                 self.rotate_power_degrees_IMU(17, -180)
                 self.recordaction(self.missionid, "Rotation Back", "17", self.get_orientation_IMU()[0], "Direction Rotated -180 degrees", "South")
-                self.search_harmed((14,143,134),(17,145,134))
+                self.search_harmed((120, 120, 120), (170,170,170))
                 print("Going South")
                 self.move_forward(42)
                 self.recordaction(self.missionid, "Move Forward", "20", self.get_orientation_IMU()[0], "Movement Forward", "")
@@ -95,7 +95,7 @@ class Robot(BrickPiInterface):
                 self.stop_all()
             else: #If intersection code has no direction then this determines its movement
                 if North == 0 and self.CurrentRoutine == "Searching":
-                    self.search_harmed((14,143,134),(17,145,134)) #Yeloow detection
+                    self.search_harmed((120, 120, 120), (170,170,170)) #Yeloow detection
                     print("Going North")
                     self.move_forward(42)
                     self.recordaction(self.missionid, "Move Forward", "20", self.get_orientation_IMU()[0], "Direction Forward", "North")
@@ -103,7 +103,7 @@ class Robot(BrickPiInterface):
                 elif North == 1 and West == 0 and self.CurrentRoutine == "Searching":
                     self.rotate_power_degrees_IMU(17,-90)
                     self.recordaction(self.missionid, "Rotation Left", "17", self.get_orientation_IMU()[0], "Direction Rotated -90 degrees", "West")
-                    self.search_harmed((14,143,134),(17,145,134))
+                    self.search_harmed((120, 120, 120), (170,170,170))
                     print("Going West")
                     self.move_forward(42)
                     self.recordaction(self.missionid, "Move Forward", "20", self.get_orientation_IMU()[0], "Movement Forward", "")
@@ -111,7 +111,7 @@ class Robot(BrickPiInterface):
                 elif North == 1 and West == 1 and East == 0 and self.CurrentRoutine == "Searching":
                     self.rotate_power_degrees_IMU(17,90)
                     self.recordaction(self.missionid, "Rotation Right", "17", self.get_orientation_IMU()[0], "Direction Rotated 90 degrees", "East")
-                    self.search_harmed((14,143,134),(17,145,134))
+                    self.search_harmed((120, 120, 120), (170,170,170))
                     print("Going East")
                     self.move_forward(42)
                     self.recordaction(self.missionid, "Move Forward", "20", self.get_orientation_IMU()[0], "Movement Forward", "")
@@ -119,7 +119,7 @@ class Robot(BrickPiInterface):
                 elif North == 1 and West == 1 and East == 1 and South == 0 and self.CurrentRoutine == "Searching":
                     self.rotate_power_degrees_IMU(17,-180)
                     self.recordaction(self.missionid, "Rotation Back", "17", self.get_orientation_IMU()[0], "Direction Rotated 180 degrees", "South")
-                    self.search_harmed((14,143,134),(17,145,134))
+                    self.search_harmed((120, 120, 120), (170,170,170))
                     print("Going South")
                     self.move_forward(42)
                     self.recordaction(self.missionid, "Move Forward", "20", self.get_orientation_IMU()[0], "Movement Forward", "")
@@ -177,12 +177,15 @@ class Robot(BrickPiInterface):
 
     #Checks camera for yellow pixels between a high and low range
     def search_harmed(self, low, high):
-        camval = GLOBALS.CAMERA.get_camera_colour(low, high)
+        '''camval = GLOBALS.CAMERA.get_camera_colour(low, high)
+        print(camval)
+        print("Checking")
         if camval == "True":
+            print("Yellow")
             self.spin_medium_motor(-360)
             self.spin_medium_motor(-360)
             self.spin_medium_motor(-360)
-            self.recordaction(self.missionid, "Medium", "-360", self.get_orientation_IMU()[0], "Medium shot cannon, Victim Found!", "")
+            self.recordaction(self.missionid, "Medium", "-360", self.get_orientation_IMU()[0], "Medium shot cannon, Victim Found!", "")'''
         return
 
     #Moves for specified time, with power, and stops if robot gets to close to wall or if colour detected
@@ -304,10 +307,11 @@ if __name__ == '__main__':
     logging.basicConfig(filename='logs/robot.log', level=logging.INFO)
     ROBOT = Robot(timelimit=0)
     bp = ROBOT.BP
-    #GLOBALS.CAMERA = camerainterface.CameraInterface()
-    #GLOBALS.CAMERA.start()
+    GLOBALS.CAMERA = camerainterface.CameraInterface()
+    GLOBALS.CAMERA.start()
     ROBOT.configure_sensors()
     #ROBOT.rotate_left(90)
     #ROBOT.rotate_right(90)
-    ROBOT.move_forward(15)
+    #ROBOT.move_forward(42)
+    ROBOT.search_harmed((120, 120, 120), (170,170,170))
     ROBOT.safe_exit()
